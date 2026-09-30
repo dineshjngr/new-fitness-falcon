@@ -199,6 +199,98 @@
         });
       }
     }
+
+    // ------------------------------------------------------------------------
+    // 5. Single Blog Post Interactions
+    // ------------------------------------------------------------------------
+    // Reading Progress Bar
+    const progressBar = document.getElementById('falconReadingProgress');
+    const articleBox = document.querySelector('.falcon-article-box');
+    if (progressBar && articleBox) {
+      window.addEventListener('scroll', function () {
+        const articleRect = articleBox.getBoundingClientRect();
+        const articleTop = window.scrollY + articleRect.top;
+        const articleHeight = articleRect.height;
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition < articleTop) {
+          progressBar.style.width = '0%';
+        } else if (scrollPosition > articleTop + articleHeight - windowHeight) {
+          progressBar.style.width = '100%';
+        } else {
+          const progress = ((scrollPosition - articleTop) / (articleHeight - windowHeight)) * 100;
+          progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+        }
+      }, { passive: true });
+    }
+
+    // Table of Contents Toggle
+    const tocToggle = document.getElementById('falconTocToggle');
+    const tocList = document.getElementById('falconTocList');
+    if (tocToggle && tocList) {
+      tocToggle.addEventListener('click', function () {
+        const isHidden = tocList.style.display === 'none';
+        tocList.style.display = isHidden ? 'block' : 'none';
+        tocToggle.textContent = isHidden ? 'Hide' : 'Show';
+        tocToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+      });
+    }
+
+    // Copy Article Link to Clipboard
+    const copyLinkBtn = document.getElementById('falconCopyLinkBtn');
+    const copyTooltip = document.getElementById('falconCopyTooltip');
+    if (copyLinkBtn) {
+      copyLinkBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const urlToCopy = this.getAttribute('data-url') || window.location.href;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(urlToCopy).then(showTooltip);
+        } else {
+          // Fallback for older browsers
+          const tempInput = document.createElement('input');
+          tempInput.value = urlToCopy;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          showTooltip();
+        }
+
+        function showTooltip() {
+          if (copyTooltip) {
+            copyTooltip.classList.add('show');
+            setTimeout(function () {
+              copyTooltip.classList.remove('show');
+            }, 2200);
+          }
+        }
+      });
+    }
+
+    // Ensure all tables inside .entry-content have responsive scroll container
+    const entryTables = document.querySelectorAll('.entry-content table');
+    entryTables.forEach(function (tbl) {
+      if (!tbl.parentElement.classList.contains('falcon-table-wrapper')) {
+        const wrap = document.createElement('div');
+        wrap.className = 'falcon-table-wrapper';
+        tbl.parentNode.insertBefore(wrap, tbl);
+        wrap.appendChild(tbl);
+      }
+    });
+
+    // Ensure all YouTube/Vimeo iframes inside .entry-content have responsive 16:9 container
+    const entryIframes = document.querySelectorAll('.entry-content iframe');
+    entryIframes.forEach(function (iframe) {
+      const src = iframe.getAttribute('src') || '';
+      if ((src.indexOf('youtube.com') !== -1 || src.indexOf('youtu.be') !== -1 || src.indexOf('vimeo.com') !== -1) &&
+          !iframe.parentElement.classList.contains('falcon-video-wrapper')) {
+        const wrap = document.createElement('div');
+        wrap.className = 'falcon-video-wrapper';
+        iframe.parentNode.insertBefore(wrap, iframe);
+        wrap.appendChild(iframe);
+      }
+    });
   }
 
   if (document.readyState === 'loading') {

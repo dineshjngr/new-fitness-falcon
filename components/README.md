@@ -13,33 +13,42 @@ Individual pages only provide their own page-specific content within `<main id="
 
 - `header.html`: Global responsive header, top bar (breaking news ticker, date, social channels, theme switch), desktop navigation with dropdowns, mobile navigation drawer (`.slide-bar`), and live search modal with auto-complete.
 - `footer.html`: Global responsive footer, brand intro, explore topic links, company pages links, reading recommendations, copyright, and back-to-top button.
+- `post-template.html`: Single master reusable blog post template for the entire website. Renders all 155 existing articles and future articles with zero duplicated layout code.
 - `layout.html`: Reference global layout architecture shell.
 - `breadcrumbs.html`: Reusable breadcrumbs component pattern.
 - `card.html`: Reusable article and content card component pattern.
 - `cta-banner.html`: Reusable call-to-action newsletter/subscription banner pattern.
 
-## Global Design System
+## Blog Post Architecture & Content Storage
 
-All shared design tokens, layout primitives, and component styles live in `assets/css/custom-style.css`:
-- **Containers**: `.falcon-container`, `.falcon-container-narrow`, `.falcon-container-article`
-- **Spacing Scale**: CSS variables `--space-1` through `--space-20` (4px to 80px)
-- **Typography**: Fluid type scale `--text-xs` through `--text-5xl`, line heights, font weights (`DM Sans`)
-- **Buttons**: `.falcon-btn`, `.falcon-btn-primary`, `.falcon-btn-secondary`, `.falcon-btn-outline`, `.falcon-btn-sm`, `.falcon-btn-lg`
-- **Cards**: `.post-card`, `.falcon-card`
-- **Blog Components**: `.category-badge`, `.falcon-article-box`, `.falcon-post-meta`, `.entry-content`
-- **CTA Components**: `.falcon-cta`, `.falcon-cta-eyebrow`, `.falcon-cta-title`, `.falcon-cta-description`, `.falcon-newsletter-form`
+To eliminate layout duplication across articles:
+- **Master Template**: `components/post-template.html` defines the layout, dynamic SEO tags, schema structured data, reading progress bar, table of contents, article meta row, author box, social sharing bar, post pagination (prev/next), related articles grid, and sticky sidebar.
+- **Content Store**: Post data and body HTML are stored cleanly in `content/posts/<slug>.json`.
+- **Dynamic SEO per Article**:
+  - Meta title, description, robots directives
+  - Canonical URL (`https://thefitnessfalcon.com/blogs/<slug>/`)
+  - Open Graph tags (`og:type="article"`, `og:title`, `og:description`, `og:url`, `og:image`, `article:published_time`, `article:modified_time`, `article:author`, `article:section`)
+  - Twitter card tags (`twitter:card="summary_large_image"`)
+  - Schema.org JSON-LD structured data (`BlogPosting` and `BreadcrumbList`)
+- **Rich Elements Support**:
+  - Automatic Table of Contents (`.falcon-toc`) for articles with 3+ headings
+  - Responsive tables wrapped in `.falcon-table-wrapper` with mobile horizontal scroll
+  - Styled quotes (`blockquote`), video embeds (`.falcon-video-wrapper`), and captions
+  - Social sharing toolbar with instant clipboard copy for article URL
+  - Contextual Related Articles (3 cards by category) & Chronological Previous/Next post pagination
+  - Sticky sidebar with recent posts, category counts, and newsletter subscription
 
-## Scripts Architecture
+## Build and Post Management
 
-Shared scripts are loaded once globally rather than duplicated in page HTML:
-- `assets/js/search-results.js`: Renders search result items cleanly.
-- `assets/js/falcon-search-data.js`: Search index containing all 155 articles.
-- `assets/js/falcon-core.js`: Live search filtering, modal open/close, dark/light theme persistence, mobile menu toggling, and breaking news carousel.
-
-## Build and Verification
-
-To compile and propagate changes across all pages:
+To compile and propagate changes across all pages and blog posts:
 ```sh
+# 1. Compile all posts and propagate global header/footer
 python3 scripts/build.py
+
+# 2. Verify all routes, references, and search entries (must be 0 errors)
 python3 scripts/check_site.py
+
+# 3. Create a new future blog article
+python3 scripts/new_post.py --title "New Health Guide" --category "Health" --author "Dinesh"
 ```
+

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Primary Meta Tags -->
+    <title>{{META_TITLE}}</title>
+    <meta name="title" content="{{META_TITLE}}" />
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+    <meta name="robots" content="{{ROBOTS_DIRECTIVES}}" />
+    <link rel="canonical" href="{{CANONICAL_URL}}" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{META_TITLE}}" />
+    <meta property="og:description" content="{{META_DESCRIPTION}}" />
+    <meta property="og:url" content="{{CANONICAL_URL}}" />
+    <meta property="og:site_name" content="The Fitness Falcon" />
+    <meta property="og:image" content="{{OG_IMAGE_URL}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta property="og:image:alt" content="{{FEATURED_IMAGE_ALT}}" />
+    <meta property="article:published_time" content="{{PUBLISHED_ISO}}T00:00:00+00:00" />
+    <meta property="article:modified_time" content="{{MODIFIED_ISO}}T00:00:00+00:00" />
+    <meta property="article:author" content="{{AUTHOR_NAME}}" />
+    <meta property="article:section" content="{{CATEGORY_NAME}}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@fitnessfalcon_" />
+    <meta name="twitter:creator" content="@fitnessfalcon_" />
+    <meta name="twitter:title" content="{{META_TITLE}}" />
+    <meta name="twitter:description" content="{{META_DESCRIPTION}}" />
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/cropped-Untitled-design-14-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/assets/images/cropped-Untitled-design-14-192x192.png" sizes="192x192" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/benqu-style.css" />
+    <link rel="stylesheet" href="/assets/css/post-style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+{{SCHEMA_JSON_LD}}
+    </script>
+</head>
+<body>
+<div class="falcon-reading-progress" id="falconReadingProgress" aria-hidden="true"></div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="falcon-site-wrapper">
+<!-- shared:header:start -->
+<!-- shared:header:end -->
+
+<main id="main-content" class="falcon-main-layout falcon-article-layout">
+    <div class="container">
+        <!-- Breadcrumbs Component -->
+        <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
+            <a href="/./">Home</a>
+            <span class="separator" aria-hidden="true">/</span>
+            <a href="{{CATEGORY_URL}}">{{CATEGORY_NAME}}</a>
+            <span class="separator" aria-hidden="true">/</span>
+            <span class="current" aria-current="page">{{BREADCRUMB_TITLE}}</span>
+        </nav>
+
+        <div class="row">
+            <!-- Main Article Column (8 Cols) -->
+            <div class="col-lg-8">
+                <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
+                    <!-- Category Badge -->
+                    <a href="{{CATEGORY_URL}}" class="category-badge">{{CATEGORY_NAME}}</a>
+
+                    <!-- Post Title / H1 -->
+                    <h1 class="falcon-article-title" itemprop="headline">{{POST_TITLE}}</h1>
+
+                    <!-- Article Meta Row -->
+                    <div class="falcon-post-meta">
+                        <span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <i class="fal fa-user"></i> By <span itemprop="name">{{AUTHOR_NAME}}</span>
+                        </span>
+                        <span>
+                            <i class="fal fa-calendar-alt"></i>
+                            <time datetime="{{PUBLISHED_ISO}}" itemprop="datePublished">{{PUBLISHED_DATE}}</time>
+                        </span>
+                        {{UPDATED_DATE_HTML}}
+                        <span>
+                            <i class="fal fa-clock"></i> {{READ_TIME}} min read
+                        </span>
+                        <span>
+                            <i class="fal fa-comments"></i> {{COMMENTS_COUNT}} Comments
+                        </span>
+                    </div>
+
+                    <!-- Featured Image -->
+                    <figure class="falcon-featured-image-wrapper">
+                        <img src="{{FEATURED_IMAGE}}" alt="{{FEATURED_IMAGE_ALT}}" class="falcon-featured-image" loading="eager" itemprop="image" />
+                        {{FEATURED_IMAGE_CAPTION_HTML}}
+                    </figure>
+
+                    <!-- Table of Contents (when applicable) -->
+                    {{TABLE_OF_CONTENTS_HTML}}
+
+                    <!-- Article Content Body -->
+                    <div class="entry-content" itemprop="articleBody">
+{{ENTRY_CONTENT}}
+                    </div>
+
+                    <!-- Tags List -->
+                    {{TAGS_HTML}}
+
+                    <!-- Social Sharing Toolbar -->
+                    <div class="falcon-social-share" aria-label="Share this article">
+                        <div class="falcon-social-share-title">
+                            <i class="fal fa-share-alt"></i>
+                            <span>Share this article:</span>
+                        </div>
+                        <div class="falcon-social-buttons">
+                            <a href="https://twitter.com/intent/tweet?text={{SHARE_TITLE_ENCODED}}&url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-x" aria-label="Share on X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-facebook" aria-label="Share on Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-linkedin" aria-label="Share on LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://pinterest.com/pin/create/button/?url={{SHARE_URL_ENCODED}}&media={{SHARE_IMG_ENCODED}}&description={{SHARE_TITLE_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-pinterest" aria-label="Pin on Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?text={{SHARE_TITLE_ENCODED}}%20{{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-whatsapp" aria-label="Share via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <button type="button" class="falcon-share-btn share-copy" id="falconCopyLinkBtn" data-url="{{CANONICAL_URL}}" aria-label="Copy article link">
+                                <i class="fal fa-link"></i>
+                                <span class="falcon-copy-tooltip" id="falconCopyTooltip">Link copied!</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Author Box -->
+                    <div class="falcon-author-box">
+                        <div class="falcon-author-avatar" style="background: {{AUTHOR_GRADIENT}};">
+                            {{AUTHOR_INITIAL}}
+                        </div>
+                        <div class="falcon-author-info">
+                            <span class="falcon-author-badge">Verified Falcon Contributor</span>
+                            <h4 class="falcon-author-name">Written by {{AUTHOR_NAME}}</h4>
+                            <div class="falcon-author-role">{{AUTHOR_ROLE}}</div>
+                            <p class="falcon-author-bio">{{AUTHOR_BIO}}</p>
+                        </div>
+                    </div>
+
+                    <!-- Post Pagination: Previous / Next Articles -->
+                    <nav class="falcon-post-pagination" aria-label="Article navigation">
+                        {{PREV_POST_HTML}}
+                        {{NEXT_POST_HTML}}
+                    </nav>
+                </article>
+
+                <!-- Related Articles Section -->
+                <section class="falcon-related-section" aria-label="Related articles">
+                    <h3 class="falcon-section-heading">Related Articles</h3>
+                    <div class="row">
+                        {{RELATED_POSTS_HTML}}
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sticky Sidebar Column (4 Cols) -->
+            <div class="col-lg-4">
+                <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
+                    <!-- Recent Articles Widget -->
+                    <div class="falcon-sidebar-widget">
+                        <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
+                        {{SIDEBAR_RECENT_POSTS_HTML}}
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="falcon-sidebar-widget">
+                        <h3 class="falcon-sidebar-widget-title">Categories</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            {{SIDEBAR_CATEGORIES_HTML}}
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter CTA Widget -->
+                    <div class="falcon-sidebar-cta">
+                        <i class="far fa-envelope-open-text"></i>
+                        <h3>Daily Fitness Digest</h3>
+                        <p>Get top health tips, workouts, and wellness guides straight to your inbox.</p>
+                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address" />
+                            <button type="submit">Subscribe Free</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- shared:footer:start -->
+<!-- shared:footer:end -->
+</div>
+
+<!-- Dynamic Article Client Payload -->
+<script id="falcon-post-data" type="application/json">
+{{POST_JSON_DATA}}
+</script>
+
+<!-- JS Dependencies -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/search-results.js"></script>
+<script src="/assets/js/falcon-search-data.js"></script>
+<script src="/assets/js/falcon-core.js"></script>
+</body>
+</html>
