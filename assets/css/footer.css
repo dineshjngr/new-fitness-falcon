@@ -1,0 +1,33 @@
+/* The Fitness Falcon footer */
+.falcon-footer { background: #101522; color: #b6bdcb; padding: 0; position: relative; }
+.falcon-footer .container { max-width: 1320px; padding-left: 30px; padding-right: 30px; }
+.falcon-footer a { color: inherit; text-decoration: none; transition: color .2s, background .2s; }
+.falcon-footer a:hover { color: #fff; }
+.falcon-footer a:focus-visible, .falcon-footer button:focus-visible { outline: 2px solid #8299ff; outline-offset: 5px; }
+.falcon-footer-intro { display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 60px 0 48px; border-bottom: 1px solid #303543; }
+.falcon-footer-eyebrow { color: #91a5ff; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+.falcon-footer .falcon-footer-intro h2 { color: #fff; font-size: clamp(36px, 4vw, 56px); line-height: 1.12; letter-spacing: -2px; margin: 17px 0 0; }
+.falcon-footer-intro h2 span { color: #6382ff; }
+.falcon-footer-intro > p { font-size: 16px; line-height: 1.8; margin: 25px 0 0; padding-right: 30px; }
+.falcon-footer-main { display: grid; grid-template-columns: 1.3fr .9fr .9fr 1.45fr; gap: 45px; padding: 46px 0 50px; }
+.falcon-footer-brand img { width: 190px; height: auto; display: block; margin: -8px 0 17px; }
+.falcon-footer-brand p { font-size: 13px; line-height: 1.8; margin: 0 0 22px; }
+.falcon-footer .falcon-footer-main h3 { color: #fff; font-size: 14px; line-height: 1.5; margin: 0 0 22px; font-weight: 700 !important; }
+.falcon-footer ul { list-style: none; padding: 0; margin: 0; }
+.falcon-footer li { font-size: 13px; line-height: 1.6; margin: 0 0 12px; }
+.falcon-footer-social { display: flex; gap: 8px; }
+.falcon-footer-social a { display: flex; align-items: center; justify-content: center; width: 33px; height: 33px; border: 1px solid #3b4150; border-radius: 50%; }
+.falcon-footer .falcon-footer-social .fab { font-family: 'Font Awesome 5 Brands' !important; font-size: 12px; }
+.falcon-footer-social a:hover { background: #3b60fe; border-color: #3b60fe; }
+.falcon-footer-note { display: block; max-width: 140px; margin-top: 22px; font-size: 11px; line-height: 1.7; color: #9099ab; }
+.falcon-footer-story { display: flex; align-items: center; gap: 13px; margin-bottom: 15px; }
+.falcon-footer-story img { width: 68px; height: 52px; object-fit: cover; border-radius: 5px; flex-shrink: 0; }
+.falcon-footer-story span:nth-child(2) { font-size: 13px; line-height: 1.5; color: #e0e4ed; }
+.falcon-footer-story span:last-child { font-size: 18px; color: #91a5ff; margin-left: auto; }
+.falcon-footer-bottom { display: flex; align-items: center; gap: 28px; border-top: 1px solid #303543; padding: 23px 0; font-size: 11px; }
+.falcon-footer-bottom p { font-size: inherit; margin: 0; }
+.falcon-footer-bottom button { margin-left: auto; padding: 0; border: 0; background: transparent; color: #dce1eb; font-size: 11px; cursor: pointer !important; }
+.falcon-footer-bottom button span { margin-left: 12px; color: #91a5ff; font-size: 18px; }
+@media (max-width: 991px) { .falcon-footer-main { grid-template-columns: 1fr 1fr; gap: 35px 50px; } .falcon-footer-intro > p { padding-right: 0; font-size: 14px; } }
+@media (max-width: 575px) { .falcon-footer .container { padding-left: 24px; padding-right: 24px; } .falcon-footer-intro { display: block; padding: 40px 0 30px; } .falcon-footer .falcon-footer-intro h2 { letter-spacing: -1px; } .falcon-footer-intro > p { margin-top: 22px; } .falcon-footer-main { gap: 30px 20px; padding: 32px 0; } .falcon-footer-brand, .falcon-footer-reading { grid-column: 1 / -1; } .falcon-footer-brand p br { display: none; } .falcon-footer-note { max-width: 170px; } .falcon-footer-bottom { flex-wrap: wrap; gap: 15px; padding: 20px 0; } .falcon-footer-bottom p { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .falcon-footer a { transition: none; } }
