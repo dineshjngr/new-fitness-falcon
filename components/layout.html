@@ -1,0 +1,53 @@
+<!-- Global Layout Architecture Template
+     Individual pages provide only their <head> metadata and page-specific <main> content.
+-->
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page Specific Head & SEO Metadata -->
+  <title>{{PAGE_TITLE}} - The Fitness Falcon</title>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}" />
+
+  <!-- Global Shared Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/all.min.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/benqu-style.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/post-style.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/responsive.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/custom-style.css" />
+  <link rel="stylesheet" href="{{PREFIX}}assets/css/footer.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="falcon-site-wrapper">
+    <!-- shared:header:start -->
+    <!-- 1 shared global header injected here by build.py -->
+    <!-- shared:header:end -->
+
+    <main id="main-content" class="falcon-main-layout">
+      <!-- Individual page-specific content ONLY goes here -->
+      {{PAGE_CONTENT}}
+    </main>
+
+    <!-- shared:footer:start -->
+    <!-- 1 shared global footer injected here by build.py -->
+    <!-- shared:footer:end -->
+  </div>
+
+  <!-- Shared Global Scripts -->
+  <script src="{{PREFIX}}assets/js/jquery.min.js"></script>
+  <script src="{{PREFIX}}assets/js/popper.min.js"></script>
+  <script src="{{PREFIX}}assets/js/bootstrap.min.js"></script>
+  <script src="{{PREFIX}}assets/js/owl.carousel.min.js"></script>
+  <script src="{{PREFIX}}assets/js/search-results.js"></script>
+  <script src="{{PREFIX}}assets/js/falcon-search-data.js"></script>
+  <script src="{{PREFIX}}assets/js/falcon-core.js"></script>
+</body>
+</html>

@@ -20,217 +20,301 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
-    
-    <style>
-        body {
-            font-family: 'DM Sans', sans-serif !important;
-            color: #1e293b;
-            background-color: #f8fafc;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'DM Sans', sans-serif !important;
-            font-weight: 900 !important;
-            color: #0f172a;
-        }
-        .entry-content {
-            font-size: 17px;
-            line-height: 1.85;
-            color: #334155;
-        }
-        .entry-content p {
-            margin-bottom: 1.5em;
-        }
-        .entry-content h2 {
-            margin-top: 1.8em;
-            margin-bottom: 0.7em;
-            font-size: 26px;
-        }
-        .entry-content h3 {
-            margin-top: 1.5em;
-            margin-bottom: 0.6em;
-            font-size: 22px;
-        }
-        .entry-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 20px 0;
-        }
-        .entry-content ul, .entry-content ol {
-            padding-left: 24px;
-            margin-bottom: 1.5em;
-        }
-        .entry-content li {
-            margin-bottom: 0.5em;
-        }
-        .entry-content blockquote {
-            border-left: 4px solid #5541f8;
-            padding: 16px 24px;
-            background: #f1f5f9;
-            border-radius: 0 12px 12px 0;
-            margin: 24px 0;
-            font-style: italic;
-        }
-        .category-badge {
-            display: inline-block;
-            background: #5541f8;
-            color: #fff;
-            font-size: 12px;
-            font-weight: 700;
-            padding: 4px 14px;
-            border-radius: 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .category-badge:hover {
-            background: #3b2ee8;
-            color: #fff;
-        }
-        .post-card {
-            background: #fff;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-            border: 1px solid #f1f5f9;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .post-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-        }
-        .post-card-thumb {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .post-card-body {
-            padding: 20px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .post-card-title {
-            font-size: 18px;
-            font-weight: 800;
-            color: #0f172a;
-            margin: 10px 0;
-            line-height: 1.4;
-        }
-        .post-card-title a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .post-card-title a:hover {
-            color: #5541f8;
-        }
-        .post-card-meta {
-            font-size: 13px;
-            color: #64748b;
-            margin-top: auto;
-            padding-top: 15px;
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+<link rel="stylesheet" href="../../assets/css/footer.css">
 </head>
 <body>
-
-    <div class="benqu_header_search" id="headerSearchModal">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="falcon-site-wrapper">
+<!-- shared:header:start -->
+<div class="benqu_header_search" id="headerSearchModal">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="search-wrap-inner" style="position: relative; max-width: 700px; margin: 0 auto;">
+                    <form method="get" action="https://thefitnessfalcon.com/" onsubmit="event.preventDefault(); return false;">
+                        <input type="search" name="s" id="liveSearchInput" placeholder="Search across all 155 articles..." autocomplete="off" style="width: 100%; padding: 18px 24px; font-size: 18px; border-radius: 50px; border: 2px solid #5541f8; outline: none; background: #fff; color: #111;" />
+                        <i class="close-btn fal fa-times" id="closeSearchBtn" style="position: absolute; right: 20px; top: 22px; font-size: 22px; cursor: pointer;" aria-label="Close search"></i>
+                    </form>
+                    <div id="searchResultsDropdown" class="falcon-search-dropdown" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="benqu-main-header pfy-header-2">
+    <div class="pfy-top-bar" id="pfytopbar">
         <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-12">
-                    <div class="search-wrap-inner" style="position: relative; max-width: 700px; margin: 0 auto;">
-                        <input type="search" id="liveSearchInput" placeholder="Search across all 155 articles..." autocomplete="off" style="width: 100%; padding: 18px 24px; font-size: 18px; border-radius: 50px; border: 2px solid #5541f8; outline: none; background: #fff; color: #111;" />
-                        <i class="close-btn fal fa-times" id="closeSearchBtn" style="position: absolute; right: 20px; top: 22px; font-size: 22px; cursor: pointer;"></i>
-                        <div id="searchResultsDropdown" style="display: none; position: absolute; top: 75px; left: 0; right: 0; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); max-height: 420px; overflow-y: auto; z-index: 9999; padding: 10px; text-align: left;"></div>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="pfy-top-left">
+                        <div class="topbar-date">
+                            <span><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
+                        </div>
+                        <div class="tp-news-ticker">
+                            <div class="breaking-heading"><i class="far fa-fire-alt"></i> Breaking News</div>
+                            <div class="pfy-breakingnews">
+                                <ul class="breaking-headline-active owl-carousel">
+                                    <li><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?</a></li>
+                                    <li><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training</a></li>
+                                    <li><a href="/blogs/what-is-a-readiness-score-low-workout/">What Is a Readiness Score? Should You Skip Your Workout When It’s Low?</a></li>
+                                    <li><a href="/blogs/hrv-for-fitness-what-it-tells-you/">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-end">
+                    <div class="pfy-top-right">
+                        <div class="dark-light-mode" style="display: inline-block; margin-right: 18px;">
+                            <i class="fas fa-moon" id="themeToggleBtn" style="cursor: pointer; font-size: 15px; color: #64748b;" aria-label="Toggle theme"></i>
+                        </div>
+                        <div class="socila-title">
+                            <h5>Follow Us</h5>
+                        </div>
+                        <div class="social-info">
+                            <a href="https://www.facebook.com/people/The-Fitness-Falcon/61553645405177/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/fitnessfalcon_" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/thefitnessfalconofficial/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@TheFitnessFalcon" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.pinterest.com/thefitnessfalcon/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <header class="benqu-main-header pfy-header-2">
-        <div class="pfy-top-bar" id="pfytopbar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-7">
-                        <div class="pfy-top-left">
-                            <div class="topbar-date">
-                                <span><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-                            </div>
-                            <div class="tp-news-ticker">
-                                <div class="breaking-heading"><i class="far fa-fire-alt"></i> Breaking News</div>
-                                <div class="pfy-breakingnews">
-                                    <ul class="breaking-headline-active owl-carousel" style="display: block;">
-                                        <li><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?</a></li>
-                                        <li><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training</a></li>
-                                        <li><a href="/blogs/what-is-a-readiness-score-low-workout/">What Is a Readiness Score? Should You Skip Your Workout When It’s Low?</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="pfy-top-right">
-                            <div class="dark-light-mode">
-                                <i class="fas fa-moon" id="themeToggleBtn" style="cursor: pointer;"></i>
-                            </div>
-                            <div class="pfy-top-social">
-                                <span>Follow Us</span>
-                                <ul>
-                                    <li><a href="https://www.facebook.com/people/The-Fitness-Falcon/61553645405177/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/fitnessfalcon_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/thefitnessfalconofficial/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@TheFitnessFalcon" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="https://www.pinterest.com/thefitnessfalcon/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pfy-main-menu pfy-menu-2">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-6">
-                        <div class="pfy-logo">
-                            <a href="/./">
-                                <img src="/assets/images/1.svg" alt="The Fitness Falcon" style="max-height: 48px;" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 d-none d-lg-block">
-                        <div class="pfy-main-nav text-center">
-                            <nav>
-                                <ul style="display: flex; justify-content: center; gap: 24px; list-style: none; margin: 0; padding: 0;">
-                                    <li><a href="/category/food-and-recipes/" style="font-weight: 600;">Food &amp; Recipes</a></li>
-                                    <li><a href="/category/fitness/" style="font-weight: 600;">Fitness</a></li>
-                                    <li><a href="/category/health/" style="font-weight: 600;">Health</a></li>
-                                    <li><a href="/category/news/" style="font-weight: 600;">News</a></li>
-                                    <li><span style="font-weight: 600;">About Us</span></li>
-                                    <li><a href="/pages/contact-us/" style="font-weight: 600;">Contact Us</a></li>
-                                    <li><a href="/pages/write-for-us/" style="font-weight: 600;">Write For Us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 text-end">
-                        <div class="pfy-right-action" style="display: flex; align-items: center; justify-content: flex-end; gap: 16px;">
-                            <a href="javascript:void(0)" class="pfy-search-btn" id="openSearchBtn" style="font-size: 18px; color: inherit;"><i class="far fa-search"></i></a>
-                            <a href="/blogs/" class="d-none d-sm-inline-block" style="background: #5541f8; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 700; text-decoration: none;">All Articles</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <main style="padding: 40px 0 80px;">
+
+    <div id="stickyHeader" class="header-menu">
         <div class="container">
+            <div class="header-menu-opt d-flex justify-content-between align-items-center">
+                <div class="pfy-logo d-flex align-items-center">
+                    <a class="site-logo" href="/./" aria-label="The Fitness Falcon home">
+                        <img src="../../assets/images/1.svg" alt="The Fitness Falcon">
+                    </a>
+                    <a class="site-logo light-logo" href="/./" aria-label="The Fitness Falcon home">
+                        <img src="../../assets/images/2.svg" alt="The Fitness Falcon">
+                    </a>
+                </div>
+                <div class="mainmenu">
+                    <div class="site-navigation">
+                        <ul id="menu-header-menu" class="navigation clearfix">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="/category/food-and-recipes/">Food &amp; Recipes</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="/category/recipes/">Recipes</a></li>
+                                    <li class="menu-item"><a href="/category/nutrition/">Nutrition</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="/category/fitness/">Fitness</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="/category/gym/">Gym</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="/category/workout/">Workout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="/category/yoga/">Yoga</a></li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="/category/sports/">Sports</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="/category/swimming/">Swimming</a></li>
+                                            <li class="menu-item"><a href="/category/trekking/">Trekking</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="/category/weight/">Weight</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="/category/health/">Health</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="/category/skincare/">Skincare</a></li>
+                                    <li class="menu-item"><a href="/category/beauty/">Beauty</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="/category/news/">News</a></li>
+                            <li class="menu-item"><a href="/pages/contact-us/">Contact Us</a></li>
+                            <li class="menu-item"><a href="/pages/write-for-us/">Write For Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-right d-flex justify-content-between align-items-center" style="gap: 16px;">
+                    <span class="pfy-search-btn" id="openSearchBtn" role="button" aria-label="Open search"><i class="far fa-search"></i></span>
+                    <a href="/blogs/" class="falcon-btn falcon-btn-primary falcon-btn-sm d-none d-sm-inline-block">All Articles</a>
+                    <span class="pfy-sidebarnav" role="button" aria-label="Open sidebar"><img src="../../assets/images/nav.svg" alt="Sidebar Navigation"></span>
+                    <div class="hamburger_menu d-lg-none">
+                        <a href="javascript:void(0)" class="active" aria-label="Open mobile menu">
+                            <div class="icon bar">
+                                <img src="../../assets/images/nav.svg" alt="Menu">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="pfy-sidebar-wrap pfy-sidebar-box">
+    <div class="pfy-sidebar-overlay pfy-sidebar-return"></div>
+    <div class="pfy-sidebar-nav-widget">
+        <div class="pfy-sidebar-wid-wrap">
+            <div class="pfy-sidebar-close-wrap">
+                <a href="javascript:void(0)" class="pfy-sidebar-close" aria-label="Close sidebar">
+                    <i class="fal fa-times"></i>
+                </a>
+            </div>
+            <div class="pfy-sidebar-content">
+                <div class="pfy-sidebar-info-content">
+                    <div class="content-inner">
+                        <div class="sidebar-logo sidebar-style">
+                            <a class="site-logo light-logo" href="/./">
+                                <img src="../../assets/images/2.svg" alt="The Fitness Falcon">
+                            </a>
+                            <p>Stronger Every Day, Healthier Every Way</p>
+                        </div>
+                        <div class="pfy-sidebar-contact-info sidebar-style">
+                            <section class="widget benqu_latest_news_widget">
+                                <div class="recent-posts-widget">
+                                    <div class="pfy-post-grid-wrap grid-style-tb">
+                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
+                                            <div class="benqu__post-content pfy-scale d-flex">
+                                                <div class="pfy-post-thumb">
+                                                    <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/"><img width="640" height="360" src="../../assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026-1024x576.png" class="attachment-large size-large wp-post-image" alt="Apple Watch vs Garmin" loading="lazy" /></a>
+                                                </div>
+                                                <div class="pfy-post-content">
+                                                    <div class="pfy-post-meta-tb d-flex">
+                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
+                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
+                                                    </div>
+                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
+                                            <div class="benqu__post-content pfy-scale d-flex">
+                                                <div class="pfy-post-thumb">
+                                                    <a href="/blogs/apple-watch-series-12-readiness-score-explained/"><img width="640" height="360" src="../../assets/images/apple-watch-series-12-readiness-score-explained-1024x576.png" class="attachment-large size-large wp-post-image" alt="Apple Watch Series 12 Readiness" loading="lazy" /></a>
+                                                </div>
+                                                <div class="pfy-post-content">
+                                                    <div class="pfy-post-meta-tb d-flex">
+                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
+                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
+                                                    </div>
+                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
+                                            <div class="benqu__post-content pfy-scale d-flex">
+                                                <div class="pfy-post-thumb">
+                                                    <a href="/blogs/what-is-a-readiness-score-low-workout/"><img width="640" height="360" src="../../assets/images/what-is-a-readiness-score-low-workout-1024x576.png" class="attachment-large size-large wp-post-image" alt="What Is a Readiness Score" loading="lazy" /></a>
+                                                </div>
+                                                <div class="pfy-post-content">
+                                                    <div class="pfy-post-meta-tb d-flex">
+                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
+                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
+                                                    </div>
+                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/what-is-a-readiness-score-low-workout/">What Is a Readiness Score?</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
+                                            <div class="benqu__post-content pfy-scale d-flex">
+                                                <div class="pfy-post-thumb">
+                                                    <a href="/blogs/hrv-for-fitness-what-it-tells-you/"><img width="640" height="360" src="../../assets/images/hrv-for-fitness-what-it-tells-you-1024x576.png" class="attachment-large size-large wp-post-image" alt="HRV for Fitness" loading="lazy" /></a>
+                                                </div>
+                                                <div class="pfy-post-content">
+                                                    <div class="pfy-post-meta-tb d-flex">
+                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
+                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
+                                                    </div>
+                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/hrv-for-fitness-what-it-tells-you/">HRV for Fitness: What It Tells You</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="pfy-sidebar-contact-info sidebar-style">
+                            <div class="sidebar-social-info">
+                                <a href="https://www.facebook.com/people/The-Fitness-Falcon/61553645405177/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/fitnessfalcon_" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/thefitnessfalconofficial/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@TheFitnessFalcon" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.pinterest.com/thefitnessfalcon/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body-overlay"></div>
+
+<div class="slide-bar">
+    <div class="close-mobile-menu">
+        <a href="javascript:void(0)" aria-label="Close mobile menu"><i class="fal fa-times"></i></a>
+    </div>
+    <nav class="side-mobile-menu d-lg-none" aria-label="Mobile navigation">
+        <div class="header-mobile-search">
+            <form action="https://thefitnessfalcon.com/" method="get" onsubmit="event.preventDefault(); return false;">
+                <input type="search" name="s" id="search-mobile" placeholder="Search articles...">
+                <button type="submit" aria-label="Submit search"><i class="ti-search"></i></button>
+            </form>
+        </div>
+        <div class="menu-header-menu-container">
+            <ul id="pfy-mobile-menu" class="menu">
+                <li class="menu-item menu-item-has-children dropdown">
+                    <a href="/category/food-and-recipes/">Food &amp; Recipes</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="/category/recipes/">Recipes</a></li>
+                        <li class="menu-item"><a href="/category/nutrition/">Nutrition</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children dropdown">
+                    <a href="/category/fitness/">Fitness</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children dropdown">
+                            <a href="/category/gym/">Gym</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="/category/workout/">Workout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="/category/yoga/">Yoga</a></li>
+                        <li class="menu-item menu-item-has-children dropdown">
+                            <a href="/category/sports/">Sports</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="/category/swimming/">Swimming</a></li>
+                                <li class="menu-item"><a href="/category/trekking/">Trekking</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="/category/weight/">Weight</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children dropdown">
+                    <a href="/category/health/">Health</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="/category/skincare/">Skincare</a></li>
+                        <li class="menu-item"><a href="/category/beauty/">Beauty</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="/category/news/">News</a></li>
+                <li class="menu-item"><a href="/blogs/">All Articles</a></li>
+                <li class="menu-item"><a href="/pages/team/">Our Team</a></li>
+                <li class="menu-item"><a href="/pages/contact-us/">Contact Us</a></li>
+                <li class="menu-item"><a href="/pages/write-for-us/">Write For Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- shared:header:end -->
+
+<main id="main-content" class="falcon-main-layout">
+<div class="container">
             <div style="margin-bottom: 24px; font-size: 14px; color: #64748b;">
                 <a href="/./" style="color: #64748b; text-decoration: none;">Home</a> &nbsp;/&nbsp; 
                 <a href="/category/gym/" style="color: #5541f8; font-weight: 600; text-decoration: none;">Gym</a> &nbsp;/&nbsp; 
@@ -466,129 +550,90 @@ Embarking on a fitness journey is a transformative experience—one that's rife 
                 </div>
             </div>
         </div>
-    </main>
-    
-    <footer class="benqu-footer" style="background: #0f172a; color: #94a3b8; padding: 60px 0 30px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <a href="/./">
-                            <img src="/assets/images/2.svg" alt="The Fitness Falcon" style="max-height: 45px; margin-bottom: 20px;" />
-                        </a>
-                        <p style="color: #94a3b8; line-height: 1.7; font-size: 15px;">The Fitness Falcon delivers evidence-based health tips, fitness advice, nutrition insights, workout plans, and wellness guidance for an improved lifestyle.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 style="color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 20px;">Quick Links</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2;">
-                            <li><a href="/./" style="color: #94a3b8; text-decoration: none;">Home</a></li>
-                            <li><a href="/blogs/" style="color: #94a3b8; text-decoration: none;">Blog Library</a></li>
-                            <li><span style="color: #94a3b8; text-decoration: none;">About Us</span></li>
-                            <li><a href="/pages/contact-us/" style="color: #94a3b8; text-decoration: none;">Contact Us</a></li>
-                            <li><a href="/pages/privacy-policy/" style="color: #94a3b8; text-decoration: none;">Privacy Policy</a></li>
-                            <li><a href="/pages/write-for-us/" style="color: #94a3b8; text-decoration: none;">Write For Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 style="color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 20px;">Top Categories</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2;">
-                            <li><a href="/category/fitness/" style="color: #94a3b8; text-decoration: none;">Fitness &amp; Workouts</a></li>
-                            <li><a href="/category/nutrition/" style="color: #94a3b8; text-decoration: none;">Nutrition &amp; Diet</a></li>
-                            <li><a href="/category/food-and-recipes/" style="color: #94a3b8; text-decoration: none;">Food &amp; Recipes</a></li>
-                            <li><a href="/category/health/" style="color: #94a3b8; text-decoration: none;">Health &amp; Wellness</a></li>
-                            <li><a href="/category/lifestyle/" style="color: #94a3b8; text-decoration: none;">Lifestyle</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 style="color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 20px;">Newsletter</h4>
-                        <p style="color: #94a3b8; font-size: 14px;">Subscribe to get our weekly health insights delivered to your inbox.</p>
-                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-                            <input type="email" placeholder="Your email address" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #fff; outline: none; font-size: 14px;" />
-                            <button type="submit" style="padding: 12px; border-radius: 8px; border: none; background: #5541f8; color: #fff; font-weight: 700; cursor: pointer;">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-4 mt-4" style="border-top: 1px solid #1e293b; text-align: center;">
-                <div class="col-12">
-                    <p style="margin: 0; font-size: 14px; color: #64748b;">&copy; 2026, <strong>The Fitness Falcon</strong> All Rights Reserved.</p>
-                </div>
-            </div>
+</main>
+
+<!-- shared:footer:start -->
+<footer class="falcon-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="falcon-footer-intro">
+      <div>
+        <span class="falcon-footer-eyebrow">SMALL STEPS. STRONGER YOU.</span>
+        <h2>Make room for<br>a healthier life<span>.</span></h2>
+      </div>
+      <p>A little inspiration. A better routine.<br>Explore fresh perspectives on moving well,<br>eating well, and feeling your best.</p>
+    </div>
+    <div class="falcon-footer-main">
+      <div class="falcon-footer-brand">
+        <a href="/./" aria-label="The Fitness Falcon home">
+          <img src="../../assets/images/The-Fitness-Falcon-logo-White.svg" width="210" height="73" alt="The Fitness Falcon" loading="lazy">
+        </a>
+        <p>Your daily dose of fitness, nutrition,<br>and everyday wellness.</p>
+        <div class="falcon-footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/people/The-Fitness-Falcon/61553645405177/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/thefitnessfalconofficial/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/fitnessfalcon_" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/@TheFitnessFalcon" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com/thefitnessfalcon/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
         </div>
-    </footer>
-    
-    <!-- JS Dependencies -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/owl.carousel.min.js"></script>
-    <script>
-    const ALL_POSTS = [{"title": "Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training", "slug": "apple-watch-series-12-readiness-score-explained", "thumb": "apple-watch-series-12-readiness-score-explained.png", "date": "September 30, 2026", "cat": "Wearables &amp; Fitness Technology"}, {"title": "Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?", "slug": "apple-watch-vs-garmin-step-tracking-accuracy-2026", "thumb": "apple-watch-vs-garmin-step-tracking-accuracy-2026.png", "date": "September 30, 2026", "cat": "Wearables &amp; Fitness Technology"}, {"title": "What Is a Readiness Score? Should You Skip Your Workout When It\u2019s Low?", "slug": "what-is-a-readiness-score-low-workout", "thumb": "what-is-a-readiness-score-low-workout.png", "date": "September 30, 2026", "cat": "Wearables &amp; Fitness Technology"}, {"title": "HRV for Fitness: What Your Heart Rate Variability Actually Tells You", "slug": "hrv-for-fitness-what-it-tells-you", "thumb": "hrv-for-fitness-what-it-tells-you.png", "date": "September 30, 2026", "cat": "Wearables &amp; Fitness Technology"}, {"title": "Garmin\u2019s New Running Plans and Fitness Features: What Changed in September 2026", "slug": "garmin-running-plans-features-september-2026", "thumb": "garmin-running-plans-features-september-2026.png", "date": "September 30, 2026", "cat": "Wearables &amp; Fitness Technology"}, {"title": "Running Shoes for Women: Stylish, Stable & Comfortable", "slug": "running-shoes-for-women-stylish-stable-comfortable", "thumb": "Best-Fitness-Tracker-1-scaled.jpg", "date": "February 25, 2026", "cat": "Lifestyle"}, {"title": "What Are the Benefits of Swimming Daily?", "slug": "what-are-the-benefits-of-swimming-daily", "thumb": "benefits-of-swimming-daily-1.jpg", "date": "February 22, 2026", "cat": "Swimming"}, {"title": "Top Fitness Tracker Brands Available in India", "slug": "top-fitness-tracker-brands-available-in-india", "thumb": "Best-Fitness-Tracker-scaled.jpg", "date": "February 18, 2026", "cat": "Fitness"}, {"title": "Clean Weight Gain vs Fat Gain: What You Really Need to Know", "slug": "clean-weight-gain-vs-fat-gain-what-you-really-need-to-know", "thumb": "weight-gain-scaled.jpg", "date": "February 15, 2026", "cat": "Health"}, {"title": "How to Choose the Right Running Shoes for Flat Feet", "slug": "how-to-choose-the-right-running-shoes-for-flat-feet", "thumb": "running-shoes-scaled.jpg", "date": "February 11, 2026", "cat": "Lifestyle"}, {"title": "How To Remove Makeup Without Makeup Remover", "slug": "how-to-remove-makeup-without-makeup-remover", "thumb": "Remove-Makeup-Without-Makeup-Remover-scaled.jpg", "date": "February 10, 2026", "cat": "Beauty"}, {"title": "Yoga vs Sports for Fitness: Which Is Better for Overall Fitness?", "slug": "yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness", "thumb": "Yoga-vs-Sports-for-Fitness--scaled.jpg", "date": "February 09, 2026", "cat": "Sports"}, {"title": "Best Sports for Beginners With No Fitness Background", "slug": "best-sports-for-beginners-with-no-fitness-background", "thumb": "Best-Sports-for-Beginners-With-No-Fitness-Background-scaled.jpg", "date": "February 08, 2026", "cat": "Sports"}, {"title": "How to Make Skin Glow Naturally Without Makeup or Treatments", "slug": "how-to-make-skin-glow-naturally-without-makeup-or-treatments", "thumb": "Skin-Glow-Without-Makeup-or-Treatments-scaled.jpg", "date": "February 06, 2026", "cat": "Skincare"}, {"title": "Running for Mental Health: Stress, Anxiety, and Mood Benefits", "slug": "running-for-mental-health-stress-anxiety-and-mood-benefits", "thumb": "running-scaled.jpg", "date": "February 05, 2026", "cat": "Lifestyle"}, {"title": "Home Workouts That Actually Work in 2026", "slug": "home-workouts-that-actually-work-in-2026", "thumb": "Home-Workouts-That-Actually-Work-in-2026.jpg", "date": "February 04, 2026", "cat": "Fitness"}, {"title": "Running Affects Belly Fat and Metabolism: How Running Burns Fat Effectively", "slug": "running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively", "thumb": "Running-Affects-Belly-Fat-Metabolism-scaled.jpg", "date": "February 03, 2026", "cat": "Fitness"}, {"title": "Trekking vs Running for Fitness: Which Burns More Calories in Real Life?", "slug": "trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life", "thumb": "Trekking-vs-Running--scaled.jpg", "date": "February 02, 2026", "cat": "Trekking"}, {"title": "Minerals for Hair Growth: Iron, Zinc, and Selenium Explained", "slug": "minerals-for-hair-growth-iron-zinc-and-selenium-explained", "thumb": "hair-1-scaled.jpg", "date": "February 01, 2026", "cat": "Lifestyle"}, {"title": "Hair Growth vs Hair Thickness: Why Length Isn\u2019t Increasing", "slug": "hair-growth-vs-hair-thickness-why-length-isnt-increasing", "thumb": "hair-scaled.jpg", "date": "January 30, 2026", "cat": "Beauty"}, {"title": "Why Skin Becomes Sensitive in Your 30s and Triggers Facial Redness?", "slug": "why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness", "thumb": "skincare-scaled.jpg", "date": "January 29, 2026", "cat": "Lifestyle"}, {"title": "Brain Boosting Nutrition: Best Foods to Improve Focus and Memory", "slug": "brain-boosting-nutrition-best-foods-to-improve-focus-and-memory", "thumb": "yoga-1-scaled.jpg", "date": "January 28, 2026", "cat": "Nutrition"}, {"title": "How Yoga Transforms Your Body in Just 30 Days?", "slug": "how-yoga-transforms-your-body-in-just-30-days", "thumb": "yoga-scaled.jpg", "date": "January 27, 2026", "cat": "Yoga"}, {"title": "Top 5 Best Swimming Strokes for Weight Loss and Fitness", "slug": "top-5-best-swimming-strokes-for-weight-loss-and-fitness", "thumb": "SWIMMING-1-scaled.jpg", "date": "January 26, 2026", "cat": "Swimming"}, {"title": "Smart Ring vs. Smart Watch: Which Wearable is Right for Your Lifestyle?", "slug": "smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle", "thumb": "smart-ring-vs.-smart-watch.jpg", "date": "January 25, 2026", "cat": "Fitness"}, {"title": "Psychodermatology 101: Can \u201cCortisol-Blocking\u201d Skincare Actually Stop Stress Breakouts?", "slug": "psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts", "thumb": "Psychodermatology-Skincare.png", "date": "January 24, 2026", "cat": "Beauty"}, {"title": "Top 5 Gyms in New York City (2026 Picks) : Best Fitness Centers, Classes, and Reviews", "slug": "top-5-gyms-in-new-york-city-2026", "thumb": "Black-and-White-Modern-Gym-Presentation.png", "date": "January 24, 2026", "cat": "Gym"}, {"title": "Best Time to Consume Protein: Morning vs Night \u2013 What Works Best?", "slug": "best-time-to-consume-protein-morning-vs-night", "thumb": "best-time-to-consume-protein.jpg", "date": "January 23, 2026", "cat": "Fitness"}, {"title": "Essential Tips for Dry Skin Care: How to Repair Your Skin Barrier", "slug": "essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier", "thumb": "dry-skin-scaled.jpg", "date": "January 23, 2026", "cat": "Skincare"}, {"title": "Belly Fat Reduction: Myths vs Facts You Need to Know", "slug": "belly-fat-reduction-myths-vs-facts-you-need-to-know", "thumb": "belly-fat-reduction.jpg", "date": "January 23, 2026", "cat": "Fitness"}, {"title": "Swimming vs Walking for Weight Loss: Which Burns More Fat Faster?", "slug": "swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster", "thumb": "weight-loss-scaled.jpg", "date": "January 22, 2026", "cat": "Fitness"}, {"title": "2026 Fitness Goals: A Complete Guide to Building Strength, Health, and Consistency", "slug": "2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency", "thumb": "2026-fitness-goals.jpg", "date": "January 21, 2026", "cat": "Fitness"}, {"title": "Best Full Body Workout Gym For 2026", "slug": "best-full-body-workout-gym-for-2026", "thumb": "workout-1-scaled.jpg", "date": "January 21, 2026", "cat": "Workout"}, {"title": "Top Skincare Hacks for Dry and Dehydrated Skin", "slug": "top-skincare-hacks-for-dry-and-dehydrated-skin", "thumb": "Dry-Dehydrated-Skin.j.jpg", "date": "December 28, 2025", "cat": "Skincare"}, {"title": "Best Lifestyle Habits for Longevity and Healthy Aging", "slug": "best-lifestyle-habits-for-longevity-and-healthy-aging", "thumb": "Best-Lifestyle-Habits-for.png", "date": "December 27, 2025", "cat": "Fitness"}, {"title": "Common Swimming Mistakes and How to Fix Them", "slug": "common-swimming-mistakes-and-how-to-fix-them", "thumb": "swimming-1.jpg", "date": "August 06, 2025", "cat": "Swimming"}, {"title": "Summer Haircare Tips to Stop Dryness and Damage", "slug": "summer-haircare-tips-to-stop-dryness-and-damage", "thumb": "hair-fall-1.jpg", "date": "August 06, 2025", "cat": "Lifestyle"}, {"title": "Haircare Tips to Prevent Split Ends and Breakage", "slug": "haircare-tips-to-prevent-split-ends-and-breakage", "thumb": "Breakage.jpg", "date": "August 05, 2025", "cat": "Lifestyle"}, {"title": "Common Trekking Mistakes and How to Avoid Them", "slug": "common-trekking-mistakes-and-how-to-avoid-them", "thumb": "Trekking-Mistakes-.jpg", "date": "August 05, 2025", "cat": "Trekking"}, {"title": "Top 10 Himalayan Treks in India", "slug": "top-10-himalayan-treks-in-india", "thumb": "trekking.jpg", "date": "August 03, 2025", "cat": "Trekking"}, {"title": "Dandruff Treatment at Home: Remedies That Work", "slug": "dandruff-treatment-at-home-remedies-that-work", "thumb": "Dandruff.jpg", "date": "August 03, 2025", "cat": "Lifestyle"}, {"title": "Top 10 Home Workouts That Require No Equipment", "slug": "top-10-home-workouts-that-require-no-equipment", "thumb": "Home-Workouts.jpg", "date": "August 02, 2025", "cat": "Workout"}, {"title": "15 Health and Nutrition Benefits of Sesame Seeds", "slug": "15-health-and-nutrition-benefits-of-sesame-seeds", "thumb": "Sesame-Seeds.jpg", "date": "August 02, 2025", "cat": "Nutrition"}, {"title": "Best Skincare Routine to Prevent Pimples", "slug": "best-skincare-routine-to-prevent-pimples", "thumb": "Pimple.jpg", "date": "August 01, 2025", "cat": "Beauty"}, {"title": "HIIT vs LISS: Which Cardio Method Is Better for You!", "slug": "hiit-vs-liss-which-cardio-method-is-better-for-you", "thumb": "HIIT-vs-LISS.jpg", "date": "July 30, 2025", "cat": "Gym"}, {"title": "10 Serious Diseases Caused by Smoking", "slug": "10-serious-diseases-caused-by-smoking", "thumb": "smoking-1.jpg", "date": "July 30, 2025", "cat": "Lifestyle"}, {"title": "Biological Cycle: Signs & Causes of Disruption", "slug": "biological-cycle-signs-causes-of-disruption", "thumb": "Biological-Cycle.jpg", "date": "July 29, 2025", "cat": "Lifestyle"}, {"title": "Gym Diet Plan: What to Eat Before and After Workout", "slug": "gym-diet-plan-what-to-eat-before-and-after-workout", "thumb": "1-1.png", "date": "July 27, 2025", "cat": "Nutrition"}, {"title": "Pigmentation on Face: Causes, Prevention, and Effective Treatments", "slug": "pigmentation-on-face-causes-prevention-and-effective-treatments", "thumb": "dark-spots.jpg", "date": "July 27, 2025", "cat": "Beauty"}, {"title": "How to Remove Dark Circles Naturally at Home", "slug": "how-to-remove-dark-circles-naturally-at-home", "thumb": "dark-circles.jpg", "date": "July 26, 2025", "cat": "Beauty"}, {"title": "Blackhead Removal Guide: Best Remedies and Prevention Methods", "slug": "blackhead-removal-guide-best-remedies-and-prevention-methods", "thumb": "Blackhead-Removal-and-Precautions.jpg", "date": "July 25, 2025", "cat": "Beauty"}, {"title": "Beginner's Guide to Cycling: Top Tips for a Smooth and Fun Ride", "slug": "beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride", "thumb": "Cycle.jpg", "date": "July 25, 2025", "cat": "Cycling"}, {"title": "The Four Phases of the Menstrual Cycle and How They Impact Your Health", "slug": "the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health", "thumb": "Menstrual-Cycle.jpg", "date": "July 24, 2025", "cat": "Lifestyle"}, {"title": "Healthy Sunflower Seeds: Nutrition, Benefits & Eating Tips", "slug": "healthy-sunflower-seeds-nutrition-benefits-eating-tips", "thumb": "seeds-1.jpg", "date": "July 24, 2025", "cat": "Nutrition"}, {"title": "7 Healthy Seeds That Boost Immunity and Improve Gut Health", "slug": "7-healthy-seeds-that-boost-immunity-and-improve-gut-health", "thumb": "seeds.jpg", "date": "July 23, 2025", "cat": "Nutrition"}, {"title": "Why Cycling Is the Ultimate Workout for Your Body and Brain", "slug": "why-cycling-is-the-ultimate-workout-for-your-body-and-brain", "thumb": "cycling.jpg", "date": "July 22, 2025", "cat": "Cycling"}, {"title": "Acro Yoga for Mental Health: How It Improves Focus and Connection", "slug": "acro-yoga-for-mental-health-how-it-improves-focus-and-connection", "thumb": "ACRo-Yoga.jpg", "date": "July 21, 2025", "cat": "Yoga"}, {"title": "Top 10 Ingredients to Avoid If You Have Oily Skin", "slug": "top-10-ingredients-to-avoid-if-you-have-oily-skin", "thumb": "oily-skincare.jpg", "date": "July 20, 2025", "cat": "Beauty"}, {"title": "Dry Skin Care Routine: Best Products and Tips for Hydration", "slug": "dry-skin-care-routine-best-products-and-tips-for-hydration", "thumb": "Dry-skincare-routine-.jpg", "date": "July 19, 2025", "cat": "Beauty"}, {"title": "Home Remedies: Faster Hair Growth Naturally", "slug": "home-remedies-faster-hair-growth-naturally", "thumb": "Home-Remedies-Faster-Hair-Growth-Naturally.jpg", "date": "July 19, 2025", "cat": "Beauty"}, {"title": "Skincare for Sensitive Skin: What to Use and What to Avoid", "slug": "skincare-for-sensitive-skin", "thumb": "sensitive-skin-care.jpg", "date": "July 18, 2025", "cat": "Beauty"}, {"title": "What Is Dietary Fiber? Types, Benefits, and Best Food Sources", "slug": "what-is-dietary-fiber-types-benefits-and-best-food-sources", "thumb": "dietary-fiber.jpg", "date": "July 17, 2025", "cat": "Food &amp; Recipes"}, {"title": "Is Overthinking Killing Your Confidence?", "slug": "is-overthinking-killing-your-confidence", "thumb": "stop-overthinking.jpg", "date": "July 15, 2025", "cat": "Blog"}, {"title": "Hair Fall in Men: Common Causes and Permanent Fixes", "slug": "hair-fall-in-men-common-causes-and-permanent-fixes", "thumb": "Hair-Fall-in-men.jpg", "date": "July 14, 2025", "cat": "Beauty"}, {"title": "Hair Fall in Women: Causes, Prevention, and Treatments", "slug": "hair-fall-in-women-causes-prevention-and-treatments", "thumb": "Hair-Fall-in-Women.jpg", "date": "July 13, 2025", "cat": "Beauty"}, {"title": "Healthy Fats vs. Unhealthy Fats: What You Need to Know", "slug": "healthy-fats-vs-unhealthy-fats-what-you-need-to-know", "thumb": "Healthy-Fats-vs.-Unhealthy-Fats.jpg", "date": "July 12, 2025", "cat": "Blog"}, {"title": "What Are Carbohydrates? Definition, Types & Health Impact", "slug": "what-are-carbohydrates-definition-types-health-impact", "thumb": "carb-.jpg", "date": "July 11, 2025", "cat": "Lifestyle"}, {"title": "Best Workouts for Mental Health: Move to Feel Better", "slug": "best-workouts-for-mental-health-move-to-feel-better", "thumb": "Mental-Health-Workout.jpg", "date": "July 10, 2025", "cat": "Health"}, {"title": "High-Protein Plant Foods for Fitness & Health", "slug": "high-protein-plant-foods-for-fitness-health", "thumb": "High-Protein-Plant-Foods.jpg", "date": "July 08, 2025", "cat": "Lifestyle"}, {"title": "What to Do If You Panic in Water: Beginner Survival Techniques", "slug": "what-to-do-if-you-panic-in-water-beginner-survival-techniques", "thumb": "What-to-Do-If-You-Panic-in-Water.jpg", "date": "July 08, 2025", "cat": "Swimming"}, {"title": "Face Yoga for Anti-Aging and Skin Health", "slug": "face-yoga-for-anti-aging-and-skin-health", "thumb": "Face-Yoga-for-Anti-Aging-and-Skin-Health.png", "date": "July 07, 2025", "cat": "Skincare"}, {"title": "Wearable Fitness Technology: Smart Gyms in 2025", "slug": "wearable-fitness-technology-smart-gyms-in-2025", "thumb": "Wearable-Fitness-Tech.jpg", "date": "July 06, 2025", "cat": "Gym"}, {"title": "AI & Mental Health: Chatbots, Ethics, and Emotional Support", "slug": "ai-mental-health-chatbots-ethics-and-emotional-support", "thumb": "AI-Mental-Health.png", "date": "July 06, 2025", "cat": "Health"}, {"title": "Improving Your Posture: The Ultimate Guide for 2024", "slug": "improving-your-posture-the-ultimate-guide-for-2024", "thumb": "Improving-Your-Posture.jpg", "date": "August 30, 2024", "cat": "Fitness"}, {"title": "Top 10 Hair Growth Tips That Actually Work: A Comprehensive Guide", "slug": "top-10-hair-growth-tips", "thumb": "10-Hair-Growth-Tips.jpg", "date": "August 29, 2024", "cat": "Beauty"}, {"title": "The Surprising Health Benefits of Nuts You Need to Know", "slug": "health-benefits-of-nuts", "thumb": "Health-Benefits-of-Nuts.jpg", "date": "August 27, 2024", "cat": "Food &amp; Recipes"}, {"title": "Aging Well: 10 Secrets to a Vibrant Life", "slug": "aging-well-10-secrets-to-a-vibrant-life", "thumb": "Aging-Well.jpg", "date": "August 26, 2024", "cat": "Health"}, {"title": "Healthy Snack Ideas to Satisfy Your Cravings Without the Guilt", "slug": "healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt", "thumb": "Healthy-Snack-Ideas.jpg", "date": "August 25, 2024", "cat": "Food &amp; Recipes"}, {"title": "Mindfulness: A Practical Guide to Building a Consistent Practice", "slug": "mindfulness-the-ultimate-guide-to-inner-peace-in-2024", "thumb": "Mindfulness.jpg", "date": "August 24, 2024", "cat": "Fitness"}, {"title": "10 Effective Tips for Managing Stress: A Comprehensive Guide", "slug": "10-effective-tips-for-managing-stress", "thumb": "10-Effective-Tips-for-Managing-Stress.jpg", "date": "August 23, 2024", "cat": "Fitness"}, {"title": "The Power of Calisthenics: Unleashing Your Full Physical Potential", "slug": "the-power-of-calisthenics", "thumb": "power-of-calisthenics.jpg", "date": "August 21, 2024", "cat": "Fitness"}, {"title": "Why is Magnesium So Crucial for the Body?", "slug": "why-is-magnesium-so-crucial-for-the-body", "thumb": "Why-is-Magnesium-So-Crucial-for-the-Body.jpg", "date": "August 17, 2024", "cat": "Nutrition"}, {"title": "Top 5 Healthy Breakfast Ideas: Start Your Day Right", "slug": "top-5-healthy-breakfast-ideas", "thumb": "healthy-breakfast.jpg", "date": "August 14, 2024", "cat": "Food &amp; Recipes"}, {"title": "10 Superfoods for Iron Deficiency", "slug": "10-superfoods-for-iron-deficiency", "thumb": "10-Superfoods-for-Iron-Deficiency.jpg", "date": "August 06, 2024", "cat": "Blog"}, {"title": "Top 5 Home Remedies to Remove Sun Tan: Reclaim Your Natural Glow", "slug": "top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow", "thumb": "Top-5-Home-Remedies-to-Remove-Sun-Tan.jpg", "date": "August 05, 2024", "cat": "Blog"}, {"title": "10 Expert-Approved Foods to Relieve Constipation Naturally", "slug": "10-expert-approved-foods-to-relieve-constipation-naturally", "thumb": "10-Expert-Approved-Foods-to-Relieve-Constipation-Naturally.jpg", "date": "August 03, 2024", "cat": "Food &amp; Recipes"}, {"title": "Intermittent Fasting and Fat Loss: A Comprehensive Guide", "slug": "intermittent-fasting-and-fat-loss", "thumb": "intermittent-fasting.jpg", "date": "August 01, 2024", "cat": "Fitness"}, {"title": "The Ultimate Guide to Plant Protein for Women's Health", "slug": "the-ultimate-guide-to-plant-protein-for-womens-health", "thumb": "Plant-Protein-for-Womens-Health.png", "date": "January 18, 2024", "cat": "News"}, {"title": "What Is Algae and Why It's a Superfood?", "slug": "what-is-algae-and-why-its-a-superfood", "thumb": "Algae-eat.png", "date": "January 09, 2024", "cat": "Nutrition"}, {"title": "What are Micronutrients: Types, Functions, and Benefits", "slug": "what-are-micronutrients-types-functions-and-benefits", "thumb": "What-is-Micronutrients.png", "date": "January 08, 2024", "cat": "Nutrition"}, {"title": "Omega-6 Fatty Acids: Health Benefits and Rich foods", "slug": "omega-6-fatty-acids-health-benefits-and-rich-foods", "thumb": "omega-6-fatty-acids.png", "date": "January 05, 2024", "cat": "Nutrition"}, {"title": "How Much Water Should You Really Drink Each Day?", "slug": "how-much-water-should-you-really-drink-each-day", "thumb": "Untitled-design-1.png", "date": "January 05, 2024", "cat": "News"}, {"title": "Top 5 Gyms in Chicago", "slug": "top-5-gyms-in-chicago", "thumb": "Top-6-Gyms-in-Chicago.png", "date": "January 04, 2024", "cat": "Gym"}, {"title": "Monounsaturated vs. Polyunsaturated Fats: Benefits and Sources", "slug": "monounsaturated-vs-polyunsaturated-fats-benefits-and-sources", "thumb": "Monounsaturated-vs.-Polyunsaturated-Fats-Benefits-and-Sources.png", "date": "January 04, 2024", "cat": "Health"}, {"title": "Chia Seeds: Health Benefits, Sources, and Supplements", "slug": "chia-seeds-health-benefits-sources-and-supplements", "thumb": "Chia-Seeds-Health-Benefits-Sources-and-Supplements.png", "date": "January 03, 2024", "cat": "Food &amp; Recipes"}, {"title": "Exploring the Top 10 Most Consumed Winter Beverages", "slug": "exploring-the-top-10-most-consumed-winter-beverages", "thumb": "Winter-Beverages.png", "date": "January 03, 2024", "cat": "Food &amp; Recipes"}, {"title": "100 Inspirational Fitness Quotes for Captions on Instagram", "slug": "100-inspirational-fitness-quotes-for-captions-on-instagram", "thumb": "Instagram-Captions.png", "date": "January 01, 2024", "cat": "News"}, {"title": "Ultimate Plant-Based Diet Grocery List for Health", "slug": "ultimate-plant-based-diet-grocery-list-for-health", "thumb": "Plant-Based-Diet.png", "date": "December 31, 2023", "cat": "Food &amp; Recipes"}, {"title": "High-Fiber Foods: Types, Health Benefits, and Supplements", "slug": "high-fiber-foods-types-health-benefits-and-supplements", "thumb": "High-Fiber-Foods-Types-Health-Benefits-and-Supplements.png", "date": "December 29, 2023", "cat": "Nutrition"}, {"title": "Antioxidants: Health Benefits, Sources, and Supplements", "slug": "antioxidants-health-benefits-sources-and-supplements", "thumb": "Antioxidants-Health-Benefits-Sources-and-Supplements.png", "date": "December 28, 2023", "cat": "Nutrition"}, {"title": "Omega-3 Fatty Acids: Health Benefits and Rich foods", "slug": "omega-3-fatty-acids-health-benefits-and-rich-foods", "thumb": "Omega-3-Fatty-Acids.png", "date": "December 28, 2023", "cat": "Nutrition"}, {"title": "Pumpkin Seeds: Health Benefits, Nutrition, and Uses", "slug": "pumpkin-seeds-health-benefits-nutrition-and-uses", "thumb": "Pumpkin-Seeds-Health-Benefits-Nutrition-and-Uses.webp", "date": "December 27, 2023", "cat": "Food &amp; Recipes"}, {"title": "What Is Zumba Workout: Pros, Cons, and How It Works", "slug": "what-is-zumba-workout-pros-cons-and-how-it-works", "thumb": "What-Is-Zumba-Workout-Pros-Cons-and-How-It-Works.png", "date": "December 26, 2023", "cat": "Workout"}, {"title": "Pilates: A Guide to Building a Stronger Core", "slug": "pilates-the-ultimate-guide-for-a-stronger-core-in-2024", "thumb": "Pilates-The-Ultimate-Guide-for-a-Stronger-Core-in-2024.webp", "date": "December 19, 2023", "cat": "Blog"}, {"title": "Top 6 Gyms in Miami", "slug": "top-6-gyms-in-miami", "thumb": "Top-6-Gyms-in-Miami.png", "date": "December 17, 2023", "cat": "Gym"}, {"title": "Acne 101: Understanding Types, Causes, and Effective Treatments", "slug": "acne-101-understanding-types-causes-and-effective-treatments", "thumb": "Acne-101-Understanding-Different-Types-Causes-and-Effective-Treatments.png", "date": "December 17, 2023", "cat": "Skincare"}, {"title": "Immune System? How To Improve Immune System", "slug": "immune-system-how-to-improve-immune-system", "thumb": "Immune-System-How-to-improve-immune-system.png", "date": "December 16, 2023", "cat": "Health"}, {"title": "Top Yoga Classes & Certification in Phoenix", "slug": "top-yoga-classes-certification-in-phoenix", "thumb": "Top-Yoga-Classes-Certification-in-Phoenix.png", "date": "December 15, 2023", "cat": "Fitness"}, {"title": "Home Remedies for Better Digestion", "slug": "home-remedies-for-better-digestion", "thumb": "Home-Remedies-for-Better-Digestion.png", "date": "December 14, 2023", "cat": "Health"}, {"title": "Hire a Personal Female Fitness Trainer in Chicago", "slug": "hire-a-personal-female-fitness-trainer-in-chicago", "thumb": "is-hiring-a-personal-trainer-worth-it.jpeg", "date": "December 13, 2023", "cat": "Blog"}, {"title": "Top 6 Gyms in Los Angeles", "slug": "top-6-gyms-in-los-angeles", "thumb": "Untitled-design-27.png", "date": "December 13, 2023", "cat": "Gym"}, {"title": "Food Waste Reduction and Sustainability", "slug": "food-waste-reduction-and-sustainability", "thumb": "Food-Waste-Reduction-and-Sustainability.png", "date": "December 12, 2023", "cat": "Food &amp; Recipes"}, {"title": "What is superfoods? Benefits & Uses", "slug": "what-is-superfoods-benefits-uses", "thumb": "Untitled-design-24.png", "date": "December 11, 2023", "cat": "Food &amp; Recipes"}, {"title": "Alpha Bravo Development: Leading Innovations in Health Tech", "slug": "alpha-bravo-development-leading-innovations-in-health-tech", "thumb": "Alpha-Bravo-Development.png", "date": "December 11, 2023", "cat": "News"}, {"title": "What is Glucose: Types & Health Benefits", "slug": "what-is-glucose-types-health-benefits", "thumb": "What-is-Glucose-Types-Health-Benefits.png", "date": "December 10, 2023", "cat": "Nutrition"}, {"title": "What is HIIT (High Intensity Interval Training) Types & Benefits", "slug": "what-is-hiit-high-intensity-interval-training-types-benefits", "thumb": "High-Intensity-Interval-Training.png", "date": "December 09, 2023", "cat": "Workout"}, {"title": "8 Easy Outdoor Fitness Activities and Benefits", "slug": "8-easy-outdoor-fitness-activities-and-benefits", "thumb": "Outdoor-Fitness-Activities.png", "date": "December 08, 2023", "cat": "Fitness"}, {"title": "How To Sleep Better At Night Naturally", "slug": "how-to-sleep-better-at-night-naturally", "thumb": "How-To-Sleep-Better-At-Night-Naturally.png", "date": "December 07, 2023", "cat": "Blog"}, {"title": "What is Ice Bath: Health Benefits of Cold Therapy", "slug": "what-is-ice-bath-health-benefits-of-cold-therapy", "thumb": "What-is-Ice-Bath-Health-Benefits-of-Cold-Therapy.png", "date": "December 06, 2023", "cat": "Fitness"}, {"title": "What is Vitamins: Types, Importance, and Sources", "slug": "what-is-vitamins-types-importance-and-sources", "thumb": "What-is-Vitamins-Types-Importance-and-Sources.png", "date": "December 06, 2023", "cat": "Nutrition"}, {"title": "What Is a Vegan Diet: Vegan Food Diet List", "slug": "what-is-a-vegan-diet-vegan-food-diet-list", "thumb": "What-Is-a-Vegan-Diet-Vegan-Food-Diet-List.png", "date": "December 06, 2023", "cat": "Food &amp; Recipes"}, {"title": "Health Benefits of Kiss and Hugs", "slug": "health-benefits-of-kiss-and-hugs", "thumb": "how-kiss-and-hugs-improve-health.png", "date": "December 05, 2023", "cat": "Health"}, {"title": "10 Fruits for Your Gym Diet: Fuel Your Fitness", "slug": "10-fruits-for-your-gym-diet-fuel-your-fitness", "thumb": "10-Fruits-for-Your-Gym-Diet-Fuel-Your-Fitness.png", "date": "December 05, 2023", "cat": "Food &amp; Recipes"}, {"title": "7 Best Health and Fitness Wearables in 2024", "slug": "7-best-health-and-fitness-wearables-in-2024", "thumb": "Fitbit-Inspire-3.png", "date": "December 04, 2023", "cat": "Fitness"}, {"title": "Kayaking vs Canoeing vs Rafting: Best Water Sport", "slug": "kayaking-vs-canoeing-vs-rafting-best-water-sport", "thumb": "Kayaking-canoeing-and-rafting.png", "date": "December 04, 2023", "cat": "Sports"}, {"title": "What is Calcium and Calcium Rich Foods & Benefits", "slug": "what-is-calcium-and-calcium-rich-foods-benefits", "thumb": "What-is-Calcium-and-Calcium-Rich-Foods-Benefits.png", "date": "December 04, 2023", "cat": "Nutrition"}, {"title": "Baked Oats Full Recipe and Ingredients", "slug": "baked-oats-full-recipe-and-ingredients", "thumb": "Baked-Oats-Full-Recipe-and-Ingredients.png", "date": "December 03, 2023", "cat": "Recipes"}, {"title": "Stress Management Techniques: Reduce and Relieve Stress", "slug": "stress-management-techniques-reduce-and-relieve-stress", "thumb": "Stress-Management-Techniques-Reduce-and-Relieve-Stress.png", "date": "December 02, 2023", "cat": "Health"}, {"title": "Meditation for Beginners: Types and Health Benefits", "slug": "meditation-for-beginners-types-and-health-benefits", "thumb": "Meditation-for-Beginners-Types-and-Health-Benefits.png", "date": "December 01, 2023", "cat": "Health"}, {"title": "Cycling Benefits and Which Cycle is Best", "slug": "cycling-benefits-and-which-cycle-is-best", "thumb": "Cycling-Benefits-and-Which-Cycle-is-Best.png", "date": "November 30, 2023", "cat": "Cycling"}, {"title": "Swimming Safety Tips for Beginners", "slug": "swimming-safety-tips-for-beginners", "thumb": "Swimming-Safety-Tips-for-Beginners.png", "date": "November 30, 2023", "cat": "Swimming"}, {"title": "What Are Fast-Twitch Muscle Fibers? A Comprehensive Guide", "slug": "what-are-fast-twitch-muscle-fibers-a-comprehensive-guide", "thumb": "Fast-Twitch-Muscle-Fibers.png", "date": "November 29, 2023", "cat": "Health"}, {"title": "What Are the Benefits of Skipping Every Day?", "slug": "what-are-the-benefits-of-skipping-every-day", "thumb": "What-Are-the-Benefits-of-Skipping-Every-Day.png", "date": "November 29, 2023", "cat": "Workout"}, {"title": "Anti-Aging Products: Benefits and Side Effects", "slug": "anti-aging-products-benefits-and-side-effects", "thumb": "Anti-Aging-Products-Benefits-and-Side-Effects-1.png", "date": "November 29, 2023", "cat": "Skincare"}, {"title": "Essential Trekking Checklist: Gear for a Successful Trek", "slug": "essential-trekking-checklist", "thumb": "Essential-Trekking-Checklist-Must-Have-Equipment-for-a-Successful-Trek.png", "date": "November 29, 2023", "cat": "Trekking"}, {"title": "Top 5 Yoga Centers in Rishikesh", "slug": "top-5-yoga-centers-in-rishikesh", "thumb": "Top-5-Yoga-Centers-in-Rishikesh.png", "date": "November 28, 2023", "cat": "Yoga"}, {"title": "Healthy Eating Tips for Weight Loss", "slug": "healthy-eating-tips-for-weight-loss", "thumb": "Healthy-Eating-Tips-for-Weight-Loss-1.png", "date": "November 27, 2023", "cat": "Weight"}, {"title": "Gut Health: The Unsung Hero of Your Immune System", "slug": "gut-health-the-unsung-hero-of-your-immune-system", "thumb": "Gut-Health-The-Unsung-Hero-of-Your-Immune-System.png", "date": "November 27, 2023", "cat": "Health"}, {"title": "What is Protein and Types of Protein What Do They Do?", "slug": "what-is-protein-and-types-of-protein-what-do-they-do", "thumb": "What-is-Protein-and-Types-of-Protein-What-Do-They-Do.png", "date": "November 27, 2023", "cat": "Nutrition"}, {"title": "Top 5 Female Fitness Trainers in New York", "slug": "top-5-female-fitness-trainers-in-new-york", "thumb": "Untitled-design-15.png", "date": "November 27, 2023", "cat": "News"}, {"title": "Top 5 Gyms in Florida", "slug": "top-5-gyms-in-florida", "thumb": "Top-5-Gyms-in-Florida.png", "date": "November 26, 2023", "cat": "Gym"}, {"title": "What are Calories and Why are They Important", "slug": "what-are-calories-and-why-are-they-important", "thumb": "What-are-Calories-and-Why-are-They-Important.png", "date": "November 26, 2023", "cat": "Nutrition"}, {"title": "10 Essential Winter Skincare Tips From the Experts", "slug": "10-essential-winter-skincare-tips-from-the-experts", "thumb": "10-Essential-Winter-Skincare-Tips-From-the-Experts.png", "date": "November 25, 2023", "cat": "Beauty"}, {"title": "Weight Gain Alert: Signs You Need to Watch Out For", "slug": "weight-gain-alert-signs-you-need-to-watch-out-for", "thumb": "1-1.png", "date": "November 24, 2023", "cat": "Weight"}, {"title": "The Importance of Prioritizing Mental Health in the Workplace", "slug": "the-importance-of-prioritizing-mental-health-in-the-workplace", "thumb": "Pink-Gradient-Psychologist-Expert-Video.png", "date": "November 24, 2023", "cat": "Health"}, {"title": "The Ultimate Guide to Post-Workout Meals", "slug": "the-ultimate-guide-to-post-workout-meals", "thumb": "Post-Workout-Meals.png", "date": "November 24, 2023", "cat": "Recipes"}, {"title": "5 Essential Healthcare Gadgets Every Home Should Have", "slug": "5-essential-healthcare-gadgets-every-home-should-have", "thumb": "5-Essential-Healthcare-Gadgets.png", "date": "November 23, 2023", "cat": "Health"}, {"title": "7 Best Fitness YouTubers to Motivate and Energize Your Workouts", "slug": "7-best-fitness-youtubers-to-motivate-and-energize-your-workouts", "thumb": "Fitness-YouTubers.png", "date": "November 22, 2023", "cat": "News"}, {"title": "Expert Tips and Techniques to Enhance Sports Performance", "slug": "expert-tips-and-techniques-to-enhance-sports-performance", "thumb": "Untitled-design-13-1.png", "date": "November 22, 2023", "cat": "Sports"}, {"title": "No More Skinny Arms: A Diet Plan to Help You Gain Muscle", "slug": "no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle", "thumb": "Untitled-design-13.png", "date": "November 21, 2023", "cat": "Gym"}, {"title": "Home Remedies for Glowing Skin: Pamper Your Face Naturally", "slug": "home-remedies-for-glowing-skin-pamper-your-face-naturally", "thumb": "Home-Remedies-for-Glowing-Skin.png", "date": "November 20, 2023", "cat": "Skincare"}, {"title": "Sitting Still Killing You? 5 Exercises to Save Your Day", "slug": "sitting-still-killing-you-5-exercises-to-save-your-day", "thumb": "Untitled-design-11.png", "date": "November 20, 2023", "cat": "Workout"}, {"title": "Outdoor Games vs Indoor Games: Which is Better?", "slug": "outdoor-games-vs-indoor-games-which-is-better", "thumb": "Untitled-design-10.png", "date": "November 19, 2023", "cat": "Sports"}, {"title": "10 High-Protein Vegetarian Foods Ideal for Adult Nutrition", "slug": "10-high-protein-vegetarian-foods-ideal-for-adult-nutrition", "thumb": "Spirulina.png", "date": "November 19, 2023", "cat": "Nutrition"}, {"title": "5 Gym Resolutions for a Sustainable Fitness Routine", "slug": "5-new-year-resolutions-for-your-2024-gym-journey", "thumb": "2024-New-Year-Resolutions-for-Your-Gym-1.svg", "date": "November 18, 2023", "cat": "Gym"}];
+      </div>
+      <nav aria-label="Explore topics">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/category/fitness/">Fitness &amp; Workouts</a></li>
+          <li><a href="/category/health/">Health &amp; Wellness</a></li>
+          <li><a href="/category/nutrition/">Nutrition</a></li>
+          <li><a href="/category/food-and-recipes/">Food &amp; Recipes</a></li>
+          <li><a href="/category/lifestyle/">Lifestyle</a></li>
+          <li><a href="/category/wearables-fitness-technology/">Wearables &amp; Technology</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="About The Fitness Falcon">
+        <h3>The Falcon</h3>
+        <ul>
+          <li><a href="/blogs/">All Articles</a></li>
+          <li><a href="/pages/team/">Our Team</a></li>
+          <li><a href="/pages/contact-us/">Contact Us</a></li>
+          <li><a href="/pages/write-for-us/">Write For Us</a></li>
+          <li><a href="/pages/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+        <span class="falcon-footer-note">Good ideas deserve to take flight.</span>
+      </nav>
+      <div class="falcon-footer-reading">
+        <h3>One more good read</h3>
+        <a class="falcon-footer-story" href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">
+          <img src="../../assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026-1024x576.png" width="72" height="56" alt="" loading="lazy">
+          <span>Apple Watch vs Garmin: which tracks your steps better?</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="falcon-footer-story" href="/blogs/apple-watch-series-12-readiness-score-explained/">
+          <img src="../../assets/images/apple-watch-series-12-readiness-score-explained-1024x576.png" width="72" height="56" alt="" loading="lazy">
+          <span>Your readiness score, explained</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="falcon-footer-story" href="/blogs/what-is-a-readiness-score-low-workout/">
+          <img src="../../assets/images/what-is-a-readiness-score-low-workout-1024x576.png" width="72" height="56" alt="" loading="lazy">
+          <span>A low readiness score. A rest day?</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+    <div class="falcon-footer-bottom">
+      <p>© 2026 The Fitness Falcon. All rights reserved.</p>
+      <a href="/pages/privacy-policy/">Privacy Policy</a>
+      <button type="button" onclick="window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})">Back to top <span aria-hidden="true">↑</span></button>
+    </div>
+  </div>
+</footer>
+<!-- shared:footer:end -->
+</div>
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchModal = document.getElementById('headerSearchModal');
-        const openBtn = document.getElementById('openSearchBtn');
-        const closeBtn = document.getElementById('closeSearchBtn');
-        const searchInput = document.getElementById('liveSearchInput');
-        const resultsBox = document.getElementById('searchResultsDropdown');
-
-        if (openBtn && searchModal) {
-            openBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                searchModal.classList.add('active');
-                if (searchInput) searchInput.focus();
-            });
-        }
-        if (closeBtn && searchModal) {
-            closeBtn.addEventListener('click', function() {
-                searchModal.classList.remove('active');
-            });
-        }
-
-        if (searchInput && resultsBox) {
-            searchInput.addEventListener('input', function() {
-                const query = this.value.trim().toLowerCase();
-                if (!query) {
-                    resultsBox.style.display = 'none';
-                    resultsBox.innerHTML = '';
-                    return;
-                }
-                const matches = ALL_POSTS.filter(function(p) {
-                    return p.title.toLowerCase().indexOf(query) !== -1;
-                }).slice(0, 6);
-
-                if (matches.length === 0) {
-                    resultsBox.textContent = 'No articles found matching "' + query + '"';
-                } else {
-                    let html = '';
-                    html = window.FalconSearch.render(matches);
-                    resultsBox.innerHTML = html;
-                }
-                resultsBox.style.display = 'block';
-            });
-        }
-
-        const toggleBtn = document.getElementById('themeToggleBtn');
-        if (toggleBtn) {
-            toggleBtn.addEventListener('click', function() {
-                document.body.classList.toggle('dark-theme');
-                if (document.body.classList.contains('dark-theme')) {
-                    this.classList.remove('fa-moon');
-                    this.classList.add('fa-sun');
-                } else {
-                    this.classList.remove('fa-sun');
-                    this.classList.add('fa-moon');
-                }
-            });
-        }
-    });
-    </script>
+<!-- JS Dependencies -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
+<script src="/assets/js/falcon-search-data.js"></script>
+<script src="/assets/js/falcon-core.js"></script>
 </body>
 </html>

@@ -9,13 +9,20 @@ Static website with grouped blog and landing pages.
 - `blogs/<article-slug>/index.html`: 155 blog articles.
 - `pages/<page-slug>/index.html`: Contact Us, Privacy Policy, Team, and Write For Us.
 - `category/<category-slug>/index.html`: 19 category archives.
-- `assets/`: shared images, styles, scripts, fonts, and the search index.
-- `components/`: shared header and footer source for pages with shared include markers.
-- `scripts/`: build, validation, and local preview commands.
+- `assets/`: shared images, design system styles (`custom-style.css`, `footer.css`), shared scripts (`falcon-core.js`, `falcon-search-data.js`, `search-results.js`), fonts, and the search index.
+- `components/`: shared global header (`header.html`), footer (`footer.html`), layout shell (`layout.html`), and reusable component patterns (breadcrumbs, cards, CTA banners).
+- `scripts/`: build, validation, architecture migration, and local preview commands.
 - `audit/`: link validation, migration history, backup locations, and route mappings.
 - `old-website/`: WordPress exports, archived flat pages/redirects, and retired import tools.
 
-Edit the grouped page directly. The About Us page remains removed.
+All 180 canonical pages share:
+- 1 shared global header (`components/header.html`)
+- 1 shared global footer (`components/footer.html`)
+- 1 global layout system (`<main id="main-content" class="falcon-main-layout">`)
+- Shared design system & tokens (`assets/css/custom-style.css`)
+- Shared search index and core interactions (`assets/js/falcon-search-data.js`, `assets/js/falcon-core.js`)
+
+Individual pages only provide their own page-specific content and `<head>` SEO metadata. The About Us page remains removed.
 
 ## Build, check, and preview
 
