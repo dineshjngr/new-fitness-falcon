@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,40 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/trekking/">Trekking</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Common Trekking Mistakes and How to Avoi...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#1-lack-of-research-about-the-trek">1. Lack of Research About the Trek</a></li>
+<li><a href="#2-ignoring-fitness-preparation">2. Ignoring Fitness Preparation</a></li>
+<li><a href="#3-overpacking-or-underpacking">3. Overpacking or Underpacking</a></li>
+<li><a href="#4-choosing-the-wrong-footwear">4. Choosing the Wrong Footwear</a></li>
+<li><a href="#5-ignoring-weather-conditions">5. Ignoring Weather Conditions</a></li>
+<li><a href="#6-not-carrying-enough-water-or-purification-methods">6. Not Carrying Enough Water or Purification Methods</a></li>
+<li><a href="#7-skipping-acclimatization-on-high-altitude-treks">7. Skipping Acclimatization on High-Altitude Treks</a></li>
+<li><a href="#8-not-listening-to-your-body">8. Not Listening to Your Body</a></li>
+<li><a href="#9-poor-meal-planning-and-nutrition">9. Poor Meal Planning and Nutrition</a></li>
+<li><a href="#10-not-informing-anyone-about-your-plans">10. Not Informing Anyone About Your Plans</a></li>
+<li><a href="#11-neglecting-sun-protection">11. Neglecting Sun Protection</a></li>
+<li><a href="#12-disregarding-trail-etiquette-and-eco-responsibility">12. Disregarding Trail Etiquette and Eco-Responsibility</a></li>
+<li><a href="#13-carrying-the-wrong-backpack">13. Carrying the Wrong Backpack</a></li>
+<li><a href="#14-inadequate-first-aid-knowledge-and-kit">14. Inadequate First Aid Knowledge and Kit</a></li>
+<li><a href="#15-misjudging-time-and-distance">15. Misjudging Time and Distance</a></li>
+<li><a href="#checklist-summary-top-trekking-mistakes-to-avoid">Checklist Summary: Top Trekking Mistakes to Avoid</a></li>
+<li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/trekking/" class="category-badge">Trekking</a>
@@ -367,9 +393,6 @@
   <img src="/assets/images/Trekking-Mistakes-.jpg" alt="Trekking Mistakes" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 Trekking in spectacular scenery provides a combination of physical challenge and mental refreshment that is matched by very few other activities. Yet, the excitement of adventure also tends to cloud the mind, and so many trekkers, particularly beginners, make avoidable mistakes. Such trekking mishaps can transform a potentially life-altering experience into an irritating or even hazardous one.
@@ -377,7 +400,7 @@ Trekking in spectacular scenery provides a combination of physical challenge and
 Whether it's underestimating your fitness level, using the wrong equipment, or neglecting acclimatisation to altitude, every aspect matters when trekking. The charm of the trails conceals uncertainty: weather changes, uneven ground, and fatigue can strike at any time. Most frequently, the difference between a successful trek and a disappointing one is preparation, caution, and learning from others' mistakes.
 
 This is your guide to learning from and skipping the most common mistakes hikers make on the trail. From fitness preparation to packing with purpose and safety precautions, we'll dissect the top areas in which trekkers fall short and provide actionable advice on how you can plan with ease. Whether you're a beginner or preparing for your next trip, avoiding these mistakes means your trek will be remembered for the right reasons.
-<h3>1. Lack of Research About the Trek</h3>
+<h3 id="1-lack-of-research-about-the-trek">1. Lack of Research About the Trek</h3>
 One common mistake when trekking is starting a trail without enough knowledge about the terrain, weather, and difficulty. Many people assume that a beautiful destination means an easy hike, only to find themselves unprepared for steep climbs, rough sections, or sudden weather changes.
 
 How to Avoid:
@@ -390,7 +413,7 @@ Look for trek reviews or YouTube vlogs to understand the real conditions.
 
 <hr data-start="2221" data-end="2224" />
 
-<h3>2. Ignoring Fitness Preparation</h3>
+<h3 id="2-ignoring-fitness-preparation">2. Ignoring Fitness Preparation</h3>
 Underestimating the physical demands of a trek is one of the main fitness mistakes beginners make. Many think that being generally fit is sufficient, but trekking tests stamina, strength, and heart endurance over long periods.
 
 How to Avoid:
@@ -403,10 +426,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="2823" data-end="2826" />
 
-<h3 data-start="2828" data-end="2866">3. Overpacking or Underpacking</h3>
+<h3 id="3-overpacking-or-underpacking" data-start="2828" data-end="2866">3. Overpacking or Underpacking</h3>
 <p data-start="2868" data-end="3117">Packing errors are some of the things to most avoid while trekking. Overpacking results in unnecessary weight, draining your energy. On the flip side, underpacking or forgetting essentials like waterproof layers or first aid can put you at risk.</p>
 
-<h4 data-start="3119" data-end="3139">How to Avoid:</h4>
+<h4 id="how-to-avoid" data-start="3119" data-end="3139">How to Avoid:</h4>
 <ul data-start="3140" data-end="3352">
  	<li data-start="3140" data-end="3173">
 <p data-start="3142" data-end="3173">Make a detailed gear checklist.</p>
@@ -421,10 +444,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="3354" data-end="3357" />
 
-<h3 data-start="3359" data-end="3397">4. Choosing the Wrong Footwear</h3>
+<h3 id="4-choosing-the-wrong-footwear" data-start="3359" data-end="3397">4. Choosing the Wrong Footwear</h3>
 <p data-start="3399" data-end="3634">Trekking in improper shoes—like running sneakers or new boots—is a painful mistake that can lead to blisters, sprains, or worse. This is one of the easiest trekking preparation mistakes to avoid but also one of the most overlooked.</p>
 
-<h4 data-start="3636" data-end="3656">How to Avoid:</h4>
+<h4 id="how-to-avoid-2" data-start="3636" data-end="3656">How to Avoid:</h4>
 <ul data-start="3657" data-end="3833">
  	<li data-start="3657" data-end="3727">
 <p data-start="3659" data-end="3727">Invest in trekking shoes that offer ankle support and a sturdy sole.</p>
@@ -439,10 +462,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="3835" data-end="3838" />
 
-<h3 data-start="3840" data-end="3878">5. Ignoring Weather Conditions</h3>
+<h3 id="5-ignoring-weather-conditions" data-start="3840" data-end="3878">5. Ignoring Weather Conditions</h3>
 <p data-start="3880" data-end="4108">Assuming the weather will stay favourable is another of the frequent common trekking mistakes, especially on high-altitude or multi-day treks. Mountain weather is notorious for rapid changes—sunshine can quickly turn to hail.</p>
 
-<h4 data-start="4110" data-end="4130">How to Avoid:</h4>
+<h4 id="how-to-avoid-3" data-start="4110" data-end="4130">How to Avoid:</h4>
 <ul data-start="4131" data-end="4333">
  	<li data-start="4131" data-end="4189">
 <p data-start="4133" data-end="4189">Always check weather updates before and during the trek.</p>
@@ -457,10 +480,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="4335" data-end="4338" />
 
-<h3 data-start="4340" data-end="4400">6. Not Carrying Enough Water or Purification Methods</h3>
+<h3 id="6-not-carrying-enough-water-or-purification-methods" data-start="4340" data-end="4400">6. Not Carrying Enough Water or Purification Methods</h3>
 <p data-start="4402" data-end="4586">Dehydration sneaks up quickly on trails, especially at higher altitudes or in hot conditions. Many trekkers either don’t bring enough water or rely on unpurified sources, risking illness.</p>
 
-<h4 data-start="4588" data-end="4608">How to Avoid:</h4>
+<h4 id="how-to-avoid-4" data-start="4588" data-end="4608">How to Avoid:</h4>
 <ul data-start="4609" data-end="4792">
  	<li data-start="4609" data-end="4681">
 <p data-start="4611" data-end="4681">Carry at least 2–3 litres of water, or know where refilling spots are.</p>
@@ -475,10 +498,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="4794" data-end="4797" />
 
-<h3 data-start="4799" data-end="4857">7. Skipping Acclimatization on High-Altitude Treks</h3>
+<h3 id="7-skipping-acclimatization-on-high-altitude-treks" data-start="4799" data-end="4857">7. Skipping Acclimatization on High-Altitude Treks</h3>
 <p data-start="4859" data-end="5067">Rushing a high-altitude trek without proper acclimatisation is one of the most dangerous <a href="/blogs/essential-trekking-checklist/" target="_blank" rel="noopener">trekking safety tips</a> to ignore. Altitude sickness can lead to headaches, nausea, or life-threatening complications.</p>
 
-<h4 data-start="5069" data-end="5089">How to Avoid:</h4>
+<h4 id="how-to-avoid-5" data-start="5069" data-end="5089">How to Avoid:</h4>
 <ul data-start="5090" data-end="5248">
  	<li data-start="5090" data-end="5136">
 <p data-start="5092" data-end="5136">Follow the “climb high, sleep low” strategy.</p>
@@ -493,10 +516,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="5250" data-end="5253" />
 
-<h3 data-start="5255" data-end="5292">8. Not Listening to Your Body</h3>
+<h3 id="8-not-listening-to-your-body" data-start="5255" data-end="5292">8. Not Listening to Your Body</h3>
 <p data-start="5294" data-end="5502">Pushing yourself too hard to keep up with the group or to meet deadlines can lead to exhaustion, injuries, or worse. This is especially common among beginners who ignore early signs of fatigue or dehydration.</p>
 
-<h4 data-start="5504" data-end="5524">How to Avoid:</h4>
+<h4 id="how-to-avoid-6" data-start="5504" data-end="5524">How to Avoid:</h4>
 <ul data-start="5525" data-end="5652">
  	<li data-start="5525" data-end="5564">
 <p data-start="5527" data-end="5564">Pace yourself—trekking is not a race.</p>
@@ -511,10 +534,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="5654" data-end="5657" />
 
-<h3 data-start="5659" data-end="5702">9. Poor Meal Planning and Nutrition</h3>
+<h3 id="9-poor-meal-planning-and-nutrition" data-start="5659" data-end="5702">9. Poor Meal Planning and Nutrition</h3>
 <p data-start="5704" data-end="5880">Relying only on packaged snacks or skipping meals affects energy levels and recovery. Some trekkers don’t eat enough, while others carry perishable food without proper storage.</p>
 
-<h4 data-start="5882" data-end="5902">How to Avoid:</h4>
+<h4 id="how-to-avoid-7" data-start="5882" data-end="5902">How to Avoid:</h4>
 <ul data-start="5903" data-end="6145">
  	<li data-start="5903" data-end="5988">
 <p data-start="5905" data-end="5988">Bring calorie-dense, non-perishable items like nuts, energy bars, and dried fruits.</p>
@@ -529,10 +552,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="6147" data-end="6150" />
 
-<h3 data-start="6152" data-end="6201">10. Not Informing Anyone About Your Plans</h3>
+<h3 id="10-not-informing-anyone-about-your-plans" data-start="6152" data-end="6201">10. Not Informing Anyone About Your Plans</h3>
 <p data-start="6203" data-end="6388">Solo or group trekkers often fail to inform someone of their itinerary, creating challenges in case of emergencies. This is a critical yet frequently overlooked <strong data-start="6364" data-end="6387">trekking safety tip</strong>.</p>
 
-<h4 data-start="6390" data-end="6410">How to Avoid:</h4>
+<h4 id="how-to-avoid-8" data-start="6390" data-end="6410">How to Avoid:</h4>
 <ul data-start="6411" data-end="6640">
  	<li data-start="6411" data-end="6513">
 <p data-start="6413" data-end="6513">Share your trekking route, expected check-in points, and return time with a family member or friend.</p>
@@ -547,10 +570,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="6642" data-end="6645" />
 
-<h3 data-start="6647" data-end="6684">11. Neglecting Sun Protection</h3>
+<h3 id="11-neglecting-sun-protection" data-start="6647" data-end="6684">11. Neglecting Sun Protection</h3>
 <p data-start="6686" data-end="6862">UV exposure at higher altitudes can be intense, causing sunburn, headaches, or even eye damage. Many trekkers skip sunblock, sunglasses, or hats, especially in colder climates.</p>
 
-<h4 data-start="6864" data-end="6884">How to Avoid:</h4>
+<h4 id="how-to-avoid-9" data-start="6864" data-end="6884">How to Avoid:</h4>
 <ul data-start="6885" data-end="7024">
  	<li data-start="6885" data-end="6927">
 <p data-start="6887" data-end="6927">Apply SPF 30+ sunscreen every 2–3 hours.</p>
@@ -565,10 +588,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="7026" data-end="7029" />
 
-<h3 data-start="7031" data-end="7094">12. Disregarding Trail Etiquette and Eco-Responsibility</h3>
+<h3 id="12-disregarding-trail-etiquette-and-eco-responsibility" data-start="7031" data-end="7094">12. Disregarding Trail Etiquette and Eco-Responsibility</h3>
 <p data-start="7096" data-end="7291">Leaving litter, straying off designated trails, or being disrespectful to locals and wildlife are all things to avoid while trekking. The "leave no trace" principle is often ignored by beginners.</p>
 
-<h4 data-start="7293" data-end="7313">How to Avoid:</h4>
+<h4 id="how-to-avoid-10" data-start="7293" data-end="7313">How to Avoid:</h4>
 <ul data-start="7314" data-end="7478">
  	<li data-start="7314" data-end="7357">
 <p data-start="7316" data-end="7357">Carry reusable containers and trash bags.</p>
@@ -583,10 +606,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="7480" data-end="7483" />
 
-<h3 data-start="7485" data-end="7524">13. Carrying the Wrong Backpack</h3>
+<h3 id="13-carrying-the-wrong-backpack" data-start="7485" data-end="7524">13. Carrying the Wrong Backpack</h3>
 <p data-start="7526" data-end="7712">Choosing a backpack that’s too large, small, or poorly fitted is one of the more uncomfortable trekking preparation mistakes. It can cause back strain and imbalance during your hike.</p>
 
-<h4 data-start="7714" data-end="7734">How to Avoid:</h4>
+<h4 id="how-to-avoid-11" data-start="7714" data-end="7734">How to Avoid:</h4>
 <ul data-start="7735" data-end="7935">
  	<li data-start="7735" data-end="7806">
 <p data-start="7737" data-end="7806">Select a backpack with hip belts, chest straps, and padded shoulders.</p>
@@ -601,10 +624,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="7937" data-end="7940" />
 
-<h3 data-start="7942" data-end="7992">14. Inadequate First Aid Knowledge and Kit</h3>
+<h3 id="14-inadequate-first-aid-knowledge-and-kit" data-start="7942" data-end="7992">14. Inadequate First Aid Knowledge and Kit</h3>
 <p data-start="7994" data-end="8143">Even experienced trekkers forget essential medical supplies or don’t know how to use them. This mistake can escalate minor injuries into emergencies.</p>
 
-<h4 data-start="8145" data-end="8165">How to Avoid:</h4>
+<h4 id="how-to-avoid-12" data-start="8145" data-end="8165">How to Avoid:</h4>
 <ul data-start="8166" data-end="8386">
  	<li data-start="8166" data-end="8264">
 <p data-start="8168" data-end="8264">Carry a well-stocked first aid kit with bandages, antiseptics, pain relievers, and blister pads.</p>
@@ -619,10 +642,10 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="8388" data-end="8391" />
 
-<h3 data-start="8393" data-end="8433">15. Misjudging Time and Distance</h3>
+<h3 id="15-misjudging-time-and-distance" data-start="8393" data-end="8433">15. Misjudging Time and Distance</h3>
 <p data-start="8435" data-end="8562">Underestimating how long a trek will take can lead to hiking in the dark or rushing without proper breaks—both risky scenarios.</p>
 
-<h4 data-start="8564" data-end="8584">How to Avoid:</h4>
+<h4 id="how-to-avoid-13" data-start="8564" data-end="8584">How to Avoid:</h4>
 <ul data-start="8585" data-end="8772">
  	<li data-start="8585" data-end="8655">
 <p data-start="8587" data-end="8655">Start early and allocate buffer time for breaks, delays, or detours.</p>
@@ -637,7 +660,7 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="8774" data-end="8777" />
 
-<h3 data-start="8779" data-end="8836"><strong data-start="8783" data-end="8836">Checklist Summary: Top Trekking Mistakes to Avoid</strong></h3>
+<h3 id="checklist-summary-top-trekking-mistakes-to-avoid" data-start="8779" data-end="8836"><strong data-start="8783" data-end="8836">Checklist Summary: Top Trekking Mistakes to Avoid</strong></h3>
 <div class="_tableContainer_16hzy_1">
 <div class="_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse" tabindex="-1">
 <div class="falcon-table-wrapper">
@@ -720,7 +743,7 @@ Add stair climbing or incline walking to your workouts.
 
 <hr data-start="9710" data-end="9713" />
 
-<h3 data-start="9715" data-end="9737"><strong data-start="9719" data-end="9737">Final Thoughts</strong></h3>
+<h3 id="final-thoughts" data-start="9715" data-end="9737"><strong data-start="9719" data-end="9737">Final Thoughts</strong></h3>
 <p data-start="9739" data-end="10043">Trekking is an enriching experience that blends nature, fitness, and adventure—but it requires thoughtful planning and a healthy respect for the outdoors. Most trekking mistakes stem from a lack of preparation or awareness, and the good news is they’re all avoidable with the right mindset and tools.</p>
 <p data-start="10045" data-end="10352">From researching the trail and training your body to packing smart and respecting nature, your next trek can be safe, comfortable, and fulfilling. Avoiding these common errors will help you focus on the breathtaking views, the fresh air, and the sense of accomplishment that comes from conquering the trail.</p>
                     </div>
@@ -835,12 +858,30 @@ Add stair climbing or incline walking to your workouts.
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -867,24 +908,6 @@ Add stair climbing or incline walking to your workouts.
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -892,11 +915,11 @@ Add stair climbing or incline walking to your workouts.
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -1055,6 +1078,6 @@ Add stair climbing or incline walking to your workouts.
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

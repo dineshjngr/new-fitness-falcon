@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,44 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/recipes/">Recipes</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Baked Oats Full Recipe and Ingredients</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#heading-0-what-youll-learn">What You&#x27;ll Learn</a></li>
+<li><a href="#understanding-baked-oats">Understanding Baked Oats</a><ol><li><a href="#heading-2-key-components-of-baked-oats">Key Components of Baked Oats</a></li></ol></li>
+<li><a href="#the-perfect-blend-essential-wet-ingredients-for-baked-oats">The Perfect Blend: Essential Wet Ingredients for Baked Oats</a><ol><li><a href="#heading-4-1-eggs">1. Eggs</a></li>
+<li><a href="#heading-5-2-milk">2. Milk</a></li>
+<li><a href="#heading-6-3-sweeteners">3. Sweeteners</a></li></ol></li>
+<li><a href="#choosing-the-right-milk-for-your-baked-oats-recipe">Choosing the Right Milk for Your Baked Oats Recipe</a><ol><li><a href="#heading-8-almond-milk">Almond Milk</a></li>
+<li><a href="#heading-9-coconut-milk">Coconut Milk</a></li>
+<li><a href="#heading-10-cows-milk">Cow&#x27;s Milk</a></li></ol></li>
+<li><a href="#enhancing-flavor-with-extracts-and-oils">Enhancing Flavor with Extracts and Oils</a></li>
+<li><a href="#customize-your-baked-oats-optional-ingredients-and-mix-ins">Customize Your Baked Oats: Optional Ingredients and Mix-Ins</a><ol><li><a href="#heading-13-1-dried-cranberries-and-chopped-pecans">1. Dried Cranberries and Chopped Pecans</a></li>
+<li><a href="#heading-14-2-ripe-bananas">2. Ripe Bananas</a></li>
+<li><a href="#heading-15-3-flaxseed">3. Flaxseed</a></li></ol></li>
+<li><a href="#exploring-toppings-and-variations-for-endless-flavor-combinations">Exploring Toppings and Variations for Endless Flavor Combinations</a><ol><li><a href="#heading-17-fresh-or-frozen-blueberries">Fresh or Frozen Blueberries</a></li>
+<li><a href="#heading-18-other-fruit-options">Other Fruit Options</a></li>
+<li><a href="#heading-19-sliced-almonds">Sliced Almonds</a></li>
+<li><a href="#heading-20-nut-butter-drizzle">Nut Butter Drizzle</a></li></ol></li>
+<li><a href="#baking-tips-for-perfectly-baked-oats-every-time">Baking Tips for Perfectly Baked Oats Every Time</a><ol><li><a href="#heading-22-baking-temperature">Baking Temperature</a></li>
+<li><a href="#heading-23-baking-duration">Baking Duration</a></li>
+<li><a href="#heading-24-refrigeration">Refrigeration</a></li>
+<li><a href="#heading-25-freezing">Freezing</a></li></ol></li>
+<li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/recipes/" class="category-badge">Recipes</a>
@@ -367,28 +397,10 @@
   <img src="/assets/images/Baked-Oats-Full-Recipe-and-Ingredients.png" alt="Baked Oats Full Recipe and Ingredients" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#understanding-baked-oats">Understanding Baked Oats</a></li>
-    <li><a href="#the-perfect-blend-essential-wet-ingredients-for-baked-oats">The Perfect Blend: Essential Wet Ingredients for Baked Oats</a></li>
-    <li><a href="#choosing-the-right-milk-for-your-baked-oats-recipe">Choosing the Right Milk for Your Baked Oats Recipe</a></li>
-    <li><a href="#enhancing-flavor-with-extracts-and-oils">Enhancing Flavor with Extracts and Oils</a></li>
-    <li><a href="#customize-your-baked-oats-optional-ingredients-and-mix-ins">Customize Your Baked Oats: Optional Ingredients and Mix-Ins</a></li>
-    <li><a href="#exploring-toppings-and-variations-for-endless-flavor-combinations">Exploring Toppings and Variations for Endless Flavor Combinations</a></li>
-    <li><a href="#baking-tips-for-perfectly-baked-oats-every-time">Baking Tips for Perfectly Baked Oats Every Time</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 Baked oats have become a popular breakfast choice because they're tasty and good for you. If you're tired of eating regular oatmeal, baked oats are a fun way to switch things up in the morning. In this article, we'll give you a detailed recipe for making baked oats, as well as some helpful tips and optional ideas to make them even better.
-<h3 id="heading-0-what-youll-learn">What You'll Learn</h3>
+<h3 id="heading-0-what-youll-learn" >What You'll Learn</h3>
 <ul>
  	<li>What baked oats are and how they're different from regular oatmeal</li>
  	<li>How to choose the right ingredients for your baked oats</li>
@@ -396,9 +408,9 @@ Baked oats have become a popular breakfast choice because they're tasty and good
  	<li>Tips for baking your oats so they come out just right</li>
 </ul>
 Whether you're an experienced baker or a beginner in the kitchen, this article is for you. Let's get started and learn how to make a delicious and <a href="/blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/" target="_blank" rel="noopener noreferrer">nutritious breakfast</a> with baked oats!
-<h2 id="understanding-baked-oats">Understanding Baked Oats</h2>
+<h2 id="understanding-baked-oats" >Understanding Baked Oats</h2>
 Baked oats are a delightful twist on traditional stovetop oatmeal. While the basic ingredients remain the same, the method of preparation and the addition of a few key components transform this breakfast staple into a mouthwatering treat. Let's dive into what makes baked oats so special.
-<h3 id="heading-2-key-components-of-baked-oats">Key Components of Baked Oats</h3>
+<h3 id="heading-2-key-components-of-baked-oats" >Key Components of Baked Oats</h3>
 Here are the main ingredients that make baked oats stand out:
 <ol>
  	<li><strong>Rolled Oats</strong>: The star ingredient in baked oats is rolled oats. These oats are more substantial and have a chewier texture compared to quick oats or instant oats. When baked, rolled oats retain their shape and provide a satisfying bite. Additionally, they are an excellent source of fiber, making baked oats a nutritious and filling breakfast option.</li>
@@ -413,18 +425,18 @@ By combining these key components, you create a delightful bowl of baked oats th
  	<li>Ground cinnamon enhances flavor.</li>
  	<li>Baking powder with salt gives it that perfect lightness.</li>
 </ul>
-<h2 id="the-perfect-blend-essential-wet-ingredients-for-baked-oats">The Perfect Blend: Essential Wet Ingredients for Baked Oats</h2>
+<h2 id="the-perfect-blend-essential-wet-ingredients-for-baked-oats" >The Perfect Blend: Essential Wet Ingredients for Baked Oats</h2>
 When it comes to creating the perfect bowl of baked oats, the choice of wet ingredients is key. These ingredients not only add moisture and bind the other components together but also contribute to the overall flavor profile of the dish. Let's explore the role of each essential wet ingredient:
-<h3 id="heading-4-1-eggs">1. Eggs</h3>
+<h3 id="heading-4-1-eggs" >1. Eggs</h3>
 Eggs play a crucial role in providing structure to the final dish. They act as a binding agent, ensuring that all the ingredients come together harmoniously. When baked, eggs create a light and fluffy texture that complements the heartiness of the oats. Whether you prefer using traditional eggs or opt for flax eggs as a vegan alternative, they are an indispensable ingredient in baked oats.
-<h3 id="heading-5-2-milk">2. Milk</h3>
+<h3 id="heading-5-2-milk" >2. Milk</h3>
 Milk adds moisture and creaminess to baked oats, resulting in a luscious texture that makes each bite delightful. You have several options when it comes to choosing your milk:
 <ul>
  	<li><strong>Dairy-based milk</strong> like cow's milk offers a classic flavor and richness to your baked oats.</li>
  	<li>If you prefer a <strong>dairy-free alternative</strong>, almond milk is a popular choice, bringing its subtle nuttiness to the dish.</li>
  	<li>Another option is <strong>coconut milk</strong>, which adds a tropical twist to your breakfast.</li>
 </ul>
-<h3 id="heading-6-3-sweeteners">3. Sweeteners</h3>
+<h3 id="heading-6-3-sweeteners" >3. Sweeteners</h3>
 To enhance the overall flavor profile of your baked oats, <a href="https://en.wikipedia.org/wiki/Sweetener" target="_blank" rel="noopener noreferrer">sweeteners</a> like maple syrup or honey are key players. They add a touch of natural sweetness that balances out the nutty flavors of the oats and complements any additional mix-ins or toppings you choose to incorporate:
 <ul>
  	<li>Maple syrup lends its distinct caramel-like notes.</li>
@@ -437,11 +449,11 @@ To summarize:
  	<li>Maple syrup or honey contribute to the overall flavor profile.</li>
 </ul>
 By carefully selecting and combining these essential wet ingredients, you can create a delectable bowl of baked oats that satisfies both your taste buds and nutritional needs.
-<h2 id="choosing-the-right-milk-for-your-baked-oats-recipe">Choosing the Right Milk for Your Baked Oats Recipe</h2>
+<h2 id="choosing-the-right-milk-for-your-baked-oats-recipe" >Choosing the Right Milk for Your Baked Oats Recipe</h2>
 When it comes to choosing the perfect milk for your baked oats recipe, you have a few options to consider. Each type of milk brings its own unique flavor and texture to the dish, so let's explore the pros and cons of using almond milk, coconut milk, and cow's milk.
 
 <img class="alignnone wp-image-2512 size-full" src="/assets/images/Baked-Oats.png" alt="Baked Oats" width="1120" height="500" />
-<h3 id="heading-8-almond-milk">Almond Milk</h3>
+<h3 id="heading-8-almond-milk" >Almond Milk</h3>
 <ul>
  	<li><strong>Pros</strong>:</li>
  	<li class="ql-indent-1">Popular dairy-free alternative</li>
@@ -450,7 +462,7 @@ When it comes to choosing the perfect milk for your baked oats recipe, you have 
  	<li><strong>Cons</strong>:</li>
  	<li class="ql-indent-1">Slightly thinner consistency than cow's milk</li>
 </ul>
-<h3 id="heading-9-coconut-milk">Coconut Milk</h3>
+<h3 id="heading-9-coconut-milk" >Coconut Milk</h3>
 <ul>
  	<li><strong>Pros</strong>:</li>
  	<li class="ql-indent-1">Rich and creamy texture</li>
@@ -458,7 +470,7 @@ When it comes to choosing the perfect milk for your baked oats recipe, you have 
  	<li><strong>Cons</strong>:</li>
  	<li class="ql-indent-1">Higher in fat compared to other milks</li>
 </ul>
-<h3 id="heading-10-cows-milk">Cow's Milk</h3>
+<h3 id="heading-10-cows-milk" >Cow's Milk</h3>
 <ul>
  	<li><strong>Pros</strong>:</li>
  	<li class="ql-indent-1">Classic flavor and richness</li>
@@ -472,27 +484,27 @@ When choosing which type of milk to use in your baked oats recipe, consider your
  	<li>If you enjoy the classic taste of cow's milk and its nutritional benefits, go ahead and use it with confidence.</li>
 </ol>
 Remember, the type of milk you choose will impact the overall flavor and texture of your baked oats, so feel free to experiment and find the perfect blend that suits your taste buds.
-<h2 id="enhancing-flavor-with-extracts-and-oils">Enhancing Flavor with Extracts and Oils</h2>
+<h2 id="enhancing-flavor-with-extracts-and-oils" >Enhancing Flavor with Extracts and Oils</h2>
 Using <strong>pure vanilla extract</strong> can add a subtle sweetness to your baked oats without overpowering other flavors. This natural ingredient enhances the overall taste of the dish, providing a delightful aroma and depth of flavor.
 
 Substituting butter with <strong>coconut oil</strong> offers a <a href="/blogs/5-essential-healthcare-gadgets-every-home-should-have/" target="_blank" rel="noopener noreferrer">healthier</a> twist to your baked oats recipe. Coconut oil adds a hint of tropical essence while contributing to the moistness and richness of the dish. It also complements the other ingredients, creating a harmonious blend of flavors in every bite.
-<h2 id="customize-your-baked-oats-optional-ingredients-and-mix-ins">Customize Your Baked Oats: Optional Ingredients and Mix-Ins</h2>
+<h2 id="customize-your-baked-oats-optional-ingredients-and-mix-ins" >Customize Your Baked Oats: Optional Ingredients and Mix-Ins</h2>
 When it comes to customizing your baked oats, there are endless possibilities to elevate the flavors and textures. Incorporating optional ingredients and mix-ins allows you to tailor your baked oats to your personal preferences, whether you're looking for added sweetness, texture, or nutritional benefits.
-<h3 id="heading-13-1-dried-cranberries-and-chopped-pecans">1. Dried Cranberries and Chopped Pecans</h3>
+<h3 id="heading-13-1-dried-cranberries-and-chopped-pecans" >1. Dried Cranberries and Chopped Pecans</h3>
 Adding tartness and texture with dried cranberries and chopped pecans as delicious mix-ins for your baked oats adds a delightful contrast to the creamy base. The chewy texture of dried cranberries complements the crunch of chopped pecans, creating a symphony of flavors in every bite.
-<h3 id="heading-14-2-ripe-bananas">2. Ripe Bananas</h3>
+<h3 id="heading-14-2-ripe-bananas" >2. Ripe Bananas</h3>
 Another fantastic option is incorporating natural sweetness with ripe bananas. Mashed and mixed into the batter before baking, ripe bananas infuse the baked oats with a luscious sweetness while adding moisture and depth of flavor. This versatile fruit not only enhances the taste but also contributes to the overall creaminess of the dish.
 
 <img class="alignnone wp-image-2511 size-full" src="/assets/images/Ripe-Bananas.png" alt="Ripe Bananas" width="1120" height="500" />
-<h3 id="heading-15-3-flaxseed">3. Flaxseed</h3>
+<h3 id="heading-15-3-flaxseed" >3. Flaxseed</h3>
 For a boost of nutrition, consider adding flaxseed to your baked oats. High in omega-3 fatty acids and fiber, flaxseed is an excellent way to introduce a nutty flavor while promoting heart health and digestion. Whether ground or whole, flaxseed seamlessly integrates into the batter, enriching your baked oats with its wholesome goodness.
 
 By experimenting with these optional ingredients and mix-ins, you can create a myriad of flavor combinations that cater to your <a href="/blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/" target="_blank" rel="noopener noreferrer">taste preferences and dietary</a> needs. Whether you opt for a medley of dried cranberries and chopped pecans for a textural experience or choose to incorporate ripe bananas for natural sweetness, customizing your baked oats opens up a world of possibilities for a breakfast treat that suits your individual palate.
-<h2 id="exploring-toppings-and-variations-for-endless-flavor-combinations">Exploring Toppings and Variations for Endless Flavor Combinations</h2>
+<h2 id="exploring-toppings-and-variations-for-endless-flavor-combinations" >Exploring Toppings and Variations for Endless Flavor Combinations</h2>
 When it comes to topping your baked oats, the options are truly endless. Here are some delicious toppings and variations to consider for your baked oats:
-<h3 id="heading-17-fresh-or-frozen-blueberries">Fresh or Frozen Blueberries</h3>
+<h3 id="heading-17-fresh-or-frozen-blueberries" >Fresh or Frozen Blueberries</h3>
 These little bursts of sweetness add a refreshing pop of flavor and a delightful burst of color to your baked oats. Whether you use fresh blueberries when they're in season or opt for frozen ones year-round, they are a classic choice that pairs beautifully with the warm, comforting oats.
-<h3 id="heading-18-other-fruit-options">Other Fruit Options</h3>
+<h3 id="heading-18-other-fruit-options" >Other Fruit Options</h3>
 Get creative with your toppings by experimenting with other fruits such as:
 <ul>
  	<li>Sliced strawberries</li>
@@ -500,9 +512,9 @@ Get creative with your toppings by experimenting with other fruits such as:
  	<li>Diced apples</li>
 </ul>
 The natural sweetness and juiciness of these fruits can elevate the overall taste of your baked oats, providing a delightful contrast to the creamy texture.
-<h3 id="heading-19-sliced-almonds">Sliced Almonds</h3>
+<h3 id="heading-19-sliced-almonds" >Sliced Almonds</h3>
 For added crunch and nutty flavor, consider sprinkling some sliced almonds on top of your baked oats before serving. Not only do they contribute a satisfying texture, but they also bring a subtle richness that complements the wholesome flavors of the dish.
-<h3 id="heading-20-nut-butter-drizzle">Nut Butter Drizzle</h3>
+<h3 id="heading-20-nut-butter-drizzle" >Nut Butter Drizzle</h3>
 Elevate your baked oats with a drizzle of creamy:
 <ul>
  	<li>Almond butter</li>
@@ -512,27 +524,27 @@ Elevate your baked oats with a drizzle of creamy:
 This indulgent addition adds an extra layer of richness and depth to each spoonful while infusing the dish with irresistible nutty notes.
 
 By exploring various toppings and flavor combinations, you can customize your baked oats to suit your preferences and create an entirely new culinary experience every time you indulge in this wholesome breakfast treat.
-<h2 id="baking-tips-for-perfectly-baked-oats-every-time">Baking Tips for Perfectly Baked Oats Every Time</h2>
+<h2 id="baking-tips-for-perfectly-baked-oats-every-time" >Baking Tips for Perfectly Baked Oats Every Time</h2>
 When it comes to achieving the perfect baked oats, paying attention to the baking temperature and duration is crucial. Here are some essential tips to ensure your baked oats turn out just the way you like them:
-<h3 id="heading-22-baking-temperature">Baking Temperature</h3>
+<h3 id="heading-22-baking-temperature" >Baking Temperature</h3>
 <ul>
  	<li><strong>Recommended Baking Temperature</strong>: Preheat your oven to 350°F (175°C) for a balanced and consistent heat distribution, allowing the oats to cook through evenly without browning too quickly on the outside.</li>
 </ul>
-<h3 id="heading-23-baking-duration">Baking Duration</h3>
+<h3 id="heading-23-baking-duration" >Baking Duration</h3>
 <ul>
  	<li><strong>Baking Duration</strong>: Bake your oats for approximately 25-30 minutes, or until the edges are golden brown and the center is set. Keep in mind that the exact timing may vary depending on your oven and the depth of your baking dish. It's best to start checking for doneness around the 25-minute mark to avoid overcooking.</li>
 </ul>
 Proper storage methods are essential for keeping leftover baked oats fresh for longer periods of time. Here's how you can store your baked oats effectively:
-<h3 id="heading-24-refrigeration">Refrigeration</h3>
+<h3 id="heading-24-refrigeration" >Refrigeration</h3>
 <ol>
  	<li><strong>Refrigeration</strong>: If you have leftover baked oats, allow them to cool to room temperature before transferring them to an airtight container. Refrigerate promptly to maintain freshness. Baked oats can be stored in the refrigerator for up to 4-5 days.</li>
 </ol>
-<h3 id="heading-25-freezing">Freezing</h3>
+<h3 id="heading-25-freezing" >Freezing</h3>
 <ol>
  	<li><strong>Freezing</strong>: For longer-term storage, you can freeze individual portions of baked oats in airtight freezer-safe containers or resealable bags. Be sure to label them with the date for easy reference. When ready to enjoy, simply thaw overnight in the refrigerator and reheat in the microwave or oven until warmed through.</li>
 </ol>
 By following these baking and storage tips, you can consistently create perfectly baked oats every time and enjoy them at your convenience throughout the week.
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion" >Conclusion</h2>
 In conclusion, baked oats are a delicious and nutritious breakfast option that can be easily customized to suit your taste preferences. By understanding the basics of baked oats and experimenting with different flavors and ingredients, you can create a variety of delicious combinations to make this dish a staple in your breakfast routine.
 
 Here are some key takeaways to remember:
@@ -630,30 +642,30 @@ Remember, with baked oats, the possibilities are endless!
     </div>
   </article>
 </div><div class="col-md-4 mb-4">
-  <article class="falcon-related-card post-card" data-slug="apple-watch-vs-garmin-step-tracking-accuracy-2026">
-    <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-card-media" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
-      <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Original illustrated smartwatch and data graphic for Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" class="post-card-thumb" loading="lazy" />
+  <article class="falcon-related-card post-card" data-slug="walking-pad-not-counting-steps">
+    <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-card-media" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+      <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Illustration of a walking-pad desk setup with a stationary wrist and moving feet" class="post-card-thumb" loading="lazy" />
     </a>
     <div class="post-card-body">
       <a href="/category/wearables-fitness-technology/" class="category-badge category-badge-sm">Wearables &amp; Fitness Technology</a>
-      <h4 class="post-card-title"><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?</a></h4>
+      <h4 class="post-card-title"><a href="/blogs/walking-pad-not-counting-steps/">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a></h4>
       <div class="post-card-meta">
-        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 4 min read</span>
+        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 8 min read</span>
       </div>
     </div>
   </article>
 </div><div class="col-md-4 mb-4">
-  <article class="falcon-related-card post-card" data-slug="apple-watch-series-12-readiness-score-explained">
-    <a href="/blogs/apple-watch-series-12-readiness-score-explained/" class="falcon-card-media" aria-label="Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training">
-      <img src="/assets/images/apple-watch-series-12-readiness-score-explained.png" alt="Original illustrated smartwatch and data graphic for Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training" class="post-card-thumb" loading="lazy" />
+  <article class="falcon-related-card post-card" data-slug="10-minute-walk-after-meals-vs-30-minute-walk">
+    <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-card-media" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+      <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="Diagram comparing three 10-minute walks after meals with one 30-minute walking session" class="post-card-thumb" loading="lazy" />
     </a>
     <div class="post-card-body">
-      <a href="/category/wearables-fitness-technology/" class="category-badge category-badge-sm">Wearables &amp; Fitness Technology</a>
-      <h4 class="post-card-title"><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training</a></h4>
+      <a href="/category/fitness/" class="category-badge category-badge-sm">Fitness</a>
+      <h4 class="post-card-title"><a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a></h4>
       <div class="post-card-meta">
-        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 5 min read</span>
+        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 8 min read</span>
       </div>
     </div>
   </article>
@@ -663,12 +675,30 @@ Remember, with baked oats, the possibilities are endless!
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -695,24 +725,6 @@ Remember, with baked oats, the possibilities are endless!
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -720,11 +732,11 @@ Remember, with baked oats, the possibilities are endless!
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -883,6 +895,6 @@ Remember, with baked oats, the possibilities are endless!
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

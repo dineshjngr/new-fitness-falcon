@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Walking-pad step tracking at a desk</title>
+  <desc id="desc">A person walking below a desk with a stationary wrist beside the keyboard; a watch and a timer represent different ways to track movement.</desc>
+  <rect width="1200" height="675" fill="#f1f7f4"/>
+  <circle cx="1020" cy="105" r="200" fill="#e1ede6"/>
+  <rect x="72" y="74" width="398" height="527" rx="28" fill="#ffffff"/>
+  <text x="108" y="128" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#47755c">THE FITNESS FALCON</text>
+  <text x="108" y="205" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#17372a">Feet moving.</text>
+  <text x="108" y="262" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#17372a">Wrist still.</text>
+  <text x="108" y="314" font-family="Arial,sans-serif" font-size="21" fill="#586c60">Why desk walks can leave</text>
+  <text x="108" y="345" font-family="Arial,sans-serif" font-size="21" fill="#586c60">gaps in your step count.</text>
+  <rect x="108" y="394" width="326" height="157" rx="18" fill="#edf5ef"/>
+  <circle cx="149" cy="437" r="18" fill="none" stroke="#47755c" stroke-width="3"/>
+  <path d="M149 424v14l9 5" fill="none" stroke="#47755c" stroke-width="3" stroke-linecap="round"/>
+  <text x="182" y="445" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#17372a">Track your minutes</text>
+  <text x="132" y="490" font-family="Arial,sans-serif" font-size="19" fill="#586c60">Compare a short walk before</text>
+  <text x="132" y="519" font-family="Arial,sans-serif" font-size="19" fill="#586c60">changing your setup.</text>
+  <rect x="563" y="548" width="547" height="45" rx="22" fill="#234b37"/>
+  <rect x="583" y="561" width="507" height="14" rx="7" fill="#47755c"/>
+  <path d="M829 355l-48 89-49 87m99-174 36 81 79 88" fill="none" stroke="#234b37" stroke-width="34" stroke-linecap="round"/>
+  <path d="M713 532h43m176 0h45" stroke="#e3a674" stroke-width="19" stroke-linecap="round"/>
+  <circle cx="828" cy="181" r="37" fill="#e3a674"/>
+  <path d="M821 222l10 120" stroke="#648b71" stroke-width="70" stroke-linecap="round"/>
+  <path d="M842 249l53 70 78 3" fill="none" stroke="#e3a674" stroke-width="24" stroke-linecap="round"/>
+  <rect x="943" y="308" width="17" height="28" rx="4" fill="#234b37"/>
+  <rect x="947" y="313" width="9" height="18" rx="2" fill="#c8e5d2"/>
+  <path d="M963 277h88l-15-70h-71z" fill="#648b71"/>
+  <path d="M939 304h123" stroke="#234b37" stroke-width="9" stroke-linecap="round"/>
+  <rect x="885" y="335" width="244" height="18" rx="6" fill="#a9bcae"/>
+  <path d="M1102 353v190" stroke="#7b9685" stroke-width="13"/>
+  <path d="M668 465l-43 0m0 0 14-12m-14 12 14 12" fill="none" stroke="#648b71" stroke-width="5" stroke-linecap="round"/>
+  <text x="608" y="630" font-family="Arial,sans-serif" font-size="18" fill="#586c60">A step total is an estimate, not the whole session.</text>
+</svg>

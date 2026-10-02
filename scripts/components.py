@@ -298,16 +298,31 @@ def render_post_pagination(prev_post, next_post):
 
 # 13. Table of Contents
 def render_toc(headings):
-    if len(headings) < 3:
+    headings = [heading for heading in headings if heading.get('level', 2) in (2, 3)]
+    if not headings:
         return ''
-    items = '\n'.join([
-        f'    <li><a href="#{h["slug"]}">{html.escape(h["title"])}</a></li>'
-        for h in headings
-    ])
-    return f'''<nav class="falcon-toc" aria-label="Table of Contents">
+    roots, stack = [], []
+    for heading in headings:
+        node = {**heading, 'children': []}
+        level = heading.get('level', 2)
+        while stack and stack[-1].get('level', 2) >= level:
+            stack.pop()
+        (stack[-1]['children'] if stack else roots).append(node)
+        stack.append(node)
+
+    def render_items(nodes):
+        items = []
+        for node in nodes:
+            children = f'<ol>{render_items(node["children"])}</ol>' if node['children'] else ''
+            target = html.escape(quote(node['slug']), quote=True)
+            items.append(f'<li><a href="#{target}">{html.escape(node["title"])}</a>{children}</li>')
+        return '\n'.join(items)
+
+    items = render_items(roots)
+    return f'''<nav class="falcon-toc" aria-labelledby="falconTocTitle">
   <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
   </div>
   <ol class="falcon-toc-list" id="falconTocList">
 {items}

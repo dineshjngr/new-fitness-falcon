@@ -379,13 +379,106 @@
 
     const tocToggle = document.getElementById('falconTocToggle');
     const tocList = document.getElementById('falconTocList');
-    if (tocToggle && tocList) {
+    const tocLayout = document.querySelector('.falcon-article-layout');
+    const tocBody = document.querySelector('.falcon-article-box .entry-content');
+    if (tocToggle && tocList && tocLayout && tocBody) {
+      const desktopToc = window.matchMedia('(min-width: 1280px)');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const sections = Array.from(tocList.querySelectorAll('a[href^="#"]')).map(function (link) {
+        const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+        return heading && tocBody.contains(heading) ? { link: link, heading: heading } : null;
+      }).filter(Boolean);
+      let offset = 100;
+      let activeLink = null;
+      let framePending = false;
+      let tocWasClicked = false;
+
+      function setExpanded(expanded) {
+        tocList.hidden = !expanded;
+        tocToggle.textContent = expanded ? 'Hide contents' : 'Show contents';
+        tocToggle.setAttribute('aria-expanded', String(expanded));
+      }
+
+      function syncBreakpoint() {
+        tocToggle.hidden = desktopToc.matches;
+        setExpanded(desktopToc.matches);
+        scheduleUpdate();
+      }
+
+      function updateActiveSection() {
+        framePending = false;
+        // The header changes height across devices and becomes fixed while scrolling.
+        offset = (stickyHeader ? stickyHeader.getBoundingClientRect().height : 68) + 24;
+        tocLayout.style.setProperty('--falcon-toc-offset', offset + 'px');
+        let current = sections[0];
+        sections.forEach(function (section) {
+          if (section.heading.getBoundingClientRect().top <= offset + 16) current = section;
+        });
+        if (!current || current.link === activeLink) return;
+        if (activeLink) activeLink.removeAttribute('aria-current');
+        activeLink = current.link;
+        activeLink.setAttribute('aria-current', 'location');
+        // Scroll only the contents pane, never the article, to reveal the active item.
+        if (desktopToc.matches) {
+          const listRect = tocList.getBoundingClientRect();
+          const linkRect = activeLink.getBoundingClientRect();
+          if (linkRect.top < listRect.top) tocList.scrollTop += linkRect.top - listRect.top;
+          else if (linkRect.bottom > listRect.bottom) tocList.scrollTop += linkRect.bottom - listRect.bottom;
+        }
+      }
+
+      function scheduleUpdate() {
+        if (!framePending) {
+          framePending = true;
+          window.requestAnimationFrame(updateActiveSection);
+        }
+      }
+
+      function scrollToSection(section, behavior) {
+        updateActiveSection();
+        let destination = window.scrollY + section.heading.getBoundingClientRect().top - offset;
+        // Becoming fixed removes the header from document flow. Account for that
+        // shift when navigating from the top of the page to a section below it.
+        if (stickyHeader && !stickyHeader.classList.contains('stickyHeader') && destination > 200) {
+          destination -= stickyHeader.getBoundingClientRect().height;
+        }
+        window.scrollTo({ top: Math.max(0, destination), behavior: behavior });
+      }
+
       tocToggle.addEventListener('click', function () {
-        const isHidden = tocList.style.display === 'none';
-        tocList.style.display = isHidden ? 'block' : 'none';
-        tocToggle.textContent = isHidden ? 'Hide' : 'Show';
-        tocToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        setExpanded(tocList.hidden);
       });
+      sections.forEach(function (section) {
+        section.link.addEventListener('click', function (event) {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          tocWasClicked = true;
+          if (!desktopToc.matches) setExpanded(false);
+          if (!section.heading.hasAttribute('tabindex')) section.heading.setAttribute('tabindex', '-1');
+          section.heading.focus({ preventScroll: true });
+          if (window.location.hash !== section.link.hash) window.history.pushState(null, '', section.link.hash);
+          scrollToSection(section, reducedMotion.matches ? 'auto' : 'smooth');
+        });
+      });
+      desktopToc.addEventListener('change', syncBreakpoint);
+      window.addEventListener('scroll', scheduleUpdate, { passive: true });
+      window.addEventListener('resize', scheduleUpdate);
+      window.addEventListener('hashchange', scheduleUpdate);
+      window.addEventListener('load', scheduleUpdate);
+      const initialHash = window.location.hash;
+      function alignInitialHash() {
+        if (tocWasClicked || !initialHash || initialHash !== window.location.hash) return;
+        const initialSection = sections.find(function (section) { return section.link.hash === initialHash; });
+        if (initialSection) window.requestAnimationFrame(function () { scrollToSection(initialSection, 'auto'); });
+      }
+      if (document.readyState === 'complete') alignInitialHash();
+      else window.addEventListener('load', alignInitialHash, { once: true });
+      if ('ResizeObserver' in window) {
+        const tocObserver = new ResizeObserver(scheduleUpdate);
+        tocObserver.observe(tocBody);
+        if (stickyHeader) tocObserver.observe(stickyHeader);
+      }
+      syncBreakpoint();
     }
 
     const copyLinkBtn = document.getElementById('falconCopyLinkBtn');

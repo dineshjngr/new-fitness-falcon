@@ -120,35 +120,52 @@ def build_toc_and_content(content):
         return tag
     content = re.sub(r'<img\b[^>]*>', ensure_img_alt, content, flags=re.IGNORECASE)
 
-    # Find all h2 headings
-    h2_pattern = re.compile(r'<h2([^>]*)>(.*?)</h2>', re.IGNORECASE | re.DOTALL)
+    # Include the full heading hierarchy and keep existing public h2 anchors stable.
+    heading_pattern = re.compile(r'<h([2-6])\b([^>]*)>(.*?)</h\1>', re.IGNORECASE | re.DOTALL)
+    id_pattern = re.compile(r'(?<![\w:-])id\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s>]+))', re.IGNORECASE)
     headings = []
-    
-    used_slugs = set()
-    def replace_h2(match):
-        attrs = match.group(1)
-        inner = match.group(2)
-        clean_text = re.sub(r'<[^>]+>', '', inner).strip()
-        if not clean_text:
-            return match.group(0)
-            
-        base_slug = slugify(clean_text) or 'section'
-        s = base_slug
-        idx = 2
-        while s in used_slugs:
-            s = f"{base_slug}-{idx}"
-            idx += 1
-        used_slugs.add(s)
-        headings.append({'title': clean_text, 'slug': s})
-        
-        # Keep existing attributes if any, but ensure id is set
-        if 'id=' in attrs:
-            attrs = re.sub(r'id=[\"\'][^\"\']*[\"\']', f'id="{s}"', attrs)
-        else:
-            attrs = f' id="{s}"' + attrs
-        return f'<h2{attrs}>{inner}</h2>'
+    matches = list(heading_pattern.finditer(content))
+    # Reserve IDs outside headings so generated anchors cannot collide with other elements.
+    non_heading_content = heading_pattern.sub('', content)
+    used_slugs = {html.unescape(next(value for value in m.groups() if value is not None))
+                  for m in id_pattern.finditer(non_heading_content)}
+    assigned = {}
 
-    updated_content = h2_pattern.sub(replace_h2, content)
+    def assign_id(match):
+        level, attrs, inner = match.groups()
+        clean_text = html.unescape(re.sub(r'<[^>]+>', '', inner)).strip()
+        if not clean_text:
+            return
+        existing = id_pattern.search(attrs)
+        # h2 links already published by the old builder used title-based slugs.
+        base_slug = (html.unescape(next(v for v in existing.groups() if v is not None))
+                     if level != '2' and existing else slugify(clean_text)) or 'section'
+        section_id = base_slug
+        idx = 2
+        while section_id in used_slugs:
+            section_id = f"{base_slug}-{idx}"
+            idx += 1
+        used_slugs.add(section_id)
+        assigned[match.start()] = {'title': clean_text, 'slug': section_id, 'level': int(level)}
+
+    # Allocate h2 IDs first; adding subheadings must not change existing deep links.
+    for match in matches:
+        if match.group(1) == '2':
+            assign_id(match)
+    for match in matches:
+        if match.group(1) != '2':
+            assign_id(match)
+
+    def replace_heading(match):
+        heading = assigned.get(match.start())
+        if not heading:
+            return match.group(0)
+        level, attrs, inner = match.groups()
+        attrs = id_pattern.sub('', attrs)
+        headings.append(heading)
+        return f'<h{level} id="{html.escape(heading["slug"], quote=True)}"{attrs}>{inner}</h{level}>'
+
+    updated_content = heading_pattern.sub(replace_heading, content)
 
     # Wrap bare tables in .falcon-table-wrapper
     def wrap_table(match):
@@ -314,7 +331,10 @@ def render_all_posts():
         rendered = rendered.replace('{{READING_TIME_HTML}}', reading_time_html)
         rendered = rendered.replace('{{COMMENTS_COUNT}}', str(post.get('comments_count', 0)))
         rendered = rendered.replace('{{FEATURED_IMAGE_HTML}}', featured_image_html)
-        rendered = rendered.replace('{{TABLE_OF_CONTENTS_HTML}}', toc_html)
+        rendered = rendered.replace('{{TOC_CONTAINER_CLASS}}', 'falcon-has-toc' if toc_html else '')
+        rendered = rendered.replace('{{TOC_LAYOUT_CLASS}}', 'has-toc' if toc_html else '')
+        toc_column = f'<aside class="falcon-toc-column" aria-label="Article navigation">{toc_html}</aside>' if toc_html else ''
+        rendered = rendered.replace('{{TABLE_OF_CONTENTS_COLUMN}}', toc_column)
         rendered = rendered.replace('{{ENTRY_CONTENT}}', entry_content)
         rendered = rendered.replace('{{TAGS_HTML}}', tags_html)
         rendered = rendered.replace('{{SOCIAL_SHARE_HTML}}', social_share_html)

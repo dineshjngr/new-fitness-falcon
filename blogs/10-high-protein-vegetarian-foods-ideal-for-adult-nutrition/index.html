@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,34 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/nutrition/">Nutrition</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">10 High-Protein Vegetarian Foods Ideal f...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#1-lentils">1. Lentils</a><ol><li><a href="#fact-about-lentils">Fact About Lentils:</a></li></ol></li>
+<li><a href="#2-tofu">2. Tofu</a><ol><li><a href="#tofu">Tofu:</a></li></ol></li>
+<li><a href="#3-tempeh">3. Tempeh</a><ol><li><a href="#tempeh">Tempeh:</a></li></ol></li>
+<li><a href="#4-quinoa">4. Quinoa</a><ol><li><a href="#quinoa">Quinoa:</a></li></ol></li>
+<li><a href="#5-beans">5. Beans</a><ol><li><a href="#beans">Beans:</a></li></ol></li>
+<li><a href="#6-nuts-and-seeds">6. Nuts and Seeds</a><ol><li><a href="#nuts-and-seeds">Nuts and seeds:</a></li></ol></li>
+<li><a href="#7-eggs">7. Eggs</a><ol><li><a href="#eggs">Eggs:</a></li></ol></li>
+<li><a href="#8-greek-yogurt">8. Greek Yogurt</a><ol><li><a href="#greek-yogurt">Greek yogurt:</a></li>
+<li><a href="#9-chia-seeds">9. Chia Seeds</a></li>
+<li><a href="#chia-seeds">Chia seeds:</a></li></ol></li>
+<li><a href="#10-spirulina">10. Spirulina</a><ol><li><a href="#spirulina">Spirulina:</a></li></ol></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/nutrition/" class="category-badge">Nutrition</a>
@@ -367,25 +387,6 @@
   <img src="/assets/images/Spirulina.png" alt="Spirulina" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#1-lentils">1. Lentils</a></li>
-    <li><a href="#2-tofu">2. Tofu</a></li>
-    <li><a href="#3-tempeh">3. Tempeh</a></li>
-    <li><a href="#4-quinoa">4. Quinoa</a></li>
-    <li><a href="#5-beans">5. Beans</a></li>
-    <li><a href="#6-nuts-and-seeds">6. Nuts and Seeds</a></li>
-    <li><a href="#7-eggs">7. Eggs</a></li>
-    <li><a href="#8-greek-yogurt">8. Greek Yogurt</a></li>
-    <li><a href="#10-spirulina">10. Spirulina</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 In the quest for a balanced and protein-rich diet, many individuals, including vegetarians and vegans, seek diverse sources of protein beyond the realm of meat, particularly to support their workout routines. Fortunately, a plethora of plant-based options offer substantial protein content alongside other vital nutrients. Here are ten high-protein vegetarian foods that cater to adult nutrition, ensuring a well-rounded and wholesome dietary intake while supporting <a href="/blogs/5-new-year-resolutions-for-your-2024-gym-journey/" target="_blank" rel="noopener">workout</a> endeavors.
@@ -393,7 +394,7 @@ In the quest for a balanced and protein-rich diet, many individuals, including v
 Lentils, renowned for their versatility and affordability, stand as a powerhouse of nutrition. Boasting approximately 18 grams of protein per cooked cup, these legumes also serve as a rich source of fiber, iron, and folate. Whether in soups, stews, or salads, lentils offer a substantial protein punch in various culinary preparations.
 
 <img class="alignnone wp-image-251 size-full" src="/assets/images/Lentils.svg" alt="Lentils Protein Vegetarian Foods" width="1000" height="350" />
-<h3 data-sourcepos="3:1-3:12"><strong>Fact About Lentils:</strong></h3>
+<h3 id="fact-about-lentils" data-sourcepos="3:1-3:12"><strong>Fact About Lentils:</strong></h3>
 <ul data-sourcepos="5:1-5:31">
  	<li data-sourcepos="5:1-5:31">Lentils are a type of legume, which is a plant that stores nitrogen in its seeds.</li>
  	<li data-sourcepos="6:1-6:89">Lentils are a good source of iron, which is important for carrying oxygen in the blood.</li>
@@ -412,7 +413,7 @@ Lentils, renowned for their versatility and affordability, stand as a powerhouse
 Derived from soybeans, tofu ranks as a complete protein, furnishing all nine essential amino acids vital for bodily functions. A mere half-cup of firm tofu contributes around 10 grams of protein. This versatile ingredient absorbs flavors adeptly, making it a cornerstone in numerous savory and sweet dishes, catering to diverse taste preferences.
 
 <img class="alignnone wp-image-246 size-full" src="/assets/images/Tofu.svg" alt="Tofu Protein Vegetarian Foods" />
-<h3 data-sourcepos="10:1-10:9"><strong>Tofu:</strong></h3>
+<h3 id="tofu" data-sourcepos="10:1-10:9"><strong>Tofu:</strong></h3>
 <ul data-sourcepos="12:1-12:63">
  	<li data-sourcepos="12:1-12:63">Tofu is made from soybeans that have been curdled and pressed into blocks.</li>
  	<li data-sourcepos="13:1-13:91">Tofu is a good source of calcium, which is important for building strong bones and teeth.</li>
@@ -425,7 +426,7 @@ Derived from soybeans, tofu ranks as a complete protein, furnishing all nine ess
 Another soy-derived gem, tempeh, emerges from fermented soybeans. Providing roughly 15 grams of protein per cup, tempeh doubles as a source of fiber and iron. Its nutty flavor and robust texture make it an excellent substitute in stir-fries, sandwiches, or as a protein-rich addition to salads.
 
 <img class="alignnone wp-image-245 size-full" src="/assets/images/Tempeh.svg" alt="Tempeh Protein Vegetarian Foods" width="1000" height="350" />
-<h3 data-sourcepos="17:1-17:11"><strong>Tempeh:</strong></h3>
+<h3 id="tempeh" data-sourcepos="17:1-17:11"><strong>Tempeh:</strong></h3>
 <ul data-sourcepos="19:1-21:45">
  	<li data-sourcepos="19:1-19:83">Tempeh is made from fermented soybeans, which gives it a nutty and earthy flavor.</li>
  	<li data-sourcepos="20:1-20:104">Tempeh is a good source of probiotics, which are beneficial bacteria that can help improve gut health.</li>
@@ -444,7 +445,7 @@ Another soy-derived gem, tempeh, emerges from fermented soybeans. Providing roug
 Hailed as a complete protein, quinoa, a grain-like seed, stands out for its protein content and fiber richness. A cup of cooked quinoa offers around 8 grams of protein, along with a substantial dose of essential nutrients. Its versatility renders it a go-to option for salads, grain bowls, or a hearty side dish.
 
 <img class="alignnone size-full wp-image-244" src="/assets/images/Quinoa.svg" alt="Quinoa" width="1000" height="350" />
-<h3 data-sourcepos="24:1-24:11"><strong>Quinoa:</strong></h3>
+<h3 id="quinoa" data-sourcepos="24:1-24:11"><strong>Quinoa:</strong></h3>
 <ul data-sourcepos="26:1-30:0">
  	<li data-sourcepos="26:1-26:75">Quinoa is a grain that is native to the Andes Mountains in South America.</li>
  	<li data-sourcepos="27:1-27:104">Quinoa is a complete protein, meaning it contains all nine essential amino acids that your body needs.</li>
@@ -457,7 +458,7 @@ Source - <a href="https://www.researchgate.net/publication/303845280_Quinoa_Chen
 Beans reign supreme as a trifecta of protein, fiber, and iron. Providing roughly 15 grams of protein per cooked cup, these legumes come in varied forms - black beans, kidney beans, chickpeas, and more. Incorporating beans into soups, curries, or as a standalone dish amplifies protein intake while enhancing meal satiety.
 
 <img class="alignnone size-full wp-image-249" src="/assets/images/Beans.svg" alt="Beans" />
-<h3 data-sourcepos="31:1-31:10"><strong>Beans:</strong></h3>
+<h3 id="beans" data-sourcepos="31:1-31:10"><strong>Beans:</strong></h3>
 <ul data-sourcepos="33:1-37:0">
  	<li data-sourcepos="33:1-33:73">Beans are a type of legume that comes in a variety of colors and sizes.</li>
  	<li data-sourcepos="34:1-34:54">Beans are a good source of protein, fiber, and iron.</li>
@@ -484,7 +485,7 @@ Beans reign supreme as a trifecta of protein, fiber, and iron. Providing roughly
 Nuts and seeds encompass an amalgamation of protein, healthy fats, and fiber. Almonds, for instance, proffer around 6 grams of protein per ounce, making them a convenient and nutritious snack. These nutrient-dense powerhouses lend themselves well to salads, trail mixes, or as toppings for various dishes.
 
 <img class="alignnone size-full wp-image-253" src="/assets/images/Nuts-and-Seeds.svg" alt="Nuts and Seeds" />
-<h3 data-sourcepos="38:1-38:19"><strong>Nuts and seeds:</strong></h3>
+<h3 id="nuts-and-seeds" data-sourcepos="38:1-38:19"><strong>Nuts and seeds:</strong></h3>
 <ul data-sourcepos="40:1-42:48">
  	<li data-sourcepos="40:1-40:71">Nuts and seeds are a good source of protein, healthy fats, and fiber.</li>
  	<li data-sourcepos="41:1-41:113">Nuts and seeds are a good source of vitamin E, which is an antioxidant that can help protect cells from damage.</li>
@@ -511,7 +512,7 @@ Nuts and seeds encompass an amalgamation of protein, healthy fats, and fiber. Al
 Eggs, celebrated for their complete protein profile, are a reservoir of approximately 6 grams of protein per large egg. Beyond protein, eggs contain choline, crucial for brain health. Incorporating eggs into one's diet via omelets, frittatas, or simply hard-boiled as a snack boosts protein intake alongside a myriad of essential nutrients.
 
 <img class="alignnone size-full wp-image-252" src="/assets/images/Nuts-and-Seeds-2.svg" alt="Eggs" width="1000" height="350" />
-<h3 data-sourcepos="45:1-45:9"><strong>Eggs:</strong></h3>
+<h3 id="eggs" data-sourcepos="45:1-45:9"><strong>Eggs:</strong></h3>
 <ul data-sourcepos="47:1-51:0">
  	<li data-sourcepos="47:1-47:96">Eggs are a complete protein and a good source of choline, which is important for brain health.</li>
  	<li data-sourcepos="48:1-48:74">Eggs are a good source of vitamin D, which is important for bone health.</li>
@@ -525,7 +526,7 @@ Eggs, celebrated for their complete protein profile, are a reservoir of approxim
 Greek yogurt emerges as a protein-rich delight, offering around 17 grams of protein per cup. Not only does it serve as a protein source, but it also delivers calcium and probiotics, beneficial for gut health. Enjoy Greek yogurt on its own, as a parfait, or as a creamy addition to smoothies.
 
 <img class="alignnone size-full wp-image-250" src="/assets/images/Greek-Yogurt.svg" alt="Greek Yogurt" />
-<h3 data-sourcepos="52:1-52:17"><strong>Greek yogurt:</strong></h3>
+<h3 id="greek-yogurt" data-sourcepos="52:1-52:17"><strong>Greek yogurt:</strong></h3>
 <ul data-sourcepos="54:1-58:0">
  	<li data-sourcepos="54:1-54:113">Greek yogurt is made by straining yogurt to remove some of the whey, which gives it a thick and creamy texture.</li>
  	<li data-sourcepos="55:1-55:68">Greek yogurt is a good source of protein, calcium, and probiotics.</li>
@@ -535,11 +536,11 @@ Greek yogurt emerges as a protein-rich delight, offering around 17 grams of prot
 <blockquote><strong>A study published in the <em class="">Journal of the American Dietetic Association</em> found that Greek yogurt consumption may help improve bone health by increasing calcium absorption.</strong></blockquote>
 Source - <a href="https://www.menshealth.com/nutrition/a44654741/greek-yogurt-benefits/">https://www.menshealth.com</a>
 <div class="dynamic-carousel-wrapper"></div>
-<h3>9. Chia Seeds</h3>
+<h3 id="9-chia-seeds">9. Chia Seeds</h3>
 Chia seeds, revered for their protein content, omega-3 fatty acids, and fiber, present a nutritionally dense option. About 5 grams of protein per ounce coupled with their versatility in puddings, smoothies, or as a topping over breakfast bowls, make them an effortless addition to elevate daily protein intake.
 
 <img class="alignnone size-full wp-image-247" src="/assets/images/Chia-Seeds.svg" alt="Chia Seeds" width="1000" height="350" />
-<h3 data-sourcepos="59:1-59:15"><strong>Chia seeds:</strong></h3>
+<h3 id="chia-seeds" data-sourcepos="59:1-59:15"><strong>Chia seeds:</strong></h3>
 <ul data-sourcepos="61:1-62:54">
  	<li data-sourcepos="61:1-61:57">Chia seeds are a type of seed that is native to Mexico.</li>
  	<li data-sourcepos="62:1-62:54">Chia seeds are a good source of omega-3 fatty acids, which are important for heart health.</li>
@@ -558,7 +559,7 @@ Chia seeds, revered for their protein content, omega-3 fatty acids, and fiber, p
 Spirulina, a form of algae, boasts complete protein status alongside iron, vitamin B12, and antioxidants. A tablespoon of spirulina powder offers approximately 4 grams of protein. Incorporating spirulina into smoothies or as a supplement enriches the diet with not just protein but an array of essential nutrients.
 
 <img class="alignnone size-full wp-image-248" src="/assets/images/Spirulina.svg" alt="Spirulina" />
-<h3 data-sourcepos="66:1-66:14"><strong>Spirulina:</strong></h3>
+<h3 id="spirulina" data-sourcepos="66:1-66:14"><strong>Spirulina:</strong></h3>
 <ul data-sourcepos="68:1-72:0">
  	<li data-sourcepos="68:1-68:75">Spirulina is a type of algae that is grown in freshwater lakes and ponds.</li>
  	<li data-sourcepos="69:1-69:91">Spirulina is a complete protein and a good source of iron, vitamin B12, and antioxidants.</li>
@@ -685,12 +686,30 @@ Source - <a href="https://www.researchgate.net/publication/309163414_Impact_of_S
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -717,24 +736,6 @@ Source - <a href="https://www.researchgate.net/publication/309163414_Impact_of_S
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -742,11 +743,11 @@ Source - <a href="https://www.researchgate.net/publication/309163414_Impact_of_S
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -905,6 +906,6 @@ Source - <a href="https://www.researchgate.net/publication/309163414_Impact_of_S
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

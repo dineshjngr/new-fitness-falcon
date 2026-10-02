@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,41 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/nutrition/">Nutrition</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Why is Magnesium So Crucial for the Body?</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-magnesium">What is Magnesium?</a><ol><li><a href="#key-characteristics-of-magnesium">Key Characteristics of Magnesium</a></li>
+<li><a href="#where-is-magnesium-found-in-the-body">Where is Magnesium Found in the Body?</a></li></ol></li>
+<li><a href="#the-role-of-magnesium-in-biochemical-reactions">The Role of Magnesium in Biochemical Reactions</a></li>
+<li><a href="#1-magnesium-and-heart-health">1. Magnesium and Heart Health</a><ol><li><a href="#1-stabilizes-heart-rhythm">1. Stabilizes Heart Rhythm</a></li>
+<li><a href="#2relaxes-blood-vessels">2.Relaxes Blood Vessels</a></li></ol></li>
+<li><a href="#2-how-magnesium-affects-muscle-health">2. How Magnesium Affects Muscle Health</a></li>
+<li><a href="#3-how-magnesium-affects-brain-function-and-mental-health">3. How Magnesium Affects Brain Function and Mental Health</a><ol><li><a href="#the-link-between-magnesium-and-mental-health">The Link Between Magnesium and Mental Health</a></li>
+<li><a href="#supporting-mental-health-through-magnesium">Supporting Mental Health Through Magnesium</a></li></ol></li>
+<li><a href="#4-the-importance-of-magnesium-for-bone-health">4. The Importance of Magnesium for Bone Health</a><ol><li><a href="#1-magnesium-helps-build-strong-bones">1. Magnesium Helps Build Strong Bones</a></li>
+<li><a href="#2-lack-of-magnesium-can-weaken-bones">2. Lack of Magnesium Can Weaken Bones</a></li></ol></li>
+<li><a href="#5-how-magnesium-helps-regulate-blood-sugar">5. How Magnesium Helps Regulate Blood Sugar</a><ol><li><a href="#1-improves-insulin-sensitivity">1. Improves Insulin Sensitivity</a></li>
+<li><a href="#2-assists-glucose-transport">2. Assists Glucose Transport</a></li></ol></li>
+<li><a href="#signs-and-symptoms-of-magnesium-deficiency">Signs and Symptoms of Magnesium Deficiency</a><ol><li><a href="#physical-symptoms">Physical Symptoms</a></li>
+<li><a href="#mental-health-effects">Mental Health Effects</a></li></ol></li>
+<li><a href="#dietary-sources-of-magnesium">Dietary Sources of Magnesium</a></li>
+<li><a href="#understanding-magnesium-supplements">Understanding Magnesium Supplements</a></li>
+<li><a href="#recommended-daily-intake-of-magnesium">Recommended Daily Intake of Magnesium</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/nutrition/" class="category-badge">Nutrition</a>
@@ -368,28 +395,6 @@
   <img src="/assets/images/Why-is-Magnesium-So-Crucial-for-the-Body.jpg" alt="Why is Magnesium So Crucial for the Body" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#what-is-magnesium">What is Magnesium?</a></li>
-    <li><a href="#the-role-of-magnesium-in-biochemical-reactions">The Role of Magnesium in Biochemical Reactions</a></li>
-    <li><a href="#1-magnesium-and-heart-health">1. Magnesium and Heart Health</a></li>
-    <li><a href="#2-how-magnesium-affects-muscle-health">2. How Magnesium Affects Muscle Health</a></li>
-    <li><a href="#3-how-magnesium-affects-brain-function-and-mental-health">3. How Magnesium Affects Brain Function and Mental Health</a></li>
-    <li><a href="#4-the-importance-of-magnesium-for-bone-health">4. The Importance of Magnesium for Bone Health</a></li>
-    <li><a href="#5-how-magnesium-helps-regulate-blood-sugar">5. How Magnesium Helps Regulate Blood Sugar</a></li>
-    <li><a href="#signs-and-symptoms-of-magnesium-deficiency">Signs and Symptoms of Magnesium Deficiency</a></li>
-    <li><a href="#dietary-sources-of-magnesium">Dietary Sources of Magnesium</a></li>
-    <li><a href="#understanding-magnesium-supplements">Understanding Magnesium Supplements</a></li>
-    <li><a href="#recommended-daily-intake-of-magnesium">Recommended Daily Intake of Magnesium</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 Magnesium is an essential mineral that plays a critical role in many processes in the human body. It is involved in over 300 biochemical reactions, affecting various functions such as:
@@ -408,12 +413,12 @@ Despite its importance, many people suffer from <a href="https://www.healthline.
 Ensuring adequate magnesium intake is vital for maintaining optimal health and preventing these potential deficiencies. Understanding the role of magnesium in your diet is essential for promoting overall well-being and addressing any related health concerns.
 <h2 id="what-is-magnesium">What is Magnesium?</h2>
 Magnesium is a chemical element with the symbol Mg and atomic number 12. It is the fourth most abundant mineral in the human body and has many important functions.
-<h3>Key Characteristics of Magnesium</h3>
+<h3 id="key-characteristics-of-magnesium">Key Characteristics of Magnesium</h3>
 <ul>
  	<li>It is a shiny gray solid that occurs naturally in various compounds.</li>
  	<li>Magnesium is crucial for many biochemical processes.</li>
 </ul>
-<h3>Where is Magnesium Found in the Body?</h3>
+<h3 id="where-is-magnesium-found-in-the-body">Where is Magnesium Found in the Body?</h3>
 Magnesium is primarily located in:
 <ol>
  	<li><strong>Bones</strong>: About 60% of the body's magnesium is stored here, helping to maintain bone density.</li>
@@ -431,9 +436,9 @@ Magnesium is a key player in the body's biochemical processes, participating in 
 The role of magnesium extends to energy metabolism, impacting how your body converts food into usable energy. A deficiency can disrupt these processes, leading to reduced energy levels and impaired metabolic function. Understanding magnesium's significance in these reactions underlines its importance for maintaining overall health and vitality.
 <h2 id="1-magnesium-and-heart-health">1. Magnesium and Heart Health</h2>
 Magnesium is essential for keeping your heart healthy and controlling your blood pressure. Here's how it helps:
-<h3><strong>1. Stabilizes Heart Rhythm</strong></h3>
+<h3 id="1-stabilizes-heart-rhythm"><strong>1. Stabilizes Heart Rhythm</strong></h3>
 Magnesium plays a crucial role in stabilizing the electrical signals in your heart, ensuring that it beats regularly. This stabilization is vital for preventing irregular heartbeats (arrhythmias), which can lead to more serious heart problems.
-<h3><strong>2.Relaxes Blood Vessels</strong></h3>
+<h3 id="2relaxes-blood-vessels"><strong>2.Relaxes Blood Vessels</strong></h3>
 This mineral also helps relax your blood vessels, making it easier for blood to flow and reducing resistance. As a result, magnesium can help lower your blood pressure levels. In fact, key minerals like magnesium are known to help control blood pressure.
 
 The link between magnesium intake and heart diseases is significant. Getting enough magnesium can help prevent high blood pressure and other conditions that affect your heart health. Research shows that people who consume more magnesium tend to have a lower risk of developing heart problems.
@@ -467,11 +472,11 @@ Magnesium plays a crucial role in regulating neurotransmitters, which are essent
  	<li><strong>Serotonin</strong>: Often referred to as the "feel-good" hormone, it contributes to mood stability.</li>
  	<li><strong>Dopamine</strong>: Important for motivation and pleasure.</li>
 </ul>
-<h3>The Link Between Magnesium and Mental Health</h3>
+<h3 id="the-link-between-magnesium-and-mental-health">The Link Between Magnesium and Mental Health</h3>
 Research suggests that low magnesium levels may be associated with various mental health issues, particularly <em>anxiety</em> and <em>depression</em>. When there is insufficient magnesium in the body, it can disrupt the balance of these neurotransmitters, leading to increased stress and emotional instability.
 
 Studies have shown that individuals who consume lower amounts of magnesium may experience more pronounced symptoms of anxiety and depression. Therefore, aiming for adequate magnesium levels through diet or supplementation can support mental well-being and promote effective stress reduction strategies.
-<h3>Supporting Mental Health Through Magnesium</h3>
+<h3 id="supporting-mental-health-through-magnesium">Supporting Mental Health Through Magnesium</h3>
 To maintain optimal magnesium levels and potentially improve your mental health, consider the following:
 <ol>
  	<li><strong>Emphasize dietary sources</strong>: Include magnesium-rich foods in your diet such as leafy greens, nuts, seeds, whole grains, and legumes.</li>
@@ -480,17 +485,17 @@ To maintain optimal magnesium levels and potentially improve your mental health,
 By prioritizing these practices, you can contribute positively to your mental health and overall well-being.
 <h2 id="4-the-importance-of-magnesium-for-bone-health">4. The Importance of Magnesium for Bone Health</h2>
 Magnesium plays a crucial role in maintaining bone density and regulating calcium levels in the body. Here's why it's important:
-<h3><strong>1. Magnesium Helps Build Strong Bones</strong></h3>
+<h3 id="1-magnesium-helps-build-strong-bones"><strong>1. Magnesium Helps Build Strong Bones</strong></h3>
 Magnesium is essential for the proper development of bones. It helps convert vitamin D into its active form, which is necessary for the body to absorb calcium effectively. When magnesium levels are optimal, it supports overall bone health.
-<h3><strong>2. Lack of Magnesium Can Weaken Bones</strong></h3>
+<h3 id="2-lack-of-magnesium-can-weaken-bones"><strong>2. Lack of Magnesium Can Weaken Bones</strong></h3>
 If your body doesn't get enough magnesium, it can lead to weaker bones and an increased risk of osteoporosis. Research shows that low levels of magnesium are linked to lower bone mineral density, making bones more prone to fractures.
 
 To maintain healthy magnesium levels, it's important to include magnesium-rich foods in your diet. These foods include leafy greens, nuts, and whole grains. By prioritizing magnesium intake, you can promote stronger bones and reduce the risk of osteoporosis over time.
 <h2 id="5-how-magnesium-helps-regulate-blood-sugar">5. How Magnesium Helps Regulate Blood Sugar</h2>
 Magnesium is important for keeping blood sugar levels in check. It helps <strong>insulin work properly</strong>, which is crucial for controlling how our bodies use glucose. Here's what magnesium does:
-<h3><strong>1. Improves Insulin Sensitivity</strong></h3>
+<h3 id="1-improves-insulin-sensitivity"><strong>1. Improves Insulin Sensitivity</strong></h3>
 Magnesium makes the body more sensitive to insulin, so cells can take in glucose better.
-<h3><strong>2. Assists Glucose Transport</strong></h3>
+<h3 id="2-assists-glucose-transport"><strong>2. Assists Glucose Transport</strong></h3>
 It helps move glucose into cells, making sure energy production happens smoothly.
 
 If you don't get enough magnesium, it can mess with your blood sugar control. Low magnesium levels might cause:
@@ -501,14 +506,14 @@ If you don't get enough magnesium, it can mess with your blood sugar control. Lo
 Studies show that people who don't consume enough magnesium are more likely to develop Type 2 diabetes. Getting enough magnesium through food or supplements can help manage blood sugar levels and support overall metabolic health.
 <h2 id="signs-and-symptoms-of-magnesium-deficiency">Signs and Symptoms of Magnesium Deficiency</h2>
 Recognizing <strong>deficiency symptoms</strong> is crucial for maintaining overall health. Common signs include:
-<h3>Physical Symptoms</h3>
+<h3 id="physical-symptoms">Physical Symptoms</h3>
 <ul>
  	<li><strong>Muscle cramps</strong>: Frequent spasms can indicate low magnesium levels.</li>
  	<li><strong>Fatigue</strong>: Persistent tiredness may stem from insufficient magnesium.</li>
  	<li><strong>High blood pressure</strong>: A possible consequence of inadequate magnesium intake.</li>
  	<li><strong>Sleep disturbances</strong>: Difficulty in achieving restful sleep can arise from deficiency.</li>
 </ul>
-<h3>Mental Health Effects</h3>
+<h3 id="mental-health-effects">Mental Health Effects</h3>
 <ul>
  	<li><strong>Anxiety and depression</strong>: Low magnesium has been linked to mood disorders.</li>
 </ul>
@@ -660,12 +665,30 @@ Remember, prioritizing magnesium is essential for achieving optimal health and v
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -692,24 +715,6 @@ Remember, prioritizing magnesium is essential for achieving optimal health and v
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -717,11 +722,11 @@ Remember, prioritizing magnesium is essential for achieving optimal health and v
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -880,6 +885,6 @@ Remember, prioritizing magnesium is essential for achieving optimal health and v
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

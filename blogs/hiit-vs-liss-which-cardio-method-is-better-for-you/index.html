@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,40 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/gym/">Gym</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">HIIT vs LISS: Which Cardio Method Is Bet...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-hiit-high-intensity-interval-training">What Is HIIT (High-Intensity Interval Training)?</a><ol><li><a href="#key-features-of-a-hiit-workout">Key Features of a HIIT Workout:</a></li>
+<li><a href="#benefits-of-hiit-cardio">Benefits of HIIT Cardio:</a></li></ol></li>
+<li><a href="#what-is-liss-low-intensity-steady-state-cardio">What Is LISS (Low-Intensity Steady-State) Cardio?</a><ol><li><a href="#key-features-of-liss-cardio">Key Features of LISS Cardio:</a></li>
+<li><a href="#benefits-of-low-intensity-steady-state-cardio">Benefits of Low-Intensity Steady-State Cardio:</a></li></ol></li>
+<li><a href="#hiit-vs-liss-core-differences">HIIT vs LISS: Core Differences</a></li>
+<li><a href="#hiit-vs-liss-for-weight-loss">HIIT vs LISS for Weight Loss</a><ol><li><a href="#hiit-for-fat-loss">HIIT for Fat Loss:</a></li>
+<li><a href="#liss-for-fat-loss">LISS for Fat Loss:</a></li>
+<li><a href="#what-research-says">What Research Says:</a></li></ol></li>
+<li><a href="#when-to-choose-hiit-over-liss">When to Choose HIIT Over LISS</a><ol><li><a href="#sample-hiit-workout-20-minutes">Sample HIIT Workout (20 Minutes):</a></li></ol></li>
+<li><a href="#when-to-choose-liss-over-hiit">When to Choose LISS Over HIIT</a><ol><li><a href="#sample-liss-activities">Sample LISS Activities:</a></li></ol></li>
+<li><a href="#combining-hiit-and-liss-best-of-both-worlds">Combining HIIT and LISS: Best of Both Worlds</a><ol><li><a href="#benefits-of-combining-hiit-and-liss">Benefits of Combining HIIT and LISS:</a></li></ol></li>
+<li><a href="#common-myths-hiit-vs-liss">Common Myths: HIIT vs LISS</a><ol><li><a href="#myth-1-hiit-is-only-for-athletes">Myth 1: HIIT is only for athletes</a></li>
+<li><a href="#myth-2-liss-is-useless-for-fat-loss">Myth 2: LISS is useless for fat loss</a></li>
+<li><a href="#myth-3-hiit-alone-is-enough-for-fitness">Myth 3: HIIT alone is enough for fitness</a></li></ol></li>
+<li><a href="#which-one-should-you-choose">Which One Should YOU Choose?</a><ol><li><a href="#choose-hiit-if">Choose HIIT if:</a></li>
+<li><a href="#choose-liss-if">Choose LISS if:</a></li></ol></li>
+<li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/gym/" class="category-badge">Gym</a>
@@ -368,26 +394,6 @@
   <img src="/assets/images/HIIT-vs-LISS.jpg" alt="HIIT vs LISS" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#what-is-hiit-high-intensity-interval-training">What Is HIIT (High-Intensity Interval Training)?</a></li>
-    <li><a href="#what-is-liss-low-intensity-steady-state-cardio">What Is LISS (Low-Intensity Steady-State) Cardio?</a></li>
-    <li><a href="#hiit-vs-liss-core-differences">HIIT vs LISS: Core Differences</a></li>
-    <li><a href="#hiit-vs-liss-for-weight-loss">HIIT vs LISS for Weight Loss</a></li>
-    <li><a href="#when-to-choose-hiit-over-liss">When to Choose HIIT Over LISS</a></li>
-    <li><a href="#when-to-choose-liss-over-hiit">When to Choose LISS Over HIIT</a></li>
-    <li><a href="#combining-hiit-and-liss-best-of-both-worlds">Combining HIIT and LISS: Best of Both Worlds</a></li>
-    <li><a href="#common-myths-hiit-vs-liss">Common Myths: HIIT vs LISS</a></li>
-    <li><a href="#which-one-should-you-choose">Which One Should YOU Choose?</a></li>
-    <li><a href="#final-thoughts">Final Thoughts</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="372" data-end="744">When it comes to cardiovascular fitness and weight management, two major workout styles dominate the conversation: HIIT vs LISS. These acronyms stand for high-intensity interval training and low-intensity steady-state cardio, respectively. Both approaches offer unique benefits and suit different goals, fitness levels, and lifestyles. But which one is better for you?</p>
@@ -397,14 +403,14 @@
 <h2 id="what-is-hiit-high-intensity-interval-training" data-start="1418" data-end="1473"><strong data-start="1421" data-end="1473">What Is HIIT (High-Intensity Interval Training)?</strong></h2>
 <p data-start="1475" data-end="1758"><a href="/blogs/what-is-hiit-high-intensity-interval-training-types-benefits/" target="_blank" rel="noopener">High-Intensity Interval Training (HIIT)</a> involves short bursts of intense activity followed by rest or low-intensity recovery periods. A typical HIIT session could last anywhere from 10 to 30 minutes and includes alternating between intense efforts (e.g., sprinting) and rest periods.</p>
 
-<h3 data-start="1760" data-end="1799"><strong data-start="1764" data-end="1799">Key Features of a HIIT Workout:</strong></h3>
+<h3 id="key-features-of-a-hiit-workout" data-start="1760" data-end="1799"><strong data-start="1764" data-end="1799">Key Features of a HIIT Workout:</strong></h3>
 <ul>
  	<li data-start="1803" data-end="1854">Alternates between maximum effort and rest/recovery</li>
  	<li data-start="1857" data-end="1910">Typically shorter in duration but higher in intensity</li>
  	<li data-start="1913" data-end="2003">Can involve cardio (sprints, jump rope) or strength exercises (burpees, kettlebell swings)</li>
  	<li data-start="2006" data-end="2119">Elevates heart rate quickly and burns calories post-workout due to EPOC (Excess Post-Exercise Oxygen Consumption)</li>
 </ul>
-<h3 data-start="2121" data-end="2153"><strong data-start="2125" data-end="2153">Benefits of HIIT Cardio:</strong></h3>
+<h3 id="benefits-of-hiit-cardio" data-start="2121" data-end="2153"><strong data-start="2125" data-end="2153">Benefits of HIIT Cardio:</strong></h3>
 <ul>
  	<li data-start="2157" data-end="2216"><strong data-start="2157" data-end="2176">Time-Efficient:</strong> You can burn more calories in less time</li>
  	<li data-start="2219" data-end="2274"><strong data-start="2219" data-end="2240">Improves VO₂ max:</strong> Enhances cardiovascular endurance</li>
@@ -415,14 +421,14 @@
 <h2 id="what-is-liss-low-intensity-steady-state-cardio" data-start="2446" data-end="2502"><strong data-start="2449" data-end="2502">What Is LISS (Low-Intensity Steady-State) Cardio?</strong></h2>
 <p data-start="2504" data-end="2724"><a href="https://www.healthline.com/health/exercise-fitness/liss-cardio" target="_blank" rel="noopener">Low-Intensity Steady-State (LISS) cardio</a> refers to prolonged aerobic activity performed at a consistent, moderate intensity. Common examples include brisk walking, cycling, swimming, or slow jogging for 30 to 60 minutes.</p>
 
-<h3 data-start="2726" data-end="2762"><strong data-start="2730" data-end="2762">Key Features of LISS Cardio:</strong></h3>
+<h3 id="key-features-of-liss-cardio" data-start="2726" data-end="2762"><strong data-start="2730" data-end="2762">Key Features of LISS Cardio:</strong></h3>
 <ul>
  	<li data-start="2766" data-end="2812">Performed at 50–65% of your maximum heart rate</li>
  	<li data-start="2815" data-end="2854">Longer in duration, usually 30+ minutes</li>
  	<li data-start="2857" data-end="2909">Less physically demanding and easier to recover from</li>
  	<li data-start="2912" data-end="2968">Can be done daily with minimal risk of burnout or injury</li>
 </ul>
-<h3 data-start="2970" data-end="3024"><strong data-start="2974" data-end="3024">Benefits of Low-Intensity Steady-State Cardio:</strong></h3>
+<h3 id="benefits-of-low-intensity-steady-state-cardio" data-start="2970" data-end="3024"><strong data-start="2974" data-end="3024">Benefits of Low-Intensity Steady-State Cardio:</strong></h3>
 <ul>
  	<li data-start="3028" data-end="3071">Improves aerobic capacity and endurance</li>
  	<li data-start="3074" data-end="3106">Gentle on joints and muscles</li>
@@ -494,21 +500,21 @@
 <h2 id="hiit-vs-liss-for-weight-loss" data-start="3810" data-end="3845"><strong data-start="3813" data-end="3845">HIIT vs LISS for Weight Loss</strong></h2>
 <p data-start="3847" data-end="3962">When it comes to fat-burning workout techniques, both HIIT and LISS are effective, but they work in different ways.</p>
 
-<h3 data-start="3964" data-end="3990"><strong data-start="3968" data-end="3990">HIIT for Fat Loss:</strong></h3>
+<h3 id="hiit-for-fat-loss" data-start="3964" data-end="3990"><strong data-start="3968" data-end="3990">HIIT for Fat Loss:</strong></h3>
 <ul>
  	<li data-start="3993" data-end="4038">Burns more <a href="/blogs/what-are-calories-and-why-are-they-important/" target="_blank" rel="noopener">calories</a> in a short amount of time</li>
  	<li data-start="4041" data-end="4094">Stimulates EPOC, increasing calorie burn post-workout</li>
  	<li data-start="4097" data-end="4146">Preserves lean muscle mass during calorie deficit</li>
  	<li data-start="4149" data-end="4184">Ideal for time-strapped individuals</li>
 </ul>
-<h3 data-start="4186" data-end="4212"><strong data-start="4190" data-end="4212">LISS for Fat Loss:</strong></h3>
+<h3 id="liss-for-fat-loss" data-start="4186" data-end="4212"><strong data-start="4190" data-end="4212">LISS for Fat Loss:</strong></h3>
 <ul>
  	<li data-start="4215" data-end="4277">Burns fat during the workout itself through aerobic metabolism</li>
  	<li data-start="4280" data-end="4334">Easier to sustain long-term for consistent fat-burning</li>
  	<li data-start="4337" data-end="4391">Can be performed daily with minimal stress on the body</li>
  	<li data-start="4394" data-end="4428">Complements strength training well</li>
 </ul>
-<h3 data-start="4430" data-end="4457"><strong data-start="4434" data-end="4457">What Research Says:</strong></h3>
+<h3 id="what-research-says" data-start="4430" data-end="4457"><strong data-start="4434" data-end="4457">What Research Says:</strong></h3>
 <p data-start="4458" data-end="4690">Several studies have shown that HIIT and LISS can result in similar fat loss when calorie intake is controlled. However, HIIT might be more time-efficient, whereas LISS is often easier to adhere to and more accessible for beginners.</p>
 
 <h2 id="when-to-choose-hiit-over-liss" data-start="4697" data-end="4733"><strong data-start="4700" data-end="4733">When to Choose HIIT Over LISS</strong></h2>
@@ -521,7 +527,7 @@
  	<li data-start="4928" data-end="4979">You're at an intermediate or advanced fitness level</li>
  	<li data-start="4982" data-end="5041">You're focused on improving athletic performance or VO₂ max</li>
 </ul>
-<h3 data-start="5043" data-end="5084"><strong data-start="5047" data-end="5084">Sample HIIT Workout (20 Minutes):</strong></h3>
+<h3 id="sample-hiit-workout-20-minutes" data-start="5043" data-end="5084"><strong data-start="5047" data-end="5084">Sample HIIT Workout (20 Minutes):</strong></h3>
 <div class="_tableContainer_16hzy_1">
 <div class="_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse" tabindex="-1">
 <div class="falcon-table-wrapper">
@@ -577,7 +583,7 @@
  	<li data-start="5534" data-end="5597">You use cardio as active recovery on non-strength training days</li>
  	<li data-start="5600" data-end="5661">You find steady-state exercises more meditative and enjoyable</li>
 </ul>
-<h3 data-start="5663" data-end="5694"><strong data-start="5667" data-end="5694">Sample LISS Activities:</strong></h3>
+<h3 id="sample-liss-activities" data-start="5663" data-end="5694"><strong data-start="5667" data-end="5694">Sample LISS Activities:</strong></h3>
 <ul>
  	<li data-start="5697" data-end="5726">45-minute brisk walk outdoors</li>
  	<li data-start="5729" data-end="5773">40-minute treadmill session at moderate pace</li>
@@ -587,7 +593,7 @@
 <h2 id="combining-hiit-and-liss-best-of-both-worlds" data-start="5876" data-end="5927"><strong data-start="5879" data-end="5927">Combining HIIT and LISS: Best of Both Worlds</strong></h2>
 <p data-start="5929" data-end="6064">Why choose one when you can have the benefits of both? Many fitness professionals suggest a hybrid approach for a well-rounded routine.</p>
 
-<h3 data-start="6066" data-end="6110"><strong data-start="6070" data-end="6110">Benefits of Combining HIIT and LISS:</strong></h3>
+<h3 id="benefits-of-combining-hiit-and-liss" data-start="6066" data-end="6110"><strong data-start="6070" data-end="6110">Benefits of Combining HIIT and LISS:</strong></h3>
 <ul>
  	<li data-start="6113" data-end="6152">Balanced cardiovascular development</li>
  	<li data-start="6155" data-end="6187">Reduced risk of overtraining</li>
@@ -644,19 +650,19 @@
 </div>
 </div>
 <h2 id="common-myths-hiit-vs-liss" data-start="6618" data-end="6651"><strong data-start="6621" data-end="6651">Common Myths: HIIT vs LISS</strong></h2>
-<h3 data-start="6653" data-end="6694"><strong data-start="6657" data-end="6694">Myth 1: HIIT is only for athletes</strong></h3>
+<h3 id="myth-1-hiit-is-only-for-athletes" data-start="6653" data-end="6694"><strong data-start="6657" data-end="6694">Myth 1: HIIT is only for athletes</strong></h3>
 <p data-start="6695" data-end="6785"><strong data-start="6695" data-end="6705">Truth:</strong> With modifications, beginners can start with basic intervals at their own pace.</p>
 
-<h3 data-start="6787" data-end="6831"><strong data-start="6791" data-end="6831">Myth 2: LISS is useless for fat loss</strong></h3>
+<h3 id="myth-2-liss-is-useless-for-fat-loss" data-start="6787" data-end="6831"><strong data-start="6791" data-end="6831">Myth 2: LISS is useless for fat loss</strong></h3>
 <p data-start="6832" data-end="6919"><strong data-start="6832" data-end="6842">Truth:</strong> LISS is effective when done consistently and combined with proper nutrition.</p>
 
-<h3 data-start="6921" data-end="6969"><strong data-start="6925" data-end="6969">Myth 3: HIIT alone is enough for fitness</strong></h3>
+<h3 id="myth-3-hiit-alone-is-enough-for-fitness" data-start="6921" data-end="6969"><strong data-start="6925" data-end="6969">Myth 3: HIIT alone is enough for fitness</strong></h3>
 <p data-start="6970" data-end="7081"><strong data-start="6970" data-end="6980">Truth:</strong> HIIT is powerful but not a complete solution. Recovery, strength training, and LISS all play a role.</p>
 
 <h2 id="which-one-should-you-choose" data-start="7088" data-end="7123"><strong data-start="7091" data-end="7123">Which One Should YOU Choose?</strong></h2>
 <p data-start="7125" data-end="7303">The best form of cardio is the one you can do consistently. Your choice between HIIT vs LISS should align with your goals, lifestyle, fitness level, and personal preferences.</p>
 
-<h3 data-start="7305" data-end="7328"><strong data-start="7309" data-end="7328">Choose HIIT if:</strong></h3>
+<h3 id="choose-hiit-if" data-start="7305" data-end="7328"><strong data-start="7309" data-end="7328">Choose HIIT if:</strong></h3>
 <ul data-start="7329" data-end="7447">
  	<li data-start="7329" data-end="7366">
 <p data-start="7331" data-end="7366">You want rapid results in less time</p>
@@ -668,7 +674,7 @@
 <p data-start="7414" data-end="7447">You have limited time to work out</p>
 </li>
 </ul>
-<h3 data-start="7449" data-end="7472"><strong data-start="7453" data-end="7472">Choose LISS if:</strong></h3>
+<h3 id="choose-liss-if" data-start="7449" data-end="7472"><strong data-start="7453" data-end="7472">Choose LISS if:</strong></h3>
 <ul data-start="7473" data-end="7627">
  	<li data-start="7473" data-end="7526">
 <p data-start="7475" data-end="7526">You’re starting out or prefer low-impact activities</p>
@@ -795,12 +801,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -827,24 +851,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -852,11 +858,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -1015,6 +1021,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

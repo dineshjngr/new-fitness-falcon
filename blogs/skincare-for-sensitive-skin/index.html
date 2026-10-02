@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,35 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/beauty/">Beauty</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Skincare for Sensitive Skin: What to Use...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-sensitive-skin">What Is Sensitive Skin?</a></li>
+<li><a href="#sensitive-skin-symptoms">Sensitive Skin Symptoms</a></li>
+<li><a href="#causes-of-sensitive-skin">Causes of Sensitive Skin</a></li>
+<li><a href="#sensitive-skin-vs-allergic-skin">Sensitive Skin vs Allergic Skin</a></li>
+<li><a href="#how-to-take-care-of-sensitive-skin">How to Take Care of Sensitive Skin</a></li>
+<li><a href="#what-to-avoid-in-sensitive-skin-care">What to Avoid in Sensitive Skin Care</a></li>
+<li><a href="#how-to-treat-sensitive-skin-dos-and-donts">How to Treat Sensitive Skin: Dos and Don’ts</a></li>
+<li><a href="#natural-remedies-for-sensitive-skin">Natural Remedies for Sensitive Skin</a></li>
+<li><a href="#skincare-routine-example-for-sensitive-skin">Skincare Routine Example for Sensitive Skin</a></li>
+<li><a href="#sensitive-skin-in-different-seasons">Sensitive Skin in Different Seasons</a></li>
+<li><a href="#when-to-see-a-dermatologist">When to See a Dermatologist</a></li>
+<li><a href="#product-labels-to-look-for">Product Labels to Look For</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/beauty/" class="category-badge">Beauty</a>
@@ -367,18 +388,15 @@
   <img src="/assets/images/sensitive-skin-care.jpg" alt="sensitive skin care" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="373" data-end="983">Navigating a proper sensitive skin care routine can be overwhelming with countless skincare products on the market promising miracles. For individuals with sensitive skin, even the most basic ingredients may trigger irritation, redness, or breakouts. While some people are born with sensitive skin, others may develop it due to environmental factors, <a href="/blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/" target="_blank" rel="noopener">skincare habits</a>, or underlying health conditions. Either way, the key to managing sensitive skin lies in understanding its unique needs and adopting a routine that is gentle, non-irritating, and supportive of the skin barrier.</p>
 <p data-start="985" data-end="1389">This comprehensive guide is designed to help you understand what sensitive skin really is, how to identify it, what causes it, and most importantly, what products and ingredients are best suited or harmful to it. Whether you're dealing with occasional flare-ups or chronic discomfort, this blog will walk you through the do’s and don’ts to create a personalized and effective sensitive skin care routine.</p>
 
-<h3 data-start="1396" data-end="1422">What Is Sensitive Skin?</h3>
+<h3 id="what-is-sensitive-skin" data-start="1396" data-end="1422">What Is Sensitive Skin?</h3>
 <p data-start="1424" data-end="1705">Sensitive skin is not a medical diagnosis, but a term used to describe skin that is more reactive than usual. People with sensitive skin often experience sensations like burning, stinging, tightness, or redness especially when exposed to certain products or environmental triggers.</p>
 
-<h3 data-start="1707" data-end="1733">Sensitive Skin Symptoms</h3>
+<h3 id="sensitive-skin-symptoms" data-start="1707" data-end="1733">Sensitive Skin Symptoms</h3>
 <p data-start="1735" data-end="1842">Recognizing the symptoms of sensitive skin is the first step toward appropriate care. Common signs include:</p>
 
 <ul data-start="1844" data-end="2042">
@@ -403,7 +421,7 @@
 </ul>
 <p data-start="2044" data-end="2172">These symptoms can vary from mild to severe and often worsen due to triggers like weather changes, stress, or harsh ingredients.</p>
 
-<h3 data-start="2179" data-end="2206">Causes of Sensitive Skin</h3>
+<h3 id="causes-of-sensitive-skin" data-start="2179" data-end="2206">Causes of Sensitive Skin</h3>
 <p data-start="2208" data-end="2322">Understanding the underlying causes of sensitive skin can help you avoid flare-ups. Common contributors include:</p>
 
 <ol data-start="2324" data-end="2962">
@@ -426,7 +444,7 @@
 <p data-start="2869" data-end="2962"><strong data-start="2869" data-end="2889">Over-exfoliation</strong>: Frequent use of scrubs or acids can disrupt the skin’s natural balance.</p>
 </li>
 </ol>
-<h3 data-start="2969" data-end="3003">Sensitive Skin vs Allergic Skin</h3>
+<h3 id="sensitive-skin-vs-allergic-skin" data-start="2969" data-end="3003">Sensitive Skin vs Allergic Skin</h3>
 <p data-start="3005" data-end="3164">It’s important to differentiate between <em data-start="3045" data-end="3078">sensitive skin vs allergic skin</em>. While both may show similar reactions like redness and itching, their causes differ.</p>
 
 <div class="_tableContainer_80l1q_1">
@@ -466,44 +484,44 @@
 </div>
 <p data-start="3613" data-end="3782">If you're unsure whether your skin issues stem from sensitivity or an allergy, a dermatologist or allergist can perform a patch test to help identify specific allergens.</p>
 
-<h3 data-start="3789" data-end="3826">How to Take Care of Sensitive Skin</h3>
+<h3 id="how-to-take-care-of-sensitive-skin" data-start="3789" data-end="3826">How to Take Care of Sensitive Skin</h3>
 <p data-start="3828" data-end="3974">An effective sensitive skin care routine involves being gentle, consistent, and protective of your skin. Here's how to care for it step by step:</p>
 
-<h4 data-start="3976" data-end="4020">1. Use a Mild, Fragrance-Free Cleanser</h4>
+<h4 id="1-use-a-mild-fragrance-free-cleanser" data-start="3976" data-end="4020">1. Use a Mild, Fragrance-Free Cleanser</h4>
 <p data-start="4021" data-end="4248">Avoid foaming or gel-based cleansers that strip natural oils. Instead, opt for a creamy, sulfate-free cleanser that maintains your skin’s pH.</p>
 
-<h4 data-start="4250" data-end="4297">2. Moisturize Immediately After Cleansing</h4>
+<h4 id="2-moisturize-immediately-after-cleansing" data-start="4250" data-end="4297">2. Moisturize Immediately After Cleansing</h4>
 <p data-start="4298" data-end="4509">Hydration is critical for maintaining a healthy skin barrier. Look for moisturizers containing ceramides, glycerin, or hyaluronic acid.</p>
 
-<h4 data-start="4511" data-end="4542">3. Protect with SPF Daily</h4>
+<h4 id="3-protect-with-spf-daily" data-start="4511" data-end="4542">3. Protect with SPF Daily</h4>
 <p data-start="4543" data-end="4775">Sun exposure can worsen sensitivity and trigger inflammation. Choose a mineral sunscreen with zinc oxide or titanium dioxide, which are less irritating than chemical filters.</p>
 
-<h4 data-start="4777" data-end="4808">4. Avoid Over-Exfoliating</h4>
+<h4 id="4-avoid-over-exfoliating" data-start="4777" data-end="4808">4. Avoid Over-Exfoliating</h4>
 <p data-start="4809" data-end="4956">Exfoliate only 1–2 times a week with very gentle products. Avoid physical scrubs and choose low-concentration chemical exfoliants like lactic acid.</p>
 
-<h4 data-start="4958" data-end="4997">5. Choose Simple Ingredient Lists</h4>
+<h4 id="5-choose-simple-ingredient-lists" data-start="4958" data-end="4997">5. Choose Simple Ingredient Lists</h4>
 <p data-start="4998" data-end="5116">Products with fewer ingredients are less likely to irritate the skin. Stick to trusted, dermatologist-tested formulas.</p>
 
-<h3 data-start="5123" data-end="5162">What to Avoid in Sensitive Skin Care</h3>
+<h3 id="what-to-avoid-in-sensitive-skin-care" data-start="5123" data-end="5162">What to Avoid in Sensitive Skin Care</h3>
 <p data-start="5164" data-end="5295">Managing sensitive skin treatment isn’t just about what to use—it’s also about knowing what to avoid. Here are some major no-nos:</p>
 
-<h4 data-start="5297" data-end="5338">1. Fragrance and Essential Oils</h4>
+<h4 id="1-fragrance-and-essential-oils" data-start="5297" data-end="5338">1. Fragrance and Essential Oils</h4>
 <p data-start="5339" data-end="5444">Artificial fragrance and even natural essential oils like lavender or citrus can irritate sensitive skin.</p>
 
-<h4 data-start="5446" data-end="5481">2. Alcohol-Based Products</h4>
+<h4 id="2-alcohol-based-products" data-start="5446" data-end="5481">2. Alcohol-Based Products</h4>
 <p data-start="5482" data-end="5574">Alcohols like ethanol and denatured alcohol dry out the skin and can lead to barrier damage.</p>
 
-<h4 data-start="5576" data-end="5616">3. Harsh Exfoliants and Scrubs</h4>
+<h4 id="3-harsh-exfoliants-and-scrubs" data-start="5576" data-end="5616">3. Harsh Exfoliants and Scrubs</h4>
 <p data-start="5617" data-end="5728">Physical exfoliants like walnut shells or microbeads can cause microtears in the skin, increasing inflammation.</p>
 
-<h4 data-start="5730" data-end="5751">4. Sulfates</h4>
+<h4 id="4-sulfates" data-start="5730" data-end="5751">4. Sulfates</h4>
 <p data-start="5752" data-end="5839">Common in foaming cleansers, sulfates can strip away essential oils and worsen dryness.</p>
 
-<h4 data-start="5841" data-end="5875">5. High-Strength Actives</h4>
+<h4 id="5-high-strength-actives" data-start="5841" data-end="5875">5. High-Strength Actives</h4>
 <p data-start="5876" data-end="6012">Ingredients like retinoids or high percentages of acids (AHAs, BHAs) should be used with extreme caution or under professional guidance.</p>
 
-<h3 data-start="6019" data-end="6065">How to Treat Sensitive Skin: Dos and Don’ts</h3>
-<h4 data-start="6067" data-end="6078"><strong data-start="6071" data-end="6077">Do</strong>:</h4>
+<h3 id="how-to-treat-sensitive-skin-dos-and-donts" data-start="6019" data-end="6065">How to Treat Sensitive Skin: Dos and Don’ts</h3>
+<h4 id="do" data-start="6067" data-end="6078"><strong data-start="6071" data-end="6077">Do</strong>:</h4>
 <ul data-start="6079" data-end="6280">
  	<li data-start="6079" data-end="6117">
 <p data-start="6081" data-end="6117">Patch test new products for 48 hours</p>
@@ -521,7 +539,7 @@
 <p data-start="6249" data-end="6280">Opt for hypoallergenic products</p>
 </li>
 </ul>
-<h4 data-start="6282" data-end="6296"><strong data-start="6286" data-end="6295">Don’t</strong>:</h4>
+<h4 id="dont" data-start="6282" data-end="6296"><strong data-start="6286" data-end="6295">Don’t</strong>:</h4>
 <ul data-start="6297" data-end="6437">
  	<li data-start="6297" data-end="6322">
 <p data-start="6299" data-end="6322">Layer too many products</p>
@@ -539,29 +557,29 @@
 <p data-start="6403" data-end="6437">Assume “natural” always means safe</p>
 </li>
 </ul>
-<h3 data-start="6444" data-end="6482">Natural Remedies for Sensitive Skin</h3>
+<h3 id="natural-remedies-for-sensitive-skin" data-start="6444" data-end="6482">Natural Remedies for Sensitive Skin</h3>
 <p data-start="6484" data-end="6658">When considering natural remedies for sensitive skin, always proceed cautiously. While many ingredients are soothing, not all “natural” products are safe for reactive skin.</p>
 
-<h4 data-start="6660" data-end="6686">1. Aloe Vera Gel</h4>
+<h4 id="1-aloe-vera-gel" data-start="6660" data-end="6686">1. Aloe Vera Gel</h4>
 <p data-start="6687" data-end="6825">Known for its cooling and anti-inflammatory effects, aloe vera helps soothe redness and itching. Always use pure, fragrance-free aloe gel.</p>
 
-<h4 data-start="6827" data-end="6857">2. Colloidal Oatmeal</h4>
+<h4 id="2-colloidal-oatmeal" data-start="6827" data-end="6857">2. Colloidal Oatmeal</h4>
 <p data-start="6858" data-end="6980">This ingredient calms inflammation and strengthens the skin barrier. It’s especially effective in masks or soothing baths.</p>
 
-<h4 data-start="6982" data-end="7012">3. Chamomile Extract</h4>
+<h4 id="3-chamomile-extract" data-start="6982" data-end="7012">3. Chamomile Extract</h4>
 <p data-start="7013" data-end="7103">Chamomile has anti-inflammatory and antioxidant properties, ideal for reducing irritation.</p>
 
-<h4 data-start="7105" data-end="7132">4. Cucumber Juice</h4>
+<h4 id="4-cucumber-juice" data-start="7105" data-end="7132">4. Cucumber Juice</h4>
 <p data-start="7133" data-end="7203">Cucumber is hydrating and contains antioxidants that refresh the skin.</p>
 
-<h4 data-start="7205" data-end="7223">5. Honey</h4>
+<h4 id="5-honey" data-start="7205" data-end="7223">5. Honey</h4>
 <p data-start="7224" data-end="7303">Raw honey has antibacterial and healing benefits and is suitable for DIY masks.</p>
 <p data-start="7305" data-end="7411"><strong data-start="7305" data-end="7316">Caution</strong>: Always patch test before trying home remedies and consult a dermatologist for chronic issues.</p>
 
-<h3 data-start="7418" data-end="7464">Skincare Routine Example for Sensitive Skin</h3>
+<h3 id="skincare-routine-example-for-sensitive-skin" data-start="7418" data-end="7464">Skincare Routine Example for Sensitive Skin</h3>
 <p data-start="7466" data-end="7547">Here's a sample daily sensitive skin care routine for both morning and evening:</p>
 
-<h4 data-start="7549" data-end="7570">Morning Routine</h4>
+<h4 id="morning-routine" data-start="7549" data-end="7570">Morning Routine</h4>
 <ul data-start="7571" data-end="7844">
  	<li data-start="7571" data-end="7620">
 <p data-start="7573" data-end="7620"><strong data-start="7573" data-end="7585">Cleanser</strong>: Gentle, fragrance-free cleanser</p>
@@ -579,7 +597,7 @@
 <p data-start="7803" data-end="7844"><strong data-start="7803" data-end="7816">Sunscreen</strong>: Mineral SPF 30 or higher</p>
 </li>
 </ul>
-<h4 data-start="7846" data-end="7865">Night Routine</h4>
+<h4 id="night-routine" data-start="7846" data-end="7865">Night Routine</h4>
 <ul data-start="7866" data-end="8024">
  	<li data-start="7866" data-end="7899">
 <p data-start="7868" data-end="7899"><strong data-start="7868" data-end="7880">Cleanser</strong>: Same as morning</p>
@@ -591,7 +609,7 @@
 <p data-start="7950" data-end="8024"><strong data-start="7950" data-end="7973">Treatment (2x/week)</strong>: Calming mask or mild exfoliation with lactic acid</p>
 </li>
 </ul>
-<h3 data-start="8031" data-end="8069">Sensitive Skin in Different Seasons</h3>
+<h3 id="sensitive-skin-in-different-seasons" data-start="8031" data-end="8069">Sensitive Skin in Different Seasons</h3>
 <ul data-start="8071" data-end="8389">
  	<li data-start="8071" data-end="8158">
 <p data-start="8073" data-end="8158"><strong data-start="8073" data-end="8083">Summer</strong>: Increase hydration and sun protection. Avoid sweating with clogged pores.</p>
@@ -606,7 +624,7 @@
 <p data-start="8323" data-end="8389"><strong data-start="8323" data-end="8338">Spring/Fall</strong>: Adjust products gradually as the weather changes.</p>
 </li>
 </ul>
-<h3 data-start="8396" data-end="8426">When to See a Dermatologist</h3>
+<h3 id="when-to-see-a-dermatologist" data-start="8396" data-end="8426">When to See a Dermatologist</h3>
 <p data-start="8428" data-end="8654">If your sensitive skin doesn’t improve despite gentle care, or if you experience severe symptoms like oozing, bleeding, or persistent rashes, consult a dermatologist. Medical treatment may be needed to address conditions like:</p>
 
 <ul data-start="8656" data-end="8717">
@@ -623,7 +641,7 @@
 <p data-start="8698" data-end="8717"><a href="https://my.clevelandclinic.org/health/diseases/21458-perioral-dermatitis" target="_blank" rel="noopener">Perioral dermatitis</a></p>
 </li>
 </ul>
-<h3 data-start="8724" data-end="8753">Product Labels to Look For</h3>
+<h3 id="product-labels-to-look-for" data-start="8724" data-end="8753">Product Labels to Look For</h3>
 <p data-start="8755" data-end="8779">Choose products labeled:</p>
 
 <ul data-start="8780" data-end="8885">
@@ -645,7 +663,7 @@
 </ul>
 <p data-start="8887" data-end="8984">Avoid products that list alcohol, menthol, fragrance, or citrus oils in the top five ingredients.</p>
 
-<h4 data-start="9708" data-end="9725">Final Thoughts</h4>
+<h4 id="final-thoughts" data-start="9708" data-end="9725">Final Thoughts</h4>
 <p data-start="9727" data-end="10146">Managing sensitive skin can be a journey of trial and error, but with the right knowledge and care, it’s entirely possible to maintain healthy, calm, and glowing skin. Stick to a consistent sensitive skin care routine, be mindful of product labels, and always listen to your skin’s signals. Whether you're using natural remedies or dermatologically-approved solutions, the best care is gentle, simple, and protective.</p>
                     </div>
 
@@ -759,12 +777,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -791,24 +827,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -816,11 +834,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -979,6 +997,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,29 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/beauty/">Beauty</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Top 10 Ingredients to Avoid If You Have...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#understanding-oily-skin">Understanding Oily Skin</a><ol><li><a href="#top-10-ingredients-to-avoid-if-you-have-oily-skin">Top 10 Ingredients to Avoid If You Have Oily Skin</a></li>
+<li><a href="#how-to-get-rid-of-oily-skin-daily-routine">How to Get Rid of Oily Skin: Daily Routine</a></li>
+<li><a href="#natural-remedies-for-oily-skin">Natural Remedies for Oily Skin</a></li>
+<li><a href="#skincare-tips-for-oily-skin">Skincare Tips for Oily Skin</a></li>
+<li><a href="#what-causes-oily-skin-in-adults">What Causes Oily Skin in Adults?</a></li>
+<li><a href="#how-to-treat-oily-skin-naturally">How to Treat Oily Skin Naturally</a></li></ol></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/beauty/" class="category-badge">Beauty</a>
@@ -367,9 +382,6 @@
   <img src="/assets/images/oily-skincare.jpg" alt="oily skincare" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="452" data-end="929">Finding the right oily skin care routine can be a challenge. Oily skin tends to produce excess sebum, leading to clogged pores, blackheads, whiteheads, and frequent breakouts. While the market is flooded with skincare products promising to tackle oily skin, not all ingredients are beneficial. In fact, some can aggravate oiliness, disrupt the skin barrier, or trigger acne and inflammation. That’s why it's essential to be informed about what goes into your skincare products.</p>
@@ -377,7 +389,7 @@
 <p data-start="1395" data-end="1730">In addition to identifying these culprits, we'll also explore <a href="/blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/" target="_blank" rel="noopener">helpful skincare tips</a>, natural remedies, and the underlying causes of oily skin. Whether you’re dealing with adult-onset oiliness or have been battling oily skin since your teens, knowing what ingredients to avoid is a key step toward achieving a healthy, matte complexion.</p>
 
 <h2 id="understanding-oily-skin" data-start="1737" data-end="1763">Understanding Oily Skin</h2>
-<h4 data-start="1765" data-end="1803">What Causes Oily Skin on the Face?</h4>
+<h4 id="what-causes-oily-skin-on-the-face" data-start="1765" data-end="1803">What Causes Oily Skin on the Face?</h4>
 <p data-start="1805" data-end="2051">The sebaceous glands under your skin’s surface produce sebum—an oily substance that helps protect and hydrate the skin. However, when these glands become overactive, they produce more oil than necessary. Factors contributing to oily skin include:</p>
 
 <ul data-start="2053" data-end="2493">
@@ -397,11 +409,11 @@
 <p data-start="2389" data-end="2493"><strong data-start="2389" data-end="2411">Incorrect skincare</strong>: Using harsh products can strip natural oils, prompting the skin to produce more.</p>
 </li>
 </ul>
-<h4 data-start="2495" data-end="2529">Oily Skin vs. Combination Skin</h4>
+<h4 id="oily-skin-vs-combination-skin" data-start="2495" data-end="2529">Oily Skin vs. Combination Skin</h4>
 <p data-start="2531" data-end="2854">Oily skin is characterized by a consistently shiny or greasy appearance across the entire face, especially the T-zone (forehead, nose, and chin). In contrast, combination skin typically has oiliness in the T-zone but dryness on the cheeks or jawline. Understanding the difference is key to selecting the right skincare.</p>
 
-<h3 data-start="2861" data-end="2913">Top 10 Ingredients to Avoid If You Have Oily Skin</h3>
-<h4 data-start="2915" data-end="2959">1. Alcohol (Denatured or SD Alcohol)</h4>
+<h3 id="top-10-ingredients-to-avoid-if-you-have-oily-skin" data-start="2861" data-end="2913">Top 10 Ingredients to Avoid If You Have Oily Skin</h3>
+<h4 id="1-alcohol-denatured-or-sd-alcohol" data-start="2915" data-end="2959">1. Alcohol (Denatured or SD Alcohol)</h4>
 <p data-start="2961" data-end="3140">While alcohol-based products may offer a temporary matte effect, they strip the skin of its natural moisture barrier. This causes the skin to overcompensate by producing more oil.</p>
 <p data-start="3142" data-end="3161"><strong data-start="3142" data-end="3159">Why to avoid:</strong></p>
 
@@ -418,7 +430,7 @@
 </ul>
 <p data-start="3264" data-end="3354"><strong data-start="3264" data-end="3280">Alternative:</strong> Look for witch hazel or green tea extract as gentler astringents.</p>
 
-<h4 data-start="3356" data-end="3378">2. Coconut Oil</h4>
+<h4 id="2-coconut-oil" data-start="3356" data-end="3378">2. Coconut Oil</h4>
 <p data-start="3380" data-end="3473">Although coconut oil has antibacterial benefits, it's comedogenic, meaning it can clog pores.</p>
 <p data-start="3475" data-end="3494"><strong data-start="3475" data-end="3492">Why to avoid:</strong></p>
 
@@ -435,7 +447,7 @@
 </ul>
 <p data-start="3603" data-end="3713"><strong data-start="3603" data-end="3619">Alternative:</strong> Use jojoba oil or rosehip oil, which mimic natural sebum and regulate oil production.</p>
 
-<h4 data-start="3715" data-end="3769">3. Silicones (Dimethicone, Cyclopentasiloxane)</h4>
+<h4 id="3-silicones-dimethicone-cyclopentasiloxane" data-start="3715" data-end="3769">3. Silicones (Dimethicone, Cyclopentasiloxane)</h4>
 <p data-start="3771" data-end="3926">Silicones are commonly used in primers and moisturizers to create a smooth texture, but they form a film on the skin that can trap oil, dirt, and bacteria.</p>
 <p data-start="3928" data-end="3947"><strong data-start="3928" data-end="3945">Why to avoid:</strong></p>
 
@@ -452,7 +464,7 @@
 </ul>
 <p data-start="4034" data-end="4119"><strong data-start="4034" data-end="4050">Alternative:</strong> Opt for <strong data-start="4059" data-end="4085">gel-based moisturizers</strong> with hyaluronic acid or glycerin.</p>
 
-<h4 data-start="4121" data-end="4158">4. Petrolatum and Mineral Oil</h4>
+<h4 id="4-petrolatum-and-mineral-oil" data-start="4121" data-end="4158">4. Petrolatum and Mineral Oil</h4>
 <p data-start="4160" data-end="4274">These heavy occlusives create a thick barrier that traps moisture—and unfortunately, sebum and impurities as well.</p>
 <p data-start="4276" data-end="4295"><strong data-start="4276" data-end="4293">Why to avoid:</strong></p>
 
@@ -469,7 +481,7 @@
 </ul>
 <p data-start="4362" data-end="4449"><strong data-start="4362" data-end="4378">Alternative:</strong> Try<strong> squalane or aloe vera gel </strong>for hydration without heaviness.</p>
 
-<h4 data-start="4451" data-end="4469">5. Lanolin</h4>
+<h4 id="5-lanolin" data-start="4451" data-end="4469">5. Lanolin</h4>
 <p data-start="4471" data-end="4551">Lanolin is derived from sheep’s wool and is highly moisturizing but very greasy.</p>
 <p data-start="4553" data-end="4572"><strong data-start="4553" data-end="4570">Why to avoid:</strong></p>
 
@@ -486,7 +498,7 @@
 </ul>
 <p data-start="4645" data-end="4732"><strong data-start="4645" data-end="4661">Alternative:</strong> Choose lightweight emollients like panthenol or allantoin.</p>
 
-<h4 data-start="4734" data-end="4772">6. Sodium Lauryl Sulfate (SLS)</h4>
+<h4 id="6-sodium-lauryl-sulfate-sls" data-start="4734" data-end="4772">6. Sodium Lauryl Sulfate (SLS)</h4>
 <p data-start="4774" data-end="4892">A harsh cleansing agent found in many face washes, SLS can strip too much oil, disrupting your skin’s natural balance.</p>
 <p data-start="4894" data-end="4913"><strong data-start="4894" data-end="4911">Why to avoid:</strong></p>
 
@@ -503,7 +515,7 @@
 </ul>
 <p data-start="5025" data-end="5127"><strong data-start="5025" data-end="5041">Alternative:</strong> Use <strong data-start="5046" data-end="5072">sulfate-free cleansers</strong> with mild surfactants like <a href="https://www.clinikally.com/blogs/news/cocamidopropyl-betaine-for-skin?srsltid=AfmBOooNbVLG7HZv3K9vNiAgDFGD83VvCOlKlUXUjU68qQ_jAmX2uVS1" target="_blank" rel="noopener">cocamidopropyl betaine</a>.</p>
 
-<h4 data-start="5129" data-end="5160">7. Fragrance and Parfum</h4>
+<h4 id="7-fragrance-and-parfum" data-start="5129" data-end="5160">7. Fragrance and Parfum</h4>
 <p data-start="5162" data-end="5267">Synthetic fragrances are common irritants that can lead to breakouts, especially in oily, sensitive skin.</p>
 <p data-start="5269" data-end="5288"><strong data-start="5269" data-end="5286">Why to avoid:</strong></p>
 
@@ -520,7 +532,7 @@
 </ul>
 <p data-start="5366" data-end="5477"><strong data-start="5366" data-end="5382">Alternative:</strong> Go for <strong data-start="5390" data-end="5408">fragrance-free</strong> or products with natural essential oils in small concentrations.</p>
 
-<h4 data-start="5479" data-end="5503">8. Myristic Acid</h4>
+<h4 id="8-myristic-acid" data-start="5479" data-end="5503">8. Myristic Acid</h4>
 <p data-start="5505" data-end="5615">This fatty acid, found in many foaming cleansers, contributes to excessive drying and can lead to oil rebound.</p>
 <p data-start="5617" data-end="5636"><strong data-start="5617" data-end="5634">Why to avoid:</strong></p>
 
@@ -537,7 +549,7 @@
 </ul>
 <p data-start="5725" data-end="5824"><strong data-start="5725" data-end="5741">Alternative:</strong> Look for non-foaming, creamy cleansers formulated for oily or acne-prone skin.</p>
 
-<h4 data-start="5826" data-end="5856">9. Isopropyl Myristate</h4>
+<h4 id="9-isopropyl-myristate" data-start="5826" data-end="5856">9. Isopropyl Myristate</h4>
 <p data-start="5858" data-end="5947">Often used for a silky feel in lotions and makeup, this ingredient is highly comedogenic.</p>
 <p data-start="5949" data-end="5968"><strong data-start="5949" data-end="5966">Why to avoid:</strong></p>
 
@@ -554,7 +566,7 @@
 </ul>
 <p data-start="6030" data-end="6133"><strong data-start="6030" data-end="6046">Alternative:</strong> Use non-comedogenic moisturizers specifically labeled for oily or <a href="/blogs/acne-101-understanding-types-causes-and-effective-treatments/" target="_blank" rel="noopener">acne-prone skin</a>.</p>
 
-<h4 data-start="6135" data-end="6154">10. Beeswax</h4>
+<h4 id="10-beeswax" data-start="6135" data-end="6154">10. Beeswax</h4>
 <p data-start="6156" data-end="6250">While natural, beeswax can be too occlusive for oily skin, trapping sebum beneath the surface.</p>
 <p data-start="6252" data-end="6271"><strong data-start="6252" data-end="6269">Why to avoid:</strong></p>
 
@@ -571,43 +583,43 @@
 </ul>
 <p data-start="6356" data-end="6437"><strong data-start="6356" data-end="6372">Alternative:</strong> Use lighter film-formers like xanthan gum or silica.</p>
 
-<h3 data-start="6444" data-end="6489">How to Get Rid of Oily Skin: Daily Routine</h3>
+<h3 id="how-to-get-rid-of-oily-skin-daily-routine" data-start="6444" data-end="6489">How to Get Rid of Oily Skin: Daily Routine</h3>
 <p data-start="6491" data-end="6574">To effectively manage oily skin, follow this simple yet effective skincare routine:</p>
 
-<h4 data-start="6576" data-end="6606">1. Cleanse Twice Daily</h4>
+<h4 id="1-cleanse-twice-daily" data-start="6576" data-end="6606">1. Cleanse Twice Daily</h4>
 <p data-start="6608" data-end="6711">Use a gentle, sulfate-free cleanser to remove oil, dirt, and impurities without stripping the skin.</p>
 
-<h4 data-start="6713" data-end="6743">2. <strong data-start="6720" data-end="6743">Tone (Alcohol-Free)</strong></h4>
+<h4 id="2-tone-alcohol-free" data-start="6713" data-end="6743">2. <strong data-start="6720" data-end="6743">Tone (Alcohol-Free)</strong></h4>
 <p data-start="6745" data-end="6855">Choose toners with niacinamide, witch hazel, or green tea to balance oil levels and tighten pores.</p>
 
-<h4 data-start="6857" data-end="6905">3. Moisturize (Yes, Even If You're Oily)</h4>
+<h4 id="3-moisturize-yes-even-if-youre-oily" data-start="6857" data-end="6905">3. Moisturize (Yes, Even If You're Oily)</h4>
 <p data-start="6907" data-end="7035">Use a lightweight, oil-free moisturizer that hydrates without clogging pores. Look for hyaluronic acid or ceramides.</p>
 
-<h4 data-start="7037" data-end="7074">4. Exfoliate 2–3 Times a Week</h4>
+<h4 id="4-exfoliate-23-times-a-week" data-start="7037" data-end="7074">4. Exfoliate 2–3 Times a Week</h4>
 <p data-start="7076" data-end="7145">Use <strong data-start="7080" data-end="7104">salicylic acid (BHA)</strong> to dissolve excess oil and unclog pores.</p>
 
-<h4 data-start="7147" data-end="7172">5. Sun Protection</h4>
+<h4 id="5-sun-protection" data-start="7147" data-end="7172">5. Sun Protection</h4>
 <p data-start="7174" data-end="7278">Use gel-based sunscreens with zinc oxide or titanium dioxide—non-comedogenic and mattifying.</p>
 
-<h3 data-start="7285" data-end="7318">Natural Remedies for Oily Skin</h3>
+<h3 id="natural-remedies-for-oily-skin" data-start="7285" data-end="7318">Natural Remedies for Oily Skin</h3>
 <p data-start="7320" data-end="7389">Here are some effective, research-backed home remedies for oily skin:</p>
 
-<h4 data-start="7391" data-end="7432">1. Multani Mitti (Fuller's Earth)</h4>
+<h4 id="1-multani-mitti-fullers-earth" data-start="7391" data-end="7432">1. Multani Mitti (Fuller's Earth)</h4>
 <p data-start="7434" data-end="7512">Absorbs excess oil and deep cleans pores. Use as a face pack 1–2 times a week.</p>
 
-<h4 data-start="7514" data-end="7538">2. Aloe Vera Gel</h4>
+<h4 id="2-aloe-vera-gel" data-start="7514" data-end="7538">2. Aloe Vera Gel</h4>
 <p data-start="7540" data-end="7594">Has anti-inflammatory and sebum-regulating properties.</p>
 
-<h4 data-start="7596" data-end="7618">3. Tomato Pulp</h4>
+<h4 id="3-tomato-pulp" data-start="7596" data-end="7618">3. Tomato Pulp</h4>
 <p data-start="7620" data-end="7676">Rich in lycopene, it helps shrink pores and balance oil.</p>
 
-<h4 data-start="7678" data-end="7698">4. Green Tea</h4>
+<h4 id="4-green-tea" data-start="7678" data-end="7698">4. Green Tea</h4>
 <p data-start="7700" data-end="7775">Antioxidant-rich; applying cooled green tea bags can reduce oil production.</p>
 
-<h4 data-start="7777" data-end="7808">5. Honey and Lemon Mask</h4>
+<h4 id="5-honey-and-lemon-mask" data-start="7777" data-end="7808">5. Honey and Lemon Mask</h4>
 <p data-start="7810" data-end="7865">Honey is antibacterial; lemon controls oil. Use weekly.</p>
 
-<h3 data-start="7872" data-end="7902">Skincare Tips for Oily Skin</h3>
+<h3 id="skincare-tips-for-oily-skin" data-start="7872" data-end="7902">Skincare Tips for Oily Skin</h3>
 <ul data-start="7904" data-end="8180">
  	<li data-start="7904" data-end="7948">
 <p data-start="7906" data-end="7948">Avoid over-washing: Twice a day is enough.</p>
@@ -625,7 +637,7 @@
 <p data-start="8122" data-end="8180">Stay hydrated: Water helps regulate oil levels internally.</p>
 </li>
 </ul>
-<h3 data-start="8187" data-end="8222">What Causes Oily Skin in Adults?</h3>
+<h3 id="what-causes-oily-skin-in-adults" data-start="8187" data-end="8222">What Causes Oily Skin in Adults?</h3>
 <p data-start="8224" data-end="8303">While oily skin is common during adolescence, many adults experience it due to:</p>
 
 <ul data-start="8305" data-end="8471">
@@ -645,7 +657,7 @@
 <p data-start="8438" data-end="8471">Underlying medical conditions</p>
 </li>
 </ul>
-<h3 data-start="8478" data-end="8513">How to Treat Oily Skin Naturally</h3>
+<h3 id="how-to-treat-oily-skin-naturally" data-start="8478" data-end="8513">How to Treat Oily Skin Naturally</h3>
 <p data-start="8515" data-end="8576">In addition to home remedies and the right product selection:</p>
 
 <ul data-start="8578" data-end="8895">
@@ -665,7 +677,7 @@
 <p data-start="8832" data-end="8895">Try facial yoga to improve circulation and sebum regulation</p>
 </li>
 </ul>
-<h4 data-start="8902" data-end="8919">Final Thoughts</h4>
+<h4 id="final-thoughts" data-start="8902" data-end="8919">Final Thoughts</h4>
 <p data-start="8921" data-end="9256">Oily skin requires a consistent and informed skincare approach. While many products may seem helpful at first glance, they could contain ingredients that worsen oiliness, clog pores, or trigger breakouts. By avoiding the 10 ingredients listed above, you’ll be better equipped to manage oily skin and maintain a clear, matte complexion.</p>
                     </div>
 
@@ -779,12 +791,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -811,24 +841,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -836,11 +848,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -999,6 +1011,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

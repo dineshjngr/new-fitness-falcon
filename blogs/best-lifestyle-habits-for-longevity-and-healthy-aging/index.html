@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,37 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/fitness/">Fitness</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Best Lifestyle Habits for Longevity and...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-longevity-and-healthy-aging">What is longevity and healthy aging?</a></li>
+<li><a href="#1-follow-a-longevity-focused-diet">1. Follow a longevity-focused diet</a><ol><li><a href="#practical-nutrition-principles-for-healthy-aging">Practical nutrition principles for healthy aging</a></li></ol></li>
+<li><a href="#2-move-your-body-daily">2. Move your body daily</a><ol><li><a href="#accessible-activities-that-support-longevity">Accessible activities that support longevity</a></li></ol></li>
+<li><a href="#3-strength-training-protects-independence">3. Strength training protects independence</a><ol><li><a href="#beginner-strength-exercises">Beginner strength exercises</a></li></ol></li>
+<li><a href="#4-prioritize-sleep">4. Prioritize sleep</a><ol><li><a href="#sleep-habits-that-support-longevity">Sleep habits that support longevity</a></li></ol></li>
+<li><a href="#5-avoid-smoking-completely">5. Avoid smoking completely</a></li>
+<li><a href="#6-limit-alcohol-intake">6. Limit alcohol intake</a></li>
+<li><a href="#7-maintain-strong-social-relationships">7. Maintain strong social relationships</a></li>
+<li><a href="#8-manage-chronic-stress">8. Manage chronic stress</a><ol><li><a href="#simple-stress-management-habits">Simple stress-management habits</a></li></ol></li>
+<li><a href="#9-track-key-health-indicators">9. Track key health indicators</a><ol><li><a href="#important-metrics-to-monitor">Important metrics to monitor</a></li></ol></li>
+<li><a href="#competitor-comparison-table">Competitor comparison table</a></li>
+<li><a href="#weekly-longevity-habit-checklist">Weekly longevity habit checklist</a></li>
+<li><a href="#final-thoughts">Final thoughts</a></li>
+<li><a href="#sources">Sources</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/fitness/" class="category-badge">Fitness</a>
@@ -366,30 +389,6 @@
                     <figure class="falcon-featured-image-wrapper">
   <img src="/assets/images/Best-Lifestyle-Habits-for.png" alt="Best Lifestyle Habits for" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
-
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#what-is-longevity-and-healthy-aging">What is longevity and healthy aging?</a></li>
-    <li><a href="#1-follow-a-longevity-focused-diet">1. Follow a longevity-focused diet</a></li>
-    <li><a href="#2-move-your-body-daily">2. Move your body daily</a></li>
-    <li><a href="#3-strength-training-protects-independence">3. Strength training protects independence</a></li>
-    <li><a href="#4-prioritize-sleep">4. Prioritize sleep</a></li>
-    <li><a href="#5-avoid-smoking-completely">5. Avoid smoking completely</a></li>
-    <li><a href="#6-limit-alcohol-intake">6. Limit alcohol intake</a></li>
-    <li><a href="#7-maintain-strong-social-relationships">7. Maintain strong social relationships</a></li>
-    <li><a href="#8-manage-chronic-stress">8. Manage chronic stress</a></li>
-    <li><a href="#9-track-key-health-indicators">9. Track key health indicators</a></li>
-    <li><a href="#competitor-comparison-table">Competitor comparison table</a></li>
-    <li><a href="#weekly-longevity-habit-checklist">Weekly longevity habit checklist</a></li>
-    <li><a href="#final-thoughts">Final thoughts</a></li>
-    <li><a href="#sources">Sources</a></li>
-  </ol>
-</nav>
 
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
@@ -413,7 +412,7 @@ The key insight is simple. Consistency matters more than perfection.
 One of the most well-studied eating patterns for longevity is the Mediterranean diet. It emphasizes vegetables,
 fruits, whole grains, legumes, nuts, olive oil, and fish. Large clinical studies associate this pattern with a
 lower risk of heart disease and early death
-<h3>Practical nutrition principles for healthy aging</h3>
+<h3 id="practical-nutrition-principles-for-healthy-aging">Practical nutrition principles for healthy aging</h3>
 <ul>
  	<li>Eat mostly whole and minimally processed foods</li>
  	<li>Increase fiber intake from plants</li>
@@ -431,7 +430,7 @@ Regular physical activity is strongly associated with long-term health. The Worl
 at least 150 minutes of moderate physical activity per week
 
 Research also indicates that even moderate activities such as brisk walking are linked with lower mortality risk
-<h3>Accessible activities that support longevity</h3>
+<h3 id="accessible-activities-that-support-longevity">Accessible activities that support longevity</h3>
 <ul>
  	<li>Brisk walking</li>
  	<li>Cycling</li>
@@ -444,7 +443,7 @@ Research also indicates that even moderate activities such as brisk walking are 
 As people age, muscle mass and strength tend to decline. Strength training helps slow this process and supports
 mobility and balance. The National Institute on Aging recommends muscle-strengthening activities at least two
 days per week
-<h3>Beginner strength exercises</h3>
+<h3 id="beginner-strength-exercises">Beginner strength exercises</h3>
 <ul>
  	<li>Chair squats</li>
  	<li>Wall push-ups</li>
@@ -459,7 +458,7 @@ Chronic sleep deprivation is linked with increased risk of obesity, heart diseas
 conditions
 
 Most adults need 7 to 9 hours of sleep per night for optimal health
-<h3>Sleep habits that support longevity</h3>
+<h3 id="sleep-habits-that-support-longevity">Sleep habits that support longevity</h3>
 <ul>
  	<li>Maintain a regular sleep schedule</li>
  	<li>Reduce screen exposure before bedtime</li>
@@ -496,7 +495,7 @@ Ways to support social health
 </section><section id="stress">
 <h2 id="8-manage-chronic-stress">8. Manage chronic stress</h2>
 Chronic stress can contribute to inflammation, hormonal changes, and sleep disruption
-<h3>Simple stress-management habits</h3>
+<h3 id="simple-stress-management-habits">Simple stress-management habits</h3>
 <ul>
  	<li>Slow breathing for a few minutes daily</li>
  	<li>Short outdoor walks</li>
@@ -506,7 +505,7 @@ Chronic stress can contribute to inflammation, hormonal changes, and sleep disru
 <h2 id="9-track-key-health-indicators">9. Track key health indicators</h2>
 Preventive monitoring can help detect risk factors early. The American Heart Association highlights lifestyle and
 health factors tied to cardiovascular health
-<h3>Important metrics to monitor</h3>
+<h3 id="important-metrics-to-monitor">Important metrics to monitor</h3>
 <ul>
  	<li>Blood pressure</li>
  	<li>Blood glucose levels</li>
@@ -680,6 +679,20 @@ If you have a health condition or take medications, speak with a qualified clini
   <h3 class="falcon-section-heading">Related Articles</h3>
   <div class="row">
     <div class="col-md-4 mb-4">
+  <article class="falcon-related-card post-card" data-slug="10-minute-walk-after-meals-vs-30-minute-walk">
+    <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-card-media" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+      <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="Diagram comparing three 10-minute walks after meals with one 30-minute walking session" class="post-card-thumb" loading="lazy" />
+    </a>
+    <div class="post-card-body">
+      <a href="/category/fitness/" class="category-badge category-badge-sm">Fitness</a>
+      <h4 class="post-card-title"><a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a></h4>
+      <div class="post-card-meta">
+        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 8 min read</span>
+      </div>
+    </div>
+  </article>
+</div><div class="col-md-4 mb-4">
   <article class="falcon-related-card post-card" data-slug="top-fitness-tracker-brands-available-in-india">
     <a href="/blogs/top-fitness-tracker-brands-available-in-india/" class="falcon-card-media" aria-label="Top Fitness Tracker Brands Available in India">
       <img src="/assets/images/Best-Fitness-Tracker-scaled.jpg" alt="Top Fitness Tracker Brands Available in India" class="post-card-thumb" loading="lazy" />
@@ -707,32 +720,36 @@ If you have a health condition or take medications, speak with a qualified clini
       </div>
     </div>
   </article>
-</div><div class="col-md-4 mb-4">
-  <article class="falcon-related-card post-card" data-slug="running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively">
-    <a href="/blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/" class="falcon-card-media" aria-label="Running Affects Belly Fat and Metabolism: How Running Burns Fat Effectively">
-      <img src="/assets/images/Running-Affects-Belly-Fat-Metabolism-scaled.jpg" alt="Running Affects Belly Fat &amp; Metabolism" class="post-card-thumb" loading="lazy" />
-    </a>
-    <div class="post-card-body">
-      <a href="/category/fitness/" class="category-badge category-badge-sm">Fitness</a>
-      <h4 class="post-card-title"><a href="/blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/">Running Affects Belly Fat and Metabolism: How Running Burns Fat Effectively</a></h4>
-      <div class="post-card-meta">
-        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> February 03, 2026</span>
-        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 6 min read</span>
-      </div>
-    </div>
-  </article>
 </div>
   </div>
 </section>
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -759,24 +776,6 @@ If you have a health condition or take medications, speak with a qualified clini
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -784,11 +783,11 @@ If you have a health condition or take medications, speak with a qualified clini
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -947,6 +946,6 @@ If you have a health condition or take medications, speak with a qualified clini
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

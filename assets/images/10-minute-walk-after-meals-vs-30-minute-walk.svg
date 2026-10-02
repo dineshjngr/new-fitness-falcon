@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Three short walks and one longer walk</title>
+  <desc id="desc">Three ten-minute walking sessions after meals compared with one thirty-minute session, with a reminder to choose a sustainable schedule.</desc>
+  <rect width="1200" height="675" fill="#f1f7f4"/>
+  <text x="72" y="83" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#47755c">THE FITNESS FALCON</text>
+  <text x="72" y="158" font-family="Arial,sans-serif" font-size="45" font-weight="700" fill="#17372a">Short walks. A repeatable routine.</text>
+  <text x="72" y="208" font-family="Arial,sans-serif" font-size="24" fill="#586c60">Two ways to make room for 30 minutes of walking.</text>
+  <rect x="72" y="256" width="668" height="273" rx="26" fill="#ffffff"/>
+  <text x="107" y="305" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17372a">AFTER MEALS</text>
+  <path d="M154 371h460" stroke="#cedfd3" stroke-width="5" stroke-dasharray="7 9"/>
+  <g fill="#edf5ef" stroke="#648b71" stroke-width="3"><circle cx="190" cy="381" r="51"/><circle cx="406" cy="381" r="51"/><circle cx="622" cy="381" r="51"/></g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#234b37" font-size="36" font-weight="700"><text x="190" y="395">10</text><text x="406" y="395">10</text><text x="622" y="395">10</text></g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#586c60" font-size="20"><text x="190" y="463">Breakfast</text><text x="406" y="463">Lunch</text><text x="622" y="463">Dinner</text></g>
+  <rect x="772" y="256" width="356" height="273" rx="26" fill="#234b37"/>
+  <text x="807" y="305" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#d9e9de">ONE LONGER WALK</text>
+  <circle cx="950" cy="381" r="58" fill="none" stroke="#b7d4c1" stroke-width="3"/>
+  <text x="950" y="398" font-family="Arial,sans-serif" text-anchor="middle" font-size="46" font-weight="700" fill="#ffffff">30</text>
+  <text x="950" y="463" font-family="Arial,sans-serif" text-anchor="middle" font-size="20" fill="#d9e9de">When it fits your day</text>
+  <text x="72" y="588" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17372a">Minutes shown are a comparison, not a required prescription.</text>
+  <text x="72" y="625" font-family="Arial,sans-serif" font-size="21" fill="#586c60">Start comfortably. Your goal, pace, and consistency matter.</text>
+</svg>

@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,45 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/lifestyle/">Lifestyle</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Dandruff Treatment at Home: Remedies Tha...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#1-understanding-the-basics-what-is-dandruff">1. Understanding the Basics: What Is Dandruff?</a></li>
+<li><a href="#2-what-causes-dandruff">2. What Causes Dandruff?</a><ol><li><a href="#1-malassezia-overgrowth">1. Malassezia Overgrowth</a></li>
+<li><a href="#2-oily-scalp-seborrheic-dermatitis">2. Oily Scalp (Seborrheic Dermatitis)</a></li>
+<li><a href="#3-dry-skin">3. Dry Skin</a></li>
+<li><a href="#4-poor-hygiene">4. Poor Hygiene</a></li>
+<li><a href="#5-sensitivity-to-hair-products-contact-dermatitis">5. Sensitivity to Hair Products (Contact Dermatitis)</a></li>
+<li><a href="#6-medical-conditions">6. Medical Conditions</a></li></ol></li>
+<li><a href="#3-dandruff-vs-dry-scalp-whats-the-difference">3. Dandruff vs Dry Scalp: What’s the Difference?</a></li>
+<li><a href="#4-how-to-get-rid-of-dandruff-naturally-at-home">4. How to Get Rid of Dandruff Naturally at Home</a><ol><li><a href="#1-coconut-oil-and-lemon-juice">1. Coconut Oil and Lemon Juice</a></li>
+<li><a href="#2-apple-cider-vinegar-acv-rinse">2. Apple Cider Vinegar (ACV) Rinse</a></li>
+<li><a href="#3-aloe-vera-gel">3. Aloe Vera Gel</a></li>
+<li><a href="#4-neem-paste-or-neem-oil">4. Neem Paste or Neem Oil</a></li>
+<li><a href="#5-tea-tree-oil">5. Tea Tree Oil</a></li>
+<li><a href="#6-baking-soda-scrub">6. Baking Soda Scrub</a></li>
+<li><a href="#7-fenugreek-methi-seeds">7. Fenugreek (Methi) Seeds</a></li></ol></li>
+<li><a href="#5-home-remedies-for-dandruff-diet-lifestyle-tips">5. Home Remedies for Dandruff: Diet &amp; Lifestyle Tips</a><ol><li><a href="#hydration-matters">Hydration Matters</a></li>
+<li><a href="#balanced-diet">Balanced Diet</a></li>
+<li><a href="#scalp-hygiene">Scalp Hygiene</a></li>
+<li><a href="#reduce-stress">Reduce Stress</a></li></ol></li>
+<li><a href="#6-choosing-the-right-shampoo-for-dandruff-control">6. Choosing the Right Shampoo for Dandruff Control</a><ol><li><a href="#look-for-ingredients-like">Look for ingredients like:</a></li></ol></li>
+<li><a href="#7-when-to-see-a-dermatologist">7. When to See a Dermatologist</a></li>
+<li><a href="#8-quick-tips-for-ongoing-dandruff-prevention">8. Quick Tips for Ongoing Dandruff Prevention</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/lifestyle/" class="category-badge">Lifestyle</a>
@@ -366,24 +397,6 @@
                     <figure class="falcon-featured-image-wrapper">
   <img src="/assets/images/Dandruff.jpg" alt="Dandruff" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
-
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#1-understanding-the-basics-what-is-dandruff">1. Understanding the Basics: What Is Dandruff?</a></li>
-    <li><a href="#2-what-causes-dandruff">2. What Causes Dandruff?</a></li>
-    <li><a href="#3-dandruff-vs-dry-scalp-whats-the-difference">3. Dandruff vs Dry Scalp: What’s the Difference?</a></li>
-    <li><a href="#4-how-to-get-rid-of-dandruff-naturally-at-home">4. How to Get Rid of Dandruff Naturally at Home</a></li>
-    <li><a href="#5-home-remedies-for-dandruff-diet-lifestyle-tips">5. Home Remedies for Dandruff: Diet &amp;amp; Lifestyle Tips</a></li>
-    <li><a href="#6-choosing-the-right-shampoo-for-dandruff-control">6. Choosing the Right Shampoo for Dandruff Control</a></li>
-    <li><a href="#7-when-to-see-a-dermatologist">7. When to See a Dermatologist</a></li>
-    <li><a href="#8-quick-tips-for-ongoing-dandruff-prevention">8. Quick Tips for Ongoing Dandruff Prevention</a></li>
-  </ol>
-</nav>
 
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
@@ -411,22 +424,22 @@
 <h2 id="2-what-causes-dandruff" data-start="2124" data-end="2155">2. What Causes Dandruff?</h2>
 <p data-start="2157" data-end="2286">Understanding <strong data-start="2171" data-end="2195">what causes dandruff</strong> is essential for effective treatment. Several factors can trigger or worsen the condition:</p>
 
-<h3 data-start="2288" data-end="2324">1. Malassezia Overgrowth</h3>
+<h3 id="1-malassezia-overgrowth" data-start="2288" data-end="2324">1. Malassezia Overgrowth</h3>
 <p data-start="2325" data-end="2466">A yeast-like fungus called Malassezia lives naturally on the scalp but can overgrow due to excess oil, leading to inflammation and flaking.</p>
 
-<h3 data-start="2468" data-end="2517">2. Oily Scalp (Seborrheic Dermatitis)</h3>
+<h3 id="2-oily-scalp-seborrheic-dermatitis" data-start="2468" data-end="2517">2. Oily Scalp (Seborrheic Dermatitis)</h3>
 <p data-start="2518" data-end="2633">Excess sebum production can create a greasy scalp environment where fungi thrive, causing flakiness and irritation.</p>
 
-<h3 data-start="2635" data-end="2658">3. Dry Skin</h3>
+<h3 id="3-dry-skin" data-start="2635" data-end="2658">3. Dry Skin</h3>
 <p data-start="2659" data-end="2808">When the scalp lacks moisture, it becomes dry and flaky. Dry skin flakes are usually smaller and less oily than dandruff caused by fungal infections.</p>
 
-<h3 data-start="2810" data-end="2837">4. Poor Hygiene</h3>
+<h3 id="4-poor-hygiene" data-start="2810" data-end="2837">4. Poor Hygiene</h3>
 <p data-start="2838" data-end="2962">Not washing your hair regularly can lead to oil buildup, dead skin accumulation, and clogged follicles, resulting in flakes.</p>
 
-<h3 data-start="2964" data-end="3028">5. Sensitivity to Hair Products (Contact Dermatitis)</h3>
+<h3 id="5-sensitivity-to-hair-products-contact-dermatitis" data-start="2964" data-end="3028">5. Sensitivity to Hair Products (Contact Dermatitis)</h3>
 <p data-start="3029" data-end="3115">Harsh ingredients in shampoos, gels, or dyes can irritate the scalp and cause flaking.</p>
 
-<h3 data-start="3117" data-end="3150">6. Medical Conditions</h3>
+<h3 id="6-medical-conditions" data-start="3117" data-end="3150">6. Medical Conditions</h3>
 <p data-start="3151" data-end="3230">Psoriasis, eczema, or immune disorders may also contribute to chronic dandruff.</p>
 
 <h2 id="3-dandruff-vs-dry-scalp-whats-the-difference" data-start="3237" data-end="3292">3. Dandruff vs Dry Scalp: What’s the Difference?</h2>
@@ -482,7 +495,7 @@
 <h2 id="4-how-to-get-rid-of-dandruff-naturally-at-home" data-start="4297" data-end="4351">4. How to Get Rid of Dandruff Naturally at Home</h2>
 <p data-start="4353" data-end="4531">If you’re looking to learn how to get rid of dandruff without resorting to harsh medicated products, the following natural remedies can offer relief and support scalp health.</p>
 
-<h3 data-start="4538" data-end="4576">1. Coconut Oil and Lemon Juice</h3>
+<h3 id="1-coconut-oil-and-lemon-juice" data-start="4538" data-end="4576">1. Coconut Oil and Lemon Juice</h3>
 <p data-start="4578" data-end="4745"><strong data-start="4578" data-end="4595">Why It Works:</strong><br data-start="4595" data-end="4598" />Coconut oil has antimicrobial properties and helps moisturize the scalp. Lemon’s citric acid helps balance the scalp’s pH and reduce fungal growth.</p>
 <p data-start="4747" data-end="4764"><strong data-start="4747" data-end="4762">How to Use:</strong></p>
 
@@ -500,7 +513,7 @@
 <p data-start="4929" data-end="4953">Repeat 2–3 times a week.</p>
 </li>
 </ul>
-<h3 data-start="4960" data-end="5002">2. Apple Cider Vinegar (ACV) Rinse</h3>
+<h3 id="2-apple-cider-vinegar-acv-rinse" data-start="4960" data-end="5002">2. Apple Cider Vinegar (ACV) Rinse</h3>
 <p data-start="5004" data-end="5134"><strong data-start="5004" data-end="5021">Why It Works:</strong><br data-start="5021" data-end="5024" />ACV is naturally acidic and helps restore the scalp’s pH balance. It also prevents the growth of <a href="https://my.clevelandclinic.org/health/diseases/22833-pityrosporum-folliculitis" target="_blank" rel="noopener"><em data-start="5121" data-end="5133">Malassezia</em></a>.</p>
 <p data-start="5136" data-end="5153"><strong data-start="5136" data-end="5151">How to Use:</strong></p>
 
@@ -518,7 +531,7 @@
 <p data-start="5294" data-end="5315">Use 1–2 times a week.</p>
 </li>
 </ul>
-<h3 data-start="5322" data-end="5346">3. Aloe Vera Gel</h3>
+<h3 id="3-aloe-vera-gel" data-start="5322" data-end="5346">3. Aloe Vera Gel</h3>
 <p data-start="5348" data-end="5475"><strong data-start="5348" data-end="5365">Why It Works:</strong><br data-start="5365" data-end="5368" />Aloe vera soothes itching and inflammation. It also moisturises the scalp and combats microbial infections.</p>
 <p data-start="5477" data-end="5494"><strong data-start="5477" data-end="5492">How to Use:</strong></p>
 
@@ -536,7 +549,7 @@
 <p data-start="5627" data-end="5648">Use 2–3 times a week.</p>
 </li>
 </ul>
-<h3 data-start="5655" data-end="5688">4. Neem Paste or Neem Oil</h3>
+<h3 id="4-neem-paste-or-neem-oil" data-start="5655" data-end="5688">4. Neem Paste or Neem Oil</h3>
 <p data-start="5690" data-end="5828">Why It Works:<br data-start="5707" data-end="5710" />Neem has antifungal, antibacterial, and anti-inflammatory properties. It’s particularly effective for fungal dandruff.</p>
 <p data-start="5830" data-end="5858">How to Use Neem Paste:</p>
 
@@ -558,7 +571,7 @@
 <p data-start="6068" data-end="6120">Apply, massage, and leave for 1 hour before washing.</p>
 </li>
 </ul>
-<h3 data-start="6127" data-end="6150">5. Tea Tree Oil</h3>
+<h3 id="5-tea-tree-oil" data-start="6127" data-end="6150">5. Tea Tree Oil</h3>
 <p data-start="6152" data-end="6299">Why It Works:<br data-start="6169" data-end="6172" />Tea tree oil is a potent antifungal and antibacterial agent. It helps reduce inflammation and fights dandruff-causing microbes.</p>
 <p data-start="6301" data-end="6318">How to Use:</p>
 
@@ -573,7 +586,7 @@
 <p data-start="6456" data-end="6494">Leave for 30–60 minutes, then shampoo.</p>
 </li>
 </ul>
-<h3 data-start="6501" data-end="6529">6. Baking Soda Scrub</h3>
+<h3 id="6-baking-soda-scrub" data-start="6501" data-end="6529">6. Baking Soda Scrub</h3>
 <p data-start="6531" data-end="6613">Why It Works:<br data-start="6548" data-end="6551" />Baking soda exfoliates dead skin and reduces fungal infection.</p>
 <p data-start="6615" data-end="6632">How to Use:</p>
 
@@ -591,7 +604,7 @@
 <p data-start="6788" data-end="6804">Use once a week.</p>
 </li>
 </ul>
-<h3 data-start="6811" data-end="6845">7. Fenugreek (Methi) Seeds</h3>
+<h3 id="7-fenugreek-methi-seeds" data-start="6811" data-end="6845">7. Fenugreek (Methi) Seeds</h3>
 <p data-start="6847" data-end="6964">Why It Works:<br data-start="6864" data-end="6867" />Fenugreek has antifungal and soothing properties. It helps reduce scalp irritation and flakiness.</p>
 <p data-start="6966" data-end="6983">How to Use:</p>
 
@@ -607,10 +620,10 @@
 </li>
 </ul>
 <h2 id="5-home-remedies-for-dandruff-diet-lifestyle-tips" data-start="7132" data-end="7191">5. Home Remedies for Dandruff: Diet &amp; Lifestyle Tips</h2>
-<h3 data-start="7193" data-end="7220">Hydration Matters</h3>
+<h3 id="hydration-matters" data-start="7193" data-end="7220">Hydration Matters</h3>
 <p data-start="7221" data-end="7328">Drink plenty of water to keep your scalp hydrated. Dehydration can lead to dryness, worsening scalp issues.</p>
 
-<h3 data-start="7330" data-end="7353">Balanced Diet</h3>
+<h3 id="balanced-diet" data-start="7330" data-end="7353">Balanced Diet</h3>
 <ul data-start="7354" data-end="7505">
  	<li data-start="7354" data-end="7406">
 <p data-start="7356" data-end="7406">Include zinc, omega-3 fatty acids, and B vitamins.</p>
@@ -619,7 +632,7 @@
 <p data-start="7409" data-end="7505">Avoid excessive sugar and processed foods, which can trigger inflammation and fungal overgrowth.</p>
 </li>
 </ul>
-<h3 data-start="7507" data-end="7530">Scalp Hygiene</h3>
+<h3 id="scalp-hygiene" data-start="7507" data-end="7530">Scalp Hygiene</h3>
 <ul data-start="7531" data-end="7693">
  	<li data-start="7531" data-end="7578">
 <p data-start="7533" data-end="7578">Wash your hair regularly with a mild shampoo.</p>
@@ -631,13 +644,13 @@
 <p data-start="7646" data-end="7693">Rinse out products thoroughly to avoid buildup.</p>
 </li>
 </ul>
-<h3 data-start="7695" data-end="7718">Reduce Stress</h3>
+<h3 id="reduce-stress" data-start="7695" data-end="7718">Reduce Stress</h3>
 <p data-start="7719" data-end="7838">Stress affects hormonal balance and can trigger flare-ups. Practice yoga, meditation, or breathing exercises regularly.</p>
 
 <h2 id="6-choosing-the-right-shampoo-for-dandruff-control" data-start="7845" data-end="7902">6. Choosing the Right Shampoo for Dandruff Control</h2>
 <p data-start="7904" data-end="7998">While home remedies are highly effective, supporting them with the right shampoo is essential.</p>
 
-<h3 data-start="8000" data-end="8030">Look for ingredients like:</h3>
+<h3 id="look-for-ingredients-like" data-start="8000" data-end="8030">Look for ingredients like:</h3>
 <ul data-start="8031" data-end="8119">
  	<li data-start="8031" data-end="8058">
 <p data-start="8033" data-end="8058">Ketoconazole (antifungal)</p>
@@ -696,7 +709,7 @@
 </ul>
 <p data-start="8893" data-end="9042">Consistency is key when it comes to home care. A weekly routine using two or three of the above remedies can significantly reduce dandruff over time.</p>
 
-<h4 data-start="9049" data-end="9089">Conclusion: Flake-Free, Naturally</h4>
+<h4 id="conclusion-flake-free-naturally" data-start="9049" data-end="9089">Conclusion: Flake-Free, Naturally</h4>
 <p data-start="9091" data-end="9313">Dandruff doesn’t have to be a lifelong problem. With the right combination of care, consistency, and natural ingredients, you can reclaim a healthy, comfortable, and flake-free scalp—without relying on harsh chemicals.</p>
 <p data-start="9315" data-end="9673">From soothing aloe vera and neem to powerful antifungals like tea tree oil and apple cider vinegar, there are many safe and effective ways to manage dandruff from home. Identifying whether you’re dealing with fungal overgrowth, product buildup, or simply dry scalp is the first step. Once that’s clear, natural remedies and lifestyle tweaks can work wonders.</p>
                     </div>
@@ -811,12 +824,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -843,24 +874,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -868,11 +881,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -1031,6 +1044,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

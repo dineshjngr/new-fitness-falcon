@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,33 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/swimming/">Swimming</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Top 5 Best Swimming Strokes for Weight L...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#why-swimming-is-good-for-weight-loss-and-fitness">Why Swimming Is Good for Weight Loss and Fitness?</a></li>
+<li><a href="#1-freestyle-front-crawl-best-for-calorie-burning">1. Freestyle (Front Crawl) – Best for Calorie Burning</a><ol><li><a href="#why-it-works">Why it works:</a></li></ol></li>
+<li><a href="#2-butterfly-stroke-maximum-fat-burn">2. Butterfly Stroke – Maximum Fat Burn</a><ol><li><a href="#why-it-works-2">Why it works:</a></li></ol></li>
+<li><a href="#3-breaststroke-balanced-weight-loss-endurance">3. Breaststroke – Balanced Weight Loss &amp; Endurance</a><ol><li><a href="#why-it-works-3">Why it works:</a></li></ol></li>
+<li><a href="#4-backstroke-low-impact-full-body-fitness">4. Backstroke – Low Impact &amp; Full-Body Fitness</a><ol><li><a href="#why-it-works-4">Why it works:</a></li></ol></li>
+<li><a href="#5-sidestroke-beginner-friendly-fat-loss">5. Sidestroke – Beginner-Friendly Fat Loss</a><ol><li><a href="#why-it-works-5">Why it works:</a></li></ol></li>
+<li><a href="#which-swimming-stroke-is-best-for-weight-loss">Which Swimming Stroke Is Best for Weight Loss?</a></li>
+<li><a href="#swimming-workout-tips-for-better-results">Swimming Workout Tips for Better Results</a></li>
+<li><a href="#is-swimming-better-than-gym-for-weight-loss">Is Swimming Better Than Gym for Weight Loss?</a></li>
+<li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/swimming/" class="category-badge">Swimming</a>
@@ -368,26 +387,6 @@
   <img src="/assets/images/SWIMMING-1-scaled.jpg" alt="SWIMMING" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#why-swimming-is-good-for-weight-loss-and-fitness">Why Swimming Is Good for Weight Loss and Fitness?</a></li>
-    <li><a href="#1-freestyle-front-crawl-best-for-calorie-burning">1. Freestyle (Front Crawl) – Best for Calorie Burning</a></li>
-    <li><a href="#2-butterfly-stroke-maximum-fat-burn">2. Butterfly Stroke – Maximum Fat Burn</a></li>
-    <li><a href="#3-breaststroke-balanced-weight-loss-endurance">3. Breaststroke – Balanced Weight Loss &amp;amp; Endurance</a></li>
-    <li><a href="#4-backstroke-low-impact-full-body-fitness">4. Backstroke – Low Impact &amp;amp; Full-Body Fitness</a></li>
-    <li><a href="#5-sidestroke-beginner-friendly-fat-loss">5. Sidestroke – Beginner-Friendly Fat Loss</a></li>
-    <li><a href="#which-swimming-stroke-is-best-for-weight-loss">Which Swimming Stroke Is Best for Weight Loss?</a></li>
-    <li><a href="#swimming-workout-tips-for-better-results">Swimming Workout Tips for Better Results</a></li>
-    <li><a href="#is-swimming-better-than-gym-for-weight-loss">Is Swimming Better Than Gym for Weight Loss?</a></li>
-    <li><a href="#final-thoughts">Final Thoughts</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="248" data-end="607">Swimming is one of the most effective full-body workouts because it engages multiple muscle groups at the same time, helping to burn calories, improve stamina, and enhance overall fitness. The natural resistance of water increases muscle activation, making each movement more effective without putting stress on the joints. Unlike high-impact exercises such as running or jumping, swimming is low-impact and suitable for people of all fitness levels. It strengthens the heart and lungs, improves flexibility, and tones the body evenly. If your goal is fat loss and better physical conditioning, selecting the right swimming stroke plays a crucial role, as each stroke varies in intensity, calorie burn, and muscle engagement, directly affecting your weight-loss and fitness results.</p>
@@ -407,7 +406,7 @@
 <h2 id="1-freestyle-front-crawl-best-for-calorie-burning" data-start="1352" data-end="1408">1. Freestyle (Front Crawl) – Best for Calorie Burning</h2>
 <p data-start="1410" data-end="1547">Freestyle is the most common and fastest swimming stroke. In this stroke, you swim on your stomach and move your arms one by one in a circular motion. Your legs move up and down in a kicking action. You turn your head to the side to breathe. Freestyle is easy to learn and helps burn a lot of calories because your whole body keeps moving continuously. It is very good for weight loss, heart health, and improving stamina.</p>
 
-<h3 data-start="1549" data-end="1566">Why it works:</h3>
+<h3 id="why-it-works" data-start="1549" data-end="1566">Why it works:</h3>
 <ul>
  	<li data-start="1569" data-end="1605">Uses arms, shoulders, core, and legs</li>
  	<li data-start="1608" data-end="1640">Maintains a fast and steady pace</li>
@@ -419,7 +418,7 @@
 <h2 id="2-butterfly-stroke-maximum-fat-burn" data-start="1892" data-end="1933">2. Butterfly Stroke – Maximum Fat Burn</h2>
 <p data-start="1935" data-end="2048">The <a href="https://www.britannica.com/sports/butterfly-swimming" target="_blank" rel="noopener">butterfly stroke</a> is the most challenging swimming stroke and requires strong upper body and core muscles. This stroke is the hardest swimming stroke. In this, both arms move together in a wide circular motion, and your legs move like a dolphin. It needs a lot of strength and energy. Because of this, it burns the most calories. Butterfly stroke is best for advanced swimmers who want fast weight loss and strong muscles, especially in the arms, chest, and core.</p>
 
-<h3 data-start="2050" data-end="2067">Why it works:</h3>
+<h3 id="why-it-works-2" data-start="2050" data-end="2067">Why it works:</h3>
 <ul>
  	<li data-start="2070" data-end="2098">Extremely high energy demand</li>
  	<li data-start="2101" data-end="2135">Engages chest, arms, abs, and legs</li>
@@ -431,7 +430,7 @@
 <h2 id="3-breaststroke-balanced-weight-loss-endurance" data-start="2324" data-end="2377">3. Breaststroke – Balanced Weight Loss &amp; Endurance</h2>
 <p data-start="2379" data-end="2487">Breaststroke is a slow and comfortable swimming stroke. In this stroke, you move your arms and legs like a frog. Your head stays above water most of the time, which makes breathing easy. <a href="https://www.wikihow.com/Swim-the-Breaststroke" target="_blank" rel="noopener">Breaststroke</a> is good for beginners and people who want a relaxed workout. It helps in weight loss, improves flexibility, and is gentle on the body.</p>
 
-<h3 data-start="2489" data-end="2506">Why it works:</h3>
+<h3 id="why-it-works-3" data-start="2489" data-end="2506">Why it works:</h3>
 <ul>
  	<li data-start="2509" data-end="2546">Engages thighs, hips, arms, and chest</li>
  	<li data-start="2549" data-end="2586">Improves flexibility and coordination</li>
@@ -443,7 +442,7 @@
 <h2 id="4-backstroke-low-impact-full-body-fitness" data-start="2788" data-end="2837">4. Backstroke – Low Impact &amp; Full-Body Fitness</h2>
 <p data-start="2839" data-end="2912">Backstroke is done while lying on your back in the water. Your arms move one after the other, and your legs kick just like freestyle. Since your face stays above water, breathing is very easy. Backstroke is good for people with back pain and beginners. It improves posture, strengthens the back, and helps in overall fitness.</p>
 
-<h3 data-start="2914" data-end="2931">Why it works:</h3>
+<h3 id="why-it-works-4" data-start="2914" data-end="2931">Why it works:</h3>
 <ul>
  	<li data-start="2934" data-end="2971">Strengthens back, shoulders, and core</li>
  	<li data-start="2974" data-end="2990">Improves posture</li>
@@ -455,7 +454,7 @@
 <h2 id="5-sidestroke-beginner-friendly-fat-loss" data-start="3179" data-end="3224">5. Sidestroke – Beginner-Friendly Fat Loss</h2>
 <p data-start="3226" data-end="3305"><a href="https://www.coachslava.com/swimming-tips-education/side-stroke-swimming-a-forgotten-lifesaving-stroke" target="_blank" rel="noopener">Sidestroke</a> is done while lying on one side of the body. It is slow and easy, making it good for beginners or people who want a light workout. This stroke does not need much energy and is often used for rescue swimming. Sidestroke helps improve coordination and is suitable for long, relaxed swimming sessions.</p>
 
-<h3 data-start="3307" data-end="3324">Why it works:</h3>
+<h3 id="why-it-works-5" data-start="3307" data-end="3324">Why it works:</h3>
 <ul>
  	<li data-start="3327" data-end="3364">Low intensity but consistent movement</li>
  	<li data-start="3367" data-end="3402">Improves coordination and endurance</li>
@@ -639,12 +638,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -671,24 +688,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -696,11 +695,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -859,6 +858,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,36 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/food-and-recipes/">Food &amp; Recipes</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">What Is Dietary Fiber? Types, Benefits,...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-dietary-fiber">What Is Dietary Fiber?</a><ol><li><a href="#key-characteristics-of-fiber">Key Characteristics of Fiber:</a></li>
+<li><a href="#types-of-dietary-fiber">Types of Dietary Fiber</a></li>
+<li><a href="#benefits-of-dietary-fiber">Benefits of Dietary Fiber</a></li>
+<li><a href="#fiber-for-digestion-how-it-works">Fiber for Digestion: How It Works</a></li>
+<li><a href="#daily-fiber-intake-recommendations">Daily Fiber Intake Recommendations</a></li>
+<li><a href="#high-fiber-foods-best-natural-sources">High Fiber Foods: Best Natural Sources</a></li>
+<li><a href="#how-to-add-more-fiber-without-bloating">How to Add More Fiber Without Bloating</a></li>
+<li><a href="#dietary-fiber-for-weight-loss">Dietary Fiber for Weight Loss</a></li>
+<li><a href="#practical-meal-ideas-for-a-high-fiber-diet">Practical Meal Ideas for a High-Fiber Diet</a></li>
+<li><a href="#myths-about-dietary-fiber">Myths About Dietary Fiber</a></li>
+<li><a href="#myth-fiber-supplements-are-enough">Myth: Fiber supplements are enough.</a></li>
+<li><a href="#myth-all-fibers-work-the-same">Myth: All fibers work the same.</a></li>
+<li><a href="#when-to-see-a-doctor">When to See a Doctor</a></li></ol></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/food-and-recipes/" class="category-badge">Food &amp; Recipes</a>
@@ -367,9 +389,6 @@
   <img src="/assets/images/dietary-fiber.jpg" alt="dietary fiber" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="285" data-end="750">In today’s health-conscious world, the conversation around nutrition often revolves around macronutrients like protein, fats, and carbohydrates. However, there's one powerful dietary component that doesn’t get as much spotlight but plays a vital role in digestive and overall well-being <a href="/blogs/high-fiber-foods-types-health-benefits-and-supplements/" target="_blank" rel="noopener">high fiber foods</a>. These fiber-rich options are often overlooked, despite offering impressive health benefits ranging from improved digestion to effective weight management.</p>
@@ -390,7 +409,7 @@
 </ul>
 <p data-start="2010" data-end="2204">While both types are important, they perform different functions in the body. Some fibers also act as <a href="https://www.health.harvard.edu/nutrition/prebiotics-understanding-their-role-in-gut-health" target="_blank" rel="noopener">prebiotics</a>, feeding the healthy bacteria in your gut and promoting a healthy microbiome.</p>
 
-<h3 data-start="2206" data-end="2239">Key Characteristics of Fiber:</h3>
+<h3 id="key-characteristics-of-fiber" data-start="2206" data-end="2239">Key Characteristics of Fiber:</h3>
 <ul data-start="2240" data-end="2398">
  	<li data-start="2240" data-end="2273">
 <p data-start="2242" data-end="2273">Found only in plant-based foods</p>
@@ -404,10 +423,10 @@
 </ul>
 <p data-start="2400" data-end="2515">Fiber isn't just for people with digestive issues—it’s essential for everyone, no matter your age or fitness level.</p>
 
-<h3 data-start="2522" data-end="2547">Types of Dietary Fiber</h3>
+<h3 id="types-of-dietary-fiber" data-start="2522" data-end="2547">Types of Dietary Fiber</h3>
 <p data-start="2549" data-end="2661">Understanding the <strong data-start="2567" data-end="2593">types of dietary fiber</strong> helps you make informed food choices tailored to your health goals.</p>
 
-<h4 data-start="2663" data-end="2683">1. Soluble Fiber</h4>
+<h4 id="1-soluble-fiber" data-start="2663" data-end="2683">1. Soluble Fiber</h4>
 <ul data-start="2684" data-end="2910">
  	<li data-start="2684" data-end="2766">
 <p data-start="2686" data-end="2766"><strong data-start="2686" data-end="2698">Function</strong>: Dissolves in water, forming a gel-like substance. Slows digestion.</p>
@@ -419,7 +438,7 @@
 <p data-start="2842" data-end="2910"><strong data-start="2842" data-end="2853">Sources</strong>: Oats, barley, apples, citrus fruits, carrots, psyllium.</p>
 </li>
 </ul>
-<h4 data-start="2912" data-end="2934">2. Insoluble Fiber</h4>
+<h4 id="2-insoluble-fiber" data-start="2912" data-end="2934">2. Insoluble Fiber</h4>
 <ul data-start="2935" data-end="3181">
  	<li data-start="2935" data-end="3025">
 <p data-start="2937" data-end="3025"><strong data-start="2937" data-end="2949">Function</strong>: Does not dissolve in water; adds bulk to stool and aids in bowel movement.</p>
@@ -431,7 +450,7 @@
 <p data-start="3105" data-end="3181"><strong data-start="3105" data-end="3116">Sources</strong>: Whole wheat flour, bran, nuts, beans, cauliflower, green beans.</p>
 </li>
 </ul>
-<h4 data-start="3183" data-end="3206">3. Resistant Starch</h4>
+<h4 id="3-resistant-starch" data-start="3183" data-end="3206">3. Resistant Starch</h4>
 <ul data-start="3207" data-end="3440">
  	<li data-start="3207" data-end="3297">
 <p data-start="3209" data-end="3297"><strong data-start="3209" data-end="3221">Function</strong>: Resists digestion in the small intestine; ferments in the large intestine.</p>
@@ -443,7 +462,7 @@
 <p data-start="3376" data-end="3440"><strong data-start="3376" data-end="3387">Sources</strong>: Cooked and cooled potatoes, green bananas, lentils.</p>
 </li>
 </ul>
-<h4 data-start="3442" data-end="3464">4. Prebiotic Fiber</h4>
+<h4 id="4-prebiotic-fiber" data-start="3442" data-end="3464">4. Prebiotic Fiber</h4>
 <ul data-start="3465" data-end="3668">
  	<li data-start="3465" data-end="3531">
 <p data-start="3467" data-end="3531"><strong data-start="3467" data-end="3479">Function</strong>: Feeds healthy gut bacteria, supporting gut health.</p>
@@ -455,7 +474,7 @@
 <p data-start="3608" data-end="3668"><strong data-start="3608" data-end="3619">Sources</strong>: Garlic, onions, leeks, asparagus, chicory root.</p>
 </li>
 </ul>
-<h4 data-start="3670" data-end="3693">5. Functional Fiber</h4>
+<h4 id="5-functional-fiber" data-start="3670" data-end="3693">5. Functional Fiber</h4>
 <ul data-start="3694" data-end="3841">
  	<li data-start="3694" data-end="3792">
 <p data-start="3696" data-end="3792"><strong data-start="3696" data-end="3710">Definition</strong>: Isolated or synthetic fibers added to foods and supplements for health benefits.</p>
@@ -464,29 +483,29 @@
 <p data-start="3795" data-end="3841"><strong data-start="3795" data-end="3807">Examples</strong>: Inulin, polydextrose, cellulose.</p>
 </li>
 </ul>
-<h3 data-start="3848" data-end="3876">Benefits of Dietary Fiber</h3>
-<h4 data-start="3878" data-end="3910">1. Supports Digestive Health</h4>
+<h3 id="benefits-of-dietary-fiber" data-start="3848" data-end="3876">Benefits of Dietary Fiber</h3>
+<h4 id="1-supports-digestive-health" data-start="3878" data-end="3910">1. Supports Digestive Health</h4>
 <p data-start="3911" data-end="4141">Fiber plays a crucial role in promoting <strong data-start="3951" data-end="3974">fiber for digestion</strong>. Insoluble fiber increases stool bulk and frequency, preventing constipation. Soluble fiber, on the other hand, slows digestion, which helps with nutrient absorption.</p>
 
-<h4 data-start="4143" data-end="4175">2. Aids in Weight Management</h4>
+<h4 id="2-aids-in-weight-management" data-start="4143" data-end="4175">2. Aids in Weight Management</h4>
 <p data-start="4176" data-end="4384">One of the top dietary fiber for weight loss benefits is its ability to promote satiety. Fiber-rich foods take longer to chew and digest, keeping you fuller for longer and reducing overall calorie intake.</p>
 
-<h4 data-start="4386" data-end="4426">3. Helps Regulate Blood Sugar Levels</h4>
+<h4 id="3-helps-regulate-blood-sugar-levels" data-start="4386" data-end="4426">3. Helps Regulate Blood Sugar Levels</h4>
 <p data-start="4427" data-end="4554">Soluble fiber can slow the absorption of sugar, helping to improve blood sugar levels and reducing the risk of type 2 diabetes.</p>
 
-<h4 data-start="4556" data-end="4581">4. Lowers Cholesterol</h4>
+<h4 id="4-lowers-cholesterol" data-start="4556" data-end="4581">4. Lowers Cholesterol</h4>
 <p data-start="4582" data-end="4721">Soluble fiber binds with cholesterol particles in the digestive system and helps remove them from the body, lowering LDL (bad) cholesterol.</p>
 
-<h4 data-start="4723" data-end="4751">5. Supports Heart Health</h4>
+<h4 id="5-supports-heart-health" data-start="4723" data-end="4751">5. Supports Heart Health</h4>
 <p data-start="4752" data-end="4915">Numerous studies link a high-fiber diet with a reduced risk of <a href="https://www.narayanahealth.org/blog/cardiovascular-disease-types-causes-and-symptoms" target="_blank" rel="noopener">cardiovascular disease</a>. It lowers blood pressure, improves lipid profiles, and reduces inflammation.</p>
 
-<h4 data-start="4917" data-end="4955">6. Promotes Gut Microbiome Balance</h4>
+<h4 id="6-promotes-gut-microbiome-balance" data-start="4917" data-end="4955">6. Promotes Gut Microbiome Balance</h4>
 <p data-start="4956" data-end="5143">Fiber—especially <strong data-start="4973" data-end="4986">prebiotic</strong> types—nourishes beneficial bacteria in the colon. A balanced microbiome has been associated with improved immunity, mental health, and reduced inflammation.</p>
 
-<h4 data-start="5145" data-end="5186">7. May Reduce Risk of Certain Cancers</h4>
+<h4 id="7-may-reduce-risk-of-certain-cancers" data-start="5145" data-end="5186">7. May Reduce Risk of Certain Cancers</h4>
 <p data-start="5187" data-end="5333">Some research suggests that fiber may lower the risk of colorectal cancer by speeding up the elimination of carcinogens and supporting gut health.</p>
 
-<h3 data-start="5340" data-end="5376">Fiber for Digestion: How It Works</h3>
+<h3 id="fiber-for-digestion-how-it-works" data-start="5340" data-end="5376">Fiber for Digestion: How It Works</h3>
 <p data-start="5378" data-end="5497"><strong data-start="5378" data-end="5401">Fiber for digestion</strong> isn’t just about avoiding constipation. It affects multiple aspects of gastrointestinal health:</p>
 
 <ul data-start="5499" data-end="5690">
@@ -506,10 +525,10 @@
 <p data-start="5650" data-end="5690">Supports the integrity of the gut lining</p>
 </li>
 </ul>
-<h4 data-start="5692" data-end="5718">Fiber and Gut Bacteria</h4>
+<h4 id="fiber-and-gut-bacteria" data-start="5692" data-end="5718">Fiber and Gut Bacteria</h4>
 <p data-start="5720" data-end="5918">Soluble fiber and resistant starches are fermented in the colon by gut bacteria, producing short-chain fatty acids (SCFAs) such as butyrate, which supports colon health and reduces inflammation.</p>
 
-<h3 data-start="5925" data-end="5962">Daily Fiber Intake Recommendations</h3>
+<h3 id="daily-fiber-intake-recommendations" data-start="5925" data-end="5962">Daily Fiber Intake Recommendations</h3>
 <p data-start="5964" data-end="6009">How much fiber do you actually need each day?</p>
 
 <div class="_tableContainer_80l1q_1">
@@ -547,7 +566,7 @@
 </div>
 </div>
 </div>
-<h4 data-start="6416" data-end="6449">Tips to Meet Your Fiber Needs</h4>
+<h4 id="tips-to-meet-your-fiber-needs" data-start="6416" data-end="6449">Tips to Meet Your Fiber Needs</h4>
 <ul data-start="6450" data-end="6636">
  	<li data-start="6450" data-end="6482">
 <p data-start="6452" data-end="6482">Add seeds or nuts to smoothies</p>
@@ -565,10 +584,10 @@
 <p data-start="6610" data-end="6636">Don’t peel your vegetables</p>
 </li>
 </ul>
-<h3 data-start="6643" data-end="6684">High Fiber Foods: Best Natural Sources</h3>
+<h3 id="high-fiber-foods-best-natural-sources" data-start="6643" data-end="6684">High Fiber Foods: Best Natural Sources</h3>
 <p data-start="6686" data-end="6757">Let’s explore the top high fiber foods across different categories:</p>
 
-<h4 data-start="6759" data-end="6772">1. Fruits</h4>
+<h4 id="1-fruits" data-start="6759" data-end="6772">1. Fruits</h4>
 <ul data-start="6773" data-end="6877">
  	<li data-start="6773" data-end="6798">
 <p data-start="6775" data-end="6798">Raspberries: 8g per cup</p>
@@ -586,7 +605,7 @@
 <p data-start="6866" data-end="6877">Oranges: 3g</p>
 </li>
 </ul>
-<h4 data-start="6879" data-end="6896">2. Vegetables</h4>
+<h4 id="2-vegetables" data-start="6879" data-end="6896">2. Vegetables</h4>
 <ul data-start="6897" data-end="7028">
  	<li data-start="6897" data-end="6925">
 <p data-start="6899" data-end="6925">Artichokes: 10g per medium</p>
@@ -604,7 +623,7 @@
 <p data-start="6998" data-end="7028">Sweet potatoes (with skin): 4g</p>
 </li>
 </ul>
-<h4 data-start="7030" data-end="7044">3. Legumes</h4>
+<h4 id="3-legumes" data-start="7030" data-end="7044">3. Legumes</h4>
 <ul data-start="7045" data-end="7145">
  	<li data-start="7045" data-end="7067">
 <p data-start="7047" data-end="7067">Lentils: 15g per cup</p>
@@ -619,7 +638,7 @@
 <p data-start="7122" data-end="7145">Split peas: 16g per cup</p>
 </li>
 </ul>
-<h4 data-start="7147" data-end="7166">4. Whole Grains</h4>
+<h4 id="4-whole-grains" data-start="7147" data-end="7166">4. Whole Grains</h4>
 <ul data-start="7167" data-end="7295">
  	<li data-start="7167" data-end="7194">
 <p data-start="7169" data-end="7194">Oats: 4g per cup (cooked)</p>
@@ -637,7 +656,7 @@
 <p data-start="7266" data-end="7295">Whole wheat pasta: 6g per cup</p>
 </li>
 </ul>
-<h4 data-start="7297" data-end="7318">5. Nuts and Seeds</h4>
+<h4 id="5-nuts-and-seeds" data-start="7297" data-end="7318">5. Nuts and Seeds</h4>
 <ul data-start="7319" data-end="7423">
  	<li data-start="7319" data-end="7346">
 <p data-start="7321" data-end="7346"><a href="/blogs/chia-seeds-health-benefits-sources-and-supplements/" target="_blank" rel="noopener">Chia seeds</a>: 10g per ounce</p>
@@ -652,7 +671,7 @@
 <p data-start="7399" data-end="7423">Pistachios: 3g per ounce</p>
 </li>
 </ul>
-<h4 data-start="7425" data-end="7443">6. Other Foods</h4>
+<h4 id="6-other-foods" data-start="7425" data-end="7443">6. Other Foods</h4>
 <ul data-start="7444" data-end="7530">
  	<li data-start="7444" data-end="7483">
 <p data-start="7446" data-end="7483">Popcorn (air-popped): 3.6g per 3 cups</p>
@@ -664,7 +683,7 @@
 <p data-start="7511" data-end="7530">Edamame: 9g per cup</p>
 </li>
 </ul>
-<h3 data-start="7537" data-end="7578">How to Add More Fiber Without Bloating</h3>
+<h3 id="how-to-add-more-fiber-without-bloating" data-start="7537" data-end="7578">How to Add More Fiber Without Bloating</h3>
 <p data-start="7580" data-end="7678">Increasing fiber intake suddenly can cause gas, bloating, or cramping. Here's how to ease into it:</p>
 
 <ul data-start="7680" data-end="7838">
@@ -681,25 +700,25 @@
 <p data-start="7802" data-end="7838">Balance insoluble with soluble fiber</p>
 </li>
 </ul>
-<h3 data-start="7845" data-end="7877">Dietary Fiber for Weight Loss</h3>
+<h3 id="dietary-fiber-for-weight-loss" data-start="7845" data-end="7877">Dietary Fiber for Weight Loss</h3>
 <p data-start="7879" data-end="7924">Here’s how fiber supports fat loss naturally:</p>
 
-<h4 data-start="7926" data-end="7951">1. Increases Fullness</h4>
+<h4 id="1-increases-fullness" data-start="7926" data-end="7951">1. Increases Fullness</h4>
 <p data-start="7952" data-end="8042">Fiber slows gastric emptying and enhances satiety hormones, helping reduce calorie intake.</p>
 
-<h4>2. Reduces Caloric Absorption</h4>
+<h4 id="2-reduces-caloric-absorption">2. Reduces Caloric Absorption</h4>
 <p data-start="8078" data-end="8159">Some fibers reduce the absorption of nutrients, slightly lowering caloric intake.</p>
 3. Improves Insulin Sensitivity
 <p data-start="8197" data-end="8243">Better blood sugar control = less fat storage.</p>
 
-<h4 data-start="8245" data-end="8281">4. Promotes Healthy Gut Bacteria</h4>
+<h4 id="4-promotes-healthy-gut-bacteria" data-start="8245" data-end="8281">4. Promotes Healthy Gut Bacteria</h4>
 <p data-start="8282" data-end="8367">SCFAs from fiber fermentation may influence hormones involved in appetite regulation.</p>
 
-<h4 data-start="8369" data-end="8424">5. Fiber-Rich Foods Are Naturally Lower in Calories</h4>
+<h4 id="5-fiber-rich-foods-are-naturally-lower-in-calories" data-start="8369" data-end="8424">5. Fiber-Rich Foods Are Naturally Lower in Calories</h4>
 <p data-start="8425" data-end="8524">Whole foods high in fiber tend to be more nutrient-dense and filling, supporting a calorie deficit.</p>
 
-<h3 data-start="8531" data-end="8576">Practical Meal Ideas for a High-Fiber Diet</h3>
-<h4 data-start="8578" data-end="8592">Breakfast:</h4>
+<h3 id="practical-meal-ideas-for-a-high-fiber-diet" data-start="8531" data-end="8576">Practical Meal Ideas for a High-Fiber Diet</h3>
+<h4 id="breakfast" data-start="8578" data-end="8592">Breakfast:</h4>
 <ul data-start="8593" data-end="8687">
  	<li data-start="8593" data-end="8640">
 <p data-start="8595" data-end="8640">Oatmeal with chia seeds, almonds, and berries</p>
@@ -708,7 +727,7 @@
 <p data-start="8643" data-end="8687">Whole grain toast with avocado and flaxseeds</p>
 </li>
 </ul>
-<h4 data-start="8689" data-end="8699">Lunch:</h4>
+<h4 id="lunch" data-start="8689" data-end="8699">Lunch:</h4>
 <ul data-start="8700" data-end="8788">
  	<li data-start="8700" data-end="8752">
 <p data-start="8702" data-end="8752">Lentil salad with spinach, cucumbers, and tomatoes</p>
@@ -717,7 +736,7 @@
 <p data-start="8755" data-end="8788">Chickpea-stuffed whole grain pita</p>
 </li>
 </ul>
-<h4 data-start="8790" data-end="8800">Snack:</h4>
+<h4 id="snack" data-start="8790" data-end="8800">Snack:</h4>
 <ul data-start="8801" data-end="8862">
  	<li data-start="8801" data-end="8834">
 <p data-start="8803" data-end="8834">Apple slices with almond butter</p>
@@ -726,7 +745,7 @@
 <p data-start="8837" data-end="8862">Carrot sticks with hummus</p>
 </li>
 </ul>
-<h4 data-start="8864" data-end="8875">Dinner:</h4>
+<h4 id="dinner" data-start="8864" data-end="8875">Dinner:</h4>
 <ul data-start="8876" data-end="8979">
  	<li data-start="8876" data-end="8936">
 <p data-start="8878" data-end="8936">Quinoa with black beans, roasted vegetables, and olive oil</p>
@@ -735,20 +754,20 @@
 <p data-start="8939" data-end="8979">Baked sweet potato with steamed broccoli</p>
 </li>
 </ul>
-<h3 data-start="8986" data-end="9014">Myths About Dietary Fiber</h3>
-<h4 data-start="9016" data-end="9057">Myth: Fiber is only for old people.</h4>
+<h3 id="myths-about-dietary-fiber" data-start="8986" data-end="9014">Myths About Dietary Fiber</h3>
+<h4 id="myth-fiber-is-only-for-old-people" data-start="9016" data-end="9057">Myth: Fiber is only for old people.</h4>
 <p data-start="9058" data-end="9125">Fact: Everyone needs fiber for optimal health, regardless of age.</p>
 
-<h3 data-start="9127" data-end="9168">Myth: Fiber supplements are enough.</h3>
+<h3 id="myth-fiber-supplements-are-enough" data-start="9127" data-end="9168">Myth: Fiber supplements are enough.</h3>
 <p data-start="9169" data-end="9257">Fact: While supplements help, natural sources offer more nutrients and phytochemicals.</p>
 
-<h3 data-start="9259" data-end="9296">Myth: All fibers work the same.</h3>
+<h3 id="myth-all-fibers-work-the-same" data-start="9259" data-end="9296">Myth: All fibers work the same.</h3>
 <p data-start="9297" data-end="9374">Fact: Soluble and insoluble fibers have distinct roles and health benefits.</p>
 
-<h3 data-start="9381" data-end="9404">When to See a Doctor</h3>
+<h3 id="when-to-see-a-doctor" data-start="9381" data-end="9404">When to See a Doctor</h3>
 <p data-start="9406" data-end="9636">If you have symptoms like chronic constipation, bloating, or unexplained weight changes despite a high-fiber diet, consult a healthcare provider. You might have conditions like IBS or a sensitivity to fermentable fibers (FODMAPs).</p>
 
-<h4 data-start="9643" data-end="9660">Final Thoughts</h4>
+<h4 id="final-thoughts" data-start="9643" data-end="9660">Final Thoughts</h4>
 <p data-start="9662" data-end="9901">Adding <strong data-start="9669" data-end="9689">high fiber foods</strong> to your daily routine is one of the simplest yet most powerful steps toward better health. From improving digestion to helping you lose weight naturally, fiber is essential for a balanced, disease-fighting diet.</p>
 <p data-start="9903" data-end="10068">Start small, stay consistent, and enjoy the long-term health rewards of this humble nutrient. Remember, nature provides plenty of fiber-rich foods—no pills required.</p>
                     </div>
@@ -863,12 +882,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -895,24 +932,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -920,11 +939,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -1083,6 +1102,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

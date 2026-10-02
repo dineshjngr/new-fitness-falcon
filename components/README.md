@@ -36,7 +36,9 @@ To eliminate layout duplication across articles:
   - Twitter card tags (`twitter:card="summary_large_image"`)
   - Schema.org JSON-LD structured data (`BlogPosting` and `BreadcrumbList`)
 - **Rich Elements Support**:
-  - Automatic Table of Contents (`.falcon-toc`) for articles with 3+ headings
+  - Automatic Table of Contents (`.falcon-toc`) from article H2 and H3 headings only, with nested subheadings and stable section links
+  - Sticky left navigation on wide screens, bounded by the article layout and offset below the header; collapsible navigation above the article on smaller screens
+  - Smooth section navigation, scroll-based active highlighting, keyboard focus, and reduced-motion support; article-only styles in `assets/css/article-toc.css`
   - Responsive tables wrapped in `.falcon-table-wrapper` with mobile horizontal scroll
   - Styled quotes (`blockquote`), video embeds (`.falcon-video-wrapper`), and captions
   - Social sharing toolbar with instant clipboard copy for article URL
@@ -56,4 +58,3 @@ python3 scripts/check_site.py
 # 3. Create a new future blog article
 python3 scripts/new_post.py --title "New Health Guide" --category "Health" --author "Dinesh"
 ```
-

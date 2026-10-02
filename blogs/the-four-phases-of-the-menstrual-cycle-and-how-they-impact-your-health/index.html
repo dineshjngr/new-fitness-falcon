@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,49 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/lifestyle/">Lifestyle</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">The Four Phases of the Menstrual Cycle a...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#what-is-the-menstrual-cycle">What Is the Menstrual Cycle?</a></li>
+<li><a href="#phase-1-menstrual-phase">Phase 1: Menstrual Phase</a><ol><li><a href="#what-happens">What Happens</a></li>
+<li><a href="#hormonal-changes">Hormonal Changes</a></li>
+<li><a href="#symptoms">Symptoms</a></li>
+<li><a href="#health-impact">Health Impact</a></li>
+<li><a href="#self-care-tips">Self-Care Tips</a></li></ol></li>
+<li><a href="#phase-2-follicular-phase">Phase 2: Follicular Phase</a><ol><li><a href="#what-happens-2">What Happens</a></li>
+<li><a href="#hormonal-changes-2">Hormonal Changes</a></li>
+<li><a href="#symptoms-2">Symptoms</a></li>
+<li><a href="#health-impact-2">Health Impact</a></li>
+<li><a href="#self-care-tips-2">Self-Care Tips</a></li></ol></li>
+<li><a href="#phase-3-ovulation-phase">Phase 3: Ovulation Phase</a><ol><li><a href="#what-happens-3">What Happens</a></li>
+<li><a href="#hormonal-changes-3">Hormonal Changes</a></li>
+<li><a href="#symptoms-3">Symptoms</a></li>
+<li><a href="#health-impact-3">Health Impact</a></li>
+<li><a href="#self-care-tips-3">Self-Care Tips</a></li></ol></li>
+<li><a href="#phase-4-luteal-phase">Phase 4: Luteal Phase</a><ol><li><a href="#what-happens-4">What Happens</a></li>
+<li><a href="#hormonal-changes-4">Hormonal Changes</a></li>
+<li><a href="#symptoms-4">Symptoms</a></li>
+<li><a href="#health-impact-4">Health Impact</a></li>
+<li><a href="#self-care-tips-4">Self-Care Tips</a></li></ol></li>
+<li><a href="#menstrual-cycle-and-fertility">Menstrual Cycle and Fertility</a><ol><li><a href="#fertility-tracking-tips">Fertility Tracking Tips</a></li></ol></li>
+<li><a href="#important-menstrual-symptoms-to-monitor">Important Menstrual Symptoms to Monitor</a></li>
+<li><a href="#how-to-monitor-the-menstrual-cycle">How to Monitor the Menstrual Cycle</a><ol><li><a href="#popular-tracking-methods">Popular Tracking Methods</a></li></ol></li>
+<li><a href="#nutrition-exercise-tips-for-each-cycle-phase">Nutrition &amp; Exercise Tips for Each Cycle Phase</a></li>
+<li><a href="#final-thoughts-embrace-your-cycle">Final Thoughts: Embrace Your Cycle</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/lifestyle/" class="category-badge">Lifestyle</a>
@@ -366,26 +401,6 @@
                     <figure class="falcon-featured-image-wrapper">
   <img src="/assets/images/Menstrual-Cycle.jpg" alt="Menstrual Cycle" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
-
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#what-is-the-menstrual-cycle">What Is the Menstrual Cycle?</a></li>
-    <li><a href="#phase-1-menstrual-phase">Phase 1: Menstrual Phase</a></li>
-    <li><a href="#phase-2-follicular-phase">Phase 2: Follicular Phase</a></li>
-    <li><a href="#phase-3-ovulation-phase">Phase 3: Ovulation Phase</a></li>
-    <li><a href="#phase-4-luteal-phase">Phase 4: Luteal Phase</a></li>
-    <li><a href="#menstrual-cycle-and-fertility">Menstrual Cycle and Fertility</a></li>
-    <li><a href="#important-menstrual-symptoms-to-monitor">Important Menstrual Symptoms to Monitor</a></li>
-    <li><a href="#how-to-monitor-the-menstrual-cycle">How to Monitor the Menstrual Cycle</a></li>
-    <li><a href="#nutrition-exercise-tips-for-each-cycle-phase">Nutrition &amp;amp; Exercise Tips for Each Cycle Phase</a></li>
-    <li><a href="#final-thoughts-embrace-your-cycle">Final Thoughts: Embrace Your Cycle</a></li>
-  </ol>
-</nav>
 
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
@@ -416,10 +431,10 @@
 <h2 id="phase-1-menstrual-phase" data-start="1736" data-end="1769"><strong data-start="1739" data-end="1767">Phase 1: Menstrual Phase</strong></h2>
 <p data-start="1770" data-end="1827"><strong data-start="1770" data-end="1783">Duration:</strong> Day 1 to Day 5 (can range from 3 to 7 days)</p>
 
-<h3 data-start="1829" data-end="1845">What Happens</h3>
+<h3 id="what-happens" data-start="1829" data-end="1845">What Happens</h3>
 <p data-start="1846" data-end="2000">This phase begins on the first day of bleeding. The uterine lining, known as the <a href="https://www.verywellhealth.com/what-is-the-endometrium-2721857" target="_blank" rel="noopener">endometrium</a>, is shed through the vagina if no pregnancy has occurred.</p>
 
-<h3 data-start="2002" data-end="2022">Hormonal Changes</h3>
+<h3 id="hormonal-changes" data-start="2002" data-end="2022">Hormonal Changes</h3>
 <ul data-start="2023" data-end="2127">
  	<li data-start="2023" data-end="2067">
 <p data-start="2025" data-end="2067">Decreased estrogen and progesterone levels</p>
@@ -428,7 +443,7 @@
 <p data-start="2070" data-end="2127">Hormonal drop triggers the shedding of the uterine lining</p>
 </li>
 </ul>
-<h3 data-start="2129" data-end="2141">Symptoms</h3>
+<h3 id="symptoms" data-start="2129" data-end="2141">Symptoms</h3>
 <ul data-start="2142" data-end="2235">
  	<li data-start="2142" data-end="2151">
 <p data-start="2144" data-end="2151">Fatigue</p>
@@ -446,7 +461,7 @@
 <p data-start="2218" data-end="2235">Breast tenderness</p>
 </li>
 </ul>
-<h3 data-start="2237" data-end="2254">Health Impact</h3>
+<h3 id="health-impact" data-start="2237" data-end="2254">Health Impact</h3>
 <ul data-start="2255" data-end="2368">
  	<li data-start="2255" data-end="2311">
 <p data-start="2257" data-end="2311">Hormone deficiency causes fatigue and emotional shifts</p>
@@ -455,7 +470,7 @@
 <p data-start="2314" data-end="2368">Iron levels may dip due to blood loss, lowering energy</p>
 </li>
 </ul>
-<h3 data-start="2370" data-end="2388">Self-Care Tips</h3>
+<h3 id="self-care-tips" data-start="2370" data-end="2388">Self-Care Tips</h3>
 <ul data-start="2389" data-end="2555">
  	<li data-start="2389" data-end="2415">
 <p data-start="2391" data-end="2415">Prioritize restful sleep</p>
@@ -476,10 +491,10 @@
 <h2 id="phase-2-follicular-phase" data-start="2562" data-end="2596"><strong data-start="2565" data-end="2594">Phase 2: Follicular Phase</strong></h2>
 <p data-start="2597" data-end="2658"><strong data-start="2597" data-end="2610">Duration:</strong> Day 1 to Day 13 (overlaps with menstrual phase)</p>
 
-<h3 data-start="2660" data-end="2676">What Happens</h3>
+<h3 id="what-happens-2" data-start="2660" data-end="2676">What Happens</h3>
 <p data-start="2677" data-end="2905">This phase begins with menstruation and lasts until ovulation. The pituitary gland releases <a href="https://my.clevelandclinic.org/health/articles/24638-follicle-stimulating-hormone-fsh" target="_blank" rel="noopener">follicle-stimulating hormone (FSH)</a>, which helps ovaries develop follicles. One dominant follicle matures and prepares for ovulation.</p>
 
-<h3 data-start="2907" data-end="2927">Hormonal Changes</h3>
+<h3 id="hormonal-changes-2" data-start="2907" data-end="2927">Hormonal Changes</h3>
 <ul data-start="2928" data-end="2988">
  	<li data-start="2928" data-end="2952">
 <p data-start="2930" data-end="2952">Rising estrogen levels</p>
@@ -488,7 +503,7 @@
 <p data-start="2955" data-end="2988">Moderate increase in progesterone</p>
 </li>
 </ul>
-<h3 data-start="2990" data-end="3002">Symptoms</h3>
+<h3 id="symptoms-2" data-start="2990" data-end="3002">Symptoms</h3>
 <ul data-start="3003" data-end="3084">
  	<li data-start="3003" data-end="3031">
 <p data-start="3005" data-end="3031">Increased energy and focus</p>
@@ -500,7 +515,7 @@
 <p data-start="3063" data-end="3084">Improved productivity</p>
 </li>
 </ul>
-<h3 data-start="3086" data-end="3103">Health Impact</h3>
+<h3 id="health-impact-2" data-start="3086" data-end="3103">Health Impact</h3>
 <ul data-start="3104" data-end="3193">
  	<li data-start="3104" data-end="3140">
 <p data-start="3106" data-end="3140">Optimism and confidence are higher</p>
@@ -509,7 +524,7 @@
 <p data-start="3143" data-end="3193">Great time for creative work and physical activity</p>
 </li>
 </ul>
-<h3 data-start="3195" data-end="3213">Self-Care Tips</h3>
+<h3 id="self-care-tips-2" data-start="3195" data-end="3213">Self-Care Tips</h3>
 <ul data-start="3214" data-end="3378">
  	<li data-start="3214" data-end="3240">
 <p data-start="3216" data-end="3240">Maintain a balanced diet</p>
@@ -527,10 +542,10 @@
 <h2 id="phase-3-ovulation-phase" data-start="3385" data-end="3418"><strong data-start="3388" data-end="3416">Phase 3: Ovulation Phase</strong></h2>
 <p data-start="3419" data-end="3446"><strong data-start="3419" data-end="3432">Duration:</strong> Around Day 14</p>
 
-<h3 data-start="3448" data-end="3464">What Happens</h3>
+<h3 id="what-happens-3" data-start="3448" data-end="3464">What Happens</h3>
 <p data-start="3465" data-end="3619">The mature egg is released from the ovary and travels to the fallopian tube, where it can be fertilized. This is the most fertile window of the cycle.</p>
 
-<h3 data-start="3621" data-end="3641">Hormonal Changes</h3>
+<h3 id="hormonal-changes-3" data-start="3621" data-end="3641">Hormonal Changes</h3>
 <ul data-start="3642" data-end="3732">
  	<li data-start="3642" data-end="3677">
 <p data-start="3644" data-end="3677">Surge in luteinizing hormone (LH)</p>
@@ -542,7 +557,7 @@
 <p data-start="3699" data-end="3732">Progesterone levels begin to rise</p>
 </li>
 </ul>
-<h3 data-start="3734" data-end="3746">Symptoms</h3>
+<h3 id="symptoms-3" data-start="3734" data-end="3746">Symptoms</h3>
 <ul data-start="3747" data-end="3912">
  	<li data-start="3747" data-end="3765">
 <p data-start="3749" data-end="3765">Increased libido</p>
@@ -560,7 +575,7 @@
 <p data-start="3895" data-end="3912">Breast tenderness</p>
 </li>
 </ul>
-<h3 data-start="3914" data-end="3931">Health Impact</h3>
+<h3 id="health-impact-3" data-start="3914" data-end="3931">Health Impact</h3>
 <ul data-start="3932" data-end="4076">
  	<li data-start="3932" data-end="3968">
 <p data-start="3934" data-end="3968">Energy and social interaction peak</p>
@@ -572,7 +587,7 @@
 <p data-start="4022" data-end="4076">Some may experience ovulation pain or emotional shifts</p>
 </li>
 </ul>
-<h3 data-start="4078" data-end="4096">Self-Care Tips</h3>
+<h3 id="self-care-tips-3" data-start="4078" data-end="4096">Self-Care Tips</h3>
 <ul data-start="4097" data-end="4279">
  	<li data-start="4097" data-end="4134">
 <p data-start="4099" data-end="4134">Plan social or romantic engagements</p>
@@ -590,10 +605,10 @@
 <h2 id="phase-4-luteal-phase" data-start="4286" data-end="4316"><strong data-start="4289" data-end="4314">Phase 4: Luteal Phase</strong></h2>
 <p data-start="4317" data-end="4369"><strong data-start="4317" data-end="4330">Duration:</strong> Day 15 to Day 28 (may last 10–14 days)</p>
 
-<h3 data-start="4371" data-end="4387">What Happens</h3>
+<h3 id="what-happens-4" data-start="4371" data-end="4387">What Happens</h3>
 <p data-start="4388" data-end="4569">After ovulation, the <strong data-start="4409" data-end="4432">corpus luteum forms</strong> and secretes progesterone to maintain the uterine lining. If fertilization doesn't occur, hormone levels fall, signaling the next cycle.</p>
 
-<h3 data-start="4571" data-end="4591">Hormonal Changes</h3>
+<h3 id="hormonal-changes-4" data-start="4571" data-end="4591">Hormonal Changes</h3>
 <ul data-start="4592" data-end="4652">
  	<li data-start="4592" data-end="4621">
 <p data-start="4594" data-end="4621">Progesterone is at its peak</p>
@@ -602,7 +617,7 @@
 <p data-start="4624" data-end="4652">Estrogen gradually decreases</p>
 </li>
 </ul>
-<h3 data-start="4654" data-end="4666">Symptoms</h3>
+<h3 id="symptoms-4" data-start="4654" data-end="4666">Symptoms</h3>
 <ul data-start="4667" data-end="4818">
  	<li data-start="4667" data-end="4709">
 <p data-start="4669" data-end="4709">PMS: mood swings, bloating, irritability</p>
@@ -617,7 +632,7 @@
 <p data-start="4778" data-end="4818">Anxiety or mild depression in some women</p>
 </li>
 </ul>
-<h3 data-start="4820" data-end="4837">Health Impact</h3>
+<h3 id="health-impact-4" data-start="4820" data-end="4837">Health Impact</h3>
 <ul data-start="4838" data-end="4945">
  	<li data-start="4838" data-end="4909">
 <p data-start="4840" data-end="4909">Hormonal shifts may cause emotional vulnerability and digestive upset</p>
@@ -626,7 +641,7 @@
 <p data-start="4912" data-end="4945">Fatigue and irritability increase</p>
 </li>
 </ul>
-<h3 data-start="4947" data-end="4965">Self-Care Tips</h3>
+<h3 id="self-care-tips-4" data-start="4947" data-end="4965">Self-Care Tips</h3>
 <ul data-start="4966" data-end="5184">
  	<li data-start="4966" data-end="5033">
 <p data-start="4968" data-end="5033">Limit sodium; consume magnesium-rich foods (nuts, dark chocolate)</p>
@@ -647,7 +662,7 @@
 <h2 id="menstrual-cycle-and-fertility" data-start="5191" data-end="5227"><strong data-start="5194" data-end="5227">Menstrual Cycle and Fertility</strong></h2>
 <p data-start="5229" data-end="5424">Tracking your menstrual cycle is crucial for fertility. The <strong data-start="5289" data-end="5308">ovulation phase</strong> is the most fertile time, and understanding your body's signs can help you either <strong data-start="5391" data-end="5423">promote or prevent pregnancy</strong>.</p>
 
-<h3 data-start="5426" data-end="5453">Fertility Tracking Tips</h3>
+<h3 id="fertility-tracking-tips" data-start="5426" data-end="5453">Fertility Tracking Tips</h3>
 <ul data-start="5454" data-end="5636">
  	<li data-start="5454" data-end="5490">
 <p data-start="5456" data-end="5490">Use predictive ovulation calendars</p>
@@ -712,7 +727,7 @@
 <h2 id="how-to-monitor-the-menstrual-cycle" data-start="6285" data-end="6326"><strong data-start="6288" data-end="6326">How to Monitor the Menstrual Cycle</strong></h2>
 <p data-start="6328" data-end="6440">Choose tracking methods based on your goals—whether it’s for fertility, symptom management, or hormonal balance.</p>
 
-<h3 data-start="6442" data-end="6470">Popular Tracking Methods</h3>
+<h3 id="popular-tracking-methods" data-start="6442" data-end="6470">Popular Tracking Methods</h3>
 <ul data-start="6471" data-end="6615">
  	<li data-start="6471" data-end="6521">
 <p data-start="6473" data-end="6521">Menstrual tracking apps (Flo, Clue, My Calendar)</p>
@@ -887,12 +902,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -919,24 +952,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -944,11 +959,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -1107,6 +1122,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,39 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/beauty/">Beauty</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Hair Growth vs Hair Thickness: Why Lengt...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#understanding-hair-growth-how-hair-actually-grows">Understanding Hair Growth: How Hair Actually Grows</a><ol><li><a href="#1-anagen-phase-growth-phase">1. Anagen Phase (Growth Phase)</a></li>
+<li><a href="#2-catagen-phase-transition-phase">2. Catagen Phase (Transition Phase)</a></li>
+<li><a href="#3-telogen-phase-resting-phase">3. Telogen Phase (Resting Phase)</a></li></ol></li>
+<li><a href="#hair-growth-vs-hair-thickness-key-differences-explained">Hair Growth vs Hair Thickness: Key Differences Explained</a><ol><li><a href="#hair-growth">Hair Growth</a></li>
+<li><a href="#hair-thickness">Hair Thickness</a></li></ol></li>
+<li><a href="#why-hair-length-isnt-increasing-even-when-hair-is-growing">Why Hair Length Isn’t Increasing Even When Hair Is Growing?</a></li>
+<li><a href="#breakage-the-biggest-reason-hair-is-not-growing-in-length">Breakage: The Biggest Reason Hair Is Not Growing in Length</a></li>
+<li><a href="#thin-hair-and-the-role-of-hair-thickness">Thin Hair and the Role of Hair Thickness</a></li>
+<li><a href="#scalp-health-and-its-impact-on-hair-length">Scalp Health and Its Impact on Hair Length</a></li>
+<li><a href="#nutrition-and-internal-factors-affecting-hair-length">Nutrition and Internal Factors Affecting Hair Length</a></li>
+<li><a href="#how-to-fix-hair-growth-but-no-length">How to Fix Hair Growth but No Length?</a><ol><li><a href="#1-focus-on-length-retention">1. Focus on Length Retention</a></li>
+<li><a href="#2-improve-hair-thickness-naturally">2. Improve Hair Thickness Naturally</a></li>
+<li><a href="#3-gentle-hair-care-routine">3. Gentle Hair Care Routine</a></li>
+<li><a href="#4-reduce-heat-styling">4. Reduce Heat Styling</a></li>
+<li><a href="#5-nourish-hair-from-within">5. Nourish Hair From Within</a></li></ol></li>
+<li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/beauty/" class="category-badge">Beauty</a>
@@ -367,25 +392,6 @@
   <img src="/assets/images/hair-scaled.jpg" alt="HAIR" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#understanding-hair-growth-how-hair-actually-grows">Understanding Hair Growth: How Hair Actually Grows</a></li>
-    <li><a href="#hair-growth-vs-hair-thickness-key-differences-explained">Hair Growth vs Hair Thickness: Key Differences Explained</a></li>
-    <li><a href="#why-hair-length-isnt-increasing-even-when-hair-is-growing">Why Hair Length Isn’t Increasing Even When Hair Is Growing?</a></li>
-    <li><a href="#breakage-the-biggest-reason-hair-is-not-growing-in-length">Breakage: The Biggest Reason Hair Is Not Growing in Length</a></li>
-    <li><a href="#thin-hair-and-the-role-of-hair-thickness">Thin Hair and the Role of Hair Thickness</a></li>
-    <li><a href="#scalp-health-and-its-impact-on-hair-length">Scalp Health and Its Impact on Hair Length</a></li>
-    <li><a href="#nutrition-and-internal-factors-affecting-hair-length">Nutrition and Internal Factors Affecting Hair Length</a></li>
-    <li><a href="#how-to-fix-hair-growth-but-no-length">How to Fix Hair Growth but No Length?</a></li>
-    <li><a href="#final-thoughts">Final Thoughts</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 <p data-start="242" data-end="477">Many people feel frustrated when their hair seems healthy and full, yet hair length isn’t increasing. You may notice regular shedding, good volume, or even new baby hairs but still think, <em data-start="434" data-end="475">“Why is my hair not growing in length?”</em></p>
@@ -396,18 +402,18 @@
 <p data-start="1091" data-end="1158"><a href="/blogs/top-10-hair-growth-tips/" target="_blank" rel="noopener">Hair growth</a> is a biological process that occurs beneath the scalp and follows a natural cycle. Many people assume hair grows continuously, but in reality, each strand goes through phases that determine how long it can grow. When this cycle is disrupted, you may experience hair growth but no length, even though follicles remain active. Understanding this process helps explain why hair length isn’t increasing despite visible signs of growth. Hair growth speed, cycle duration, and follicle health all play a role in whether hair reaches longer lengths. Without a healthy growth phase, strands shed or weaken before length becomes noticeable, contributing to the confusion between hair growth vs hair thickness.</p>
 <p data-start="1091" data-end="1158">Hair grows from follicles in the scalp and follows a natural cycle:</p>
 
-<h3 data-start="1160" data-end="1194">1. Anagen Phase (Growth Phase)</h3>
+<h3 id="1-anagen-phase-growth-phase" data-start="1160" data-end="1194">1. Anagen Phase (Growth Phase)</h3>
 <ul>
  	<li data-start="1197" data-end="1214">Lasts 2–7 years</li>
  	<li data-start="1217" data-end="1265">Hair actively grows about <strong data-start="1243" data-end="1265">1–1.5 cm per month</strong></li>
  	<li data-start="1268" data-end="1326">The longer this phase lasts, the longer your hair can grow</li>
 </ul>
-<h3 data-start="1328" data-end="1367">2. Catagen Phase (Transition Phase)</h3>
+<h3 id="2-catagen-phase-transition-phase" data-start="1328" data-end="1367">2. Catagen Phase (Transition Phase)</h3>
 <ul>
  	<li data-start="1370" data-end="1389">Lasts a few weeks</li>
  	<li data-start="1392" data-end="1430">Hair growth slows and follicle shrinks</li>
 </ul>
-<h3 data-start="1432" data-end="1468">3. Telogen Phase (Resting Phase)</h3>
+<h3 id="3-telogen-phase-resting-phase" data-start="1432" data-end="1468">3. Telogen Phase (Resting Phase)</h3>
 <ul>
  	<li data-start="1471" data-end="1489">Lasts 2–3 months</li>
  	<li data-start="1492" data-end="1538">Hair eventually sheds and new hair replaces it</li>
@@ -418,7 +424,7 @@
 <h2 id="hair-growth-vs-hair-thickness-key-differences-explained" data-start="2077" data-end="2136">Hair Growth vs Hair Thickness: Key Differences Explained</h2>
 <p data-start="2138" data-end="2825">Many people use the terms hair growth and hair thickness interchangeably, but they describe two very different things. Understanding the difference between hair growth and hair thickness is crucial when hair seems stuck at the same length. Hair growth refers to new hair production at the scalp, while thickness refers to the diameter and strength of each strand. You can have active growth while still experiencing breakage, which leads to hair growth but no length. Thin hair strands are more fragile and prone to damage, making it harder for them to retain length. This is why focusing only on growth products may not solve the problem of why hair length isn’t increasing.</p>
 
-<h3 data-start="1734" data-end="1749">Hair Growth</h3>
+<h3 id="hair-growth" data-start="1734" data-end="1749">Hair Growth</h3>
 <p data-start="1750" data-end="1760">Refers to:</p>
 
 <ul>
@@ -428,7 +434,7 @@
 </ul>
 <p data-start="1875" data-end="1947">You can have hair growth even if your hair is not growing in length.</p>
 
-<h3 data-start="1949" data-end="1967">Hair Thickness</h3>
+<h3 id="hair-thickness" data-start="1949" data-end="1967">Hair Thickness</h3>
 <p data-start="1968" data-end="1978">Refers to:</p>
 
 <ul>
@@ -473,7 +479,7 @@
 <h2 id="how-to-fix-hair-growth-but-no-length" data-start="6389" data-end="6428">How to Fix Hair Growth but No Length?</h2>
 <p data-start="6430" data-end="6887">Solving the issue of hair growth but no length requires a balanced approach. Instead of focusing only on growth, you must protect existing hair. Length retention is the key to visible results. Strengthening hair thickness, reducing breakage, and maintaining scalp health work together to support longer hair. When these factors are aligned, the confusion around hair growth vs hair thickness disappears, and length becomes more noticeable over time.</p>
 
-<h3 data-start="4875" data-end="4907">1. Focus on Length Retention</h3>
+<h3 id="1-focus-on-length-retention" data-start="4875" data-end="4907">1. Focus on Length Retention</h3>
 <p data-start="4908" data-end="4975">Instead of only boosting growth, protect the hair you already have.</p>
 
 <ul>
@@ -481,7 +487,7 @@
  	<li data-start="5014" data-end="5039">Micro-trimming split ends</li>
  	<li data-start="5042" data-end="5067">Avoid aggressive brushing</li>
 </ul>
-<h3 data-start="5074" data-end="5113">2. Improve Hair Thickness Naturally</h3>
+<h3 id="2-improve-hair-thickness-naturally" data-start="5074" data-end="5113">2. Improve Hair Thickness Naturally</h3>
 <p data-start="5115" data-end="5216">To address the difference between hair growth and hair thickness, focus on strengthening strands.</p>
 
 <ul>
@@ -489,7 +495,7 @@
  	<li data-start="5250" data-end="5293">Apply natural oils (castor, coconut, argan)</li>
  	<li data-start="5296" data-end="5314">Avoid over-washing</li>
 </ul>
-<h3 data-start="5321" data-end="5352">3. Gentle Hair Care Routine</h3>
+<h3 id="3-gentle-hair-care-routine" data-start="5321" data-end="5352">3. Gentle Hair Care Routine</h3>
 <ul>
  	<li data-start="5356" data-end="5376">Sulfate-free shampoo</li>
  	<li data-start="5379" data-end="5401">Conditioner every wash</li>
@@ -498,7 +504,7 @@
 </ul>
 <p data-start="5461" data-end="5525">These steps reduce breakage and help hair grow longer over time.</p>
 
-<h3 data-start="5532" data-end="5558">4. Reduce Heat Styling</h3>
+<h3 id="4-reduce-heat-styling" data-start="5532" data-end="5558">4. Reduce Heat Styling</h3>
 <p data-start="5560" data-end="5635">Excess heat weakens the hair shaft, causing <strong data-start="5604" data-end="5634">hair not growing in length</strong>.</p>
 <p data-start="5637" data-end="5655">If you must style:</p>
 
@@ -507,7 +513,7 @@
  	<li data-start="5680" data-end="5700">Keep temperature low</li>
  	<li data-start="5703" data-end="5732">Limit to once or twice a week</li>
 </ul>
-<h3 data-start="5739" data-end="5770">5. Nourish Hair From Within</h3>
+<h3 id="5-nourish-hair-from-within" data-start="5739" data-end="5770">5. Nourish Hair From Within</h3>
 <p data-start="5772" data-end="5822">Healthy hair growth depends on internal nutrition.</p>
 <p data-start="5824" data-end="5832">Include:</p>
 
@@ -633,12 +639,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -665,24 +689,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -690,11 +696,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -853,6 +859,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

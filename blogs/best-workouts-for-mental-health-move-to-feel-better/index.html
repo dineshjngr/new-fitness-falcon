@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,30 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/health/">Health</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Best Workouts for Mental Health: Move to...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#why-physical-activity-is-important-for-mental-wellness">Why Physical Activity Is Important for Mental Wellness</a><ol><li><a href="#exercise-and-its-impact-on-the-brain-and-mood">Exercise and its Impact on the Brain and Mood</a></li>
+<li><a href="#all-these-benefits-contribute-to-achieving-optimum-mental-health">All these benefits contribute to achieving optimum mental health</a></li>
+<li><a href="#group-classes-exercising-provides-social-support-for-mental-health">Group Classes: Exercising Provides Social Support for Mental Health</a></li>
+<li><a href="#outdoor-workouts-nature-as-a-natural-healer">Outdoor Workouts: Nature as a Natural Healer</a></li>
+<li><a href="#building-a-mental-health-workout-routine">Building a Mental Health Workout Routine</a></li>
+<li><a href="#exercises-to-reduce-stress-and-anxiety">Exercises To Reduce Stress and Anxiety</a></li>
+<li><a href="#mental-benefits-of-exercising">Mental Benefits Of Exercising:</a></li></ol></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/health/" class="category-badge">Health</a>
@@ -367,9 +383,6 @@
   <img src="/assets/images/Mental-Health-Workout.jpg" alt="Mental Health Workout" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 In today's world, mental health plays an equal role to physical health. With the demands of the digital world, sleeping becomes harder, and life becomes more centered on virtual connections. Our mental resilience takes a hit because of this. People of all ages are prone to anxiety, depression, chronic stress, and mental fatigue. Non-invasive ways to boost mental health are becoming more popular and sought after. Managing mental health conditions often requires therapy or medication; in addition to those, another very effective strategy based on research is exercise.
@@ -379,7 +392,7 @@ Exercising has tremendous effects on the body and brain. When exercised regularl
 Science backs the relationship between exercise and mental health. The movement of the body stimulates the release of hormones such as endorphins, serotonin, dopamine, and norepinephrine which regulate emotions. In addition, exercise facilitates sleep, reduces inflammation, and enhances self-esteem.
 
 Exercise is an essential component for individuals suffering from anxiety and depression, along with enhancing physical wellbeing, according to the <a href="https://www.apa.org/monitor/2011/12/exercise" target="_blank" rel="noopener">American Psychological Association</a>.
-<h3>Exercise and its Impact on the Brain and Mood</h3>
+<h3 id="exercise-and-its-impact-on-the-brain-and-mood">Exercise and its Impact on the Brain and Mood</h3>
 Your brain’s reaction to movement occurs nearly instantaneously. There is a wealth of scientific research that shows these benefits.
 <ul>
  	<li>Increased Endorphin Level:. Also known as happiness hormones, these relieve stress and elevate moods.</li>
@@ -388,8 +401,8 @@ Your brain’s reaction to movement occurs nearly instantaneously. There is a we
  	<li>Improved Sleep Quality: Working out improves deep sleep and helps regulate circadian rhythms.</li>
  	<li>Boosted Self-Confidence: Achieving fitness goals enhances self-worth.</li>
 </ul>
-<h3>All these benefits contribute to achieving optimum mental health</h3>
-<h4>1. Walking: The Overlooked Mental Health Superpower</h4>
+<h3 id="all-these-benefits-contribute-to-achieving-optimum-mental-health">All these benefits contribute to achieving optimum mental health</h3>
+<h4 id="1-walking-the-overlooked-mental-health-superpower">1. Walking: The Overlooked Mental Health Superpower</h4>
 The gym is not required for improving ones mental health, walking is one of the most effective forms of excersise. It can be done effortlessly.
 
 Different kinds of walks such as eco therapy has shown to be very beneficial for a person’s mental health. It can reduce anxiety, improve mood, and further cognitive function.
@@ -397,7 +410,7 @@ Different kinds of walks such as eco therapy has shown to be very beneficial for
 <a href="https://www.health.harvard.edu/mind-and-mood/exercise-is-an-all-natural-treatment-to-fight-depression" target="_blank" rel="noopener">Harvard</a> has researched and shown that walking for 30 minutes a day five times a week greatly assists in overcoming depression.
 
 Suggestion: Use nature for your brisk walk and aim for 20-45 minutes a day.
-<h4>2. Yoga: The Mind Body Coalition</h4>
+<h4 id="2-yoga-the-mind-body-coalition">2. Yoga: The Mind Body Coalition</h4>
 Yoga has a combination of movements, controlled breathing, and mindfulness. All of these combined increase emotional wellbeing. Yoga has also been said to lower cortisol levels improve focus and even balance the nervous system..
 
 Studies have shown that practicing yoga greatly assists individuals that face anxiety and depression. Offering assistance for people that are battling PTSD, trauma, and chronic stress.
@@ -409,17 +422,17 @@ Most Common Types Of Yoga For Mental Health:
  	<li>Yin Yoga: Relaxation and emotional recovery.</li>
 </ul>
 <a href="https://www.yogajournal.com/poses/yoga-by-benefit/anxiety/" target="_blank" rel="noopener">Yoga Journal</a> provides an all-encompassing anxiety and stress relief poses list.
-<h4>3. Running and Jogging: The Natural Antidepressants</h4>
+<h4 id="3-running-and-jogging-the-natural-antidepressants">3. Running and Jogging: The Natural Antidepressants</h4>
 Numerous individuals classify jogging as a moderate speed “natural antidepressant." It utilizes major muscle groups and subsequently elevates heart rate, delivering oxygen to the brain, enhancing its functionality.
 
 According to a study published on The Lancet Psychiatry in 2020, individuals who ran three times a week experienced 25% less poor mental health days when compared to individuals who didn’t exercise.
 
 Mental Trick: Engagement while running can be enhanced by listening to calming or uplifting music, allowing gentle tunes to guide your thoughts.
-<h4>4. Strength Training: Building Emotional and Physical Strength</h4>
+<h4 id="4-strength-training-building-emotional-and-physical-strength">4. Strength Training: Building Emotional and Physical Strength</h4>
 Psychological resilience can be bolstered with weight training; as far as benefits, it isn't exclusive to muscle building. It improves body image, motivates goal-setting, and decreases anxiety and depression through the release of specific neurotransmitters.
 
 Start Small: Making an effort with simple bodyweight exercises like squats, push-ups, and lunges can add up.
-<h4>5. Dance: Joy in Movement</h4>
+<h4 id="5-dance-joy-in-movement">5. Dance: Joy in Movement</h4>
 By bringing together exercise with social interaction, creativity, and music, dance becomes a powerful tool that alleviates stress and elevates moods.
 
 Types of Dance to Try:
@@ -430,7 +443,7 @@ Types of Dance to Try:
  	<li>Freeform/Improv</li>
 </ul>
 No formal training is needed. Just put on your favorite tunes and dance!
-<h4>6. HIIT (High-Intensity Interval Training): Endorphin Explosion</h4>
+<h4 id="6-hiit-high-intensity-interval-training-endorphin-explosion">6. HIIT (High-Intensity Interval Training): Endorphin Explosion</h4>
 This intense workout includes short but powerful bursts of physical activity separated by rest periods. It’s beneficial not only for the heart, but for mental health, too.
 
 Why HIIT Helps:
@@ -441,13 +454,13 @@ Why HIIT Helps:
  	<li>Lessens overthinking</li>
 </ul>
 Note: Start slow with low-impact intervals, or consult a trainer first.
-<h3>Group Classes: Exercising Provides Social Support for Mental Health</h3>
+<h3 id="group-classes-exercising-provides-social-support-for-mental-health">Group Classes: Exercising Provides Social Support for Mental Health</h3>
 Working together is proven to be more enjoyable and also scientifically shown to improve motivation and reduce stress. Group fitness classes like spin, aerobics, bootcamp, or even team sports promote community and accountability.
 
 To stay connected with others, consider joining a local fitness group or signing up for a virtual class.
 
 <img class="alignnone wp-image-3222 size-full" src="/assets/images/Mental-Health-.jpg" alt="Mental Health" width="2240" height="1260" />
-<h3>Outdoor Workouts: Nature as a Natural Healer</h3>
+<h3 id="outdoor-workouts-nature-as-a-natural-healer">Outdoor Workouts: Nature as a Natural Healer</h3>
 Exercise offers the benefit of spending time in nature, which is healing in many ways. We can reap these benefits from outdoor workouts like trail running, hiking, or even yoga on the beach. These activities can be greatly beneficial to one’s mood due to the sun’s Vitamin D, fresh air, and beautiful scenery.
 
 Being in nature has been linked to lower cortisol levels, anxiety, and improved mental sharpness and focus.
@@ -455,7 +468,7 @@ Being in nature has been linked to lower cortisol levels, anxiety, and improved 
 Environmental Health and Preventive Medicine published a study showing that spending just 20 minutes in a natural setting can reduce stress hormone levels by 20%—pretty incredible, right?
 
 Idea: Plan weekly outdoor activities to break away from the confines of indoor spaces.
-<h3>Building a Mental Health Workout Routine</h3>
+<h3 id="building-a-mental-health-workout-routine">Building a Mental Health Workout Routine</h3>
 Working on mental health doesn’t have to be intense and overly complicated—building and maintaining a mental health workout routine is all about keeping it simple. Choose easy and enjoyable workouts that fit comfortably into your day-to-day life.
 
 Weekly Mental Wellness Plan Example:
@@ -469,7 +482,7 @@ Weekly Mental Wellness Plan Example:
  	<li>Sunday: Rest day or restorative yoga</li>
 </ul>
 Tip: Record your mood before and after each session to track emotional changes.
-<h3>Exercises To Reduce Stress and Anxiety</h3>
+<h3 id="exercises-to-reduce-stress-and-anxiety">Exercises To Reduce Stress and Anxiety</h3>
 Feeling stressed and anxious? Try moving your body. Try any movements that have rhythm and repetition because those help release feel-good hormones.
 
 The best types of exercises to relieve stress:
@@ -480,7 +493,7 @@ The best types of exercises to relieve stress:
  	<li>Stretching sessions</li>
  	<li>Cycling outdoors</li>
 </ul>
-<h3>Mental Benefits Of Exercising:</h3>
+<h3 id="mental-benefits-of-exercising">Mental Benefits Of Exercising:</h3>
 These days people prefer to exercise to achieve a certain body shape and look good. Although, exercising has several mental health benefits, which are even more important.
 
 Here’s how the exercise mental health benefits stack up:
@@ -491,7 +504,7 @@ Here’s how the exercise mental health benefits stack up:
  	<li>Social Connectivity: Workouts in groups lessens isolation and increases social connectivity.</li>
 </ul>
 These advantages can add up. The more consistent you are, the more benefit you will gain.
-<h5>Concluding Remarks:</h5>
+<h5 id="concluding-remarks">Concluding Remarks:</h5>
 No single approach works for everyone faced with a mental health issue, but incorporating some exercise in the daily routine is bound to have loads of positive effects. Whether it be a walk, a dance session, or a yoga class, the best workouts for mental health are those that suit your personality and lifestyle.
 
 Begin gently and practice self-kindness. Each effort you make toward any form of activity brings your mind a little closer to inner peace and happiness.
@@ -607,12 +620,30 @@ Begin gently and practice self-kindness. Each effort you make toward any form of
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -639,24 +670,6 @@ Begin gently and practice self-kindness. Each effort you make toward any form of
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -664,11 +677,11 @@ Begin gently and practice self-kindness. Each effort you make toward any form of
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -827,6 +840,6 @@ Begin gently and practice self-kindness. Each effort you make toward any form of
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

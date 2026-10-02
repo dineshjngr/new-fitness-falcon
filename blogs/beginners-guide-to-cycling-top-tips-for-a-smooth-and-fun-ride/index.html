@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,36 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/cycling/">Cycling</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Beginner&#x27;s Guide to Cycling: Top Tips fo...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#1-what-makes-cycling-ideal-for-beginners">1. What Makes Cycling Ideal for Beginners?</a></li>
+<li><a href="#2-selecting-the-appropriate-bicycle-as-a-beginner">2. Selecting the Appropriate Bicycle as a Beginner</a><ol><li><a href="#beginner-bicycle-models">Beginner Bicycle Models</a></li>
+<li><a href="#fit-and-comfort-matter">Fit and Comfort Matter</a></li></ol></li>
+<li><a href="#3-essential-cycling-gear-for-beginners">3. Essential Cycling Gear for Beginners</a></li>
+<li><a href="#4-for-a-safe-and-smooth-ride-a-beginner-cyclist-must-use-take-into-these-tips">4. For a Safe and Smooth Ride, a Beginner cyclist must use take into these tips</a></li>
+<li><a href="#5-how-to-start-cycling-a-step-by-step-plan">5. How to Start Cycling: A Step By Step Plan</a><ol><li><a href="#weeks-1-2-get-comfortable">Weeks 1-2: Get Comfortable</a></li>
+<li><a href="#weeks-3-4-build-endurance">Weeks 3-4: Build Endurance</a></li>
+<li><a href="#month-2-and-beyond">Month 2 and Beyond:</a></li>
+<li><a href="#additional-tips">Additional Tips:</a></li></ol></li>
+<li><a href="#6-cycling-safety-practices-every-novice-should-know">6. Cycling Safety Practices Every Novice Should Know</a><ol><li><a href="#use-of-lights-when-riding-at-night">Use of Lights When Riding at Night:</a></li></ol></li>
+<li><a href="#7-know-the-most-common-beginner-mistakes-and-how-to-prevent-them">7. Know the Most Common Beginner Mistakes and How to Prevent Them</a></li>
+<li><a href="#8-for-novice-cyclist-nutrition-and-hydration">8. For Novice Cyclist: Nutrition and Hydration</a></li>
+<li><a href="#9-when-and-how-to-upgrade-your-gear">9. When and How to Upgrade Your Gear</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/cycling/" class="category-badge">Cycling</a>
@@ -367,25 +389,6 @@
   <img src="/assets/images/Cycle.jpg" alt="Cycle" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
 
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#1-what-makes-cycling-ideal-for-beginners">1. What Makes Cycling Ideal for Beginners?</a></li>
-    <li><a href="#2-selecting-the-appropriate-bicycle-as-a-beginner">2. Selecting the Appropriate Bicycle as a Beginner</a></li>
-    <li><a href="#3-essential-cycling-gear-for-beginners">3. Essential Cycling Gear for Beginners</a></li>
-    <li><a href="#4-for-a-safe-and-smooth-ride-a-beginner-cyclist-must-use-take-into-these-tips">4. For a Safe and Smooth Ride, a Beginner cyclist must use take into these tips</a></li>
-    <li><a href="#5-how-to-start-cycling-a-step-by-step-plan">5. How to Start Cycling: A Step By Step Plan</a></li>
-    <li><a href="#6-cycling-safety-practices-every-novice-should-know">6. Cycling Safety Practices Every Novice Should Know</a></li>
-    <li><a href="#7-know-the-most-common-beginner-mistakes-and-how-to-prevent-them">7. Know the Most Common Beginner Mistakes and How to Prevent Them</a></li>
-    <li><a href="#8-for-novice-cyclist-nutrition-and-hydration">8. For Novice Cyclist: Nutrition and Hydration</a></li>
-    <li><a href="#9-when-and-how-to-upgrade-your-gear">9. When and How to Upgrade Your Gear</a></li>
-  </ol>
-</nav>
-
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
 Beginning a cycling adventure can be exhilarating and life-changing. If you want to get fit, travel without contributing to pollution, and spend some time in the fresh air, then cycling can be beneficial in many ways. It’s a great way to work out without stressing the body, as it can be easier on the body and still improve heart health, cardiovascular function, muscle strength, and stamina.
@@ -407,14 +410,14 @@ Cycling provides a good way for beginners to engage in physical activity and doe
 <img class="alignnone wp-image-3355 size-full" src="/assets/images/Cycle-1.jpg" alt="cycling" width="2240" height="1260" />
 <h2 id="2-selecting-the-appropriate-bicycle-as-a-beginner">2. Selecting the Appropriate Bicycle as a Beginner</h2>
 The first step in learning how to cycle is to understand the importance of getting a suitable bike. Look at the standard bicycles which are appropriate for beginners:
-<h3>Beginner Bicycle Models</h3>
+<h3 id="beginner-bicycle-models">Beginner Bicycle Models</h3>
 <ul>
  	<li>Road Bicycles: Designed for smooth surfaces. They are the lightest and the best for long distance travel.</li>
  	<li>Mountain Bicycles: Built for rugged surfaces, rough trails, and off-road activities.</li>
  	<li><a href="https://www.outdoors91.com/adventures/blogs/everything-you-must-know-about-a-hybrid-cycle?srsltid=AfmBOoo1HLXIwK_EXkJ79dv1uPKKu61dN3CbnjJZygIu_0kjT-8dpywI" target="_blank" rel="noopener">Hybrid Bicycles</a>: A combination of mountain and road bicycles. Ideal for beginners looking for a bit of everything.</li>
  	<li><a href="https://rossacycles.com/blogs/news/cruiser-bikes-they-come-in-different-shapes-and-sizes?srsltid=AfmBOop9ruPapoEeEEzC8FT59ouZAc_90u7xauc3rxqK-ol8IwQOiBUV" target="_blank" rel="noopener">Cruiser Bicycles</a>: Suitable for short leisure cycle rides in the city.</li>
 </ul>
-<h3>Fit and Comfort Matter</h3>
+<h3 id="fit-and-comfort-matter">Fit and Comfort Matter</h3>
 <ul>
  	<li>Be sure to get the right bike which suits your height and leg length.</li>
  	<li>Take test rides on different models to pinpoint the one that feels best to you.</li>
@@ -431,7 +434,7 @@ Making sure you have some basic biking equipment can improve your comfort and sa
  	<li>Lights and Reflectors: For early morning or evening rides, lights make you visible.</li>
  	<li>Repair Kit: Having a mini pump, spare tube and tire levers are vital to have.</li>
 </ul>
-<h4>Optional, but useful:</h4>
+<h4 id="optional-but-useful">Optional, but useful:</h4>
 <ul>
  	<li>Cycling Computer or App: for distance, speed and calories burned, software is available.</li>
  	<li>Bike Lock: a recommended secure way to park your bike, lock it and not worry.</li>
@@ -450,22 +453,22 @@ Right practices and the right habits must be started for a new cyclist.
 <img class="alignnone wp-image-3356 size-full" src="/assets/images/Cycling-man.jpg" alt="Cycling man" width="2240" height="1260" />
 <h2 id="5-how-to-start-cycling-a-step-by-step-plan">5. How to Start Cycling: A Step By Step Plan</h2>
 Getting started in cycling doesn’t have to be overwhelming. Here’s an easy plan for beginners:
-<h3>Weeks 1-2: Get Comfortable</h3>
+<h3 id="weeks-1-2-get-comfortable">Weeks 1-2: Get Comfortable</h3>
 <ul>
  	<li>Ride on flat and quiet roads for 10 to 15 minutes each day.</li>
  	<li>Focus on the basics: starting, stopping, turning, and signaling.</li>
 </ul>
-<h3>Weeks 3-4: Build Endurance</h3>
+<h3 id="weeks-3-4-build-endurance">Weeks 3-4: Build Endurance</h3>
 <ul>
  	<li>Increase your ride time to 30-15 minutes.</li>
  	<li>Add light hills and surfaced trails.</li>
 </ul>
-<h3>Month 2 and Beyond:</h3>
+<h3 id="month-2-and-beyond">Month 2 and Beyond:</h3>
 <ul>
  	<li>Aim for 3 to 4 rides per week.</li>
  	<li>Join group rides or try new trails for extra fun and motivation.</li>
 </ul>
-<h3>Additional Tips:</h3>
+<h3 id="additional-tips">Additional Tips:</h3>
 <ul>
  	<li>Document every ride for better tracking.</li>
  	<li>Set small achievements, e.g. 50 kilometers in a week.</li>
@@ -480,7 +483,7 @@ As a novice cyclist, safety practices are critical. Consider these primary point
  	<li>Sustaining Distraction: While cycling, put away your phone and headphones.</li>
  	<li>Remain Taxed: Watch out for potholes, opening doors, and other road users.</li>
 </ul>
-<h3>Use of Lights When Riding at Night:</h3>
+<h3 id="use-of-lights-when-riding-at-night">Use of Lights When Riding at Night:</h3>
 <ul>
  	<li>Both the front and rear lights must always be used.</li>
  	<li>Add vests or tapes for extra visibility during the night.</li>
@@ -510,7 +513,7 @@ The following accessories are effective steps to take if you want to improve cyc
  	<li>Cycling jerseys with pockets, shorts, and breathable layers are much better and investing in them is a leap toward better cycling.</li>
  	<li>Make sure to book regular professional and detailed maintenance checkups to best preserve your bike’s condition.</li>
 </ul>
-<h4>Conclusion</h4>
+<h4 id="conclusion">Conclusion</h4>
 To feel a greater sense of freedom and feel healthier, a workout is needed, and cycling serves more as a workout. While riding your bike, the journey matters as significant enjoyment while understanding the basics boosts confidence. With the best mindset, gear as well as trying to embrace practice, soon you will be riding a bike for much longer and a broad smile will take over your face.
 
 Most importantly, while cycling, gear up, stay safe, and if you want to have fun to embrace the joy of cycling from today.
@@ -607,16 +610,16 @@ Most importantly, while cycling, gear up, stay safe, and if you want to have fun
     </div>
   </article>
 </div><div class="col-md-4 mb-4">
-  <article class="falcon-related-card post-card" data-slug="apple-watch-vs-garmin-step-tracking-accuracy-2026">
-    <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-card-media" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
-      <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Original illustrated smartwatch and data graphic for Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" class="post-card-thumb" loading="lazy" />
+  <article class="falcon-related-card post-card" data-slug="walking-pad-not-counting-steps">
+    <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-card-media" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+      <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Illustration of a walking-pad desk setup with a stationary wrist and moving feet" class="post-card-thumb" loading="lazy" />
     </a>
     <div class="post-card-body">
       <a href="/category/wearables-fitness-technology/" class="category-badge category-badge-sm">Wearables &amp; Fitness Technology</a>
-      <h4 class="post-card-title"><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?</a></h4>
+      <h4 class="post-card-title"><a href="/blogs/walking-pad-not-counting-steps/">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a></h4>
       <div class="post-card-meta">
-        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 4 min read</span>
+        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 8 min read</span>
       </div>
     </div>
   </article>
@@ -626,12 +629,30 @@ Most importantly, while cycling, gear up, stay safe, and if you want to have fun
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -658,24 +679,6 @@ Most importantly, while cycling, gear up, stay safe, and if you want to have fun
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -683,11 +686,11 @@ Most importantly, while cycling, gear up, stay safe, and if you want to have fun
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -846,6 +849,6 @@ Most importantly, while cycling, gear up, stay safe, and if you want to have fun
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

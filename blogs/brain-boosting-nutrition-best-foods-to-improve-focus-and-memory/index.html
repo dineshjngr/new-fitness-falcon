@@ -52,7 +52,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
+    <link rel="stylesheet" href="/assets/css/article-toc.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -336,15 +337,46 @@
 <!-- shared:header:end -->
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container">
+    <div class="container falcon-has-toc">
         <!-- Reusable Breadcrumbs Component -->
         <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/nutrition/">Nutrition</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">Brain Boosting Nutrition: Best Foods to...</span>
 </nav>
 
-        <div class="row">
-            <!-- Main Article Column (8 Cols) -->
-            <div class="col-lg-8">
+        <div class="falcon-post-layout has-toc">
+            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+  <div class="falcon-toc-header">
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
+  </div>
+  <ol class="falcon-toc-list" id="falconTocList">
+<li><a href="#understanding-brain-boosting-nutrition">Understanding Brain Boosting Nutrition</a></li>
+<li><a href="#why-nutrition-for-brain-function-matters">Why Nutrition for Brain Function Matters?</a></li>
+<li><a href="#how-nutrition-supports-brain-health">How Nutrition Supports Brain Health</a><ol><li><a href="#1-improves-blood-flow-to-the-brain">1. Improves Blood Flow to the Brain</a></li>
+<li><a href="#2-protects-brain-cells">2. Protects Brain Cells</a></li>
+<li><a href="#3-supports-neurotransmitters">3. Supports Neurotransmitters</a></li>
+<li><a href="#4-reduces-inflammation">4. Reduces Inflammation</a></li></ol></li>
+<li><a href="#essential-nutrients-for-brain-health">Essential Nutrients for Brain Health</a></li>
+<li><a href="#best-foods-for-brain-health">Best Foods for Brain Health</a><ol><li><a href="#fatty-fish">Fatty Fish</a></li>
+<li><a href="#nuts-and-seeds">Nuts and Seeds</a></li>
+<li><a href="#leafy-green-vegetables">Leafy Green Vegetables</a></li>
+<li><a href="#berries">Berries</a></li>
+<li><a href="#eggs">Eggs</a></li>
+<li><a href="#whole-grains">Whole Grains</a></li>
+<li><a href="#dark-chocolate">Dark Chocolate</a></li>
+<li><a href="#yogurt-and-fermented-foods">Yogurt and Fermented Foods</a></li></ol></li>
+<li><a href="#best-foods-for-focus-and-memory">Best Foods for Focus and Memory</a></li>
+<li><a href="#daily-nutrition-for-brain-function">Daily Nutrition for Brain Function</a><ol><li><a href="#simple-daily-tips">Simple Daily Tips</a></li></ol></li>
+<li><a href="#brain-boosting-nutrition-for-different-age-groups">Brain Boosting Nutrition for Different Age Groups</a><ol><li><a href="#1-students">1. Students</a></li>
+<li><a href="#2-working-professionals">2. Working Professionals</a></li>
+<li><a href="#3-older-adults">3. Older Adults</a></li></ol></li>
+<li><a href="#lifestyle-factors-that-support-brain-health">Lifestyle Factors That Support Brain Health</a></li>
+<li><a href="#how-long-does-it-take-to-see-results">How Long Does It Take to See Results?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav></aside>
+            <!-- Main Article Column -->
+            <div class="falcon-post-main">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
                     <!-- Reusable Category Badge -->
                     <a href="/category/nutrition/" class="category-badge">Nutrition</a>
@@ -366,27 +398,6 @@
                     <figure class="falcon-featured-image-wrapper">
   <img src="/assets/images/yoga-1-scaled.jpg" alt="Nutrition Supports Brain Health" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
 </figure>
-
-                    <!-- Reusable Table of Contents (when applicable) -->
-                    <nav class="falcon-toc" aria-label="Table of Contents">
-  <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
-  </div>
-  <ol class="falcon-toc-list" id="falconTocList">
-    <li><a href="#understanding-brain-boosting-nutrition">Understanding Brain Boosting Nutrition</a></li>
-    <li><a href="#why-nutrition-for-brain-function-matters">Why Nutrition for Brain Function Matters?</a></li>
-    <li><a href="#how-nutrition-supports-brain-health">How Nutrition Supports Brain Health</a></li>
-    <li><a href="#essential-nutrients-for-brain-health">Essential Nutrients for Brain Health</a></li>
-    <li><a href="#best-foods-for-brain-health">Best Foods for Brain Health</a></li>
-    <li><a href="#best-foods-for-focus-and-memory">Best Foods for Focus and Memory</a></li>
-    <li><a href="#daily-nutrition-for-brain-function">Daily Nutrition for Brain Function</a></li>
-    <li><a href="#brain-boosting-nutrition-for-different-age-groups">Brain Boosting Nutrition for Different Age Groups</a></li>
-    <li><a href="#lifestyle-factors-that-support-brain-health">Lifestyle Factors That Support Brain Health</a></li>
-    <li><a href="#how-long-does-it-take-to-see-results">How Long Does It Take to See Results?</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ol>
-</nav>
 
                     <!-- Article Content Body -->
                     <div class="entry-content" itemprop="articleBody">
@@ -419,16 +430,16 @@
 <h2 id="how-nutrition-supports-brain-health" data-start="2522" data-end="2564"><strong data-start="2525" data-end="2564">How Nutrition Supports Brain Health</strong></h2>
 <p data-start="2566" data-end="2626">Nutrition influences brain health in several important ways:</p>
 
-<h3 data-start="2628" data-end="2671"><strong data-start="2632" data-end="2671">1. Improves Blood Flow to the Brain</strong></h3>
+<h3 id="1-improves-blood-flow-to-the-brain" data-start="2628" data-end="2671"><strong data-start="2632" data-end="2671">1. Improves Blood Flow to the Brain</strong></h3>
 <p data-start="2672" data-end="2767">Healthy foods support circulation, ensuring oxygen and nutrients reach brain cells efficiently.</p>
 
-<h3 data-start="2769" data-end="2800"><strong data-start="2773" data-end="2800">2. Protects Brain Cells</strong></h3>
+<h3 id="2-protects-brain-cells" data-start="2769" data-end="2800"><strong data-start="2773" data-end="2800">2. Protects Brain Cells</strong></h3>
 <p data-start="2801" data-end="2880">Antioxidants protect the brain from oxidative stress, which can damage neurons.</p>
 
-<h3 data-start="2882" data-end="2919"><strong data-start="2886" data-end="2919">3. Supports Neurotransmitters</strong></h3>
+<h3 id="3-supports-neurotransmitters" data-start="2882" data-end="2919"><strong data-start="2886" data-end="2919">3. Supports Neurotransmitters</strong></h3>
 <p data-start="2920" data-end="3007">Certain nutrients help produce neurotransmitters that regulate mood, focus, and memory.</p>
 
-<h3 data-start="3009" data-end="3040"><strong data-start="3013" data-end="3040">4. Reduces Inflammation</strong></h3>
+<h3 id="4-reduces-inflammation" data-start="3009" data-end="3040"><strong data-start="3013" data-end="3040">4. Reduces Inflammation</strong></h3>
 <p data-start="3041" data-end="3151">Chronic inflammation negatively affects brain health. Anti-inflammatory foods help protect cognitive function.</p>
 
 <h2 id="essential-nutrients-for-brain-health" data-start="3158" data-end="3201"><strong data-start="3161" data-end="3201">Essential Nutrients for Brain Health</strong></h2>
@@ -446,28 +457,28 @@
 <h2 id="best-foods-for-brain-health" data-start="3688" data-end="3722"><strong data-start="3691" data-end="3722">Best Foods for Brain Health</strong></h2>
 <p data-start="3724" data-end="3884">Incorporating the right foods into your daily meals can significantly improve mental performance. Below are some of the most effective <strong data-start="3859" data-end="3883">brain boosting foods</strong>.</p>
 
-<h3 data-start="3891" data-end="3909"><strong data-start="3895" data-end="3909">Fatty Fish</strong></h3>
+<h3 id="fatty-fish" data-start="3891" data-end="3909"><strong data-start="3895" data-end="3909">Fatty Fish</strong></h3>
 <p data-start="3911" data-end="4172">Fatty fish such as salmon, sardines, and mackerel are rich in omega-3 fatty acids. Omega-3s are essential for brain structure and help improve communication between brain cells. Regular consumption of fatty fish supports memory, learning, and emotional balance.</p>
 
-<h3 data-start="4179" data-end="4201"><strong data-start="4183" data-end="4201">Nuts and Seeds</strong></h3>
+<h3 id="nuts-and-seeds" data-start="4179" data-end="4201"><strong data-start="4183" data-end="4201">Nuts and Seeds</strong></h3>
 <p data-start="4203" data-end="4468">Nuts and seeds are powerful <strong data-start="4231" data-end="4255">brain boosting foods</strong> due to their healthy fats, antioxidants, and vitamins. Walnuts, almonds, flaxseeds, and <a href="/blogs/pumpkin-seeds-health-benefits-nutrition-and-uses/">pumpkin seeds</a> support brain cell protection and cognitive performance. They are easy to include as snacks or meal additions.</p>
 
-<h3 data-start="4475" data-end="4505"><strong data-start="4479" data-end="4505">Leafy Green Vegetables</strong></h3>
+<h3 id="leafy-green-vegetables" data-start="4475" data-end="4505"><strong data-start="4479" data-end="4505">Leafy Green Vegetables</strong></h3>
 <p data-start="4507" data-end="4761">Spinach, kale, and other leafy greens are excellent <strong data-start="4559" data-end="4585">foods for brain health</strong>. They are rich in vitamins and antioxidants that help slow cognitive decline and protect memory. These vegetables also support brain detoxification and overall mental clarity.</p>
 
-<h3 data-start="4768" data-end="4783"><strong data-start="4772" data-end="4783">Berries</strong></h3>
+<h3 id="berries" data-start="4768" data-end="4783"><strong data-start="4772" data-end="4783">Berries</strong></h3>
 <p data-start="4785" data-end="5017">Berries such as blueberries and strawberries are known for their antioxidant content. They help reduce oxidative stress and improve memory and learning ability. Berries are especially effective for supporting long-term brain health.</p>
 
-<h3 data-start="5024" data-end="5036"><strong data-start="5028" data-end="5036">Eggs</strong></h3>
+<h3 id="eggs" data-start="5024" data-end="5036"><strong data-start="5028" data-end="5036">Eggs</strong></h3>
 <p data-start="5038" data-end="5223">Eggs provide important nutrients that support memory and brain development. They are one of the <strong data-start="5134" data-end="5169">best foods for focus and memory</strong>, especially when consumed as part of a balanced diet.</p>
 
-<h3 data-start="5230" data-end="5250"><strong data-start="5234" data-end="5250">Whole Grains</strong></h3>
+<h3 id="whole-grains" data-start="5230" data-end="5250"><strong data-start="5234" data-end="5250">Whole Grains</strong></h3>
 <p data-start="5252" data-end="5422">Whole grains supply the brain with steady energy. Unlike refined carbohydrates, whole grains prevent energy crashes and help maintain consistent focus throughout the day.</p>
 
-<h3 data-start="5429" data-end="5451"><strong data-start="5433" data-end="5451">Dark Chocolate</strong></h3>
+<h3 id="dark-chocolate" data-start="5429" data-end="5451"><strong data-start="5433" data-end="5451">Dark Chocolate</strong></h3>
 <p data-start="5453" data-end="5626">Dark chocolate contains compounds that improve blood flow to the brain and support alertness. In moderation, it can be a beneficial addition to <strong data-start="5597" data-end="5625">brain boosting nutrition</strong>.</p>
 
-<h3 data-start="5633" data-end="5667"><strong data-start="5637" data-end="5667">Yogurt and Fermented Foods</strong></h3>
+<h3 id="yogurt-and-fermented-foods" data-start="5633" data-end="5667"><strong data-start="5637" data-end="5667">Yogurt and Fermented Foods</strong></h3>
 <p data-start="5669" data-end="5820">Gut health is closely linked to brain health. Fermented foods support healthy gut bacteria, which positively influence mood, focus, and mental clarity.</p>
 
 <h2 id="best-foods-for-focus-and-memory" data-start="5827" data-end="5865"><strong data-start="5830" data-end="5865">Best Foods for Focus and Memory</strong></h2>
@@ -485,7 +496,7 @@
 <h2 id="daily-nutrition-for-brain-function" data-start="6263" data-end="6304"><strong data-start="6266" data-end="6304">Daily Nutrition for Brain Function</strong></h2>
 <p data-start="6306" data-end="6454">Maintaining proper <strong data-start="6325" data-end="6357">nutrition for brain function</strong> is not about one perfect meal—it’s about daily habits. Consistency matters more than perfection.</p>
 
-<h3 data-start="6456" data-end="6481"><strong data-start="6460" data-end="6481">Simple Daily Tips</strong></h3>
+<h3 id="simple-daily-tips" data-start="6456" data-end="6481"><strong data-start="6460" data-end="6481">Simple Daily Tips</strong></h3>
 <ul data-start="6482" data-end="6690">
  	<li data-start="6482" data-end="6550">
 <p data-start="6484" data-end="6550">Eat balanced meals with protein, healthy fats, and complex carbs</p>
@@ -503,13 +514,13 @@
 <p data-start="6692" data-end="6770">Small daily changes can lead to noticeable improvements in mental performance.</p>
 
 <h2 id="brain-boosting-nutrition-for-different-age-groups" data-start="6777" data-end="6833"><strong data-start="6780" data-end="6833">Brain Boosting Nutrition for Different Age Groups</strong></h2>
-<h3 data-start="6835" data-end="6851"><strong data-start="6839" data-end="6851">1. Students</strong></h3>
+<h3 id="1-students" data-start="6835" data-end="6851"><strong data-start="6839" data-end="6851">1. Students</strong></h3>
 <p data-start="6852" data-end="6910">Supports learning, memory retention, and exam performance.</p>
 
-<h3 data-start="6912" data-end="6941"><strong data-start="6916" data-end="6941">2. Working Professionals</strong></h3>
+<h3 id="2-working-professionals" data-start="6912" data-end="6941"><strong data-start="6916" data-end="6941">2. Working Professionals</strong></h3>
 <p data-start="6942" data-end="6994">Improves focus, productivity, and stress management.</p>
 
-<h3 data-start="6996" data-end="7016"><strong data-start="7000" data-end="7016">3. Older Adults</strong></h3>
+<h3 id="3-older-adults" data-start="6996" data-end="7016"><strong data-start="7000" data-end="7016">3. Older Adults</strong></h3>
 <p data-start="7017" data-end="7087">Helps protect against memory decline and supports cognitive longevity.</p>
 <p data-start="7089" data-end="7149">Brain health nutrition is beneficial at every stage of life.</p>
 
@@ -652,12 +663,30 @@
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="col-lg-4">
+            <div class="falcon-post-widgets">
                 <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
                     <!-- Recent Articles Widget -->
                     <div class="falcon-sidebar-widget">
                         <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
                                 <div class="falcon-recent-item">
+            <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-thumb" aria-label="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin">
+                <img src="/assets/images/walking-pad-not-counting-steps.png" alt="Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/walking-pad-not-counting-steps/" class="falcon-recent-title">Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
+            <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-thumb" aria-label="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?">
+                <img src="/assets/images/10-minute-walk-after-meals-vs-30-minute-walk.png" alt="10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?" loading="lazy" />
+            </a>
+            <div class="falcon-recent-content">
+                <a href="/blogs/10-minute-walk-after-meals-vs-30-minute-walk/" class="falcon-recent-title">10-Minute Walks After Meals vs One 30-Minute Walk: Which Helps More?</a>
+                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 2, 2026</span>
+            </div>
+        </div>
+        <div class="falcon-recent-item">
             <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/" class="falcon-recent-thumb" aria-label="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?">
                 <img src="/assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026.png" alt="Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?" loading="lazy" />
             </a>
@@ -684,24 +713,6 @@
                 <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
             </div>
         </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-thumb" aria-label="HRV for Fitness: What Your Heart Rate Variability Actually Tells You">
-                <img src="/assets/images/hrv-for-fitness-what-it-tells-you.png" alt="HRV for Fitness: What Your Heart Rate Variability Actually Tells You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/hrv-for-fitness-what-it-tells-you/" class="falcon-recent-title">HRV for Fitness: What Your Heart Rate Variability Actually Tells You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-thumb" aria-label="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026">
-                <img src="/assets/images/garmin-running-plans-features-september-2026.png" alt="Garmin’s New Running Plans and Fitness Features: What Changed in September 2026" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/garmin-running-plans-features-september-2026/" class="falcon-recent-title">Garmin’s New Running Plans and Fitness Features: What Changed in September 2026</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
-            </div>
-        </div>
                     </div>
 
                     <!-- Categories Widget -->
@@ -709,11 +720,11 @@
                         <h3 class="falcon-sidebar-widget-title">Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                                     <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">18</span>
+            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <span class="falcon-cat-badge">19</span>
         </li>
         <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
+            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
             <span class="falcon-cat-badge">18</span>
         </li>
         <li class="falcon-cat-item">
@@ -872,6 +883,6 @@
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/search-results.js"></script>
 <script src="/assets/js/falcon-search-data.js"></script>
-<script src="/assets/js/falcon-core.js?v=1ff0f3c74a95"></script>
+<script src="/assets/js/falcon-core.js?v=dba9826cf6ef"></script>
 </body>
 </html>

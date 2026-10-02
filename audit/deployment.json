@@ -1,0 +1,24 @@
+{
+  "domain": "https://thefitnessfalcon.com/",
+  "deployed_on": "2026-10-02",
+  "hosting": "Hostinger",
+  "type": "static",
+  "public_files_uploaded": 828,
+  "public_urls_checked": 827,
+  "all_public_urls_returned_expected_status": true,
+  "exact_content_matches": 455,
+  "image_responses_with_different_hashes": 372,
+  "image_verification": "All images returned HTTP 200. Original server asset sizes match the release. Image response changes are consistent with CDN processing; sampled image dimensions match.",
+  "server_asset_sizes_verified": 457,
+  "routing_checks": {
+    "https_homepage_matches_release": true,
+    "http_redirects_to_https": true,
+    "legacy_blog_redirect": true,
+    "custom_404_status": true,
+    "private_paths_forbidden": true
+  },
+  "previous_wordpress_files_and_database_preserved": true,
+  "release_and_routing_backup": "/private/tmp/falcon-deployment-20261002-163430",
+  "verification_report": "/private/tmp/falcon-deployment-20261002-163430/live-verification.json",
+  "limitation": "Newsletter delivery service is not connected."
+}

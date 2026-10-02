@@ -1,8 +1,8 @@
 <!-- Shared Reusable Table of Contents Component -->
-<nav class="falcon-toc" aria-label="Table of Contents">
+<nav class="falcon-toc" aria-labelledby="falconTocTitle">
   <div class="falcon-toc-header">
-    <span class="falcon-toc-title"><i class="fal fa-list-ul"></i> Table of Contents</span>
-    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList">Hide</button>
+    <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
+    <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
   </div>
   <ol class="falcon-toc-list" id="falconTocList">
     {{TOC_ITEMS_HTML}}
