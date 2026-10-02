@@ -1,0 +1,27 @@
+<!-- Shared Reusable Featured Article Card Component -->
+<article class="falcon-featured-card">
+  <div class="falcon-featured-media">
+    <a href="/blogs/{{SLUG}}/" aria-label="{{TITLE}}">
+      <img src="{{IMAGE_URL}}" alt="{{ALT_TEXT}}" class="falcon-featured-thumb" loading="eager" />
+    </a>
+    <span class="falcon-featured-badge"><i class="far fa-star"></i> Featured Story</span>
+  </div>
+  <div class="falcon-featured-body">
+    <a href="{{CATEGORY_URL}}" class="category-badge category-badge-sm">{{CATEGORY_NAME}}</a>
+    <h2 class="falcon-featured-title">
+      <a href="/blogs/{{SLUG}}/">{{TITLE}}</a>
+    </h2>
+    <p class="falcon-featured-excerpt">{{EXCERPT}}</p>
+    <div class="falcon-featured-meta">
+      <div class="falcon-author-compact">
+        <span class="falcon-author-avatar-sm" style="background: {{AUTHOR_GRADIENT}};">{{AUTHOR_INITIAL}}</span>
+        <span class="falcon-author-name-sm">By {{AUTHOR}}</span>
+      </div>
+      <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> {{DATE}}</span>
+      <span class="falcon-meta-read"><i class="fal fa-clock"></i> {{READ_TIME}} min read</span>
+    </div>
+    <div class="falcon-featured-action">
+      <a href="/blogs/{{SLUG}}/" class="falcon-btn falcon-btn-primary falcon-btn-sm">Read Article <i class="fal fa-arrow-right"></i></a>
+    </div>
+  </div>
+</article>

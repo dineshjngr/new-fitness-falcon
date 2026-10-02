@@ -1,0 +1,28 @@
+<!-- Shared Reusable Social Sharing Toolbar Component -->
+<div class="falcon-social-share" aria-label="Share this article">
+  <div class="falcon-social-share-title">
+    <i class="fal fa-share-alt"></i>
+    <span>Share this article:</span>
+  </div>
+  <div class="falcon-social-buttons">
+    <a href="https://twitter.com/intent/tweet?text={{SHARE_TITLE_ENCODED}}&url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-x" aria-label="Share on X (Twitter)">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-facebook" aria-label="Share on Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-linkedin" aria-label="Share on LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://pinterest.com/pin/create/button/?url={{SHARE_URL_ENCODED}}&media={{SHARE_IMG_ENCODED}}&description={{SHARE_TITLE_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-pinterest" aria-label="Pin on Pinterest">
+      <i class="fab fa-pinterest-p"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send?text={{SHARE_TITLE_ENCODED}}%20{{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-whatsapp" aria-label="Share via WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button type="button" class="falcon-share-btn share-copy" id="falconCopyLinkBtn" data-url="{{CANONICAL_URL}}" aria-label="Copy article link">
+      <i class="fal fa-link"></i>
+      <span class="falcon-copy-tooltip" id="falconCopyTooltip">Link copied!</span>
+    </button>
+  </div>
+</div>

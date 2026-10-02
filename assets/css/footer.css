@@ -1,33 +1,391 @@
-/* The Fitness Falcon footer */
-.falcon-footer { background: #101522; color: #b6bdcb; padding: 0; position: relative; }
-.falcon-footer .container { max-width: 1320px; padding-left: 30px; padding-right: 30px; }
-.falcon-footer a { color: inherit; text-decoration: none; transition: color .2s, background .2s; }
-.falcon-footer a:hover { color: #fff; }
-.falcon-footer a:focus-visible, .falcon-footer button:focus-visible { outline: 2px solid #8299ff; outline-offset: 5px; }
-.falcon-footer-intro { display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 60px 0 48px; border-bottom: 1px solid #303543; }
-.falcon-footer-eyebrow { color: #91a5ff; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
-.falcon-footer .falcon-footer-intro h2 { color: #fff; font-size: clamp(36px, 4vw, 56px); line-height: 1.12; letter-spacing: -2px; margin: 17px 0 0; }
-.falcon-footer-intro h2 span { color: #6382ff; }
-.falcon-footer-intro > p { font-size: 16px; line-height: 1.8; margin: 25px 0 0; padding-right: 30px; }
-.falcon-footer-main { display: grid; grid-template-columns: 1.3fr .9fr .9fr 1.45fr; gap: 45px; padding: 46px 0 50px; }
-.falcon-footer-brand img { width: 190px; height: auto; display: block; margin: -8px 0 17px; }
-.falcon-footer-brand p { font-size: 13px; line-height: 1.8; margin: 0 0 22px; }
-.falcon-footer .falcon-footer-main h3 { color: #fff; font-size: 14px; line-height: 1.5; margin: 0 0 22px; font-weight: 700 !important; }
-.falcon-footer ul { list-style: none; padding: 0; margin: 0; }
-.falcon-footer li { font-size: 13px; line-height: 1.6; margin: 0 0 12px; }
-.falcon-footer-social { display: flex; gap: 8px; }
-.falcon-footer-social a { display: flex; align-items: center; justify-content: center; width: 33px; height: 33px; border: 1px solid #3b4150; border-radius: 50%; }
-.falcon-footer .falcon-footer-social .fab { font-family: 'Font Awesome 5 Brands' !important; font-size: 12px; }
-.falcon-footer-social a:hover { background: #3b60fe; border-color: #3b60fe; }
-.falcon-footer-note { display: block; max-width: 140px; margin-top: 22px; font-size: 11px; line-height: 1.7; color: #9099ab; }
-.falcon-footer-story { display: flex; align-items: center; gap: 13px; margin-bottom: 15px; }
-.falcon-footer-story img { width: 68px; height: 52px; object-fit: cover; border-radius: 5px; flex-shrink: 0; }
-.falcon-footer-story span:nth-child(2) { font-size: 13px; line-height: 1.5; color: #e0e4ed; }
-.falcon-footer-story span:last-child { font-size: 18px; color: #91a5ff; margin-left: auto; }
-.falcon-footer-bottom { display: flex; align-items: center; gap: 28px; border-top: 1px solid #303543; padding: 23px 0; font-size: 11px; }
-.falcon-footer-bottom p { font-size: inherit; margin: 0; }
-.falcon-footer-bottom button { margin-left: auto; padding: 0; border: 0; background: transparent; color: #dce1eb; font-size: 11px; cursor: pointer !important; }
-.falcon-footer-bottom button span { margin-left: 12px; color: #91a5ff; font-size: 18px; }
-@media (max-width: 991px) { .falcon-footer-main { grid-template-columns: 1fr 1fr; gap: 35px 50px; } .falcon-footer-intro > p { padding-right: 0; font-size: 14px; } }
-@media (max-width: 575px) { .falcon-footer .container { padding-left: 24px; padding-right: 24px; } .falcon-footer-intro { display: block; padding: 40px 0 30px; } .falcon-footer .falcon-footer-intro h2 { letter-spacing: -1px; } .falcon-footer-intro > p { margin-top: 22px; } .falcon-footer-main { gap: 30px 20px; padding: 32px 0; } .falcon-footer-brand, .falcon-footer-reading { grid-column: 1 / -1; } .falcon-footer-brand p br { display: none; } .falcon-footer-note { max-width: 170px; } .falcon-footer-bottom { flex-wrap: wrap; gap: 15px; padding: 20px 0; } .falcon-footer-bottom p { width: 100%; } }
-@media (prefers-reduced-motion: reduce) { .falcon-footer a { transition: none; } }
+/* --------------------------------------------------------------------------
+   The Fitness Falcon - Global Shared Footer Styles
+   Unified across all pages: Desktop (4 cols), Tablet (2x2), Mobile (stacked)
+   -------------------------------------------------------------------------- */
+
+.falcon-footer {
+  background: #101522;
+  color: #b6bdcb;
+  padding: 0;
+  position: relative;
+  font-family: var(--font-family-base, 'DM Sans', sans-serif);
+  border-top: 1px solid #1e2430;
+  clear: both;
+}
+
+.falcon-footer .container {
+  max-width: 1320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.falcon-footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.falcon-footer a:hover {
+  color: #ffffff;
+}
+
+.falcon-footer a:focus-visible,
+.falcon-footer button:focus-visible {
+  outline: 2px solid #8299ff !important;
+  outline-offset: 4px !important;
+  border-radius: 4px;
+}
+
+/* 1. Top Editorial Intro */
+.falcon-footer-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0 48px;
+  border-bottom: 1px solid #232a3b;
+}
+
+.falcon-footer-eyebrow {
+  color: #91a5ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.falcon-footer .falcon-footer-intro h2 {
+  color: #ffffff;
+  font-size: clamp(32px, 3.6vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 14px 0 0;
+}
+
+.falcon-footer-intro h2 span {
+  color: #6382ff;
+}
+
+.falcon-footer-intro > p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #94a3b8;
+  margin: 0;
+  padding-right: 20px;
+  max-width: 520px;
+}
+
+/* 2. Main Footer Grid */
+.falcon-footer-main {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.9fr 1.45fr;
+  gap: 48px;
+  padding: 48px 0 52px;
+}
+
+/* Column 1: Brand & Social */
+.falcon-footer-brand img {
+  width: 190px;
+  max-width: 210px;
+  height: auto;
+  aspect-ratio: 575.53 / 200;
+  display: block;
+  margin: 0 0 18px;
+  transition: transform 0.2s ease;
+}
+
+.falcon-footer-brand a:hover img {
+  transform: scale(1.02);
+}
+
+.falcon-footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin: 0 0 22px;
+}
+
+.falcon-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.falcon-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #2a3346;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  color: #cbd5e1;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.falcon-footer .falcon-footer-social .fab {
+  font-family: 'Font Awesome 5 Brands' !important;
+  font-size: 13px;
+}
+
+.falcon-footer-social a:hover {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 65, 248, 0.35);
+}
+
+/* Column 2 & 3: Navigation Columns */
+.falcon-footer .falcon-footer-main h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+
+.falcon-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.falcon-footer li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.falcon-footer-nav a {
+  color: #b6bdcb;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.falcon-footer-nav a:hover {
+  color: #6382ff;
+  transform: translateX(3px);
+}
+
+.falcon-footer-note {
+  display: block;
+  max-width: 180px;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Column 4: Reading Stories */
+.falcon-footer-story {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.falcon-footer-story:last-child {
+  margin-bottom: 0;
+}
+
+.falcon-footer-story:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.falcon-footer-story img {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.falcon-footer-story:hover img {
+  transform: scale(1.04);
+}
+
+.falcon-footer-story span:nth-child(2) {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #e0e4ed;
+  flex: 1;
+  transition: color 0.2s ease;
+}
+
+.falcon-footer-story:hover span:nth-child(2) {
+  color: #8299ff;
+}
+
+.falcon-story-arrow {
+  font-size: 16px;
+  color: #91a5ff;
+  margin-left: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.falcon-footer-story:hover .falcon-story-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* 3. Bottom Bar */
+.falcon-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #232a3b;
+  padding: 24px 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.falcon-footer-bottom p {
+  margin: 0;
+  font-size: inherit;
+}
+
+.falcon-footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.falcon-footer-bottom-links a {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.falcon-footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+.falcon-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.falcon-back-to-top span {
+  color: #91a5ff;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.falcon-back-to-top:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.falcon-back-to-top:hover span {
+  transform: translateY(-3px);
+}
+
+/* 4. Responsive Breakpoints */
+@media (max-width: 991px) {
+  .falcon-footer-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 48px 0 36px;
+  }
+
+  .falcon-footer-intro > p {
+    padding-right: 0;
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .falcon-footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 48px;
+    padding: 40px 0 44px;
+  }
+}
+
+@media (max-width: 575px) {
+  .falcon-footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .falcon-footer-intro {
+    padding: 36px 0 28px;
+  }
+
+  .falcon-footer .falcon-footer-intro h2 {
+    font-size: 30px;
+    letter-spacing: -0.8px;
+  }
+
+  .falcon-footer-main {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0;
+  }
+
+  .falcon-footer-brand,
+  .falcon-footer-reading {
+    grid-column: 1 / -1;
+  }
+
+  .falcon-footer-brand p br {
+    display: none;
+  }
+
+  .falcon-footer-note {
+    max-width: 100%;
+  }
+
+  .falcon-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px 0 30px;
+  }
+
+  .falcon-footer-bottom p {
+    order: 2;
+  }
+
+  .falcon-footer-bottom-links {
+    order: 1;
+  }
+
+  .falcon-back-to-top {
+    order: 3;
+    padding-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .falcon-footer a,
+  .falcon-footer button,
+  .falcon-footer img,
+  .falcon-story-arrow,
+  .falcon-back-to-top span {
+    transition: none !important;
+  }
+}

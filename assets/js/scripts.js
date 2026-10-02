@@ -22,11 +22,9 @@
 	  }
 
     // mobile menu start
-    $('#pfy-mobile-menu').metisMenu();
-
-    $('#pfy-mobile-menu .dropdown > a').on('click', function (e) {
-		e.preventDefault();
-	});
+    if (typeof $.fn.metisMenu !== 'undefined') {
+        $('#pfy-mobile-menu').metisMenu();
+    }
 
 	$(".hamburger_menu > a").on("click", function (e) {
 		e.preventDefault();
@@ -348,11 +346,13 @@
 
     }
 
-    $('.pfy-video-popup').magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        fixedContentPos: false
-    });
+    if ($.fn.magnificPopup) {
+        $('.pfy-video-popup').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            fixedContentPos: false
+        });
+    }
 
     /**
      * Ajax Post Load More Button

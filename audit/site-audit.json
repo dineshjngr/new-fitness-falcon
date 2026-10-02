@@ -1,0 +1,51 @@
+{
+  "scope": "Local source audit; no browser or live deployment checks",
+  "pages": 192,
+  "local_validation": {
+    "compatibility_redirects": 640,
+    "canonical_pages": 192,
+    "legacy_redirects": 0,
+    "local_references_checked": 26535,
+    "search_entries": 155,
+    "errors": []
+  },
+  "newsletter_without_backend_pages": 174,
+  "publication_date_mismatches_with_export": 150,
+  "all_post_dates_identical": 155,
+  "invalid_or_missing_canonical_pages": [
+    "index.html",
+    "pages/contact-us/index.html",
+    "pages/privacy-policy/index.html",
+    "pages/team/index.html",
+    "pages/write-for-us/index.html"
+  ],
+  "multiple_h1_pages": [
+    "blogs/top-6-gyms-in-miami/index.html",
+    "blogs/what-is-zumba-workout-pros-cons-and-how-it-works/index.html",
+    "pages/privacy-policy/index.html"
+  ],
+  "duplicate_id_pages": [
+    {
+      "page": "blogs/best-lifestyle-habits-for-longevity-and-healthy-aging/index.html",
+      "ids": [
+        "final-thoughts",
+        "sources"
+      ]
+    },
+    {
+      "page": "blogs/chia-seeds-health-benefits-sources-and-supplements/index.html",
+      "ids": [
+        "heading-9-using-chia-seeds-in-salads-and-baked-goods"
+      ]
+    }
+  ],
+  "missing_alt_pages": [
+    "blogs/top-5-gyms-in-new-york-city-2026/index.html"
+  ],
+  "images_without_explicit_dimensions": 1835,
+  "pages_with_images_without_dimensions": 188,
+  "missing_local_fragment_targets": 0,
+  "js_syntax_errors": 0,
+  "external_js_files_checked": 9,
+  "inline_scripts_checked": 7
+}

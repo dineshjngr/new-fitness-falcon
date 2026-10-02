@@ -3,9 +3,9 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-12">
                 <div class="search-wrap-inner" style="position: relative; max-width: 700px; margin: 0 auto;">
-                    <form method="get" action="https://thefitnessfalcon.com/" onsubmit="event.preventDefault(); return false;">
-                        <input type="search" name="s" id="liveSearchInput" placeholder="Search across all 155 articles..." autocomplete="off" style="width: 100%; padding: 18px 24px; font-size: 18px; border-radius: 50px; border: 2px solid #5541f8; outline: none; background: #fff; color: #111;" />
-                        <i class="close-btn fal fa-times" id="closeSearchBtn" style="position: absolute; right: 20px; top: 22px; font-size: 22px; cursor: pointer;" aria-label="Close search"></i>
+                    <form method="get" action="/search/" id="desktopSearchForm" onsubmit="var q=this.querySelector('input[type=search]').value.trim();if(q){window.location.href='/search/?q='+encodeURIComponent(q);}return false;">
+                        <input type="search" name="q" id="liveSearchInput" placeholder="Search across all 155 articles..." autocomplete="off" style="width: 100%; padding: 18px 24px; font-size: 18px; border-radius: 50px; border: 2px solid #5541f8; outline: none; background: #fff; color: #111;" />
+                        <i class="close-btn fal fa-times" id="closeSearchBtn" style="position: absolute; right: 20px; top: 22px; font-size: 22px; cursor: pointer;" role="button" tabindex="0" aria-label="Close search"></i>
                     </form>
                     <div id="searchResultsDropdown" class="falcon-search-dropdown" style="display: none;"></div>
                 </div>
@@ -16,8 +16,8 @@
 <header class="benqu-main-header pfy-header-2">
     <div class="pfy-top-bar" id="pfytopbar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-7">
+            <div class="falcon-topbar-layout">
+                <div class="falcon-topbar-main">
                     <div class="pfy-top-left">
                         <div class="topbar-date">
                             <span><i class="fal fa-calendar-alt"></i> September 30, 2026</span>
@@ -25,7 +25,7 @@
                         <div class="tp-news-ticker">
                             <div class="breaking-heading"><i class="far fa-fire-alt"></i> Breaking News</div>
                             <div class="pfy-breakingnews">
-                                <ul class="breaking-headline-active owl-carousel">
+                                <ul class="falcon-breaking-headlines" aria-label="Latest headlines">
                                     <li><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026?</a></li>
                                     <li><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training</a></li>
                                     <li><a href="/blogs/what-is-a-readiness-score-low-workout/">What Is a Readiness Score? Should You Skip Your Workout When It’s Low?</a></li>
@@ -35,10 +35,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 text-end">
+                <div class="falcon-topbar-actions">
                     <div class="pfy-top-right">
-                        <div class="dark-light-mode" style="display: inline-block; margin-right: 18px;">
-                            <i class="fas fa-moon" id="themeToggleBtn" style="cursor: pointer; font-size: 15px; color: #64748b;" aria-label="Toggle theme"></i>
+                        <div class="dark-light-mode">
+                            <i class="fas fa-moon" id="themeToggleBtn" role="button" tabindex="0" aria-label="Toggle theme"></i>
                         </div>
                         <div class="socila-title">
                             <h5>Follow Us</h5>
@@ -60,11 +60,11 @@
         <div class="container">
             <div class="header-menu-opt d-flex justify-content-between align-items-center">
                 <div class="pfy-logo d-flex align-items-center">
-                    <a class="site-logo" href="/./" aria-label="The Fitness Falcon home">
-                        <img src="assets/images/1.svg" alt="The Fitness Falcon">
+                    <a class="site-logo" href="/" aria-label="The Fitness Falcon home">
+                        <img src="/assets/images/The-Fitness-Falcon-logo.svg" width="170" height="59" alt="The Fitness Falcon">
                     </a>
-                    <a class="site-logo light-logo" href="/./" aria-label="The Fitness Falcon home">
-                        <img src="assets/images/2.svg" alt="The Fitness Falcon">
+                    <a class="site-logo light-logo" href="/" aria-label="The Fitness Falcon home">
+                        <img src="/assets/images/The-Fitness-Falcon-logo-White.svg" width="170" height="59" alt="The Fitness Falcon">
                     </a>
                 </div>
                 <div class="mainmenu">
@@ -105,19 +105,19 @@
                                 </ul>
                             </li>
                             <li class="menu-item"><a href="/category/news/">News</a></li>
+                            <li class="menu-item"><a href="/blogs/">Blog</a></li>
                             <li class="menu-item"><a href="/pages/contact-us/">Contact Us</a></li>
                             <li class="menu-item"><a href="/pages/write-for-us/">Write For Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="menu-right d-flex justify-content-between align-items-center" style="gap: 16px;">
-                    <span class="pfy-search-btn" id="openSearchBtn" role="button" aria-label="Open search"><i class="far fa-search"></i></span>
+                    <span class="pfy-search-btn" id="openSearchBtn" role="button" tabindex="0" aria-label="Open search"><i class="far fa-search"></i></span>
                     <a href="/blogs/" class="falcon-btn falcon-btn-primary falcon-btn-sm d-none d-sm-inline-block">All Articles</a>
-                    <span class="pfy-sidebarnav" role="button" aria-label="Open sidebar"><img src="assets/images/nav.svg" alt="Sidebar Navigation"></span>
                     <div class="hamburger_menu d-lg-none">
-                        <a href="javascript:void(0)" class="active" aria-label="Open mobile menu">
+                        <a href="javascript:void(0)" aria-label="Open mobile menu">
                             <div class="icon bar">
-                                <img src="assets/images/nav.svg" alt="Menu">
+                                <img src="/assets/images/nav.svg" width="24" height="24" alt="Menu">
                             </div>
                         </a>
                     </div>
@@ -127,104 +127,6 @@
     </div>
 </header>
 
-<div class="pfy-sidebar-wrap pfy-sidebar-box">
-    <div class="pfy-sidebar-overlay pfy-sidebar-return"></div>
-    <div class="pfy-sidebar-nav-widget">
-        <div class="pfy-sidebar-wid-wrap">
-            <div class="pfy-sidebar-close-wrap">
-                <a href="javascript:void(0)" class="pfy-sidebar-close" aria-label="Close sidebar">
-                    <i class="fal fa-times"></i>
-                </a>
-            </div>
-            <div class="pfy-sidebar-content">
-                <div class="pfy-sidebar-info-content">
-                    <div class="content-inner">
-                        <div class="sidebar-logo sidebar-style">
-                            <a class="site-logo light-logo" href="/./">
-                                <img src="assets/images/2.svg" alt="The Fitness Falcon">
-                            </a>
-                            <p>Stronger Every Day, Healthier Every Way</p>
-                        </div>
-                        <div class="pfy-sidebar-contact-info sidebar-style">
-                            <section class="widget benqu_latest_news_widget">
-                                <div class="recent-posts-widget">
-                                    <div class="pfy-post-grid-wrap grid-style-tb">
-                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
-                                            <div class="benqu__post-content pfy-scale d-flex">
-                                                <div class="pfy-post-thumb">
-                                                    <a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/"><img width="640" height="360" src="assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026-1024x576.png" class="attachment-large size-large wp-post-image" alt="Apple Watch vs Garmin" loading="lazy" /></a>
-                                                </div>
-                                                <div class="pfy-post-content">
-                                                    <div class="pfy-post-meta-tb d-flex">
-                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
-                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
-                                                    </div>
-                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/">Apple Watch vs Garmin: Which Is</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
-                                            <div class="benqu__post-content pfy-scale d-flex">
-                                                <div class="pfy-post-thumb">
-                                                    <a href="/blogs/apple-watch-series-12-readiness-score-explained/"><img width="640" height="360" src="assets/images/apple-watch-series-12-readiness-score-explained-1024x576.png" class="attachment-large size-large wp-post-image" alt="Apple Watch Series 12 Readiness" loading="lazy" /></a>
-                                                </div>
-                                                <div class="pfy-post-content">
-                                                    <div class="pfy-post-meta-tb d-flex">
-                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
-                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
-                                                    </div>
-                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/apple-watch-series-12-readiness-score-explained/">Apple Watch Series 12 Readiness</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
-                                            <div class="benqu__post-content pfy-scale d-flex">
-                                                <div class="pfy-post-thumb">
-                                                    <a href="/blogs/what-is-a-readiness-score-low-workout/"><img width="640" height="360" src="assets/images/what-is-a-readiness-score-low-workout-1024x576.png" class="attachment-large size-large wp-post-image" alt="What Is a Readiness Score" loading="lazy" /></a>
-                                                </div>
-                                                <div class="pfy-post-content">
-                                                    <div class="pfy-post-meta-tb d-flex">
-                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
-                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
-                                                    </div>
-                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/what-is-a-readiness-score-low-workout/">What Is a Readiness Score?</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pfy-post-item pfy-scale pfy-img-commn-style">
-                                            <div class="benqu__post-content pfy-scale d-flex">
-                                                <div class="pfy-post-thumb">
-                                                    <a href="/blogs/hrv-for-fitness-what-it-tells-you/"><img width="640" height="360" src="assets/images/hrv-for-fitness-what-it-tells-you-1024x576.png" class="attachment-large size-large wp-post-image" alt="HRV for Fitness" loading="lazy" /></a>
-                                                </div>
-                                                <div class="pfy-post-content">
-                                                    <div class="pfy-post-meta-tb d-flex">
-                                                        <a class="benqu-cate-name" href="/category/wearables-fitness-technology/" style="color:#3b60fe"><span>Wearables &amp; Tech</span></a>
-                                                        <span class="pfy-post-date"><i class="fal fa-calendar-alt"></i> Sept 30, 2026</span>
-                                                    </div>
-                                                    <h4 class="benqu__post-title pfy-post-title hover-title"><a href="/blogs/hrv-for-fitness-what-it-tells-you/">HRV for Fitness: What It Tells You</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="pfy-sidebar-contact-info sidebar-style">
-                            <div class="sidebar-social-info">
-                                <a href="https://www.facebook.com/people/The-Fitness-Falcon/61553645405177/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/fitnessfalcon_" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/thefitnessfalconofficial/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/@TheFitnessFalcon" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                                <a href="https://www.pinterest.com/thefitnessfalcon/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="body-overlay"></div>
 
 <div class="slide-bar">
@@ -233,15 +135,17 @@
     </div>
     <nav class="side-mobile-menu d-lg-none" aria-label="Mobile navigation">
         <div class="header-mobile-search">
-            <form action="https://thefitnessfalcon.com/" method="get" onsubmit="event.preventDefault(); return false;">
-                <input type="search" name="s" id="search-mobile" placeholder="Search articles...">
-                <button type="submit" aria-label="Submit search"><i class="ti-search"></i></button>
+            <form action="/search/" method="get" id="mobileSearchForm" onsubmit="var q=this.querySelector('input[type=search]').value.trim();if(q){window.location.href='/search/?q='+encodeURIComponent(q);}return false;">
+                <input type="search" name="q" id="search-mobile" placeholder="Search articles..." autocomplete="off">
+                <button type="submit" aria-label="Submit search"><i class="far fa-search"></i></button>
             </form>
+            <div id="mobileSearchResultsDropdown" class="falcon-search-dropdown" style="display: none;"></div>
         </div>
         <div class="menu-header-menu-container">
             <ul id="pfy-mobile-menu" class="menu">
                 <li class="menu-item menu-item-has-children dropdown">
                     <a href="/category/food-and-recipes/">Food &amp; Recipes</a>
+                    <button type="button" class="dropdown-toggle-btn" aria-label="Toggle submenu" aria-expanded="false"><i class="fal fa-angle-down"></i></button>
                     <ul class="sub-menu">
                         <li class="menu-item"><a href="/category/recipes/">Recipes</a></li>
                         <li class="menu-item"><a href="/category/nutrition/">Nutrition</a></li>
@@ -249,9 +153,11 @@
                 </li>
                 <li class="menu-item menu-item-has-children dropdown">
                     <a href="/category/fitness/">Fitness</a>
+                    <button type="button" class="dropdown-toggle-btn" aria-label="Toggle submenu" aria-expanded="false"><i class="fal fa-angle-down"></i></button>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children dropdown">
                             <a href="/category/gym/">Gym</a>
+                            <button type="button" class="dropdown-toggle-btn" aria-label="Toggle submenu" aria-expanded="false"><i class="fal fa-angle-down"></i></button>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="/category/workout/">Workout</a></li>
                             </ul>
@@ -259,6 +165,7 @@
                         <li class="menu-item"><a href="/category/yoga/">Yoga</a></li>
                         <li class="menu-item menu-item-has-children dropdown">
                             <a href="/category/sports/">Sports</a>
+                            <button type="button" class="dropdown-toggle-btn" aria-label="Toggle submenu" aria-expanded="false"><i class="fal fa-angle-down"></i></button>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="/category/swimming/">Swimming</a></li>
                                 <li class="menu-item"><a href="/category/trekking/">Trekking</a></li>
@@ -269,13 +176,14 @@
                 </li>
                 <li class="menu-item menu-item-has-children dropdown">
                     <a href="/category/health/">Health</a>
+                    <button type="button" class="dropdown-toggle-btn" aria-label="Toggle submenu" aria-expanded="false"><i class="fal fa-angle-down"></i></button>
                     <ul class="sub-menu">
                         <li class="menu-item"><a href="/category/skincare/">Skincare</a></li>
                         <li class="menu-item"><a href="/category/beauty/">Beauty</a></li>
                     </ul>
                 </li>
                 <li class="menu-item"><a href="/category/news/">News</a></li>
-                <li class="menu-item"><a href="/blogs/">All Articles</a></li>
+                <li class="menu-item"><a href="/blogs/">Blog</a></li>
                 <li class="menu-item"><a href="/pages/team/">Our Team</a></li>
                 <li class="menu-item"><a href="/pages/contact-us/">Contact Us</a></li>
                 <li class="menu-item"><a href="/pages/write-for-us/">Write For Us</a></li>

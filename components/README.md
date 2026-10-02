@@ -9,15 +9,20 @@ The entire website uses:
 
 Individual pages only provide their own page-specific content within `<main id="main-content" class="falcon-main-layout">` and page-specific `<head>` metadata.
 
-## Available Architecture Components
+## Core Architecture Components & Templates
 
-- `header.html`: Global responsive header, top bar (breaking news ticker, date, social channels, theme switch), desktop navigation with dropdowns, mobile navigation drawer (`.slide-bar`), and live search modal with auto-complete.
-- `footer.html`: Global responsive footer, brand intro, explore topic links, company pages links, reading recommendations, copyright, and back-to-top button.
-- `post-template.html`: Single master reusable blog post template for the entire website. Renders all 155 existing articles and future articles with zero duplicated layout code.
-- `layout.html`: Reference global layout architecture shell.
-- `breadcrumbs.html`: Reusable breadcrumbs component pattern.
-- `card.html`: Reusable article and content card component pattern.
-- `cta-banner.html`: Reusable call-to-action newsletter/subscription banner pattern.
+1. **Header** (`components/header.html`): Global responsive header with breaking news ticker, live date, social links, theme toggle, desktop navigation with dropdowns, mobile navigation drawer, and live search modal.
+2. **Footer** (`components/footer.html`): Global responsive 4-column footer with brand intro, explore category links, company/legal links, featured reads, social icons, copyright, and smooth back-to-top button.
+3. **Blog Post Template** (`components/post-template.html`): Single master template used by `scripts/build_posts.py` to compile all 155 single blog posts from `content/posts/*.json`.
+4. **Category Template** (`components/archive-template.html`): Single master archive template used by `scripts/build_archives.py` to compile all 19 category archives in `category/<slug>/`.
+5. **Tag Template** (`components/archive-template.html`): Used by `scripts/build_archives.py` to compile all 136 tag archives across 160 paginated pages in `tag/<slug>/`.
+6. **Author Template** (`components/archive-template.html`): Used by `scripts/build_archives.py` to compile all 3 author hubs across 14 paginated pages in `author/<slug>/`.
+7. **Blog Archive Template** (`components/archive-template.html`): Used by `scripts/build_archives.py` to compile `blogs/index.html` and 12 paginated pages in `blogs/page/<n>/`.
+8. **Search Results Template** (`search/index.html` & `components/search-result-card.html`): Unified search interface powered by `assets/js/search-page.js` with client-side indexing and `noindex, follow` directives.
+9. **Standard Page Layout** (`components/layout.html` & `assets/css/page.css`): Shared layout for informational pages (`pages/contact-us`, `pages/privacy-policy`, `pages/team`, `pages/write-for-us`, and `404.html`).
+10. **Breadcrumbs** (`components/breadcrumbs.html` & `scripts/components.py:render_breadcrumbs()`): Standardized accessible breadcrumb navigation across posts, archives, and standard pages.
+11. **Pagination** (`components/pagination.html` & `scripts/components.py:render_pagination()`): Standardized crawlable page navigation across all blog, tag, and author archives.
+12. **Article Cards** (`components/article-card.html` & `scripts/components.py:render_article_card()`): Reusable article cards with thumbnail, category badge, title, excerpt, and author/date/read-time metadata.
 
 ## Blog Post Architecture & Content Storage
 

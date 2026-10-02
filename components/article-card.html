@@ -1,0 +1,18 @@
+<!-- Shared Reusable Article Card Component -->
+<article class="falcon-card post-card" data-slug="{{SLUG}}">
+  <a href="/blogs/{{SLUG}}/" class="falcon-card-media" aria-label="{{TITLE}}">
+    <img src="{{IMAGE_URL}}" alt="{{ALT_TEXT}}" class="post-card-thumb" loading="lazy" />
+  </a>
+  <div class="post-card-body">
+    <a href="{{CATEGORY_URL}}" class="category-badge">{{CATEGORY_NAME}}</a>
+    <h3 class="post-card-title">
+      <a href="/blogs/{{SLUG}}/">{{TITLE}}</a>
+    </h3>
+    <p class="post-card-excerpt">{{EXCERPT}}</p>
+    <div class="post-card-meta">
+      <span class="falcon-meta-author"><i class="fal fa-user"></i> {{AUTHOR}}</span>
+      <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> {{DATE}}</span>
+      <span class="falcon-meta-read"><i class="fal fa-clock"></i> {{READ_TIME}} min read</span>
+    </div>
+  </div>
+</article>

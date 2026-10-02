@@ -1,5 +1,6 @@
 # Canonical blog and landing-page routes
 DirectoryIndex index.html
+ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule ^apple\-watch\-series\-12\-readiness\-score\-explained(?:/index\.html|\.html|/)?$ /blogs/apple-watch-series-12-readiness-score-explained/ [R=301,L,NE]
@@ -162,4 +163,9 @@ RewriteRule ^privacy\-policy(?:/index\.html|\.html|/)?$ /pages/privacy-policy/ [
 RewriteRule ^team(?:/index\.html|\.html|/)?$ /pages/team/ [R=301,L,NE]
 RewriteRule ^write\-for\-us(?:/index\.html|\.html|/)?$ /pages/write-for-us/ [R=301,L,NE]
 RewriteRule ^blog(?:/index\.html|\.html|/)?$ /blogs/ [R=301,L,NE]
+</IfModule>
+
+# Block public access to private directories and sensitive files
+<IfModule mod_rewrite.c>
+RewriteRule ^(?:\.git|old-website|content|scripts|audit|scratch)(?:/.*)?$ - [F,L]
 </IfModule>

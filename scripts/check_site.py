@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 ROOT=Path(__file__).resolve().parent.parent
-EXCLUDED={'old-website','components','.git','node_modules'}
+EXCLUDED={'old-website','components','.git','node_modules','scratch'}
 class Parser(HTMLParser):
     def __init__(self):
         super().__init__(); self.refs=[]; self.counts={}; self.shell={'header':0,'footer':0}

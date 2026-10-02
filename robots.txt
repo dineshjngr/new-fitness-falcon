@@ -1,0 +1,8 @@
+# robots.txt for https://thefitnessfalcon.com/
+User-agent: *
+Allow: /
+Disallow: /search/
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://thefitnessfalcon.com/sitemap.xml

@@ -1,0 +1,1500 @@
+{
+  "created_utc": "2026-10-02T09:16:02.195639+00:00",
+  "backup": "/private/tmp/falcon-cleanup-backup-20261002-131602.zip",
+  "method": "Case-insensitive filename checks after HTML entity and URL decoding; archived references recorded separately; build tested in isolated copy before deletion. Original exports and maintenance tooling retained.",
+  "pre_cleanup_validation": {
+    "pages": 367,
+    "redirects": 640,
+    "references": 50456,
+    "search_entries": 155,
+    "errors": []
+  },
+  "isolated_rebuild": "passed",
+  "removed_count": 122,
+  "removed_bytes": 18914959,
+  "files": [
+    {
+      "path": "assets/images/10-Harmful-Effects-of-Cigarette-Smoking.png",
+      "bytes": 266806,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "a7129e57579cf17a5a45cb2222aa9cd2aeb219a0b08ae03acd7e5d5e0e8d073a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/200-hour-yoga-ttc-in-rishikesh.jpg",
+      "bytes": 90215,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "6a30e23a11ed7693e058106c3c6d2f8b7635084166aa6b1841cd8a22ef793ce6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/5155999_2704891.jpg",
+      "bytes": 130104,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "4d64110042719154b6a0f643338e0ff9db8dc578ca6a3f5bd2c2f1c3233ec378",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/6851307_28271-scaled.jpg",
+      "bytes": 215113,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "5fb092979f55d0b5324ef1475c96facc50e1baaa02795e0b6c60de443843bf0a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/7-Best-Detox-Drinks-to-Cleanse-Your-Body-Naturally-in-7-Days.jpg",
+      "bytes": 118083,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "87c20c61fd768d34fe3ac875715c69d96cb02792865e487fecf8ca407b49f9c6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/8.jpg",
+      "bytes": 74533,
+      "active_references": [],
+      "archive_reference_count": 4,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "d124f6a27cfb1687e25fae608f1a9d2825c1b116e72a4b56cdc3627fa3bbafa4",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Anxiety-Disorders-Causes-Types-Symptoms-Treatments-1.webp",
+      "bytes": 47096,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "bef6e92df83bf9d139cfeb7350f9d71e2099e0b3fcb2a11ae0da7c8324f5c25e",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Anxiety-Disorders-Causes-Types-Symptoms-Treatments-2.webp",
+      "bytes": 38096,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "4b9ff435b23d12405589c0b202d8738f80ce01855acf4923852b12af0d3d6c1a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Anxiety-Disorders-Causes-Types-Symptoms-Treatments-3-1.webp",
+      "bytes": 37958,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "c745336036443c5218cb01e22bbff3b36108475aacb9ce28cd5ae21857df97a7",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Anxiety-Disorders-Causes-Types-Symptoms-Treatments.webp",
+      "bytes": 28892,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f5989becc4e0e6c89215d4b50b4b1f5116a91dd604c8f7690d177d0fe57c2fcf",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/B12-injections-for-weight-loss.jpg",
+      "bytes": 132338,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "4786fcca9f6fd6131e71ebeee3805ee871af03cdfbc96e6baedb8f25bb825923",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Benefits-of-Pumpkin-Seeds.jpg",
+      "bytes": 235723,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "ebb43bb35890b69050680f6b5c30b4fd978a5586048ae9fb1d32b318dd9422cc",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Calorie-Burning.png",
+      "bytes": 86725,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "c113b3f904a2b2687f67fc043268b6502d69f0119b16568a95881df205cab5a2",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Can-Fasting-Reverse-Aging.jpg",
+      "bytes": 104803,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "57f21c166ad6d32db66c075a93d2e7e0e02ed7fb409ea3d89ee6ed9d0ce0b22a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Cover.jpg",
+      "bytes": 94955,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "88d2dc07c61fd07885544a070342e5cac9a7c6b01f74dd031f8029b946152642",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Depression.jpg",
+      "bytes": 240809,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "0c7fa8db82ffe970a751f8dc2d551f6a7fbead7549625fd6c6b7417dc71be0b1",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Does-Kissing-Burn-Calories-French-Kiss-Your-Way-to-Fitness-1.png",
+      "bytes": 225449,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "f5fbb4ea9e3c34da4d0988d4843d5450f2982130e9c25edae687e78d9c137d6a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Does-Kissing-Burn-Calories-French-Kiss-Your-Way-to-Fitness.png",
+      "bytes": 308456,
+      "active_references": [],
+      "archive_reference_count": 4,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "1e2ffe18baf46178d170df124af0c623da22f700f611658e984b6290ac90d41a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/FACIAL-YOGA.jpg",
+      "bytes": 50049,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "3d856f9d2c934c341a870386c6cddd79d05df57d3e3675078e813f7fba0ae9bd",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/FITNESS-scaled.jpg",
+      "bytes": 142137,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "aac35eb17ce0d0e794ab31cc7810b2114fc26b4035d35f7f7516c75df99fefe6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Facial-Steaming-scaled.jpg",
+      "bytes": 81208,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "9e655ce916bf404e5f3f6e5139df7dfbff538ced4a006b837eaa068f9e9dbece",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Fast-Twitch-Muscle-Fibers-1.png",
+      "bytes": 155993,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "7b9cd1778ab51e2a392075a4312b9c3d88b043f1b3ebf71210ac36b31a73fa9a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Female-Fitness-Trainer-in-New-York.png",
+      "bytes": 181112,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "3da8aec4e8d2c3f8ef3f80445508889a448f368776014cce60f0a01c4c1d34bf",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Female-Fitness-Trainer.png",
+      "bytes": 346943,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "e747e153aad3e977a54b4a5f3c0032d35fa675322273f8938c17f9ba56a94037",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Food-Cuisine-in-the-USA-1.png",
+      "bytes": 446256,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f5fd1dcdeacd2510fed82e5a889c08d31598dab85a00c730a9a14174bc35e5f2",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/FullBodyWorkout.jpg",
+      "bytes": 73144,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "46e79aa9b536feee52b2b4c99f1d095a9926892ff104cd496e90d24e283da559",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Gemini_Generated_Image_7lot5x7lot5x7lot.jpg",
+      "bytes": 136340,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "4368641f307caea92a48057ef07eeaa55172b27a7154abdec4c90e290c693d44",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Heart-Health-Stress-Reduction-Does-Kissing-Burn-Calories-French-Kiss-Your-Way-to-Fitness.png",
+      "bytes": 230303,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "d9c73faa1aa773f68ef9c153e54d5416ddbfef47be458275f3e51d96734efe28",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Heart-attack-.jpg",
+      "bytes": 141418,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "82bc1bf3d8838a3cd06efc78d19bf54e237a4c4c943f738179ead5fbd13737a7",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Home-Remedies-for-Better-Digestion-300x169.png",
+      "bytes": 91219,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "2ee4e7cfd6e225ef92b1649d41c8b881047b5c5949f057a8d850b2fefcf73542",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Home-Remedies-for-Glowing-Skin-1.png",
+      "bytes": 67822,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "3211ec62e379da562c56d61ee44e98f11abf3c3f5708eaafa369dd094585f580",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Home-Remedies-for-Glowing-Skin-100x100.png",
+      "bytes": 18457,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "7b2941f3fa4a96b8c66a5b123c1a18baa7fc76787efed4b05feb6b4a2769882c",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Home-Remedies-for-Glowing-Skin-4-e1700478262236.png",
+      "bytes": 168527,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "86b345bf3df2949d624ea601c15b9ef7c9e0118301040034a0819d422fc812a9",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Home-Remedies-for-Weight-Loss.jpg",
+      "bytes": 77398,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "7d6261bc7e870963ab56f96d5aecc3d1f61ada2ba7badae1b63bfa8c83a6e678",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Hormonal-Imbalance.jpg",
+      "bytes": 81143,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "44bb85a918e0efecd607a075f55449f19ffb023d20bddef132c67dd474fd75d6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/How-to-Calm-Panic-Attack-Naturally-.jpg",
+      "bytes": 130324,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "026a4f0b1bdc36667b366e7f1cd4662535b7f6ad311577528d4af851ce2886c8",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Irregular-Periods.jpg",
+      "bytes": 159461,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "64c4cf0fee9cd1b31ff5917a6160369dfc569a44634f435ec2bd4f4f822b805b",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Ketogenic-and-Low-Carb-Diets-Benefits-Types-1.png",
+      "bytes": 365049,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "c92e7d3518dfe10a2b8496fbe614b7a608c567d737d6175139d0b4e8446db3a6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Ketogenic-and-Low-Carb-Diets-Benefits-Types.png",
+      "bytes": 397108,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f9fa4ec6bc8692404d694915d94c7962b7acc9f38f306598d5dba9e4ce796acd",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/List-of-Phobias.png",
+      "bytes": 136487,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "5712c75aca4baa6a034e4c52e80d9ddf424ed03a366e4dc2ed3e4c2a8ca118c1",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Medical-Facts-about-CPR.png",
+      "bytes": 252094,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "e968aba7914c27dc28be8a5c2c541bf77d15a9186e6db31f2f847b1af647b818",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Natural-Remedies-for-Anxiety.jpg",
+      "bytes": 82050,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "10b3b1185ade4ae13f7e62fbc4db491d426c8f0fa70f97f3f1327cc3029781f3",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Neurological-1.png",
+      "bytes": 405328,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "a33523134225f03d89e1bc0a0c442ecf203655ef7c7db4a9cddf278bc179e98a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Packing-Food-and-Water-for-Your-Trek.png",
+      "bytes": 324082,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "7869b8f2ff243aed07027ae42d329e649d11bd6383295ec76c67be3f784c70e0",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Psychodermatology-1-300x52.jpg",
+      "bytes": 5161,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "634bbb0ebe504c78a262dd26b5ac1b401f2b2ecde0aceceaac956307b89a7772",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Psychodermatology-1.jpg",
+      "bytes": 35215,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "03421bb956b8c137d0a77698407f42e9e5ec5e7817c552a719769f58c443c008",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Relieve-Period-Pain-2.png",
+      "bytes": 201927,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "02f9e1cf05e3e5160ef0d279d2e6f1ddb1a82e612b56223fc224343ced2951ae",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Relieve-Period-Pain.png",
+      "bytes": 309460,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "60e8a13eafb31d1b874d49db97e3c281593948391133fe22c8ae2e14c3f2f760",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Riya-Verma.jpg",
+      "bytes": 73107,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "dc55f58c60fea235c01112e417d13a85edb3533ceded7ca288e24100e4d63038",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Seeking-Professional-Help-for-Period-Pain.png",
+      "bytes": 250885,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "df5a864cab023071c8e26833a939db2b2fea624b7d385c4005b8a6c16eae0a56",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Smoking.jpg",
+      "bytes": 127254,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "8ba52edc3d120f090e9d0d91453ddcdfb6d9d9bec6fde3b4c35daf9990a09bb5",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Spirulina-100x100.png",
+      "bytes": 17769,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "6f40b36374e40f7b46971920bb6d487e3592d589772fa79247bfe13d79881171",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Sports.png",
+      "bytes": 114505,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "373501c3f0471585a97742f4b505b6a714e13d749f110f6c3c30b27ca455fd43",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Stress-Reduction-Does-Kissing-Burn-Calories-French-Kiss-Your-Way-to-Fitness.png",
+      "bytes": 267938,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "3ffd67c1ee522c3a9a9e4fede57d3e863ce62ec71afa3936d27f3618ba63461d",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Swimming-1.png",
+      "bytes": 143465,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "1649e537a0c56d6a0ad3e8678668236761f3287f5489a61b64f392f5271f21b4",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Swimming.jpg",
+      "bytes": 231408,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "b3e33f4468941ebfb7804c0137aaa9064a28ab16a43669d4bd83e41732760d64",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/The-fitness.png",
+      "bytes": 115061,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "b4f5cd8e00b9e1e254c4de4ee88e7bbfa1e4e5d66a61eb7d1a4a7d293c6577b6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Trekking.png",
+      "bytes": 68877,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f7f6fce35fb5515fef50d3768cb26b944fbcc4b6d3bc42654749a4df6a4c079a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Uncategorized.png",
+      "bytes": 130048,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "70f61abd7afe2da786fef2ba68b3d3ac46aeef38c72647cc16f875c05805e8ba",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Untitled-1500-x-500-px.png",
+      "bytes": 204261,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "d86f5768b5c2d7e7f666b9c8db5143ddf46f1495b1438faba19bcf04db48a254",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Untitled-design-10-100x100.png",
+      "bytes": 24778,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "736b080491fe2d03e83736b06877f6ac2397f94262a807c53a02a829105e2380",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Untitled-design-11-100x100.png",
+      "bytes": 21792,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "591969490d50366603caaf98de0b0da664ecaec8bf154132f8d854f970e73c6d",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Untitled-design-17.png",
+      "bytes": 383829,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "4e1508e09c1fdc3ed7ea539af2356b1ca93e33ac09fb57fba2054616205aebc3",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Untitled-design-23.png",
+      "bytes": 332611,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "e5a64903fe32207b80fc52ed616820d0e8ef79ebf782f7ddd809a3e5f58b4325",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/Weight.png",
+      "bytes": 108950,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "68f249417979f2609520be412a6d24c489ce510ca0bce066f8c5aee009200055",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/a4d858f8-2810-4d64-80ae-72578f1a7b67.jpg",
+      "bytes": 77568,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "eeae65afc8ac65e787e2411c120e059a9d23bd38764d6f51190d5dbaba2447f3",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/about-2bg.jpg",
+      "bytes": 146526,
+      "active_references": [],
+      "archive_reference_count": 4,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "8b23dcdafc70df47b2edf5052e9eb32e6e60a94784cc29749165e38135d9913e",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/acomodation-1.webp",
+      "bytes": 33144,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "dc2c9a1da3e8863e8ae78ac9e6a1521e948ff2e198df92af41133fcf5846c651",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/acomodation-16.webp",
+      "bytes": 60800,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "855e016f49a42ae5ba936d89131d60337600efc798865ceb7cdd637154ccff94",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/acomodation-18.webp",
+      "bytes": 37406,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "fd17c1ae2f95f34bf17c960d70252cb1a27c843d033ce68a203e05051b661852",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/acomodation-25.webp",
+      "bytes": 137766,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "17690cfe5cb10226a24efdca4121837c8de8d1784b1e03aebff8f9f813fb49c1",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/acomodation-40.webp",
+      "bytes": 497546,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "a6f25ea807999a243c47f696dc3ba01032ae8cbc6d9a509ab4b8cd2b10ee77ec",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/add-1.jpg",
+      "bytes": 22882,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "d48c4e8c2cd078f53824c6f6b282a57ab1ee607902a3a22be39441313df8107f",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/add.jpg",
+      "bytes": 32899,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "42008fc057bfd52041d2299ee24b11e1ac1f9da00c684576e95491da92c7298c",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/adds.jpg",
+      "bytes": 34015,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "dd0c2af6e6f6b3dda9f3aa530c088b8695a4a64ae7ddd4e4900c12764e4e1102",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/airpi.png",
+      "bytes": 278630,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "10a91bb6a8cb519a01ca06f54b4bccc25d88e5f850a1c0119e157e56891d760f",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/authore-img.jpg",
+      "bytes": 5100,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "ba769c2b59bd558e7139798d577de4c179004daecf12359cd577c821d10343a9",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/bag-1-1.png",
+      "bytes": 432913,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "dec59dadfc623c3aed061d878ba7acb97edfe8534df0b71a96fa41eb7da8ee0b",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/bag-1.png",
+      "bytes": 238902,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f1efdc0f3e618fb01d0eefb4dd7611a1c2a496546386761bed544dc9dcd05dda",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/bag-2.png",
+      "bytes": 406448,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f8463ff114dbb88be5f8f7e819bc274bd7c789965b232c9d5a8e6028c89466d2",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/benefits-of-swimming-daily.jpg",
+      "bytes": 144218,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "0d2d47639e79302ad27484f8ff82ff123e82ae4d6c22b2b5a0dd2f793bab3658",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/cold-plunge-therapy.jpg",
+      "bytes": 89515,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "6fb396594e56c586674e9144b0a09c474ce60da0b15e11de46ad43cc07c588ac",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/cooking.png",
+      "bytes": 184905,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f0018194034c035cdd85bc43fdedc77eb229659f08302d639a870b93bd0563b9",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/cropped-Untitled-design-14.png",
+      "bytes": 24863,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "bf0b6537e7b7f0e29fc2c3995a2c4b996a27afe65d3b6d70940d3c85bda7174f",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/device.png",
+      "bytes": 75636,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "e3fad4068cfbfa8d48c82d000887ae926b1a38757d23c67571ede8ee63934819",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/devicew.png",
+      "bytes": 216805,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "0ef6de6875b3c852243f52aa059512da4235b04d576b1f29f765e76c597bc102",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/dining-hall.jpg",
+      "bytes": 71371,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "7c37c4460305994bf22490af8cc8edd0e0fe54d8bc650945ec21f9c5898c4644",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/drone.png",
+      "bytes": 169768,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f05527d0896885097481a8a71ecd4c1a53312b27aec843e3c3b91264048b7f9f",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/fix-skin-barrier.jpg",
+      "bytes": 99284,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "0e78165c135263870dc2b8ac4f3c6361062c7dabb1e0bf064cb13af6cbcf5194",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/headpe.png",
+      "bytes": 375924,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "6d2349632b6337d97e8810ef41f150bd598fe87c55daba64d6eaba68b27b1e17",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/hormon-scaled.jpg",
+      "bytes": 114547,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "c15fe2b4d07ab0134b928108cff476c3e489bb7c8ad979a126d72a6bd3340cc9",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/ibeogpiag_1950x.jpg",
+      "bytes": 270879,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "6db0d9a9dea20a984d0d2b75274e6876f5621052fe5fd290a81f55802e2ecb28",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/jackat.png",
+      "bytes": 444780,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "4e0f1e078a43ff1839a05a6ac1fbd13067b8adc3c6fdbcc7873ca9c050526416",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/longetivity-300x128.jpg",
+      "bytes": 6656,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "923503724dd1068d581a803a4f86ec80dcb88130170a485da20af98769e15f7c",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/longetivity-scaled.jpg",
+      "bytes": 134029,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "be2d7580b05f211cff5f4ea2cf48f9418c82716b452c846816569f9f7212f5d3",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/menstruation-scaled.jpg",
+      "bytes": 143778,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "2552c00f567d4acde225a25f69768e9630faa52f28f2ac1357911cec4e60701d",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/out-door-yoga-session-rishikesh.jpg",
+      "bytes": 104537,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "665599d3ccb707441b66ea26f1116845ec6c51432bc0d57d744bfd3feddada7d",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/panic-attack.jpg",
+      "bytes": 112281,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "7e68e945270a55ed086ce2f9b291adfb64af60137e290c2d9c197f242aa5b375",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/pilates-the-ultimate-guide-for-a-stronger-core-in-2024-2-658131384c493.webp",
+      "bytes": 193634,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "74efea231b5daf1ceb5c1c75a89af326c8b2c103258a4290786eb70e43e30cf9",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/pilates-the-ultimate-guide-for-a-stronger-core-in-2024-3-65813136555f3.webp",
+      "bytes": 56892,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "ecb395a33537c37968e25407fd10557f66b46f46be703d887d6909e19885bec0",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/pilates-the-ultimate-guide-for-a-stronger-core-in-2024-4-6581313655567.webp",
+      "bytes": 84234,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "c4e4fca7bfeb80890b93d001a8ecc351878cebe0007f4ae0652adbcc9a64b82a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/quit-smoking.jpg",
+      "bytes": 172466,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30.xml"
+      ],
+      "sha256": "4f6648482434b6887413c21376ed2e815c67f4932302352d1df20ca2f6df1acb",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/radio.png",
+      "bytes": 309886,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "35d05d33da747b98602f5bb50f5b391e3f55f44030755fce98af0d151fa0d1ab",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/shape-bg.jpg",
+      "bytes": 37123,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "a1c42a3f45fee109740f46f655df13eeffa931fa031f1070ffd974809222120d",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/shape.jpg",
+      "bytes": 27999,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "1c915df105c16e4c35cbe01643d6b46a978b15e550b668cd64859d249e181d33",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/shoes.png",
+      "bytes": 196038,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "59d7f8f2d89cc24f294d46bc61ef04651c31e05bdf92ddf974f479b8ed4a451a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/silent-Heart-attack-.jpg",
+      "bytes": 89216,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "b3ee041a458f9f2c3bef0702a25209eac8347228833077aa35544e4f007f631c",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/steam-room.png",
+      "bytes": 348702,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "dbe25dd8f8b8858e3739f2d03fbb79e66a55c255a58819893a13defd98b62db6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/stop-smoking.jpg",
+      "bytes": 442959,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "446adfa86ddd4eebc6b85412ff48fc7a5306443b688b0e815191faf73a7da03b",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/subscribe-bg.jpg",
+      "bytes": 128061,
+      "active_references": [],
+      "archive_reference_count": 3,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (1).xml"
+      ],
+      "sha256": "af95b4c23111dc464f61c2e1b9ba6de4c31995999a05e34313dc1e38654beb60",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/sugar.jpg",
+      "bytes": 135164,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "ac55e717b998dcdebc4a184e7dd94293ff5f350e3424115fa908cc7edcde3618",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/summer-skincare-routine-1.jpg",
+      "bytes": 125770,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "942fb1cea00d8e4252c637e0d674dd22486018e5c0f068566eae3ce7bcfafe18",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/summer-skincare-routine.jpg",
+      "bytes": 127631,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "90170755914326d61511aaebda7ff13c8b9bfc1e0ff72ced4f2be9028d126388",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/towfiqu-barbhuiya-TeXSl0ONrdk-unsplash-1-scaled.jpg",
+      "bytes": 152315,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "899ec1780b176b22939b2900fc27788d28457e402eea8dfa62fe25d5b1078c56",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/watch2.png",
+      "bytes": 261721,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "9ee944123f79c48db920225110fad7f6249181126c59bc09c01098e10bcb5a9b",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/yoga-for-weight-loss.jpg",
+      "bytes": 100298,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "0beff14184624cd2d60437d03e5dafef5b7343b80662d3ac3b7a0e9d9ea159b6",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/yoga-retreat-in-rishikesh.jpg",
+      "bytes": 156858,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "49a2f44519fb226b6596ce47fc940e941f5eb5666474bb180b1c428190083b62",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "assets/images/yoga.png",
+      "bytes": 95273,
+      "active_references": [],
+      "archive_reference_count": 2,
+      "archive_examples": [
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (6).xml",
+        "old-website/thefitnessfalcon.WordPress.2026-09-30 (10).xml"
+      ],
+      "sha256": "f45f48397970ea0bdd2661f3470a52d1b37eb85a1d56a5bae84ecf28289b338a",
+      "reason": "No filename references in retained active pages, content, templates, CSS, JS, search data, tools or documentation; isolated full rebuild and local dependency validation passed."
+    },
+    {
+      "path": "scratch/apply_full_homepage_fix.py",
+      "bytes": 34638,
+      "reason": "Standalone one-time homepage patch; no imports or callers; current site rebuild succeeds without it.",
+      "active_references": [],
+      "sha256": "b14b4b838d0cd7cc1e0107f6e09c35a50713953fc1cb22d758f5d7c88d4031ed"
+    },
+    {
+      "path": "scratch/fix_homepage.py",
+      "bytes": 7146,
+      "reason": "Standalone one-time homepage patch; no imports or callers; current site rebuild succeeds without it.",
+      "active_references": [],
+      "sha256": "fda68472b617ec9849a9e80879c836b5613e68fc1c02986797806c460a8f8883"
+    },
+    {
+      "path": "scratch/fix_carousels.py",
+      "bytes": 10511,
+      "reason": "Standalone one-time homepage patch; no imports or callers; current site rebuild succeeds without it.",
+      "active_references": [],
+      "sha256": "a02e0b559d1481b472cbd91882434cd1c082edb09f4834c7471087a6e7d8f30b"
+    },
+    {
+      "path": ".DS_Store",
+      "bytes": 8196,
+      "reason": "Filesystem metadata or regenerable Python bytecode cache.",
+      "sha256": "6ec3156a46262d67782fc09dff87229d0cd68a180a5502f57c4e845386948fe7"
+    }
+  ],
+  "removed_empty_directories": [],
+  "post_cleanup_validation": {
+    "compatibility_redirects": 640,
+    "canonical_pages": 367,
+    "legacy_redirects": 1,
+    "local_references_checked": 50456,
+    "search_entries": 155,
+    "errors": []
+  },
+  "retained_files_unchanged": true
+}

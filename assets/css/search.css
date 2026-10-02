@@ -1,0 +1,388 @@
+/* --------------------------------------------------------------------------
+   The Fitness Falcon - Search Results Page Styles
+   -------------------------------------------------------------------------- */
+
+/* Page Layout */
+.falcon-search-page {
+  min-height: 60vh;
+  padding: 60px 0 80px;
+}
+
+/* Search Hero Header */
+.falcon-search-hero {
+  background: linear-gradient(135deg, #f4f6ff 0%, #eef0fb 100%);
+  padding: 60px 0 48px;
+  border-bottom: 1px solid #e4e8f0;
+}
+
+[data-theme="dark"] .falcon-search-hero {
+  background: linear-gradient(135deg, #131826 0%, #0f1520 100%);
+  border-bottom-color: #1e2430;
+}
+
+.falcon-search-hero__title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #0f1729;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .falcon-search-hero__title {
+  color: #f0f4ff;
+}
+
+.falcon-search-hero__title em {
+  font-style: normal;
+  color: #5541f8;
+}
+
+.falcon-search-hero__count {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0 0 28px;
+}
+
+[data-theme="dark"] .falcon-search-hero__count {
+  color: #8090b0;
+}
+
+/* Search Input Bar */
+.falcon-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  max-width: 640px;
+  background: #fff;
+  border: 2px solid #5541f8;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(85, 65, 248, 0.12);
+}
+
+[data-theme="dark"] .falcon-search-bar {
+  background: #1a2035;
+  border-color: #5541f8;
+}
+
+.falcon-search-bar__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0f1729;
+}
+
+[data-theme="dark"] .falcon-search-bar__input {
+  color: #f0f4ff;
+}
+
+.falcon-search-bar__input::placeholder {
+  color: #94a3b8;
+}
+
+.falcon-search-bar__btn {
+  padding: 14px 22px;
+  background: #5541f8;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.falcon-search-bar__btn:hover {
+  background: #4432d4;
+}
+
+.falcon-search-bar__btn:focus-visible {
+  outline: 2px solid #5541f8;
+  outline-offset: 3px;
+}
+
+/* Results Body */
+.falcon-search-results {
+  padding: 48px 0 0;
+}
+
+/* Article Grid */
+.falcon-results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 56px;
+}
+
+@media (max-width: 991px) {
+  .falcon-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .falcon-results-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Article Card */
+.falcon-result-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(15, 23, 41, 0.07);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #f0f2f8;
+}
+
+.falcon-result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(85, 65, 248, 0.13);
+  color: inherit;
+}
+
+.falcon-result-card:focus-visible {
+  outline: 2px solid #5541f8;
+  outline-offset: 3px;
+}
+
+[data-theme="dark"] .falcon-result-card {
+  background: #141d2e;
+  border-color: #1e2840;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .falcon-result-card:hover {
+  box-shadow: 0 8px 32px rgba(85, 65, 248, 0.2);
+}
+
+.falcon-result-card__thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #e8ecf6;
+}
+
+.falcon-result-card__body {
+  padding: 18px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.falcon-result-card__cat {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5541f8;
+  padding: 3px 10px;
+  background: #eeeeff;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+[data-theme="dark"] .falcon-result-card__cat {
+  background: rgba(85, 65, 248, 0.15);
+  color: #8b80ff;
+}
+
+.falcon-result-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #0f1729;
+  margin: 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .falcon-result-card__title {
+  color: #dde4f5;
+}
+
+.falcon-result-card__date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* No Results State */
+.falcon-search-empty {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.falcon-search-empty__icon {
+  font-size: 3.5rem;
+  color: #c5cedf;
+  margin-bottom: 20px;
+  display: block;
+}
+
+[data-theme="dark"] .falcon-search-empty__icon {
+  color: #2a3450;
+}
+
+.falcon-search-empty__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f1729;
+  margin: 0 0 10px;
+}
+
+[data-theme="dark"] .falcon-search-empty__title {
+  color: #dde4f5;
+}
+
+.falcon-search-empty__desc {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0 0 28px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.falcon-search-empty__suggestions h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 14px;
+}
+
+.falcon-search-empty__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.falcon-search-empty__tag {
+  display: inline-block;
+  padding: 7px 16px;
+  border: 2px solid #e4e8f0;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334160;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.falcon-search-empty__tag:hover {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #fff;
+}
+
+[data-theme="dark"] .falcon-search-empty__tag {
+  border-color: #2a3450;
+  color: #8090b0;
+}
+
+[data-theme="dark"] .falcon-search-empty__tag:hover {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #fff;
+}
+
+/* Pagination */
+.falcon-search-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 0 0;
+}
+
+.falcon-search-pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  padding: 0 10px;
+  border: 2px solid #e4e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334160;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.falcon-search-pagination__btn:hover {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #fff;
+}
+
+.falcon-search-pagination__btn.active {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #fff;
+  pointer-events: none;
+}
+
+.falcon-search-pagination__btn:disabled,
+.falcon-search-pagination__btn[aria-disabled="true"] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .falcon-search-pagination__btn {
+  background: #141d2e;
+  border-color: #2a3450;
+  color: #8090b0;
+}
+
+[data-theme="dark"] .falcon-search-pagination__btn:hover,
+[data-theme="dark"] .falcon-search-pagination__btn.active {
+  background: #5541f8;
+  border-color: #5541f8;
+  color: #fff;
+}
+
+/* Loading skeleton (optional, for future use) */
+.falcon-search-loading {
+  display: none;
+  text-align: center;
+  padding: 48px;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .falcon-result-card,
+  .falcon-search-bar__btn,
+  .falcon-search-empty__tag,
+  .falcon-search-pagination__btn {
+    transition: none;
+  }
+  .falcon-result-card:hover {
+    transform: none;
+  }
+}

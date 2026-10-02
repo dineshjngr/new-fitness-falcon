@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+index [0-9]*.html
+scratch/*.png
+scratch/screenshots/

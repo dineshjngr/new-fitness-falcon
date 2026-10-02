@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV9WZ1XFE0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FV9WZ1XFE0');
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>{{META_TITLE}}</title>
     <meta name="title" content="{{META_TITLE}}" />
@@ -51,7 +61,6 @@
     <link rel="stylesheet" href="/assets/css/post-style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
-    <link rel="stylesheet" href="../../assets/css/footer.css">
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -67,50 +76,31 @@
 
 <main id="main-content" class="falcon-main-layout falcon-article-layout">
     <div class="container">
-        <!-- Breadcrumbs Component -->
-        <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
-            <a href="/./">Home</a>
-            <span class="separator" aria-hidden="true">/</span>
-            <a href="{{CATEGORY_URL}}">{{CATEGORY_NAME}}</a>
-            <span class="separator" aria-hidden="true">/</span>
-            <span class="current" aria-current="page">{{BREADCRUMB_TITLE}}</span>
-        </nav>
+        <!-- Reusable Breadcrumbs Component -->
+        {{BREADCRUMBS_HTML}}
 
         <div class="row">
             <!-- Main Article Column (8 Cols) -->
             <div class="col-lg-8">
                 <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
-                    <!-- Category Badge -->
-                    <a href="{{CATEGORY_URL}}" class="category-badge">{{CATEGORY_NAME}}</a>
+                    <!-- Reusable Category Badge -->
+                    {{CATEGORY_BADGE_HTML}}
 
                     <!-- Post Title / H1 -->
                     <h1 class="falcon-article-title" itemprop="headline">{{POST_TITLE}}</h1>
 
-                    <!-- Article Meta Row -->
+                    <!-- Reusable Article Meta Row -->
                     <div class="falcon-post-meta">
-                        <span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                            <i class="fal fa-user"></i> By <span itemprop="name">{{AUTHOR_NAME}}</span>
-                        </span>
-                        <span>
-                            <i class="fal fa-calendar-alt"></i>
-                            <time datetime="{{PUBLISHED_ISO}}" itemprop="datePublished">{{PUBLISHED_DATE}}</time>
-                        </span>
-                        {{UPDATED_DATE_HTML}}
-                        <span>
-                            <i class="fal fa-clock"></i> {{READ_TIME}} min read
-                        </span>
-                        <span>
-                            <i class="fal fa-comments"></i> {{COMMENTS_COUNT}} Comments
-                        </span>
+                        {{AUTHOR_META_HTML}}
+                        {{DATE_META_HTML}}
+                        {{READING_TIME_HTML}}
+                        <span><i class="fal fa-comments"></i> {{COMMENTS_COUNT}} Comments</span>
                     </div>
 
-                    <!-- Featured Image -->
-                    <figure class="falcon-featured-image-wrapper">
-                        <img src="{{FEATURED_IMAGE}}" alt="{{FEATURED_IMAGE_ALT}}" class="falcon-featured-image" loading="eager" itemprop="image" />
-                        {{FEATURED_IMAGE_CAPTION_HTML}}
-                    </figure>
+                    <!-- Reusable Featured Image -->
+                    {{FEATURED_IMAGE_HTML}}
 
-                    <!-- Table of Contents (when applicable) -->
+                    <!-- Reusable Table of Contents (when applicable) -->
                     {{TABLE_OF_CONTENTS_HTML}}
 
                     <!-- Article Content Body -->
@@ -118,65 +108,21 @@
 {{ENTRY_CONTENT}}
                     </div>
 
-                    <!-- Tags List -->
+                    <!-- Reusable Tags List -->
                     {{TAGS_HTML}}
 
-                    <!-- Social Sharing Toolbar -->
-                    <div class="falcon-social-share" aria-label="Share this article">
-                        <div class="falcon-social-share-title">
-                            <i class="fal fa-share-alt"></i>
-                            <span>Share this article:</span>
-                        </div>
-                        <div class="falcon-social-buttons">
-                            <a href="https://twitter.com/intent/tweet?text={{SHARE_TITLE_ENCODED}}&url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-x" aria-label="Share on X (Twitter)">
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-facebook" aria-label="Share on Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-linkedin" aria-label="Share on LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://pinterest.com/pin/create/button/?url={{SHARE_URL_ENCODED}}&media={{SHARE_IMG_ENCODED}}&description={{SHARE_TITLE_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-pinterest" aria-label="Pin on Pinterest">
-                                <i class="fab fa-pinterest-p"></i>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?text={{SHARE_TITLE_ENCODED}}%20{{SHARE_URL_ENCODED}}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-whatsapp" aria-label="Share via WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <button type="button" class="falcon-share-btn share-copy" id="falconCopyLinkBtn" data-url="{{CANONICAL_URL}}" aria-label="Copy article link">
-                                <i class="fal fa-link"></i>
-                                <span class="falcon-copy-tooltip" id="falconCopyTooltip">Link copied!</span>
-                            </button>
-                        </div>
-                    </div>
+                    <!-- Reusable Social Sharing Toolbar -->
+                    {{SOCIAL_SHARE_HTML}}
 
-                    <!-- Author Box -->
-                    <div class="falcon-author-box">
-                        <div class="falcon-author-avatar" style="background: {{AUTHOR_GRADIENT}};">
-                            {{AUTHOR_INITIAL}}
-                        </div>
-                        <div class="falcon-author-info">
-                            <span class="falcon-author-badge">Verified Falcon Contributor</span>
-                            <h4 class="falcon-author-name">Written by {{AUTHOR_NAME}}</h4>
-                            <div class="falcon-author-role">{{AUTHOR_ROLE}}</div>
-                            <p class="falcon-author-bio">{{AUTHOR_BIO}}</p>
-                        </div>
-                    </div>
+                    <!-- Reusable Author Box -->
+                    {{AUTHOR_BOX_HTML}}
 
-                    <!-- Post Pagination: Previous / Next Articles -->
-                    <nav class="falcon-post-pagination" aria-label="Article navigation">
-                        {{PREV_POST_HTML}}
-                        {{NEXT_POST_HTML}}
-                    </nav>
+                    <!-- Reusable Post Pagination: Previous / Next Articles -->
+                    {{POST_PAGINATION_HTML}}
                 </article>
 
-                <!-- Related Articles Section -->
-                <section class="falcon-related-section" aria-label="Related articles">
-                    <h3 class="falcon-section-heading">Related Articles</h3>
-                    <div class="row">
-                        {{RELATED_POSTS_HTML}}
-                    </div>
-                </section>
+                <!-- Reusable Related Articles Section -->
+                {{RELATED_SECTION_HTML}}
             </div>
 
             <!-- Sticky Sidebar Column (4 Cols) -->
@@ -196,16 +142,8 @@
                         </ul>
                     </div>
 
-                    <!-- Newsletter CTA Widget -->
-                    <div class="falcon-sidebar-cta">
-                        <i class="far fa-envelope-open-text"></i>
-                        <h3>Daily Fitness Digest</h3>
-                        <p>Get top health tips, workouts, and wellness guides straight to your inbox.</p>
-                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
-                            <input type="email" placeholder="Your email address" required aria-label="Email address" />
-                            <button type="submit">Subscribe Free</button>
-                        </form>
-                    </div>
+                    <!-- Reusable Newsletter CTA Widget -->
+                    {{SIDEBAR_NEWSLETTER_HTML}}
                 </aside>
             </div>
         </div>

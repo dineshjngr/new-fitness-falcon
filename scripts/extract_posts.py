@@ -67,17 +67,52 @@ def extract_post(post_file):
     author = author_m.group(1).strip() if author_m else 'Dinesh'
     if 'by ' in author.lower():
         author = re.sub(r'(?i)by\s+', '', author).strip()
+# Load authoritative WordPress export dates
+WP_XML = ROOT / 'old-website' / 'thefitnessfalcon.WordPress.2026-09-30.xml'
+WP_DATES = {}
+if WP_XML.exists():
+    try:
+        import xml.etree.ElementTree as ET
+        ns = {'wp': 'http://wordpress.org/export/1.2/'}
+        for item in ET.parse(WP_XML).getroot().findall('.//item'):
+            if item.find('wp:post_type', ns) is not None and item.find('wp:post_type', ns).text == 'post' and item.find('wp:status', ns).text == 'publish':
+                s = item.find('wp:post_name', ns).text.strip()
+                pdate = item.find('wp:post_date', ns).text.strip()
+                mdate = item.find('wp:post_modified', ns).text.strip()
+                pid = item.find('wp:post_id', ns).text.strip()
+                WP_DATES[s] = (pdate, mdate, int(pid))
+    except Exception as e:
+        print(f'Warning loading WP XML: {e}', file=sys.stderr)
+
     if author not in AUTHOR_INFO:
         author = 'Dinesh'
         
-    # 5. Published Date
-    date_m = re.search(r'fa-calendar-alt[^>]*></i>\s*([^<]+)</span>', txt)
-    date_str = date_m.group(1).strip() if date_m else 'September 30, 2026'
-    try:
-        dt = datetime.strptime(date_str, '%B %d, %Y')
-        iso_date = dt.strftime('%Y-%m-%d')
-    except Exception:
-        iso_date = '2026-09-30'
+    # 5. Published & Modified Dates (from authoritative WordPress export)
+    if slug in WP_DATES:
+        pdate_str, mdate_str, wp_id = WP_DATES[slug]
+        pdt = datetime.strptime(pdate_str, '%Y-%m-%d %H:%M:%S')
+        mdt = datetime.strptime(mdate_str, '%Y-%m-%d %H:%M:%S')
+        date_str = pdt.strftime('%B %d, %Y')
+        iso_date = pdt.strftime('%Y-%m-%d')
+        pub_time = pdt.strftime('%Y-%m-%dT%H:%M:%S+00:00')
+        mod_date_str = mdt.strftime('%B %d, %Y')
+        mod_iso_date = mdt.strftime('%Y-%m-%d')
+        mod_time = mdt.strftime('%Y-%m-%dT%H:%M:%S+00:00')
+    else:
+        # Fallback to article metadata, avoiding topbar date
+        date_m = re.search(r'<article[^>]*>.*?fa-calendar-alt[^>]*></i>\s*([^<]+)</span>', txt, re.DOTALL)
+        date_str = date_m.group(1).strip() if date_m else 'November 18, 2023'
+        try:
+            dt = datetime.strptime(date_str, '%B %d, %Y')
+            iso_date = dt.strftime('%Y-%m-%d')
+            pub_time = dt.strftime('%Y-%m-%dT00:00:00+00:00')
+        except Exception:
+            iso_date = '2023-11-18'
+            pub_time = '2023-11-18T00:00:00+00:00'
+        mod_date_str = date_str
+        mod_iso_date = iso_date
+        mod_time = pub_time
+        wp_id = None
         
     # 6. Read Time
     read_m = re.search(r'fa-clock[^>]*></i>\s*(\d+)\s*min read', txt)
@@ -132,8 +167,11 @@ def extract_post(post_file):
         'author_gradient': AUTHOR_INFO[author]['gradient'],
         'published_date': date_str,
         'published_iso': iso_date,
-        'modified_date': date_str,
-        'modified_iso': iso_date,
+        'published_time': pub_time,
+        'modified_date': mod_date_str,
+        'modified_iso': mod_iso_date,
+        'modified_time': mod_time,
+        'wp_id': wp_id,
         'read_time': read_time,
         'comments_count': comments_count,
         'featured_image': featured_img,

@@ -1,0 +1,13 @@
+<!-- Shared Reusable Newsletter Subscription Block Component -->
+<div class="falcon-newsletter-card falcon-sidebar-cta" aria-label="Newsletter subscription">
+  <i class="far fa-envelope-open-text" aria-hidden="true"></i>
+  <h3 class="falcon-newsletter-title">{{TITLE}}</h3>
+  <p class="falcon-newsletter-description">{{DESCRIPTION}}</p>
+  <form class="falcon-newsletter-form-box" onsubmit="event.preventDefault(); var m = this.querySelector('.falcon-newsletter-msg'); if(m) m.style.display='block';">
+    <div style="display: flex; gap: 8px; width: 100%;">
+      <input type="email" placeholder="Your email address" required aria-label="Email address" style="flex: 1;" />
+      <button type="submit">{{BUTTON_TEXT}}</button>
+    </div>
+    <span class="falcon-newsletter-msg" style="display: none; font-size: 13px; color: #e2e8f0; margin-top: 10px; line-height: 1.4;">Newsletter delivery integration is currently being configured for production. Reach out directly to <a href="mailto:info@thefitnessfalcon.com" style="color: #fff; text-decoration: underline;">info@thefitnessfalcon.com</a> to stay updated.</span>
+  </form>
+</div>

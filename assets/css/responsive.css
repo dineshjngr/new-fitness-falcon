@@ -50,11 +50,11 @@
 
 @media (min-width: 992px) and (max-width: 1076px) {
     .pfy-header-2 .mainmenu .site-navigation .navigation li a {
-        padding-right: 35px;
-        font-size: 15px;
+        padding-right: 18px;
+        font-size: 14px;
     }
     .pfy-header-2 .mainmenu .site-navigation .navigation li.menu-item-has-children:after{
-        right: 20px;
+        right: 4px;
     }
     
     .pfy-post-grid-wrap.grid-style-2 {
@@ -94,13 +94,25 @@
     }
 }
 
-@media (min-width: 993px) and (max-width: 1024px) {
-    .mainmenu .site-navigation .navigation li a {
-        padding-right: 45px;
+@media (min-width: 993px) and (max-width: 1199px) {
+    .header-menu-opt {
+        flex-wrap: nowrap !important;
     }
-
-    .mainmenu .site-navigation .navigation li.menu-item-has-children:after{
-        right:32px
+    .mainmenu .site-navigation .navigation li a {
+        padding-right: 18px !important;
+        font-size: 14px !important;
+    }
+    .mainmenu .site-navigation .navigation li.menu-item-has-children:after,
+    .pfy-header-2 .mainmenu .site-navigation .navigation li.menu-item-has-children:after {
+        right: 4px !important;
+    }
+    .menu-right {
+        flex-shrink: 0;
+        gap: 10px !important;
+    }
+    .menu-right .falcon-btn {
+        padding: 6px 12px !important;
+        font-size: 13px !important;
     }
 }
 @media (min-width: 992px) and (max-width: 1024px) {

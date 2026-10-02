@@ -1,0 +1,6342 @@
+{
+  "total_pages": 368,
+  "route_inventory": {
+    "homepage": 1,
+    "blog_main": 1,
+    "blog_pagination": 12,
+    "blog_posts": 155,
+    "categories": 19,
+    "category_pagination": 0,
+    "tags": 136,
+    "tag_pagination": 24,
+    "authors": 3,
+    "author_pagination": 11,
+    "static_pages": 4,
+    "search": 1,
+    "404": 1,
+    "other_html": 0
+  },
+  "canonical_issues": [],
+  "robots_analysis": {
+    "index_follow": 366,
+    "noindex_follow": 2,
+    "noindex_nofollow": 0,
+    "missing_robots": 0,
+    "other_robots": 0
+  },
+  "sitemap_urls_count": 319,
+  "missing_from_sitemap": [
+    "https://thefitnessfalcon.com/author/alex/page/2/",
+    "https://thefitnessfalcon.com/author/dinesh/page/10/",
+    "https://thefitnessfalcon.com/author/dinesh/page/11/",
+    "https://thefitnessfalcon.com/author/dinesh/page/2/",
+    "https://thefitnessfalcon.com/author/dinesh/page/3/",
+    "https://thefitnessfalcon.com/author/dinesh/page/4/",
+    "https://thefitnessfalcon.com/author/dinesh/page/5/",
+    "https://thefitnessfalcon.com/author/dinesh/page/6/",
+    "https://thefitnessfalcon.com/author/dinesh/page/7/",
+    "https://thefitnessfalcon.com/author/dinesh/page/8/",
+    "https://thefitnessfalcon.com/author/dinesh/page/9/",
+    "https://thefitnessfalcon.com/blogs/page/10/",
+    "https://thefitnessfalcon.com/blogs/page/11/",
+    "https://thefitnessfalcon.com/blogs/page/12/",
+    "https://thefitnessfalcon.com/blogs/page/13/",
+    "https://thefitnessfalcon.com/blogs/page/2/",
+    "https://thefitnessfalcon.com/blogs/page/3/",
+    "https://thefitnessfalcon.com/blogs/page/4/",
+    "https://thefitnessfalcon.com/blogs/page/5/",
+    "https://thefitnessfalcon.com/blogs/page/6/",
+    "https://thefitnessfalcon.com/blogs/page/7/",
+    "https://thefitnessfalcon.com/blogs/page/8/",
+    "https://thefitnessfalcon.com/blogs/page/9/",
+    "https://thefitnessfalcon.com/tag/diet-plan/page/2/",
+    "https://thefitnessfalcon.com/tag/dinesh-jeengar/page/2/",
+    "https://thefitnessfalcon.com/tag/fitness/page/2/",
+    "https://thefitnessfalcon.com/tag/fitness/page/3/",
+    "https://thefitnessfalcon.com/tag/fitness/page/4/",
+    "https://thefitnessfalcon.com/tag/fitness/page/5/",
+    "https://thefitnessfalcon.com/tag/glowing-skin/page/2/",
+    "https://thefitnessfalcon.com/tag/gym/page/2/",
+    "https://thefitnessfalcon.com/tag/health/page/2/",
+    "https://thefitnessfalcon.com/tag/health/page/3/",
+    "https://thefitnessfalcon.com/tag/health/page/4/",
+    "https://thefitnessfalcon.com/tag/health/page/5/",
+    "https://thefitnessfalcon.com/tag/health/page/6/",
+    "https://thefitnessfalcon.com/tag/health/page/7/",
+    "https://thefitnessfalcon.com/tag/healthcare-gadgets/page/2/",
+    "https://thefitnessfalcon.com/tag/nutrition/page/2/",
+    "https://thefitnessfalcon.com/tag/nutrition/page/3/",
+    "https://thefitnessfalcon.com/tag/skincare/page/2/",
+    "https://thefitnessfalcon.com/tag/superfood/page/2/",
+    "https://thefitnessfalcon.com/tag/the-fitness-falcon/page/2/",
+    "https://thefitnessfalcon.com/tag/the-fitness-falcon/page/3/",
+    "https://thefitnessfalcon.com/tag/the-fitness-falcon/page/4/",
+    "https://thefitnessfalcon.com/tag/the-fitness-falcon/page/5/",
+    "https://thefitnessfalcon.com/tag/the-fitness-falcon/page/6/"
+  ],
+  "extra_in_sitemap": [],
+  "title_issues": [
+    [
+      "blogs/10-effective-tips-for-managing-stress/index.html",
+      "Long title (81 chars): '10 Effective Tips for Managing Stress: A Comprehensive Guide - The Fitness Falcon'"
+    ],
+    [
+      "blogs/10-expert-approved-foods-to-relieve-constipation-naturally/index.html",
+      "Long title (79 chars): '10 Expert-Approved Foods to Relieve Constipation Naturally - The Fitness Falcon'"
+    ],
+    [
+      "blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/index.html",
+      "Long title (79 chars): '10 High-Protein Vegetarian Foods Ideal for Adult Nutrition - The Fitness Falcon'"
+    ],
+    [
+      "blogs/100-inspirational-fitness-quotes-for-captions-on-instagram/index.html",
+      "Long title (79 chars): '100 Inspirational Fitness Quotes for Captions on Instagram - The Fitness Falcon'"
+    ],
+    [
+      "blogs/2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency/index.html",
+      "Long title (103 chars): '2026 Fitness Goals: A Complete Guide to Building Strength, Health, and Consistency - The Fitness Falcon'"
+    ],
+    [
+      "blogs/7-best-fitness-youtubers-to-motivate-and-energize-your-workouts/index.html",
+      "Long title (84 chars): '7 Best Fitness YouTubers to Motivate and Energize Your Workouts - The Fitness Falcon'"
+    ],
+    [
+      "blogs/7-healthy-seeds-that-boost-immunity-and-improve-gut-health/index.html",
+      "Long title (79 chars): '7 Healthy Seeds That Boost Immunity and Improve Gut Health - The Fitness Falcon'"
+    ],
+    [
+      "blogs/acne-101-understanding-types-causes-and-effective-treatments/index.html",
+      "Long title (84 chars): 'Acne 101: Understanding Types, Causes, and Effective Treatments - The Fitness Falcon'"
+    ],
+    [
+      "blogs/acro-yoga-for-mental-health-how-it-improves-focus-and-connection/index.html",
+      "Long title (86 chars): 'Acro Yoga for Mental Health: How It Improves Focus and Connection - The Fitness Falcon'"
+    ],
+    [
+      "blogs/ai-mental-health-chatbots-ethics-and-emotional-support/index.html",
+      "Long title (80 chars): 'AI & Mental Health: Chatbots, Ethics, and Emotional Support - The Fitness Falcon'"
+    ],
+    [
+      "blogs/alpha-bravo-development-leading-innovations-in-health-tech/index.html",
+      "Long title (80 chars): 'Alpha Bravo Development: Leading Innovations in Health Tech - The Fitness Falcon'"
+    ],
+    [
+      "blogs/antioxidants-health-benefits-sources-and-supplements/index.html",
+      "Long title (76 chars): 'Antioxidants: Health Benefits, Sources, and Supplements - The Fitness Falcon'"
+    ],
+    [
+      "blogs/apple-watch-series-12-readiness-score-explained/index.html",
+      "Long title (101 chars): 'Apple Watch Series 12 Readiness Score Explained: What It Means for Your Training - The Fitness Falcon'"
+    ],
+    [
+      "blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/index.html",
+      "Long title (93 chars): 'Apple Watch vs Garmin: Which Is More Accurate for Step Tracking in 2026? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride/index.html",
+      "Long title (84 chars): 'Beginner's Guide to Cycling: Top Tips for a Smooth and Fun Ride - The Fitness Falcon'"
+    ],
+    [
+      "blogs/best-time-to-consume-protein-morning-vs-night/index.html",
+      "Long title (86 chars): 'Best Time to Consume Protein: Morning vs Night \u2013 What Works Best? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/blackhead-removal-guide-best-remedies-and-prevention-methods/index.html",
+      "Long title (82 chars): 'Blackhead Removal Guide: Best Remedies and Prevention Methods - The Fitness Falcon'"
+    ],
+    [
+      "blogs/brain-boosting-nutrition-best-foods-to-improve-focus-and-memory/index.html",
+      "Long title (85 chars): 'Brain Boosting Nutrition: Best Foods to Improve Focus and Memory - The Fitness Falcon'"
+    ],
+    [
+      "blogs/clean-weight-gain-vs-fat-gain-what-you-really-need-to-know/index.html",
+      "Long title (80 chars): 'Clean Weight Gain vs Fat Gain: What You Really Need to Know - The Fitness Falcon'"
+    ],
+    [
+      "blogs/dry-skin-care-routine-best-products-and-tips-for-hydration/index.html",
+      "Long title (80 chars): 'Dry Skin Care Routine: Best Products and Tips for Hydration - The Fitness Falcon'"
+    ],
+    [
+      "blogs/essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier/index.html",
+      "Long title (86 chars): 'Essential Tips for Dry Skin Care: How to Repair Your Skin Barrier - The Fitness Falcon'"
+    ],
+    [
+      "blogs/essential-trekking-checklist/index.html",
+      "Long title (77 chars): 'Essential Trekking Checklist: Gear for a Successful Trek - The Fitness Falcon'"
+    ],
+    [
+      "blogs/expert-tips-and-techniques-to-enhance-sports-performance/index.html",
+      "Long title (77 chars): 'Expert Tips and Techniques to Enhance Sports Performance - The Fitness Falcon'"
+    ],
+    [
+      "blogs/garmin-running-plans-features-september-2026/index.html",
+      "Long title (100 chars): 'Garmin\u2019s New Running Plans and Fitness Features: What Changed in September 2026 - The Fitness Falcon'"
+    ],
+    [
+      "blogs/hair-growth-vs-hair-thickness-why-length-isnt-increasing/index.html",
+      "Long title (79 chars): 'Hair Growth vs Hair Thickness: Why Length Isn\u2019t Increasing - The Fitness Falcon'"
+    ],
+    [
+      "blogs/health-benefits-of-nuts/index.html",
+      "Long title (76 chars): 'The Surprising Health Benefits of Nuts You Need to Know - The Fitness Falcon'"
+    ],
+    [
+      "blogs/healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt/index.html",
+      "Long title (83 chars): 'Healthy Snack Ideas to Satisfy Your Cravings Without the Guilt - The Fitness Falcon'"
+    ],
+    [
+      "blogs/healthy-sunflower-seeds-nutrition-benefits-eating-tips/index.html",
+      "Long title (79 chars): 'Healthy Sunflower Seeds: Nutrition, Benefits & Eating Tips - The Fitness Falcon'"
+    ],
+    [
+      "blogs/high-fiber-foods-types-health-benefits-and-supplements/index.html",
+      "Long title (78 chars): 'High-Fiber Foods: Types, Health Benefits, and Supplements - The Fitness Falcon'"
+    ],
+    [
+      "blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/index.html",
+      "Long title (79 chars): 'Home Remedies for Glowing Skin: Pamper Your Face Naturally - The Fitness Falcon'"
+    ],
+    [
+      "blogs/how-to-make-skin-glow-naturally-without-makeup-or-treatments/index.html",
+      "Long title (81 chars): 'How to Make Skin Glow Naturally Without Makeup or Treatments - The Fitness Falcon'"
+    ],
+    [
+      "blogs/hrv-for-fitness-what-it-tells-you/index.html",
+      "Long title (89 chars): 'HRV for Fitness: What Your Heart Rate Variability Actually Tells You - The Fitness Falcon'"
+    ],
+    [
+      "blogs/intermittent-fasting-and-fat-loss/index.html",
+      "Long title (77 chars): 'Intermittent Fasting and Fat Loss: A Comprehensive Guide - The Fitness Falcon'"
+    ],
+    [
+      "blogs/mindfulness-the-ultimate-guide-to-inner-peace-in-2024/index.html",
+      "Long title (85 chars): 'Mindfulness: A Practical Guide to Building a Consistent Practice - The Fitness Falcon'"
+    ],
+    [
+      "blogs/minerals-for-hair-growth-iron-zinc-and-selenium-explained/index.html",
+      "Long title (81 chars): 'Minerals for Hair Growth: Iron, Zinc, and Selenium Explained - The Fitness Falcon'"
+    ],
+    [
+      "blogs/monounsaturated-vs-polyunsaturated-fats-benefits-and-sources/index.html",
+      "Long title (83 chars): 'Monounsaturated vs. Polyunsaturated Fats: Benefits and Sources - The Fitness Falcon'"
+    ],
+    [
+      "blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/index.html",
+      "Long title (77 chars): 'No More Skinny Arms: A Diet Plan to Help You Gain Muscle - The Fitness Falcon'"
+    ],
+    [
+      "blogs/pigmentation-on-face-causes-prevention-and-effective-treatments/index.html",
+      "Long title (87 chars): 'Pigmentation on Face: Causes, Prevention, and Effective Treatments - The Fitness Falcon'"
+    ],
+    [
+      "blogs/psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts/index.html",
+      "Long title (108 chars): 'Psychodermatology 101: Can \u201cCortisol-Blocking\u201d Skincare Actually Stop Stress Breakouts? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/index.html",
+      "Long title (96 chars): 'Running Affects Belly Fat and Metabolism: How Running Burns Fat Effectively - The Fitness Falcon'"
+    ],
+    [
+      "blogs/running-for-mental-health-stress-anxiety-and-mood-benefits/index.html",
+      "Long title (82 chars): 'Running for Mental Health: Stress, Anxiety, and Mood Benefits - The Fitness Falcon'"
+    ],
+    [
+      "blogs/sitting-still-killing-you-5-exercises-to-save-your-day/index.html",
+      "Long title (76 chars): 'Sitting Still Killing You? 5 Exercises to Save Your Day - The Fitness Falcon'"
+    ],
+    [
+      "blogs/skincare-for-sensitive-skin/index.html",
+      "Long title (79 chars): 'Skincare for Sensitive Skin: What to Use and What to Avoid - The Fitness Falcon'"
+    ],
+    [
+      "blogs/smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle/index.html",
+      "Long title (92 chars): 'Smart Ring vs. Smart Watch: Which Wearable is Right for Your Lifestyle? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/stress-management-techniques-reduce-and-relieve-stress/index.html",
+      "Long title (76 chars): 'Stress Management Techniques: Reduce and Relieve Stress - The Fitness Falcon'"
+    ],
+    [
+      "blogs/swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster/index.html",
+      "Long title (86 chars): 'Swimming vs Walking for Weight Loss: Which Burns More Fat Faster? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health/index.html",
+      "Long title (91 chars): 'The Four Phases of the Menstrual Cycle and How They Impact Your Health - The Fitness Falcon'"
+    ],
+    [
+      "blogs/the-importance-of-prioritizing-mental-health-in-the-workplace/index.html",
+      "Long title (82 chars): 'The Importance of Prioritizing Mental Health in the Workplace - The Fitness Falcon'"
+    ],
+    [
+      "blogs/the-power-of-calisthenics/index.html",
+      "Long title (87 chars): 'The Power of Calisthenics: Unleashing Your Full Physical Potential - The Fitness Falcon'"
+    ],
+    [
+      "blogs/top-10-hair-growth-tips/index.html",
+      "Long title (86 chars): 'Top 10 Hair Growth Tips That Actually Work: A Comprehensive Guide - The Fitness Falcon'"
+    ],
+    [
+      "blogs/top-5-best-swimming-strokes-for-weight-loss-and-fitness/index.html",
+      "Long title (76 chars): 'Top 5 Best Swimming Strokes for Weight Loss and Fitness - The Fitness Falcon'"
+    ],
+    [
+      "blogs/top-5-gyms-in-new-york-city-2026/index.html",
+      "Long title (106 chars): 'Top 5 Gyms in New York City (2026 Picks) : Best Fitness Centers, Classes, and Reviews - The Fitness Falcon'"
+    ],
+    [
+      "blogs/top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow/index.html",
+      "Long title (85 chars): 'Top 5 Home Remedies to Remove Sun Tan: Reclaim Your Natural Glow - The Fitness Falcon'"
+    ],
+    [
+      "blogs/trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life/index.html",
+      "Long title (93 chars): 'Trekking vs Running for Fitness: Which Burns More Calories in Real Life? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-are-carbohydrates-definition-types-health-impact/index.html",
+      "Long title (78 chars): 'What Are Carbohydrates? Definition, Types & Health Impact - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-are-fast-twitch-muscle-fibers-a-comprehensive-guide/index.html",
+      "Long title (78 chars): 'What Are Fast-Twitch Muscle Fibers? A Comprehensive Guide - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-are-micronutrients-types-functions-and-benefits/index.html",
+      "Long title (76 chars): 'What are Micronutrients: Types, Functions, and Benefits - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-is-a-readiness-score-low-workout/index.html",
+      "Long title (91 chars): 'What Is a Readiness Score? Should You Skip Your Workout When It\u2019s Low? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-is-dietary-fiber-types-benefits-and-best-food-sources/index.html",
+      "Long title (82 chars): 'What Is Dietary Fiber? Types, Benefits, and Best Food Sources - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-is-hiit-high-intensity-interval-training-types-benefits/index.html",
+      "Long title (85 chars): 'What is HIIT (High Intensity Interval Training) Types & Benefits - The Fitness Falcon'"
+    ],
+    [
+      "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      "Long title (83 chars): 'What to Do If You Panic in Water: Beginner Survival Techniques - The Fitness Falcon'"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      "Long title (80 chars): 'Why Cycling Is the Ultimate Workout for Your Body and Brain - The Fitness Falcon'"
+    ],
+    [
+      "blogs/why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness/index.html",
+      "Long title (88 chars): 'Why Skin Becomes Sensitive in Your 30s and Triggers Facial Redness? - The Fitness Falcon'"
+    ],
+    [
+      "blogs/yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness/index.html",
+      "Long title (85 chars): 'Yoga vs Sports for Fitness: Which Is Better for Overall Fitness? - The Fitness Falcon'"
+    ],
+    [
+      "pages/write-for-us/index.html",
+      "Long title (85 chars): 'Write For Us - Health, Fitness, Nutrition & Wellness Guest Posts - The Fitness Falcon'"
+    ]
+  ],
+  "desc_issues": [],
+  "duplicate_titles_count": 0,
+  "duplicate_descs_count": 0,
+  "og_issues": [],
+  "heading_issues": [
+    [
+      "index.html",
+      "Empty H1 heading"
+    ]
+  ],
+  "schema_issues": [],
+  "parity_mismatches": [],
+  "empty_categories": [],
+  "empty_tags": [],
+  "single_post_tags": [
+    "10-superfoods-for-iron-deficiency",
+    "2026-goals",
+    "5-home-remedies-to-remove-sun-tan",
+    "acne",
+    "age-well",
+    "aging-well",
+    "algae",
+    "antioxidant",
+    "anxiety-disorder",
+    "anxiety-treatment",
+    "benefits-of-nuts",
+    "calisthenics",
+    "calisthenics-power",
+    "canoeing",
+    "captions-on-instagram",
+    "constipation",
+    "easy-snack-ideas",
+    "easy-snacks-to-make",
+    "eating-habits",
+    "exercises-to-improve-posture",
+    "facial-yoga",
+    "facial-yoga-exercise",
+    "fats",
+    "fix-posture",
+    "games",
+    "garmin-coach",
+    "gut-health",
+    "health-benefits-of-nuts",
+    "healthy-breakfast",
+    "healthy-breakfast-options",
+    "healthy-breakfast-recipes",
+    "healthy-snack-ideas",
+    "heart-rate",
+    "home-remedies-to-remove-sun-tan",
+    "home-workout",
+    "hrv",
+    "hug",
+    "immune-system",
+    "improve-posture",
+    "improve-your-posture",
+    "inner-peace",
+    "iron-deficiency",
+    "kayaking",
+    "kissing",
+    "lifestyle",
+    "magnesium",
+    "magnesium-deficiency",
+    "makeup",
+    "managing-stress",
+    "menstrual-cycle",
+    "minerals",
+    "muscle",
+    "nutritional-benefits-of-nuts",
+    "nutritious-breakfast",
+    "omega-6-fatty-acids",
+    "posture-improver",
+    "power-of-calisthenics",
+    "rafting",
+    "relieving-constipation",
+    "remedies-to-remove-sun-tan",
+    "remove-sun-tan",
+    "running",
+    "skipping",
+    "snack-ideas",
+    "step-tracking",
+    "stress-reduction",
+    "sun-tan",
+    "superfoods-for-iron-deficiency",
+    "swimmer",
+    "swimming-vs-walking",
+    "the",
+    "trekking",
+    "wearables",
+    "well-aging",
+    "yoga-transforms",
+    "zumba"
+  ],
+  "internal_links_checked": 37658,
+  "internal_link_issues": [
+    [
+      "404.html",
+      166,
+      "javascript:void(0) link found"
+    ],
+    [
+      "404.html",
+      182,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/index.html",
+      497,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/alex/page/2/index.html",
+      497,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/index.html",
+      497,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/10/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/10/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/11/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/11/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/11/index.html",
+      446,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/3/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/3/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/4/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/4/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/5/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/5/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/6/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/6/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/7/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/7/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/8/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/8/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/9/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/dinesh/page/9/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/riya-verma/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "author/riya-verma/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-effective-tips-for-managing-stress/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-effective-tips-for-managing-stress/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-essential-winter-skincare-tips-from-the-experts/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-essential-winter-skincare-tips-from-the-experts/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-expert-approved-foods-to-relieve-constipation-naturally/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-expert-approved-foods-to-relieve-constipation-naturally/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-fruits-for-your-gym-diet-fuel-your-fitness/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-fruits-for-your-gym-diet-fuel-your-fitness/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-serious-diseases-caused-by-smoking/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-serious-diseases-caused-by-smoking/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-superfoods-for-iron-deficiency/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/10-superfoods-for-iron-deficiency/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/100-inspirational-fitness-quotes-for-captions-on-instagram/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/100-inspirational-fitness-quotes-for-captions-on-instagram/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/15-health-and-nutrition-benefits-of-sesame-seeds/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/15-health-and-nutrition-benefits-of-sesame-seeds/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/5-essential-healthcare-gadgets-every-home-should-have/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/5-essential-healthcare-gadgets-every-home-should-have/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/5-new-year-resolutions-for-your-2024-gym-journey/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/5-new-year-resolutions-for-your-2024-gym-journey/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-best-fitness-youtubers-to-motivate-and-energize-your-workouts/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-best-fitness-youtubers-to-motivate-and-energize-your-workouts/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-best-health-and-fitness-wearables-in-2024/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-best-health-and-fitness-wearables-in-2024/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-healthy-seeds-that-boost-immunity-and-improve-gut-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/7-healthy-seeds-that-boost-immunity-and-improve-gut-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/8-easy-outdoor-fitness-activities-and-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/8-easy-outdoor-fitness-activities-and-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/acne-101-understanding-types-causes-and-effective-treatments/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/acne-101-understanding-types-causes-and-effective-treatments/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/acro-yoga-for-mental-health-how-it-improves-focus-and-connection/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/acro-yoga-for-mental-health-how-it-improves-focus-and-connection/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/aging-well-10-secrets-to-a-vibrant-life/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/aging-well-10-secrets-to-a-vibrant-life/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/ai-mental-health-chatbots-ethics-and-emotional-support/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/ai-mental-health-chatbots-ethics-and-emotional-support/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/alpha-bravo-development-leading-innovations-in-health-tech/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/alpha-bravo-development-leading-innovations-in-health-tech/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/anti-aging-products-benefits-and-side-effects/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/anti-aging-products-benefits-and-side-effects/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/antioxidants-health-benefits-sources-and-supplements/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/antioxidants-health-benefits-sources-and-supplements/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/apple-watch-series-12-readiness-score-explained/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/apple-watch-series-12-readiness-score-explained/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/baked-oats-full-recipe-and-ingredients/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/baked-oats-full-recipe-and-ingredients/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/belly-fat-reduction-myths-vs-facts-you-need-to-know/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/belly-fat-reduction-myths-vs-facts-you-need-to-know/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-full-body-workout-gym-for-2026/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-full-body-workout-gym-for-2026/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-lifestyle-habits-for-longevity-and-healthy-aging/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-lifestyle-habits-for-longevity-and-healthy-aging/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-skincare-routine-to-prevent-pimples/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-skincare-routine-to-prevent-pimples/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-sports-for-beginners-with-no-fitness-background/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-sports-for-beginners-with-no-fitness-background/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-time-to-consume-protein-morning-vs-night/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-time-to-consume-protein-morning-vs-night/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-workouts-for-mental-health-move-to-feel-better/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/best-workouts-for-mental-health-move-to-feel-better/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/biological-cycle-signs-causes-of-disruption/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/biological-cycle-signs-causes-of-disruption/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/blackhead-removal-guide-best-remedies-and-prevention-methods/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/blackhead-removal-guide-best-remedies-and-prevention-methods/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/brain-boosting-nutrition-best-foods-to-improve-focus-and-memory/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/brain-boosting-nutrition-best-foods-to-improve-focus-and-memory/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/chia-seeds-health-benefits-sources-and-supplements/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/chia-seeds-health-benefits-sources-and-supplements/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/clean-weight-gain-vs-fat-gain-what-you-really-need-to-know/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/clean-weight-gain-vs-fat-gain-what-you-really-need-to-know/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/common-swimming-mistakes-and-how-to-fix-them/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/common-swimming-mistakes-and-how-to-fix-them/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/common-trekking-mistakes-and-how-to-avoid-them/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/common-trekking-mistakes-and-how-to-avoid-them/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/cycling-benefits-and-which-cycle-is-best/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/cycling-benefits-and-which-cycle-is-best/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/dandruff-treatment-at-home-remedies-that-work/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/dandruff-treatment-at-home-remedies-that-work/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/dry-skin-care-routine-best-products-and-tips-for-hydration/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/dry-skin-care-routine-best-products-and-tips-for-hydration/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/essential-trekking-checklist/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/essential-trekking-checklist/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/expert-tips-and-techniques-to-enhance-sports-performance/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/expert-tips-and-techniques-to-enhance-sports-performance/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/exploring-the-top-10-most-consumed-winter-beverages/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/exploring-the-top-10-most-consumed-winter-beverages/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/face-yoga-for-anti-aging-and-skin-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/face-yoga-for-anti-aging-and-skin-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/food-waste-reduction-and-sustainability/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/food-waste-reduction-and-sustainability/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/garmin-running-plans-features-september-2026/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/garmin-running-plans-features-september-2026/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/gut-health-the-unsung-hero-of-your-immune-system/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/gut-health-the-unsung-hero-of-your-immune-system/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/gym-diet-plan-what-to-eat-before-and-after-workout/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/gym-diet-plan-what-to-eat-before-and-after-workout/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-fall-in-men-common-causes-and-permanent-fixes/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-fall-in-men-common-causes-and-permanent-fixes/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-fall-in-men-common-causes-and-permanent-fixes/index.html",
+      730,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/hair-fall-in-women-causes-prevention-and-treatments/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-fall-in-women-causes-prevention-and-treatments/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-fall-in-women-causes-prevention-and-treatments/index.html",
+      507,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/hair-growth-vs-hair-thickness-why-length-isnt-increasing/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hair-growth-vs-hair-thickness-why-length-isnt-increasing/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/haircare-tips-to-prevent-split-ends-and-breakage/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/haircare-tips-to-prevent-split-ends-and-breakage/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/health-benefits-of-kiss-and-hugs/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/health-benefits-of-kiss-and-hugs/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/health-benefits-of-nuts/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/health-benefits-of-nuts/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-eating-tips-for-weight-loss/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-eating-tips-for-weight-loss/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      642,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      672,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-sunflower-seeds-nutrition-benefits-eating-tips/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/healthy-sunflower-seeds-nutrition-benefits-eating-tips/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/high-fiber-foods-types-health-benefits-and-supplements/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/high-fiber-foods-types-health-benefits-and-supplements/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      639,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      661,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/hiit-vs-liss-which-cardio-method-is-better-for-you/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hiit-vs-liss-which-cardio-method-is-better-for-you/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hire-a-personal-female-fitness-trainer-in-chicago/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hire-a-personal-female-fitness-trainer-in-chicago/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-faster-hair-growth-naturally/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-faster-hair-growth-naturally/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-for-better-digestion/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-for-better-digestion/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-workouts-that-actually-work-in-2026/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/home-workouts-that-actually-work-in-2026/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-much-water-should-you-really-drink-each-day/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-much-water-should-you-really-drink-each-day/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-choose-the-right-running-shoes-for-flat-feet/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-choose-the-right-running-shoes-for-flat-feet/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-make-skin-glow-naturally-without-makeup-or-treatments/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-make-skin-glow-naturally-without-makeup-or-treatments/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-remove-dark-circles-naturally-at-home/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-remove-dark-circles-naturally-at-home/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-remove-makeup-without-makeup-remover/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-remove-makeup-without-makeup-remover/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-sleep-better-at-night-naturally/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-to-sleep-better-at-night-naturally/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-yoga-transforms-your-body-in-just-30-days/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/how-yoga-transforms-your-body-in-just-30-days/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hrv-for-fitness-what-it-tells-you/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/hrv-for-fitness-what-it-tells-you/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/immune-system-how-to-improve-immune-system/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/immune-system-how-to-improve-immune-system/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/improving-your-posture-the-ultimate-guide-for-2024/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/improving-your-posture-the-ultimate-guide-for-2024/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/index.html",
+      519,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/intermittent-fasting-and-fat-loss/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/intermittent-fasting-and-fat-loss/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/is-overthinking-killing-your-confidence/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/is-overthinking-killing-your-confidence/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/kayaking-vs-canoeing-vs-rafting-best-water-sport/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/kayaking-vs-canoeing-vs-rafting-best-water-sport/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/meditation-for-beginners-types-and-health-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/meditation-for-beginners-types-and-health-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/mindfulness-the-ultimate-guide-to-inner-peace-in-2024/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/mindfulness-the-ultimate-guide-to-inner-peace-in-2024/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/minerals-for-hair-growth-iron-zinc-and-selenium-explained/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/minerals-for-hair-growth-iron-zinc-and-selenium-explained/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/monounsaturated-vs-polyunsaturated-fats-benefits-and-sources/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/monounsaturated-vs-polyunsaturated-fats-benefits-and-sources/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/omega-3-fatty-acids-health-benefits-and-rich-foods/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/omega-3-fatty-acids-health-benefits-and-rich-foods/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/omega-6-fatty-acids-health-benefits-and-rich-foods/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/omega-6-fatty-acids-health-benefits-and-rich-foods/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/outdoor-games-vs-indoor-games-which-is-better/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/outdoor-games-vs-indoor-games-which-is-better/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/10/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/10/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/11/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/11/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/12/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/12/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/13/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/13/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/13/index.html",
+      460,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/3/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/3/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/4/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/4/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/5/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/5/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/6/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/6/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/7/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/7/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/8/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/8/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/9/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/page/9/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pigmentation-on-face-causes-prevention-and-effective-treatments/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pigmentation-on-face-causes-prevention-and-effective-treatments/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pilates-the-ultimate-guide-for-a-stronger-core-in-2024/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pilates-the-ultimate-guide-for-a-stronger-core-in-2024/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pumpkin-seeds-health-benefits-nutrition-and-uses/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/pumpkin-seeds-health-benefits-nutrition-and-uses/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-for-mental-health-stress-anxiety-and-mood-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-for-mental-health-stress-anxiety-and-mood-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-shoes-for-women-stylish-stable-comfortable/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/running-shoes-for-women-stylish-stable-comfortable/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/sitting-still-killing-you-5-exercises-to-save-your-day/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/sitting-still-killing-you-5-exercises-to-save-your-day/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/skincare-for-sensitive-skin/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/skincare-for-sensitive-skin/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/stress-management-techniques-reduce-and-relieve-stress/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/stress-management-techniques-reduce-and-relieve-stress/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/summer-haircare-tips-to-stop-dryness-and-damage/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/summer-haircare-tips-to-stop-dryness-and-damage/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/swimming-safety-tips-for-beginners/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/swimming-safety-tips-for-beginners/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-importance-of-prioritizing-mental-health-in-the-workplace/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-importance-of-prioritizing-mental-health-in-the-workplace/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-power-of-calisthenics/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-power-of-calisthenics/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-plant-protein-for-womens-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-plant-protein-for-womens-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-post-workout-meals/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-post-workout-meals/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-hair-growth-tips/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-hair-growth-tips/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-himalayan-treks-in-india/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-himalayan-treks-in-india/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-home-workouts-that-require-no-equipment/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-home-workouts-that-require-no-equipment/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-ingredients-to-avoid-if-you-have-oily-skin/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-10-ingredients-to-avoid-if-you-have-oily-skin/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-best-swimming-strokes-for-weight-loss-and-fitness/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-best-swimming-strokes-for-weight-loss-and-fitness/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-female-fitness-trainers-in-new-york/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-female-fitness-trainers-in-new-york/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-chicago/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-chicago/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-florida/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-florida/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-new-york-city-2026/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-gyms-in-new-york-city-2026/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-healthy-breakfast-ideas/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-healthy-breakfast-ideas/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-yoga-centers-in-rishikesh/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-5-yoga-centers-in-rishikesh/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-6-gyms-in-los-angeles/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-6-gyms-in-los-angeles/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-6-gyms-in-miami/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-6-gyms-in-miami/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-fitness-tracker-brands-available-in-india/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-fitness-tracker-brands-available-in-india/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-skincare-hacks-for-dry-and-dehydrated-skin/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-skincare-hacks-for-dry-and-dehydrated-skin/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-skincare-hacks-for-dry-and-dehydrated-skin/index.html",
+      495,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/top-yoga-classes-certification-in-phoenix/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/top-yoga-classes-certification-in-phoenix/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/ultimate-plant-based-diet-grocery-list-for-health/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/ultimate-plant-based-diet-grocery-list-for-health/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/wearable-fitness-technology-smart-gyms-in-2025/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/wearable-fitness-technology-smart-gyms-in-2025/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/weight-gain-alert-signs-you-need-to-watch-out-for/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/weight-gain-alert-signs-you-need-to-watch-out-for/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-calories-and-why-are-they-important/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-calories-and-why-are-they-important/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-carbohydrates-definition-types-health-impact/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-carbohydrates-definition-types-health-impact/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-fast-twitch-muscle-fibers-a-comprehensive-guide/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-fast-twitch-muscle-fibers-a-comprehensive-guide/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-micronutrients-types-functions-and-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-micronutrients-types-functions-and-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-skipping-every-day/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-skipping-every-day/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-swimming-daily/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-swimming-daily/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-a-readiness-score-low-workout/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-a-readiness-score-low-workout/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-a-vegan-diet-vegan-food-diet-list/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-a-vegan-diet-vegan-food-diet-list/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-algae-and-why-its-a-superfood/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-algae-and-why-its-a-superfood/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-calcium-and-calcium-rich-foods-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-calcium-and-calcium-rich-foods-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-dietary-fiber-types-benefits-and-best-food-sources/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-dietary-fiber-types-benefits-and-best-food-sources/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-glucose-types-health-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-glucose-types-health-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-hiit-high-intensity-interval-training-types-benefits/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-hiit-high-intensity-interval-training-types-benefits/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-ice-bath-health-benefits-of-cold-therapy/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-ice-bath-health-benefits-of-cold-therapy/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-protein-and-types-of-protein-what-do-they-do/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-protein-and-types-of-protein-what-do-they-do/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-superfoods-benefits-uses/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-superfoods-benefits-uses/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-vitamins-types-importance-and-sources/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-vitamins-types-importance-and-sources/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-zumba-workout-pros-cons-and-how-it-works/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-is-zumba-workout-pros-cons-and-how-it-works/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      418,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      401,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      664,
+      "Empty or None href attribute"
+    ],
+    [
+      "blogs/why-is-magnesium-so-crucial-for-the-body/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/why-is-magnesium-so-crucial-for-the-body/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness/index.html",
+      250,
+      "javascript:void(0) link found"
+    ],
+    [
+      "blogs/yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness/index.html",
+      266,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/beauty/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/beauty/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/blog/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/blog/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/cycling/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/cycling/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/fitness/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/fitness/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/food-and-recipes/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/food-and-recipes/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/gym/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/gym/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/health/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/health/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/lifestyle/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/lifestyle/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/news/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/news/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/nutrition/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/nutrition/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/recipes/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/recipes/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/skincare/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/skincare/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/sports/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/sports/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/swimming/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/swimming/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/trekking/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/trekking/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/wearables-fitness-technology/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/wearables-fitness-technology/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/weight/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/weight/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/workout/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/workout/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/yoga/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "category/yoga/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "index.html",
+      614,
+      "javascript:void(0) link found"
+    ],
+    [
+      "index.html",
+      630,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/contact-us/index.html",
+      165,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/contact-us/index.html",
+      181,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/privacy-policy/index.html",
+      165,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/privacy-policy/index.html",
+      181,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/team/index.html",
+      165,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/team/index.html",
+      181,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/write-for-us/index.html",
+      165,
+      "javascript:void(0) link found"
+    ],
+    [
+      "pages/write-for-us/index.html",
+      181,
+      "javascript:void(0) link found"
+    ],
+    [
+      "search/index.html",
+      167,
+      "javascript:void(0) link found"
+    ],
+    [
+      "search/index.html",
+      183,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/10-hair-growth-tips/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/10-hair-growth-tips/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/10-superfoods-for-iron-deficiency/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/10-superfoods-for-iron-deficiency/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/2026-fitness-goals/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/2026-fitness-goals/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/2026-goals/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/2026-goals/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/5-home-remedies-to-remove-sun-tan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/5-home-remedies-to-remove-sun-tan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/acne/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/acne/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/age-well/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/age-well/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/aging-well/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/aging-well/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/algae/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/algae/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/antioxidant/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/antioxidant/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/anxiety-disorder/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/anxiety-disorder/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/anxiety-treatment/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/anxiety-treatment/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/apple-watch/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/apple-watch/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/beauty/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/beauty/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/benefits-of-nuts/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/benefits-of-nuts/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calcium/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calcium/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calisthenics/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calisthenics/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calisthenics-power/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calisthenics-power/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calorie/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/calorie/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/canoeing/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/canoeing/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/captions-on-instagram/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/captions-on-instagram/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/chia-seeds/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/chia-seeds/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/constipation/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/constipation/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/cycling/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/cycling/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/diet-plan/page/2/index.html",
+      441,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/dinesh-jeengar/page/2/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/easy-snack-ideas/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/easy-snack-ideas/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/easy-snacks-to-make/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/easy-snacks-to-make/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/eating-habits/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/eating-habits/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/exercises/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/exercises/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/exercises-to-improve-posture/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/exercises-to-improve-posture/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/facial-yoga/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/facial-yoga/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/facial-yoga-exercise/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/facial-yoga-exercise/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fats/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fats/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fiber/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fiber/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/3/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/3/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/4/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/4/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/5/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/5/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness/page/5/index.html",
+      475,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness-goals/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fitness-goals/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fix-posture/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/fix-posture/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/food/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/food/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/games/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/games/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/garmin/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/garmin/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/garmin-coach/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/garmin-coach/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/glowing-skin/page/2/index.html",
+      322,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/grow-long-hair-fast/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/grow-long-hair-fast/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gut-health/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gut-health/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym/page/2/index.html",
+      339,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym-diet/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/gym-diet/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hair-growth-tips/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hair-growth-tips/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/3/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/3/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/4/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/4/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/5/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/5/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/6/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/6/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/7/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/7/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health/page/7/index.html",
+      441,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health-benefits-of-nuts/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/health-benefits-of-nuts/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthcare-gadgets/page/2/index.html",
+      305,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-idea/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-idea/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-options/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-options/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-recipes/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-breakfast-recipes/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-eating/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-eating/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-food/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-food/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-snack-ideas/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/healthy-snack-ideas/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/heart-rate/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/heart-rate/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-remedies/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-remedies/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-remedies-to-remove-sun-tan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-remedies-to-remove-sun-tan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-workout/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/home-workout/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hrv/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hrv/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hug/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/hug/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/immune-system/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/immune-system/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/improve-posture/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/improve-posture/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/improve-your-posture/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/improve-your-posture/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/inner-peace/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/inner-peace/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/iron-deficiency/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/iron-deficiency/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/kayaking/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/kayaking/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/keto-diet/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/keto-diet/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/kissing/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/kissing/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/lifestyle/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/lifestyle/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/magnesium/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/magnesium/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/magnesium-deficiency/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/magnesium-deficiency/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/makeup/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/makeup/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/managing-stress/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/managing-stress/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/meditation/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/meditation/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/menstrual-cycle/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/menstrual-cycle/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/mental-health/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/mental-health/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/micronutrients/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/micronutrients/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/mindfulness/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/mindfulness/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/minerals/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/minerals/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/muscle/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/muscle/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/natural-hair-growth-tips/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/natural-hair-growth-tips/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/page/3/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/page/3/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutrition/page/3/index.html",
+      305,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutritional-benefits-of-nuts/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutritional-benefits-of-nuts/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutritious-breakfast/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/nutritious-breakfast/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/omega-3-fatty-acids/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/omega-3-fatty-acids/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/omega-6-fatty-acids/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/omega-6-fatty-acids/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/plant-based-diet/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/plant-based-diet/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/posture-improver/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/posture-improver/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/power-of-calisthenics/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/power-of-calisthenics/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/protein/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/protein/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/pumpkin-seeds/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/pumpkin-seeds/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/quick-ways-to-grow-hair/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/quick-ways-to-grow-hair/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/rafting/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/rafting/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/readiness-score/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/readiness-score/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/recipe/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/recipe/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/recovery/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/recovery/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/relieving-constipation/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/relieving-constipation/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/remedies-to-remove-sun-tan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/remedies-to-remove-sun-tan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/remove-sun-tan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/remove-sun-tan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/running/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/running/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skin/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skin/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skin-repair/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skin-repair/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skincare/page/2/index.html",
+      407,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skipping/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/skipping/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/snack-ideas/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/snack-ideas/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sports/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sports/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sports-performance/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sports-performance/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/step-tracking/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/step-tracking/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/stress-reduction/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/stress-reduction/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sun-tan/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/sun-tan/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/page/2/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/page/2/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfood/page/2/index.html",
+      305,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfoods-for-iron-deficiency/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/superfoods-for-iron-deficiency/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimmer/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimmer/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimming/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimming/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimming-vs-walking/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/swimming-vs-walking/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/index.html",
+      492,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/2/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/2/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/3/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/3/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/4/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/4/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/5/index.html",
+      171,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/5/index.html",
+      187,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/6/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/6/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/the-fitness-falcon/page/6/index.html",
+      475,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/trek/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/trek/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/trekking/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/trekking/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/vegan-diet/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/vegan-diet/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/vitamin/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/vitamin/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/wearables/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/wearables/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/weight-gain/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/weight-gain/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/weight-loss/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/weight-loss/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/well-aging/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/well-aging/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/women-swimmg/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/women-swimmg/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/work/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/work/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/workout/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/workout/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/yoga/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/yoga/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/yoga-transforms/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/yoga-transforms/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/youtube/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/youtube/index.html",
+      186,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/zumba/index.html",
+      170,
+      "javascript:void(0) link found"
+    ],
+    [
+      "tag/zumba/index.html",
+      186,
+      "javascript:void(0) link found"
+    ]
+  ],
+  "external_links_checked": 5221,
+  "external_link_issues": [],
+  "images_checked": 6361,
+  "image_issues": [],
+  "oversized_images": [
+    [
+      "assets/images/Rich-in-Calcium-and-Omega-3-Fatty-Acids.png",
+      "588.5 KB"
+    ],
+    [
+      "assets/images/Page-Not-Found-1.svg",
+      "1350.5 KB"
+    ],
+    [
+      "assets/images/Psychodermatology-Skincare.png",
+      "838.5 KB"
+    ],
+    [
+      "assets/images/Plant-Based-Diet.png",
+      "1708.7 KB"
+    ],
+    [
+      "assets/images/Chia-Seeds-Health-Benefits-Sources-and-Supplements.png",
+      "591.2 KB"
+    ],
+    [
+      "assets/images/What-is-superfoods-Benefits-Uses.png",
+      "662.2 KB"
+    ],
+    [
+      "assets/images/Winter-Squash.png",
+      "556.6 KB"
+    ],
+    [
+      "assets/images/Best-Lifestyle-Habits-for.png",
+      "1363.0 KB"
+    ],
+    [
+      "assets/images/What-is-Calcium-and-Calcium-Rich-Foods-Benefits.png",
+      "1505.6 KB"
+    ],
+    [
+      "assets/images/Top-5-Yoga-Centers-in-Rishikesh.png",
+      "895.4 KB"
+    ],
+    [
+      "assets/images/Easily-Digestible-Carbohydrates.png",
+      "577.8 KB"
+    ],
+    [
+      "assets/images/Use-By.png",
+      "617.0 KB"
+    ],
+    [
+      "assets/images/Healthy-Diet.png",
+      "522.3 KB"
+    ],
+    [
+      "assets/images/Healthy-Eating-Tips-for-Weight-Loss-1.png",
+      "550.7 KB"
+    ],
+    [
+      "assets/images/Leeks.png",
+      "527.6 KB"
+    ],
+    [
+      "assets/images/White-and-Beige-Minimalist-Simple-Skin-Type-Infographic-1.png",
+      "517.4 KB"
+    ],
+    [
+      "assets/images/Meditation.png",
+      "521.6 KB"
+    ],
+    [
+      "assets/images/Chronic-Insomnia.png",
+      "1152.5 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources-1.png",
+      "1827.0 KB"
+    ],
+    [
+      "assets/images/High-Intensity-Interval-Training-2.png",
+      "1204.6 KB"
+    ],
+    [
+      "assets/images/IMG_8101-scaled.jpg",
+      "572.7 KB"
+    ],
+    [
+      "assets/images/Maximizing-the-Health-Benefits-of-a-Vegan-Diet.png",
+      "588.7 KB"
+    ],
+    [
+      "assets/images/Bike-Riding.png",
+      "507.5 KB"
+    ],
+    [
+      "assets/images/Animal-Based-Proteins-576x1024.png",
+      "882.0 KB"
+    ],
+    [
+      "assets/images/Neurological-2.png",
+      "666.0 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources-3.png",
+      "542.9 KB"
+    ],
+    [
+      "assets/images/Top-Yoga-Classes-Certification-in-Phoenix.png",
+      "694.0 KB"
+    ],
+    [
+      "assets/images/Right-Water-Sport.png",
+      "574.4 KB"
+    ],
+    [
+      "assets/images/Foods.png",
+      "840.6 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources-6.png",
+      "521.4 KB"
+    ],
+    [
+      "assets/images/AI-Mental-Health.png",
+      "583.4 KB"
+    ],
+    [
+      "assets/images/Neurological.png",
+      "522.0 KB"
+    ],
+    [
+      "assets/images/jk2.png",
+      "515.3 KB"
+    ],
+    [
+      "assets/images/Animal-Based-Proteins.png",
+      "878.0 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources-4.png",
+      "593.1 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources-5.png",
+      "527.0 KB"
+    ],
+    [
+      "assets/images/Gut-Health-The-Unsung-Hero-of-Your-Immune-System.png",
+      "645.0 KB"
+    ],
+    [
+      "assets/images/Laughters.png",
+      "503.8 KB"
+    ],
+    [
+      "assets/images/2024-New-Year-Resolutions-for-Your-Gym-1.svg",
+      "8145.4 KB"
+    ],
+    [
+      "assets/images/Essential-Trekking-Checklist-Must-Have-Equipment-for-a-Successful-Trek.png",
+      "519.3 KB"
+    ],
+    [
+      "assets/images/Fiber-and-Nutrients.png",
+      "510.7 KB"
+    ],
+    [
+      "assets/images/Swimming.png",
+      "766.7 KB"
+    ],
+    [
+      "assets/images/Black-and-White-Modern-Gym-Presentation.png",
+      "1406.2 KB"
+    ],
+    [
+      "assets/images/Calcium-Rich-Foods.png",
+      "501.2 KB"
+    ],
+    [
+      "assets/images/fruits-and-vegetables.png",
+      "504.5 KB"
+    ],
+    [
+      "assets/images/What-is-Menstrual-Cycle-Period-Pain-Relief.png",
+      "602.2 KB"
+    ],
+    [
+      "assets/images/White-Water-Kayaking.png",
+      "671.9 KB"
+    ],
+    [
+      "assets/images/Healthy-Eating-Stress-Management-Techniques.png",
+      "536.6 KB"
+    ],
+    [
+      "assets/images/Cranberries.png",
+      "520.1 KB"
+    ],
+    [
+      "assets/images/Meditation-for-Beginners-Types-and-Health-Benefits-3.png",
+      "555.3 KB"
+    ],
+    [
+      "assets/images/How-Important-is-Sleep-in-a-Drug-Rehab-Center.png",
+      "1502.4 KB"
+    ],
+    [
+      "assets/images/Basketball.png",
+      "528.6 KB"
+    ],
+    [
+      "assets/images/What-is-Vitamins-Types-Importance-and-Sources.png",
+      "565.0 KB"
+    ],
+    [
+      "assets/images/White-and-Beige-Minimalist-Simple-Skin-Type-Infographic-.png",
+      "773.8 KB"
+    ],
+    [
+      "assets/images/Canoeing.png",
+      "708.7 KB"
+    ],
+    [
+      "assets/images/What-is-Protein-and-Types-of-Protein-What-Do-They-Do.png",
+      "777.7 KB"
+    ],
+    [
+      "assets/images/Essential-Trekking-Checklist-Must-Have-Equipment-for-a-Successful-Trek-1.png",
+      "580.7 KB"
+    ],
+    [
+      "assets/images/Outdoor-Fitness-Activities.png",
+      "625.8 KB"
+    ],
+    [
+      "assets/images/Essential-Trekking-Checklist-Must-Have-Equipment-for-a-Successful-Trek-1-1024x576.png",
+      "1161.8 KB"
+    ],
+    [
+      "assets/images/Facebook-Cover.png",
+      "1340.4 KB"
+    ],
+    [
+      "assets/images/Nutritious-Foods-on-a-Vegan-Diet.png",
+      "576.3 KB"
+    ],
+    [
+      "assets/images/image_67182081-scaled.jpeg",
+      "824.1 KB"
+    ],
+    [
+      "assets/images/White-and-Beige-Minimalist-Simple-Skin-Type-Infographic-1-546x1024.png",
+      "534.3 KB"
+    ],
+    [
+      "assets/images/Food-Waste-Reduction-and-Sustainability-1.png",
+      "541.1 KB"
+    ],
+    [
+      "assets/images/Leafy-Green-Vegetables.png",
+      "673.8 KB"
+    ],
+    [
+      "assets/images/Inline_Roller-Skating.png",
+      "535.8 KB"
+    ],
+    [
+      "assets/images/Untitled-design-15.png",
+      "1087.7 KB"
+    ]
+  ],
+  "form_issues": [
+    [
+      "author/alex/index.html",
+      602,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/alex/page/2/index.html",
+      602,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/index.html",
+      602,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/10/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/11/index.html",
+      551,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/2/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/3/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/4/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/5/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/6/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/7/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/8/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/dinesh/page/9/index.html",
+      603,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "author/riya-verma/index.html",
+      428,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-effective-tips-for-managing-stress/index.html",
+      807,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-essential-winter-skincare-tips-from-the-experts/index.html",
+      805,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-expert-approved-foods-to-relieve-constipation-naturally/index.html",
+      692,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-fruits-for-your-gym-diet-fuel-your-fitness/index.html",
+      798,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/index.html",
+      774,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-serious-diseases-caused-by-smoking/index.html",
+      796,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/10-superfoods-for-iron-deficiency/index.html",
+      737,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/100-inspirational-fitness-quotes-for-captions-on-instagram/index.html",
+      706,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/15-health-and-nutrition-benefits-of-sesame-seeds/index.html",
+      856,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency/index.html",
+      854,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/5-essential-healthcare-gadgets-every-home-should-have/index.html",
+      647,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/5-new-year-resolutions-for-your-2024-gym-journey/index.html",
+      607,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/7-best-fitness-youtubers-to-motivate-and-energize-your-workouts/index.html",
+      625,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/7-best-health-and-fitness-wearables-in-2024/index.html",
+      702,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/7-healthy-seeds-that-boost-immunity-and-improve-gut-health/index.html",
+      872,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/8-easy-outdoor-fitness-activities-and-benefits/index.html",
+      794,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/acne-101-understanding-types-causes-and-effective-treatments/index.html",
+      799,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/acro-yoga-for-mental-health-how-it-improves-focus-and-connection/index.html",
+      789,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/aging-well-10-secrets-to-a-vibrant-life/index.html",
+      745,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/ai-mental-health-chatbots-ethics-and-emotional-support/index.html",
+      694,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/alpha-bravo-development-leading-innovations-in-health-tech/index.html",
+      760,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/anti-aging-products-benefits-and-side-effects/index.html",
+      606,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/antioxidants-health-benefits-sources-and-supplements/index.html",
+      801,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/apple-watch-series-12-readiness-score-explained/index.html",
+      625,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/index.html",
+      621,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/baked-oats-full-recipe-and-ingredients/index.html",
+      752,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride/index.html",
+      715,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/belly-fat-reduction-myths-vs-facts-you-need-to-know/index.html",
+      833,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-full-body-workout-gym-for-2026/index.html",
+      750,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-lifestyle-habits-for-longevity-and-healthy-aging/index.html",
+      816,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-skincare-routine-to-prevent-pimples/index.html",
+      890,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-sports-for-beginners-with-no-fitness-background/index.html",
+      771,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-time-to-consume-protein-morning-vs-night/index.html",
+      786,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/best-workouts-for-mental-health-move-to-feel-better/index.html",
+      696,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/biological-cycle-signs-causes-of-disruption/index.html",
+      729,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/blackhead-removal-guide-best-remedies-and-prevention-methods/index.html",
+      714,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/brain-boosting-nutrition-best-foods-to-improve-focus-and-memory/index.html",
+      741,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/chia-seeds-health-benefits-sources-and-supplements/index.html",
+      792,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/clean-weight-gain-vs-fat-gain-what-you-really-need-to-know/index.html",
+      688,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/common-swimming-mistakes-and-how-to-fix-them/index.html",
+      716,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/common-trekking-mistakes-and-how-to-avoid-them/index.html",
+      924,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/cycling-benefits-and-which-cycle-is-best/index.html",
+      783,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/dandruff-treatment-at-home-remedies-that-work/index.html",
+      900,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/dry-skin-care-routine-best-products-and-tips-for-hydration/index.html",
+      984,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier/index.html",
+      756,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/essential-trekking-checklist/index.html",
+      834,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/expert-tips-and-techniques-to-enhance-sports-performance/index.html",
+      822,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/exploring-the-top-10-most-consumed-winter-beverages/index.html",
+      624,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/face-yoga-for-anti-aging-and-skin-health/index.html",
+      669,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/food-waste-reduction-and-sustainability/index.html",
+      800,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/garmin-running-plans-features-september-2026/index.html",
+      624,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/gut-health-the-unsung-hero-of-your-immune-system/index.html",
+      716,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/gym-diet-plan-what-to-eat-before-and-after-workout/index.html",
+      989,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hair-fall-in-men-common-causes-and-permanent-fixes/index.html",
+      1029,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hair-fall-in-women-causes-prevention-and-treatments/index.html",
+      774,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hair-growth-vs-hair-thickness-why-length-isnt-increasing/index.html",
+      722,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/haircare-tips-to-prevent-split-ends-and-breakage/index.html",
+      785,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/health-benefits-of-kiss-and-hugs/index.html",
+      774,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/health-benefits-of-nuts/index.html",
+      760,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/healthy-eating-tips-for-weight-loss/index.html",
+      892,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      919,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt/index.html",
+      814,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/healthy-sunflower-seeds-nutrition-benefits-eating-tips/index.html",
+      705,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/high-fiber-foods-types-health-benefits-and-supplements/index.html",
+      783,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      908,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hiit-vs-liss-which-cardio-method-is-better-for-you/index.html",
+      884,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hire-a-personal-female-fitness-trainer-in-chicago/index.html",
+      763,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/home-remedies-faster-hair-growth-naturally/index.html",
+      795,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/home-remedies-for-better-digestion/index.html",
+      782,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/index.html",
+      807,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/home-workouts-that-actually-work-in-2026/index.html",
+      898,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-much-water-should-you-really-drink-each-day/index.html",
+      733,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-to-choose-the-right-running-shoes-for-flat-feet/index.html",
+      775,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-to-make-skin-glow-naturally-without-makeup-or-treatments/index.html",
+      683,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-to-remove-dark-circles-naturally-at-home/index.html",
+      780,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-to-remove-makeup-without-makeup-remover/index.html",
+      729,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-to-sleep-better-at-night-naturally/index.html",
+      803,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/how-yoga-transforms-your-body-in-just-30-days/index.html",
+      724,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/hrv-for-fitness-what-it-tells-you/index.html",
+      625,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/immune-system-how-to-improve-immune-system/index.html",
+      705,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/improving-your-posture-the-ultimate-guide-for-2024/index.html",
+      780,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/intermittent-fasting-and-fat-loss/index.html",
+      686,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/is-overthinking-killing-your-confidence/index.html",
+      675,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/kayaking-vs-canoeing-vs-rafting-best-water-sport/index.html",
+      1031,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/meditation-for-beginners-types-and-health-benefits/index.html",
+      874,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/mindfulness-the-ultimate-guide-to-inner-peace-in-2024/index.html",
+      825,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/minerals-for-hair-growth-iron-zinc-and-selenium-explained/index.html",
+      782,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/monounsaturated-vs-polyunsaturated-fats-benefits-and-sources/index.html",
+      750,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/index.html",
+      774,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/omega-3-fatty-acids-health-benefits-and-rich-foods/index.html",
+      768,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/omega-6-fatty-acids-health-benefits-and-rich-foods/index.html",
+      713,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/outdoor-games-vs-indoor-games-which-is-better/index.html",
+      616,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/pigmentation-on-face-causes-prevention-and-effective-treatments/index.html",
+      734,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/pilates-the-ultimate-guide-for-a-stronger-core-in-2024/index.html",
+      809,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts/index.html",
+      851,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/pumpkin-seeds-health-benefits-nutrition-and-uses/index.html",
+      787,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/index.html",
+      826,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/running-for-mental-health-stress-anxiety-and-mood-benefits/index.html",
+      708,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/running-shoes-for-women-stylish-stable-comfortable/index.html",
+      655,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/sitting-still-killing-you-5-exercises-to-save-your-day/index.html",
+      633,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/skincare-for-sensitive-skin/index.html",
+      848,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle/index.html",
+      753,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/stress-management-techniques-reduce-and-relieve-stress/index.html",
+      895,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/summer-haircare-tips-to-stop-dryness-and-damage/index.html",
+      785,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/swimming-safety-tips-for-beginners/index.html",
+      806,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster/index.html",
+      715,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health/index.html",
+      976,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/the-importance-of-prioritizing-mental-health-in-the-workplace/index.html",
+      606,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/the-power-of-calisthenics/index.html",
+      728,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-plant-protein-for-womens-health/index.html",
+      682,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/the-ultimate-guide-to-post-workout-meals/index.html",
+      652,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-10-hair-growth-tips/index.html",
+      770,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-10-himalayan-treks-in-india/index.html",
+      939,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-10-home-workouts-that-require-no-equipment/index.html",
+      798,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-10-ingredients-to-avoid-if-you-have-oily-skin/index.html",
+      868,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-best-swimming-strokes-for-weight-loss-and-fitness/index.html",
+      728,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-female-fitness-trainers-in-new-york/index.html",
+      758,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-gyms-in-chicago/index.html",
+      610,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-gyms-in-florida/index.html",
+      713,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-gyms-in-new-york-city-2026/index.html",
+      1218,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-healthy-breakfast-ideas/index.html",
+      736,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow/index.html",
+      697,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-5-yoga-centers-in-rishikesh/index.html",
+      807,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-6-gyms-in-los-angeles/index.html",
+      757,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-6-gyms-in-miami/index.html",
+      785,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-fitness-tracker-brands-available-in-india/index.html",
+      697,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-skincare-hacks-for-dry-and-dehydrated-skin/index.html",
+      709,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/top-yoga-classes-certification-in-phoenix/index.html",
+      746,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life/index.html",
+      692,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/ultimate-plant-based-diet-grocery-list-for-health/index.html",
+      1143,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/wearable-fitness-technology-smart-gyms-in-2025/index.html",
+      710,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/weight-gain-alert-signs-you-need-to-watch-out-for/index.html",
+      651,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-calories-and-why-are-they-important/index.html",
+      757,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-carbohydrates-definition-types-health-impact/index.html",
+      733,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-fast-twitch-muscle-fibers-a-comprehensive-guide/index.html",
+      807,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-micronutrients-types-functions-and-benefits/index.html",
+      712,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-skipping-every-day/index.html",
+      619,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-are-the-benefits-of-swimming-daily/index.html",
+      654,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-a-readiness-score-low-workout/index.html",
+      626,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-a-vegan-diet-vegan-food-diet-list/index.html",
+      807,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-algae-and-why-its-a-superfood/index.html",
+      796,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-calcium-and-calcium-rich-foods-benefits/index.html",
+      933,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-dietary-fiber-types-benefits-and-best-food-sources/index.html",
+      952,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-glucose-types-health-benefits/index.html",
+      862,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-hiit-high-intensity-interval-training-types-benefits/index.html",
+      761,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-ice-bath-health-benefits-of-cold-therapy/index.html",
+      778,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-protein-and-types-of-protein-what-do-they-do/index.html",
+      751,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-superfoods-benefits-uses/index.html",
+      784,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-vitamins-types-importance-and-sources/index.html",
+      808,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-is-zumba-workout-pros-cons-and-how-it-works/index.html",
+      758,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      691,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      877,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/why-is-magnesium-so-crucial-for-the-body/index.html",
+      749,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness/index.html",
+      739,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "blogs/yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness/index.html",
+      782,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/beauty/index.html",
+      648,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/blog/index.html",
+      512,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/cycling/index.html",
+      444,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/fitness/index.html",
+      699,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/food-and-recipes/index.html",
+      614,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/gym/index.html",
+      563,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/health/index.html",
+      699,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/lifestyle/index.html",
+      614,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/news/index.html",
+      512,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/nutrition/index.html",
+      716,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/recipes/index.html",
+      444,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/skincare/index.html",
+      546,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/sports/index.html",
+      478,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/swimming/index.html",
+      495,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/trekking/index.html",
+      461,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/wearables-fitness-technology/index.html",
+      478,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/weight/index.html",
+      427,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/workout/index.html",
+      495,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "category/yoga/index.html",
+      461,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "search/index.html",
+      252,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/10-hair-growth-tips/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/10-superfoods-for-iron-deficiency/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/2026-fitness-goals/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/2026-goals/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/5-home-remedies-to-remove-sun-tan/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/acne/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/age-well/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/aging-well/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/algae/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/antioxidant/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/anxiety-disorder/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/anxiety-treatment/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/apple-watch/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/beauty/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/benefits-of-nuts/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/calcium/index.html",
+      457,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/calisthenics/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/calisthenics-power/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/calorie/index.html",
+      457,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/canoeing/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/captions-on-instagram/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/chia-seeds/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/constipation/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/cycling/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/diet-plan/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/diet-plan/page/2/index.html",
+      546,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/dinesh-jeengar/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/dinesh-jeengar/page/2/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/easy-snack-ideas/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/easy-snacks-to-make/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/eating-habits/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/exercises/index.html",
+      576,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/exercises-to-improve-posture/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/facial-yoga/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/facial-yoga-exercise/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fats/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fiber/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness/page/2/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness/page/3/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness/page/4/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness/page/5/index.html",
+      580,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fitness-goals/index.html",
+      525,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/fix-posture/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/food/index.html",
+      576,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/games/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/garmin/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/garmin-coach/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/glowing-skin/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/glowing-skin/page/2/index.html",
+      427,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/grow-long-hair-fast/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/gut-health/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/gym/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/gym/page/2/index.html",
+      444,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/gym-diet/index.html",
+      457,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/hair-growth-tips/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/2/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/3/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/4/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/5/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/6/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health/page/7/index.html",
+      546,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/health-benefits-of-nuts/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthcare-gadgets/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthcare-gadgets/page/2/index.html",
+      410,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-breakfast/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-breakfast-idea/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-breakfast-options/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-breakfast-recipes/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-eating/index.html",
+      525,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-food/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/healthy-snack-ideas/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/heart-rate/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/home-remedies/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/home-remedies-to-remove-sun-tan/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/home-workout/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/hrv/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/hug/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/immune-system/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/improve-posture/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/improve-your-posture/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/inner-peace/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/iron-deficiency/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/kayaking/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/keto-diet/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/kissing/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/lifestyle/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/magnesium/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/magnesium-deficiency/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/makeup/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/managing-stress/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/meditation/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/menstrual-cycle/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/mental-health/index.html",
+      593,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/micronutrients/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/mindfulness/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/minerals/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/muscle/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/natural-hair-growth-tips/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/nutrition/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/nutrition/page/2/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/nutrition/page/3/index.html",
+      410,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/nutritional-benefits-of-nuts/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/nutritious-breakfast/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/omega-3-fatty-acids/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/omega-6-fatty-acids/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/plant-based-diet/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/posture-improver/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/power-of-calisthenics/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/protein/index.html",
+      576,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/pumpkin-seeds/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/quick-ways-to-grow-hair/index.html",
+      491,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/rafting/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/readiness-score/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/recipe/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/recovery/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/relieving-constipation/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/remedies-to-remove-sun-tan/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/remove-sun-tan/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/running/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/skin/index.html",
+      576,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/skin-repair/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/skincare/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/skincare/page/2/index.html",
+      512,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/skipping/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/snack-ideas/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/sports/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/sports-performance/index.html",
+      491,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/step-tracking/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/stress-reduction/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/sun-tan/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/superfood/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/superfood/page/2/index.html",
+      410,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/superfoods-for-iron-deficiency/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/swimmer/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/swimming/index.html",
+      474,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/swimming-vs-walking/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/index.html",
+      597,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/page/2/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/page/3/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/page/4/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/page/5/index.html",
+      598,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/the-fitness-falcon/page/6/index.html",
+      580,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/trek/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/trekking/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/vegan-diet/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/vitamin/index.html",
+      457,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/wearables/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/weight-gain/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/weight-loss/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/well-aging/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/women-swimmg/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/work/index.html",
+      440,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/workout/index.html",
+      508,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/yoga/index.html",
+      491,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/yoga-transforms/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/youtube/index.html",
+      423,
+      "Form has missing or dummy action: action=''"
+    ],
+    [
+      "tag/zumba/index.html",
+      406,
+      "Form has missing or dummy action: action=''"
+    ]
+  ],
+  "duplicate_id_issues": [],
+  "js_issues": [
+    [
+      "index.html",
+      "Undefined fbq('track', 'PageView') call in inline script"
+    ]
+  ],
+  "redirect_issues": [
+    [
+      "/*",
+      "/404.html",
+      "Destination does not resolve to an existing page: /Users/dj/Desktop/vscode/thefitnessfalcon/404.html/index.html"
+    ]
+  ],
+  "a11y_issues": [],
+  "placeholder_issues": []
+}
