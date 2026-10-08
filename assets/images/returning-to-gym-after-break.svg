@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Returning to the Gym: Your First 4 Weeks</title>
+  <desc id="desc">A phased four-week timeline showing how to safely rebuild strength and routine after a long workout break.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Header decoration -->
+  <circle cx="1100" cy="80" r="180" fill="#38bdf8" opacity="0.05"/>
+  <circle cx="100" cy="580" r="220" fill="#2563eb" opacity="0.05"/>
+
+  <!-- Brand tag -->
+  <text x="80" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#38bdf8">THE FITNESS FALCON</text>
+  
+  <!-- Main Headlines -->
+  <text x="80" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#f8fafc">Returning to the Gym: Your First 4 Weeks</text>
+  <text x="80" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#94a3b8">A phased re-entry framework to rebuild strength without debilitating soreness or injury.</text>
+
+  <!-- Timeline Cards: 4 columns -->
+  <!-- Week 1 -->
+  <g transform="translate(80, 220)">
+    <rect width="235" height="330" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="0" y="0" width="235" height="10" rx="5" fill="#64748b"/>
+    <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5" fill="#94a3b8">WEEK 01</text>
+    <text x="24" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Awakening</text>
+    <circle cx="50" cy="130" r="26" fill="#334155"/>
+    <text x="50" y="137" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#38bdf8">50%</text>
+    <text x="90" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">Effort / Load</text>
+    <line x1="24" y1="175" x2="211" y2="175" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; 2 light sets per move</text>
+    <text x="24" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; 3–4 Reps in reserve</text>
+    <text x="24" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Re-groove mechanics</text>
+    <text x="24" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-style="italic" fill="#64748b">Goal: Zero joint pain</text>
+  </g>
+
+  <!-- Week 2 -->
+  <g transform="translate(335, 220)">
+    <rect width="235" height="330" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="0" y="0" width="235" height="10" rx="5" fill="#38bdf8"/>
+    <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5" fill="#38bdf8">WEEK 02</text>
+    <text x="24" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Base Capacity</text>
+    <circle cx="50" cy="130" r="26" fill="#1e3a5f"/>
+    <text x="50" y="137" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#38bdf8">65%</text>
+    <text x="90" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">Effort / Load</text>
+    <line x1="24" y1="175" x2="211" y2="175" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; 2–3 working sets</text>
+    <text x="24" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; 2–3 Reps in reserve</text>
+    <text x="24" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Solidify 3x schedule</text>
+    <text x="24" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-style="italic" fill="#64748b">Goal: Habit rhythm</text>
+  </g>
+
+  <!-- Week 3 -->
+  <g transform="translate(590, 220)">
+    <rect width="235" height="330" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <rect x="0" y="0" width="235" height="10" rx="5" fill="#60a5fa"/>
+    <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5" fill="#60a5fa">WEEK 03</text>
+    <text x="24" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Progression</text>
+    <circle cx="50" cy="130" r="26" fill="#1e3a8a"/>
+    <text x="50" y="137" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#93c5fd">80%</text>
+    <text x="90" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">Effort / Load</text>
+    <line x1="24" y1="175" x2="211" y2="175" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Full 3 working sets</text>
+    <text x="24" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; 1–2 Reps in reserve</text>
+    <text x="24" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Double progression</text>
+    <text x="24" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-style="italic" fill="#64748b">Goal: Real working sets</text>
+  </g>
+
+  <!-- Week 4 -->
+  <g transform="translate(845, 220)">
+    <rect width="275" height="330" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="275" height="10" rx="5" fill="#38bdf8"/>
+    <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5" fill="#38bdf8">WEEK 04 &amp; BEYOND</text>
+    <text x="24" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Full Rhythm</text>
+    <circle cx="50" cy="130" r="26" fill="#0369a1"/>
+    <text x="50" y="137" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle" fill="#bae6fd">100%</text>
+    <text x="90" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">Baseline Locked</text>
+    <line x1="24" y1="175" x2="251" y2="175" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; True working weights</text>
+    <text x="24" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Sustainable split</text>
+    <text x="24" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cbd5e1">&#8226; Long-term progression</text>
+    <text x="24" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-style="italic" fill="#38bdf8">Routine fully restored!</text>
+  </g>
+
+  <!-- Footer Tip -->
+  <text x="80" y="605" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#94a3b8">Remember: Muscle memory returns fast, but tendons and joints adapt slowly. Consistency always beats day-one soreness.</text>
+</svg>

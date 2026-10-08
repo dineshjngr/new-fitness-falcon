@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "url": "https://thefitnessfalcon.com/blogs/dumbbell-workout-at-home-for-beginners/",
+      "html_matches_deployment": true,
+      "json_ld_valid": true,
+      "h1_count": 1
+    },
+    {
+      "url": "https://thefitnessfalcon.com/blogs/how-to-increase-fibre-indian-diet/",
+      "html_matches_deployment": true,
+      "json_ld_valid": true,
+      "h1_count": 1
+    }
+  ],
+  "search_includes_both": true,
+  "banners": {
+    "status": 200,
+    "cdn_dimensions": "1600x900",
+    "visual_review": "Correct original artwork; Hostinger CDN recompresses delivered images"
+  },
+  "homepage_links_both": true,
+  "hosting_cache": "Cache cleaned successfully!",
+  "sitemap_submission": "Sitemap submitted successfully",
+  "indexing_requests": {
+    "dumbbell-workout-at-home-for-beginners": "Indexing requested \u2014 URL added to priority crawl queue",
+    "how-to-increase-fibre-indian-diet": "Indexing requested \u2014 confirmed in URL Inspection after retry"
+  },
+  "live_crawl": {
+    "sitemap_urls": 204,
+    "status_200": 204,
+    "canonical_or_indexing_problems": 0,
+    "legacy_wrong_targets": 0
+  }
+}

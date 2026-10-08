@@ -1,0 +1,244 @@
+{
+  "recent_articles": 12,
+  "banner_urls": 12,
+  "files": [
+    {
+      "path": "blogs/walking-pad-noise-apartment/index.html",
+      "status": 200,
+      "bytes": 57617,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/how-to-increase-fibre-indian-diet/index.html",
+      "status": 200,
+      "bytes": 60597,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/zone-2-cardio-without-heart-rate-monitor/index.html",
+      "status": 200,
+      "bytes": 60119,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/walking-pad-beginner-routine/index.html",
+      "status": 200,
+      "bytes": 57494,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/walking-pad-desk-setup/index.html",
+      "status": 200,
+      "bytes": 58261,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/walking-pad-speed-while-working/index.html",
+      "status": 200,
+      "bytes": 56642,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/10-minute-walk-after-meals-vs-30-minute-walk/index.html",
+      "status": 200,
+      "bytes": 60238,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/10000-steps-walking-pad-how-long/index.html",
+      "status": 200,
+      "bytes": 58789,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/walking-pad-not-counting-steps/index.html",
+      "status": 200,
+      "bytes": 61502,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/walking-pad-while-working/index.html",
+      "status": 200,
+      "bytes": 58936,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/dumbbell-workout-at-home-for-beginners/index.html",
+      "status": 200,
+      "bytes": 61676,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/index.html",
+      "status": 200,
+      "bytes": 63783,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-noise-apartment.jpg",
+      "status": 200,
+      "bytes": 230960,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/increase-fibre-indian-diet.jpg",
+      "status": 200,
+      "bytes": 327903,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/zone-2-cardio-without-heart-rate-monitor.webp",
+      "status": 200,
+      "bytes": 151208,
+      "content_type": "image/webp",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-beginner-routine.jpg",
+      "status": 200,
+      "bytes": 255380,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-desk-setup.jpg",
+      "status": 200,
+      "bytes": 242815,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-speed-while-working.jpg",
+      "status": 200,
+      "bytes": 175236,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/short-walks-after-meals-photo.jpg",
+      "status": 200,
+      "bytes": 333606,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/10000-steps-walking-pad-how-long.webp",
+      "status": 200,
+      "bytes": 103210,
+      "content_type": "image/webp",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-not-counting-steps-photo.jpg",
+      "status": 200,
+      "bytes": 263538,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/walking-pad-while-working.jpg",
+      "status": 200,
+      "bytes": 264448,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/beginner-dumbbell-workout-home.jpg",
+      "status": 200,
+      "bytes": 228041,
+      "content_type": "image/jpeg",
+      "matches_local": false,
+      "pass": true
+    },
+    {
+      "path": "assets/images/100g-protein-indian-vegetarian-meal-plan-without-powder.webp",
+      "status": 200,
+      "bytes": 165372,
+      "content_type": "image/webp",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/downloads/walking-pad-desk-worksheet.txt",
+      "status": 200,
+      "bytes": 1247,
+      "content_type": "text/plain",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/downloads/walking-pad-session-log.txt",
+      "status": 200,
+      "bytes": 721,
+      "content_type": "text/plain",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "assets/search_index.json",
+      "status": 200,
+      "bytes": 52488,
+      "content_type": "application/json",
+      "matches_local": true,
+      "pass": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 173440,
+      "content_type": "text/html",
+      "matches_local": true,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "deployment": {
+    "uploaded_files": 575,
+    "failed": 0
+  },
+  "cache_refresh": {
+    "provider": "Hostinger API",
+    "status": 200,
+    "response": "Request accepted"
+  },
+  "google_submission": {
+    "new_submission_completed": false,
+    "reason": "User requested API-only operation. No Search Console API credentials are configured; updated public sitemap and existing submission remain available for discovery."
+  }
+}

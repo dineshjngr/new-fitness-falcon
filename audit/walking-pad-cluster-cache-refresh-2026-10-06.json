@@ -1,0 +1,7 @@
+{
+  "endpoint": "https://developers.hostinger.com/api/hosting/v1/accounts/u501281425/websites/thefitnessfalcon.com/cache/clear",
+  "status": 200,
+  "response": "{\"message\":\"Request accepted\"}",
+  "method": "DELETE",
+  "scope": "Server-side and Hostinger CDN cache only"
+}

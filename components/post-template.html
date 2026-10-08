@@ -29,11 +29,11 @@
     <meta property="og:url" content="{{CANONICAL_URL}}" />
     <meta property="og:site_name" content="The Fitness Falcon" />
     <meta property="og:image" content="{{OG_IMAGE_URL}}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="675" />
+    <meta property="og:image:width" content="{{OG_IMAGE_WIDTH}}" />
+    <meta property="og:image:height" content="{{OG_IMAGE_HEIGHT}}" />
     <meta property="og:image:alt" content="{{FEATURED_IMAGE_ALT}}" />
-    <meta property="article:published_time" content="{{PUBLISHED_ISO}}T00:00:00+00:00" />
-    <meta property="article:modified_time" content="{{MODIFIED_ISO}}T00:00:00+00:00" />
+    <meta property="article:published_time" content="{{PUBLISHED_TIME}}" />
+    <meta property="article:modified_time" content="{{MODIFIED_TIME}}" />
     <meta property="article:author" content="{{AUTHOR_NAME}}" />
     <meta property="article:section" content="{{CATEGORY_NAME}}" />
 
@@ -115,6 +115,7 @@
 
                     <!-- Reusable Author Box -->
                     {{AUTHOR_BOX_HTML}}
+                    <p class="falcon-editorial-note">Read our <a href="/pages/editorial-policy/">editorial and corrections policy</a>, or <a href="/pages/contact-us/">report an error in this article</a>.</p>
 
                     <!-- Reusable Post Pagination: Previous / Next Articles -->
                     {{POST_PAGINATION_HTML}}

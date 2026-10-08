@@ -13,26 +13,8 @@ CONTENT_DIR = ROOT / 'content' / 'posts'
 SEARCH_JSON = ROOT / 'assets' / 'search_index.json'
 SEARCH_JS = ROOT / 'assets' / 'js' / 'falcon-search-data.js'
 
-AUTHOR_INFO = {
-    'Dinesh': {
-        'role': 'Senior Health & Fitness Editor',
-        'bio': 'Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes.',
-        'gradient': 'linear-gradient(135deg, #5541f8 0%, #3b82f6 100%)',
-        'initial': 'D'
-    },
-    'Alex': {
-        'role': 'Health Tech & Wearables Analyst',
-        'bio': 'Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools.',
-        'gradient': 'linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%)',
-        'initial': 'A'
-    },
-    'Riya Verma': {
-        'role': 'Holistic Health & Nutrition Contributor',
-        'bio': 'Nutrition and mindful living contributor at The Fitness Falcon. Specializes in whole-food recipes, gut health, stress resilience, and balanced daily wellness habits.',
-        'gradient': 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
-        'initial': 'R'
-    }
-}
+sys.path.insert(0, str(ROOT))
+from scripts.editorial import AUTHOR_INFO
 
 def slugify(text):
     text = html.unescape(text).strip().lower()
@@ -45,7 +27,7 @@ def main():
     parser.add_argument('--title', required=True, help='Article title / H1')
     parser.add_argument('--category', default='Fitness', help='Category name (e.g. Fitness, Nutrition, Health, Skincare)')
     parser.add_argument('--category-slug', default=None, help='Category slug (e.g. fitness, nutrition)')
-    parser.add_argument('--author', default='Dinesh', choices=['Dinesh', 'Alex', 'Riya Verma'], help='Article author')
+    parser.add_argument('--author', default='Dinesh Jeengar', choices=list(AUTHOR_INFO), help='Article author')
     parser.add_argument('--image', default='/assets/images/1-1.png', help='Featured image path')
     parser.add_argument('--tags', default='', help='Comma-separated tags (e.g. Fitness,Workout,Health)')
     parser.add_argument('--read-time', type=int, default=5, help='Reading time in minutes')
@@ -57,7 +39,7 @@ def main():
     now = datetime.now()
     date_str = now.strftime('%B %d, %Y')
     iso_date = now.strftime('%Y-%m-%d')
-    author = args.author if args.author in AUTHOR_INFO else 'Dinesh'
+    author = args.author if args.author in AUTHOR_INFO else 'Dinesh Jeengar'
 
     tags_list = [t.strip() for t in args.tags.split(',') if t.strip()] if args.tags else [args.category]
 
@@ -70,7 +52,7 @@ def main():
         'slug': slug,
         'title': args.title,
         'meta_title': f"{args.title} - The Fitness Falcon",
-        'description': f"Read {args.title} on The Fitness Falcon for expert fitness, nutrition, and wellness advice.",
+        'description': f"Read {args.title} on The Fitness Falcon for fitness, nutrition, and wellness information.",
         'canonical_url': f"https://thefitnessfalcon.com/blogs/{slug}/",
         'category': args.category,
         'category_url': f"/category/{cat_slug}/",

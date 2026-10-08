@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">5 Ways to Track Fitness Progress Beyond the Scale</title>
+  <desc id="desc">An editorial infographic detailing five non-scale victory metrics: performance, body measurements, stamina, consistency, and daily vitality.</desc>
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09111e"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad5)"/>
+  
+  <!-- Subtle decorative ambient orbs -->
+  <circle cx="1080" cy="100" r="190" fill="#10b981" opacity="0.06"/>
+  <circle cx="120" cy="560" r="210" fill="#06b6d4" opacity="0.06"/>
+
+  <!-- Brand tag -->
+  <text x="80" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#10b981">THE FITNESS FALCON</text>
+  
+  <!-- Main Headlines -->
+  <text x="80" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#f8fafc">Tracking Progress Beyond the Scale</text>
+  <text x="80" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#94a3b8">The scale fluctuates with water and digestion. These 5 metrics reveal your real physical change.</text>
+
+  <!-- 5 Metric Columns -->
+  <!-- Pillar 1: Strength & Performance -->
+  <g transform="translate(80, 220)">
+    <rect width="192" height="330" rx="16" fill="#132035" stroke="#1e3a5f" stroke-width="1.8"/>
+    <rect x="0" y="0" width="192" height="8" rx="4" fill="#38bdf8"/>
+    <text x="20" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#38bdf8">PILLAR 01</text>
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Strength &amp;</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Performance</text>
+    <line x1="20" y1="124" x2="172" y2="124" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="20" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Weight lifted</text>
+    <text x="20" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Extra clean reps</text>
+    <text x="20" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Faster recovery</text>
+    <text x="20" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Strict technique</text>
+    <rect x="20" y="280" width="152" height="30" rx="8" fill="#1e3a5f"/>
+    <text x="96" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#7dd3fc">Double progression</text>
+  </g>
+
+  <!-- Pillar 2: Body Measurements -->
+  <g transform="translate(292, 220)">
+    <rect width="192" height="330" rx="16" fill="#132035" stroke="#1e3a5f" stroke-width="1.8"/>
+    <rect x="0" y="0" width="192" height="8" rx="4" fill="#10b981"/>
+    <text x="20" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#10b981">PILLAR 02</text>
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Body Tape &amp;</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Clothing Fit</text>
+    <line x1="20" y1="124" x2="172" y2="124" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="20" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Waist at navel</text>
+    <text x="20" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Hip circumference</text>
+    <text x="20" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Looser waistband</text>
+    <text x="20" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Recomposition</text>
+    <rect x="20" y="280" width="152" height="30" rx="8" fill="#144634"/>
+    <text x="96" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#6ee7b7">Every 2–4 weeks</text>
+  </g>
+
+  <!-- Pillar 3: Cardio Stamina -->
+  <g transform="translate(504, 220)">
+    <rect width="192" height="330" rx="16" fill="#132035" stroke="#1e3a5f" stroke-width="1.8"/>
+    <rect x="0" y="0" width="192" height="8" rx="4" fill="#f59e0b"/>
+    <text x="20" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#f59e0b">PILLAR 03</text>
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Stamina &amp;</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Recovery</text>
+    <line x1="20" y1="124" x2="172" y2="124" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="20" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Lower resting HR</text>
+    <text x="20" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Easy stair climb</text>
+    <text x="20" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Zone 2 duration</text>
+    <text x="20" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Heart rate drop</text>
+    <rect x="20" y="280" width="152" height="30" rx="8" fill="#4d3208"/>
+    <text x="96" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#fcd34d">Cardiorespiratory</text>
+  </g>
+
+  <!-- Pillar 4: Habit Consistency -->
+  <g transform="translate(716, 220)">
+    <rect width="192" height="330" rx="16" fill="#132035" stroke="#1e3a5f" stroke-width="1.8"/>
+    <rect x="0" y="0" width="192" height="8" rx="4" fill="#a855f7"/>
+    <text x="20" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#a855f7">PILLAR 04</text>
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Habit &amp;</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Consistency</text>
+    <line x1="20" y1="124" x2="172" y2="124" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="20" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Workouts finished</text>
+    <text x="20" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Weekly streak</text>
+    <text x="20" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Protein target hit</text>
+    <text x="20" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Hydration habit</text>
+    <rect x="20" y="280" width="152" height="30" rx="8" fill="#3b1d54"/>
+    <text x="96" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#d8b4fe">Process &gt; Outcome</text>
+  </g>
+
+  <!-- Pillar 5: Vitality & Energy -->
+  <g transform="translate(928, 220)">
+    <rect width="192" height="330" rx="16" fill="#132035" stroke="#10b981" stroke-width="1.8"/>
+    <rect x="0" y="0" width="192" height="8" rx="4" fill="#10b981"/>
+    <text x="20" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#10b981">PILLAR 05</text>
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Daily Vitality</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">&amp; Well-Being</text>
+    <line x1="20" y1="124" x2="172" y2="124" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="20" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Deep sleep quality</text>
+    <text x="20" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Afternoon energy</text>
+    <text x="20" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Joint comfort</text>
+    <text x="20" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">&#8226; Mental mood lift</text>
+    <rect x="20" y="280" width="152" height="30" rx="8" fill="#144634"/>
+    <text x="96" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#6ee7b7">Subjective Score</text>
+  </g>
+
+  <!-- Footer Tip -->
+  <text x="80" y="605" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#94a3b8">The scale measures your gravitational pull. These 5 pillars measure your real fitness, health, and physical capability.</text>
+</svg>

@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import scripts.components as components
+from scripts.editorial import normalize_author
 
 TEMPLATE_PATH = ROOT / 'components' / 'archive-template.html'
 CONTENT_DIR = ROOT / 'content' / 'posts'
@@ -132,7 +133,7 @@ def load_posts():
     for f in sorted(CONTENT_DIR.glob('*.json')):
         try:
             data = json.loads(f.read_text(encoding='utf-8'))
-            posts.append(data)
+            posts.append(normalize_author(data))
         except Exception as e:
             print(f'Error reading {f}: {e}', file=sys.stderr)
     # Sort chronologically (newest first) by true published timestamp
@@ -434,7 +435,7 @@ def render_tag_archives(template, posts, sidebar_recent_html, sidebar_categories
         meta_title_base = f'#{tag_name} Articles - The Fitness Falcon'
         meta_desc = (
             f'Browse all {total_posts} article{"s" if total_posts != 1 else ""} tagged '
-            f'#{tag_name} on The Fitness Falcon. Expert health, fitness, and wellness guides.'
+            f'#{tag_name} on The Fitness Falcon. Health, fitness, and wellness guides.'
         )
 
         archive_header_html = f'''<div class="falcon-archive-hero" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 20px; padding: 48px 36px; color: #fff; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);">
@@ -522,6 +523,7 @@ def render_tag_archives(template, posts, sidebar_recent_html, sidebar_categories
             rendered = rendered.replace('{{PAGINATION_HTML}}', pagination_html)
             rendered = rendered.replace('{{SIDEBAR_HTML}}', sidebar_html)
 
+            rendered = rendered.replace('content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"', 'content="noindex, follow"')
             out_file.write_text(rendered, encoding='utf-8')
             rendered_pages += 1
 
@@ -579,7 +581,7 @@ def render_author_archives(template, posts, sidebar_recent_html, sidebar_categor
         meta_title_base = f'{author_name} - Articles & Posts - The Fitness Falcon'
         meta_desc = (
             f'Read all {total_posts} article{"s" if total_posts != 1 else ""} by {author_name} '
-            f'on The Fitness Falcon. Expert health, fitness, and wellness content.'
+            f'on The Fitness Falcon. Health, fitness, and wellness content.'
         )
 
         grad = author_info.get('gradient', 'linear-gradient(135deg, #5541f8 0%, #3b82f6 100%)')
@@ -678,6 +680,8 @@ def render_author_archives(template, posts, sidebar_recent_html, sidebar_categor
             rendered = rendered.replace('{{PAGINATION_HTML}}', pagination_html)
             rendered = rendered.replace('{{SIDEBAR_HTML}}', sidebar_html)
 
+            if page_num > 1:
+                rendered = rendered.replace('content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"', 'content="noindex, follow"')
             out_file.write_text(rendered, encoding='utf-8')
             rendered_pages += 1
 

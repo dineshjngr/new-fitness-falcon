@@ -16,6 +16,12 @@ class Handler(SimpleHTTPRequestHandler):
         if parts.path in ('/404.html', '/404'):
             self.send_error(404)
             return None
+        if parts.path.endswith('/index.html') and parts.path not in REDIRECTS:
+            self.send_response(301)
+            self.send_header('Location', parts.path.removesuffix('index.html') + ('?' + parts.query if parts.query else ''))
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return None
         if parts.path in REDIRECTS:
             self.send_response(301)
             self.send_header('Location', REDIRECTS[parts.path] + ('?' + parts.query if parts.query else ''))

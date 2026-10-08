@@ -1,0 +1,1461 @@
+{
+  "rewritten_or_context_added": [
+    "brain-boosting-nutrition-best-foods-to-improve-focus-and-memory",
+    "what-are-the-benefits-of-skipping-every-day",
+    "minerals-for-hair-growth-iron-zinc-and-selenium-explained",
+    "how-yoga-transforms-your-body-in-just-30-days",
+    "how-to-make-skin-glow-naturally-without-makeup-or-treatments",
+    "clean-weight-gain-vs-fat-gain-what-you-really-need-to-know",
+    "how-to-remove-makeup-without-makeup-remover",
+    "hair-growth-vs-hair-thickness-why-length-isnt-increasing",
+    "summer-haircare-tips-to-stop-dryness-and-damage",
+    "running-shoes-for-women-stylish-stable-comfortable",
+    "what-are-calories-and-why-are-they-important",
+    "swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster",
+    "yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness",
+    "best-sports-for-beginners-with-no-fitness-background",
+    "trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life"
+  ],
+  "attribution": [
+    {
+      "slug": "antioxidants-health-benefits-sources-and-supplements",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-are-micronutrients-types-functions-and-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "how-to-choose-the-right-running-shoes-for-flat-feet",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "hair-fall-in-women-causes-prevention-and-treatments",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-female-fitness-trainers-in-new-york",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "brain-boosting-nutrition-best-foods-to-improve-focus-and-memory",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "omega-6-fatty-acids-health-benefits-and-rich-foods",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-best-swimming-strokes-for-weight-loss-and-fitness",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "how-to-remove-makeup-without-makeup-remover",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "high-protein-plant-foods-for-fitness-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "mindfulness-the-ultimate-guide-to-inner-peace-in-2024",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-dietary-fiber-types-benefits-and-best-food-sources",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "dry-skin-care-routine-best-products-and-tips-for-hydration",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "hair-fall-in-men-common-causes-and-permanent-fixes",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "meditation-for-beginners-types-and-health-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-fitness-tracker-brands-available-in-india",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "clean-weight-gain-vs-fat-gain-what-you-really-need-to-know",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "how-to-sleep-better-at-night-naturally",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "gut-health-the-unsung-hero-of-your-immune-system",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "15-health-and-nutrition-benefits-of-sesame-seeds",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-fruits-for-your-gym-diet-fuel-your-fitness",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "omega-3-fatty-acids-health-benefits-and-rich-foods",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "zone-2-cardio-without-heart-rate-monitor",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "weight-gain-alert-signs-you-need-to-watch-out-for",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "healthy-sunflower-seeds-nutrition-benefits-eating-tips",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "haircare-tips-to-prevent-split-ends-and-breakage",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "pilates-the-ultimate-guide-for-a-stronger-core-in-2024",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "cycling-benefits-and-which-cycle-is-best",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-algae-and-why-its-a-superfood",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "hrv-for-fitness-what-it-tells-you",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "acne-101-understanding-types-causes-and-effective-treatments",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-ice-bath-health-benefits-of-cold-therapy",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "7-best-health-and-fitness-wearables-in-2024",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "5-new-year-resolutions-for-your-2024-gym-journey",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "healthy-fats-vs-unhealthy-fats-what-you-need-to-know",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "the-importance-of-prioritizing-mental-health-in-the-workplace",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "intermittent-fasting-and-fat-loss",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-10-home-workouts-that-require-no-equipment",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "exploring-the-top-10-most-consumed-winter-beverages",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-hiit-high-intensity-interval-training-types-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "gym-diet-plan-what-to-eat-before-and-after-workout",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "8-easy-outdoor-fitness-activities-and-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "outdoor-games-vs-indoor-games-which-is-better",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "running-shoes-for-women-stylish-stable-comfortable",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "aging-well-10-secrets-to-a-vibrant-life",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "hire-a-personal-female-fitness-trainer-in-chicago",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "skincare-for-sensitive-skin",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "common-trekking-mistakes-and-how-to-avoid-them",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "5-essential-healthcare-gadgets-every-home-should-have",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "improving-your-posture-the-ultimate-guide-for-2024",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "how-yoga-transforms-your-body-in-just-30-days",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "best-time-to-consume-protein-morning-vs-night",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "biological-cycle-signs-causes-of-disruption",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-essential-winter-skincare-tips-from-the-experts",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-superfoods-benefits-uses",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-are-carbohydrates-definition-types-health-impact",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "pigmentation-on-face-causes-prevention-and-effective-treatments",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-zumba-workout-pros-cons-and-how-it-works",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-10-himalayan-treks-in-india",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "best-sports-for-beginners-with-no-fitness-background",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "common-swimming-mistakes-and-how-to-fix-them",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-skincare-hacks-for-dry-and-dehydrated-skin",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "the-ultimate-guide-to-plant-protein-for-womens-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "why-is-magnesium-so-crucial-for-the-body",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-glucose-types-health-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-yoga-classes-certification-in-phoenix",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "immune-system-how-to-improve-immune-system",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "garmin-running-plans-features-september-2026",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-minute-walk-after-meals-vs-30-minute-walk",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-gyms-in-chicago",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "stress-management-techniques-reduce-and-relieve-stress",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "best-workouts-for-mental-health-move-to-feel-better",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-healthy-breakfast-ideas",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "monounsaturated-vs-polyunsaturated-fats-benefits-and-sources",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10000-steps-walking-pad-how-long",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-a-readiness-score-low-workout",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "healthy-eating-tips-for-weight-loss",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-superfoods-for-iron-deficiency",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "home-remedies-for-glowing-skin-pamper-your-face-naturally",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "best-skincare-routine-to-prevent-pimples",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "running-for-mental-health-stress-anxiety-and-mood-benefits",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle",
+      "previous": {
+        "author": "Riya Verma",
+        "author_role": "Holistic Health & Nutrition Contributor",
+        "author_bio": "Nutrition and mindful living contributor at The Fitness Falcon. Specializes in whole-food recipes, gut health, stress resilience, and balanced daily wellness habits."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "7-healthy-seeds-that-boost-immunity-and-improve-gut-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-to-do-if-you-panic-in-water-beginner-survival-techniques",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "essential-trekking-checklist",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-expert-approved-foods-to-relieve-constipation-naturally",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "health-benefits-of-kiss-and-hugs",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-10-ingredients-to-avoid-if-you-have-oily-skin",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "walking-pad-not-counting-steps",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-calcium-and-calcium-rich-foods-benefits",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "7-best-fitness-youtubers-to-motivate-and-energize-your-workouts",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "alpha-bravo-development-leading-innovations-in-health-tech",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "acro-yoga-for-mental-health-how-it-improves-focus-and-connection",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "top-10-hair-growth-tips",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "health-benefits-of-nuts",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "ultimate-plant-based-diet-grocery-list-for-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-vitamins-types-importance-and-sources",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-gyms-in-new-york-city-2026",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "how-to-make-skin-glow-naturally-without-makeup-or-treatments",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "what-are-the-benefits-of-swimming-daily",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "what-is-a-vegan-diet-vegan-food-diet-list",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "blackhead-removal-guide-best-remedies-and-prevention-methods",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "high-fiber-foods-types-health-benefits-and-supplements",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "why-cycling-is-the-ultimate-workout-for-your-body-and-brain",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-yoga-centers-in-rishikesh",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-is-protein-and-types-of-protein-what-do-they-do",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "expert-tips-and-techniques-to-enhance-sports-performance",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-6-gyms-in-los-angeles",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "minerals-for-hair-growth-iron-zinc-and-selenium-explained",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "sitting-still-killing-you-5-exercises-to-save-your-day",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "food-waste-reduction-and-sustainability",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "pumpkin-seeds-health-benefits-nutrition-and-uses",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "ai-mental-health-chatbots-ethics-and-emotional-support",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-gyms-in-florida",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "home-remedies-for-better-digestion",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "home-workouts-that-actually-work-in-2026",
+      "previous": {
+        "author": "Riya Verma",
+        "author_role": "Holistic Health & Nutrition Contributor",
+        "author_bio": "Nutrition and mindful living contributor at The Fitness Falcon. Specializes in whole-food recipes, gut health, stress resilience, and balanced daily wellness habits."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "swimming-safety-tips-for-beginners",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-are-calories-and-why-are-they-important",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "best-lifestyle-habits-for-longevity-and-healthy-aging",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "baked-oats-full-recipe-and-ingredients",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "home-remedies-faster-hair-growth-naturally",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "how-to-remove-dark-circles-naturally-at-home",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-serious-diseases-caused-by-smoking",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "belly-fat-reduction-myths-vs-facts-you-need-to-know",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "100g-protein-indian-vegetarian-meal-plan-without-powder",
+      "previous": {
+        "author": "Riya Verma",
+        "author_role": "Holistic Health & Nutrition Contributor",
+        "author_bio": "Nutrition and mindful living contributor at The Fitness Falcon. Specializes in whole-food recipes, gut health, stress resilience, and balanced daily wellness habits."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "10-high-protein-vegetarian-foods-ideal-for-adult-nutrition",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "100-inspirational-fitness-quotes-for-captions-on-instagram",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "summer-haircare-tips-to-stop-dryness-and-damage",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-are-fast-twitch-muscle-fibers-a-comprehensive-guide",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "top-6-gyms-in-miami",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "how-much-water-should-you-really-drink-each-day",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "10-effective-tips-for-managing-stress",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "anti-aging-products-benefits-and-side-effects",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "wearable-fitness-technology-smart-gyms-in-2025",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "face-yoga-for-anti-aging-and-skin-health",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "kayaking-vs-canoeing-vs-rafting-best-water-sport",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "apple-watch-series-12-readiness-score-explained",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "what-are-the-benefits-of-skipping-every-day",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "the-ultimate-guide-to-post-workout-meals",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "hiit-vs-liss-which-cardio-method-is-better-for-you",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "is-overthinking-killing-your-confidence",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "apple-watch-vs-garmin-step-tracking-accuracy-2026",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "the-power-of-calisthenics",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "best-full-body-workout-gym-for-2026",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    },
+    {
+      "slug": "chia-seeds-health-benefits-sources-and-supplements",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "dandruff-treatment-at-home-remedies-that-work",
+      "previous": {
+        "author": "Dinesh",
+        "author_role": "Senior Health & Fitness Editor",
+        "author_bio": "Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes."
+      },
+      "current_author": "Dinesh Jeengar"
+    },
+    {
+      "slug": "hair-growth-vs-hair-thickness-why-length-isnt-increasing",
+      "previous": {
+        "author": "Alex",
+        "author_role": "Health Tech & Wearables Analyst",
+        "author_bio": "Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools."
+      },
+      "current_author": "The Fitness Falcon"
+    }
+  ]
+}

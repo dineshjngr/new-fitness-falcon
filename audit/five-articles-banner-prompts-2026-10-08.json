@@ -1,0 +1,37 @@
+[
+  {
+    "id": "minimum-strength-training",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide fitness article banner, 16:9 landscape composition. Primary request: A beginner adult South Asian man in a modest modern gym performing a controlled goblet squat with a single dumbbell, three-quarter side view, heels grounded, naturally athletic everyday build, gym bench and a few weights in the background. Calm focused expression. Style: premium candid editorial photography, natural skin texture, believable anatomy and hands, realistic equipment and perspective, understated colors, sharp subject and softly focused background. No illustration, no vector, no cartoon, no collage, no CGI appearance, no text, no labels, no logo or watermark. Keep subject within central 70 percent so wide crops work. This is a photographic-style generated editorial asset, not documentary evidence.",
+    "tool": "built-in image_gen",
+    "source": "/Users/dj/.codex/generated_images/01a11b8d-acd9-7f61-820d-9f8b9a372d2b/exec-177ffe90-d03a-4f39-933f-c5e3d9281e60.png",
+    "destination": "assets/images/minimum-strength-training.jpg"
+  },
+  {
+    "id": "creatine-for-women",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide fitness article banner, 16:9 landscape composition. Primary request: An adult woman in plain workout clothes at a bright kitchen counter after training. A small unbranded plain supplement jar, a modest measuring scoop containing white powder, a glass of water, and folded gym towel sit on the counter. She is simply reading the jar, no legible text. Everyday strong body, candid and grounded. Style: premium candid editorial photography, natural skin texture, believable anatomy and hands, realistic equipment and perspective, understated colors, sharp subject and softly focused background. No illustration, no vector, no cartoon, no collage, no CGI appearance, no text, no labels, no logo or watermark. Keep subject within central 70 percent so wide crops work. This is a photographic-style generated editorial asset, not documentary evidence.",
+    "tool": "built-in image_gen",
+    "source": "/Users/dj/.codex/generated_images/01a11b8d-acd9-7f61-820d-9f8b9a372d2b/exec-4d772d23-019c-4c2b-8213-22418d54d94e.png",
+    "destination": "assets/images/creatine-for-women.jpg"
+  },
+  {
+    "id": "7000-vs-10000-steps",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide fitness article banner, 16:9 landscape composition. Primary request: Two everyday adults, one middle-aged woman and one adult man, walking at a comfortable pace on a leafy urban park path in soft morning sunlight, full bodies with believable walking gait, ordinary trainers, relaxed expressions. Real neighborhood park, not a glamorous destination. Style: premium candid editorial photography, natural skin texture, believable anatomy and hands, realistic equipment and perspective, understated colors, sharp subject and softly focused background. No illustration, no vector, no cartoon, no collage, no CGI appearance, no text, no labels, no logo or watermark. Keep subject within central 70 percent so wide crops work. This is a photographic-style generated editorial asset, not documentary evidence.",
+    "tool": "built-in image_gen",
+    "source": "/Users/dj/.codex/generated_images/01a11b8d-acd9-7f61-820d-9f8b9a372d2b/exec-bbb05a9a-6b92-44d0-945b-52657df18f9d.png",
+    "destination": "assets/images/7000-vs-10000-steps.jpg"
+  },
+  {
+    "id": "pre-workout-caffeine-sleep",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide fitness article banner, 16:9 landscape composition. Primary request: Close editorial still life on a kitchen counter near dusk: a small coffee cup, unbranded shaker bottle, plain closed supplement container and gym towel, evening window light with blurred apartment buildings. Restrained and realistic, no text or dramatic effects. Style: premium candid editorial photography, natural skin texture, believable anatomy and hands, realistic equipment and perspective, understated colors, sharp subject and softly focused background. No illustration, no vector, no cartoon, no collage, no CGI appearance, no text, no labels, no logo or watermark. Keep subject within central 70 percent so wide crops work. This is a photographic-style generated editorial asset, not documentary evidence.",
+    "tool": "built-in image_gen",
+    "source": "/Users/dj/.codex/generated_images/01a11b8d-acd9-7f61-820d-9f8b9a372d2b/exec-dea83283-37fb-4ecf-8471-b85614c45f48.png",
+    "destination": "assets/images/pre-workout-caffeine-sleep.jpg"
+  },
+  {
+    "id": "workout-when-sore",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide fitness article banner, 16:9 landscape composition. Primary request: An adult woman in simple gym clothes sitting on a gym bench after exercise, gently resting one hand on her thigh and considering her next set, relaxed posture, no grimace or injury. Dumbbells safely on the floor beside the bench, quiet realistic gym, natural window light. Style: premium candid editorial photography, natural skin texture, believable anatomy and hands, realistic equipment and perspective, understated colors, sharp subject and softly focused background. No illustration, no vector, no cartoon, no collage, no CGI appearance, no text, no labels, no logo or watermark. Keep subject within central 70 percent so wide crops work. This is a photographic-style generated editorial asset, not documentary evidence.",
+    "tool": "built-in image_gen",
+    "source": "/Users/dj/.codex/generated_images/01a11b8d-acd9-7f61-820d-9f8b9a372d2b/exec-55511a3d-8656-4014-a710-ce09e9c5552a.png",
+    "destination": "assets/images/workout-when-sore.jpg"
+  }
+]

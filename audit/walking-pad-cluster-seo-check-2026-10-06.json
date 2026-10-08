@@ -1,0 +1,58 @@
+{
+  "cluster": [
+    {
+      "slug": "walking-pad-noise-apartment",
+      "image": "/assets/images/walking-pad-noise-apartment.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-noise-apartment/"
+    },
+    {
+      "slug": "walking-pad-beginner-routine",
+      "image": "/assets/images/walking-pad-beginner-routine.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-beginner-routine/"
+    },
+    {
+      "slug": "walking-pad-desk-setup",
+      "image": "/assets/images/walking-pad-desk-setup.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-desk-setup/"
+    },
+    {
+      "slug": "walking-pad-speed-while-working",
+      "image": "/assets/images/walking-pad-speed-while-working.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-speed-while-working/"
+    },
+    {
+      "slug": "10000-steps-walking-pad-how-long",
+      "image": "/assets/images/10000-steps-walking-pad-how-long.webp",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/10000-steps-walking-pad-how-long/"
+    },
+    {
+      "slug": "walking-pad-not-counting-steps",
+      "image": "/assets/images/walking-pad-not-counting-steps-photo.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-not-counting-steps/"
+    },
+    {
+      "slug": "walking-pad-while-working",
+      "image": "/assets/images/walking-pad-while-working.jpg",
+      "cluster_peers": 6,
+      "canonical": "https://thefitnessfalcon.com/blogs/walking-pad-while-working/"
+    }
+  ],
+  "recent_blogs_with_distinct_banners": 12,
+  "new_posts": 5,
+  "posts_total": 167,
+  "sitemap_urls": 209,
+  "mobile_review": {
+    "width": 390,
+    "new_articles": 5,
+    "document_overflow": false,
+    "hero_loaded": true,
+    "table_containers_overflow": "auto"
+  },
+  "errors": []
+}

@@ -1,0 +1,19 @@
+{
+  "domain": "https://thefitnessfalcon.com",
+  "deployed_at": "2026-10-02T13:34:37+00:00",
+  "commit": "b235f435097ada21e65f362c0019fe186cdbe21d",
+  "public_files": 834,
+  "changed_files_uploaded": 371,
+  "live_checks": 379,
+  "failures": [],
+  "http_redirects_to_https": true,
+  "existing_wordpress_files_and_database_preserved": true,
+  "release_directory": "/private/tmp/falcon-deployment-b235f43",
+  "rollback_backup": "/private/tmp/falcon-deployment-b235f43/previous-changed-files.zip",
+  "new_articles": [
+    "https://thefitnessfalcon.com/blogs/walking-pad-not-counting-steps/",
+    "https://thefitnessfalcon.com/blogs/10-minute-walk-after-meals-vs-30-minute-walk/"
+  ],
+  "image_verification": "PNG dimensions checked alongside byte hashes; CDN may optimize image bytes.",
+  "newsletter_delivery": "Email service not connected"
+}

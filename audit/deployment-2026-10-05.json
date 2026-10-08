@@ -1,0 +1,69 @@
+{
+  "domain": "https://thefitnessfalcon.com",
+  "deployed_at": "2026-10-05T07:03:28.818341+00:00",
+  "uploaded_files": 377,
+  "checked_files": 377,
+  "exact_matches": 377,
+  "failures": [],
+  "backup": "/private/tmp/falcon-release-20261005-cache/previous-live-responses.zip",
+  "backup_type": "Public live responses captured before initial deployment, extended for additional cache-refresh paths; missing paths recorded in manifest",
+  "new_articles": [
+    "https://thefitnessfalcon.com/blogs/10000-steps-walking-pad-how-long/",
+    "https://thefitnessfalcon.com/blogs/zone-2-cardio-without-heart-rate-monitor/",
+    "https://thefitnessfalcon.com/blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/"
+  ],
+  "existing_wordpress_files_preserved": true,
+  "normal_url_checks": [
+    {
+      "path": "assets/images/10000-steps-walking-pad-how-long.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "assets/images/100g-protein-indian-vegetarian-meal-plan-without-powder.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "assets/images/zone-2-cardio-without-heart-rate-monitor.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "assets/js/falcon-search-data.js",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "assets/search_index.json",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "blogs/10000-steps-walking-pad-how-long/index.html",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/index.html",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "blogs/index.html",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "blogs/zone-2-cardio-without-heart-rate-monitor/index.html",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "exact": true
+    }
+  ],
+  "search_cache_refresh": "Content-hash URL versioning; all 160 search entries served by the versioned asset"
+}

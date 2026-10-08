@@ -7,26 +7,7 @@ Reuses existing design tokens, components, and templates without repeating marku
 import html, re
 from urllib.parse import quote
 
-AUTHOR_INFO = {
-    'Dinesh': {
-        'role': 'Senior Health & Fitness Editor',
-        'bio': 'Senior contributor at The Fitness Falcon. Passionate about strength training, endurance performance, and evidence-based wellness strategies that empower everyday athletes.',
-        'gradient': 'linear-gradient(135deg, #5541f8 0%, #3b82f6 100%)',
-        'initial': 'D'
-    },
-    'Alex': {
-        'role': 'Health Tech & Wearables Analyst',
-        'bio': 'Fitness technology specialist and gear reviewer at The Fitness Falcon. Dedicated to demystifying biometric tracking, heart rate variability, and performance recovery tools.',
-        'gradient': 'linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%)',
-        'initial': 'A'
-    },
-    'Riya Verma': {
-        'role': 'Holistic Health & Nutrition Contributor',
-        'bio': 'Nutrition and mindful living contributor at The Fitness Falcon. Specializes in whole-food recipes, gut health, stress resilience, and balanced daily wellness habits.',
-        'gradient': 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
-        'initial': 'R'
-    }
-}
+from scripts.editorial import AUTHOR_INFO, author_slug
 
 # 1. Category Badge
 def render_category_badge(name, url=None, size='md'):
@@ -44,12 +25,13 @@ def render_tag_badge(tag):
 # 3. Author Information (Inline Meta & Box)
 def render_author_meta(author_name):
     safe_author = html.escape(author_name)
-    return f'''<span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-  <i class="fal fa-user"></i> By <span itemprop="name">{safe_author}</span>
+    schema_type = 'Person' if author_name == 'Dinesh Jeengar' else 'Organization'
+    return f'''<span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/{schema_type}">
+  <i class="fal fa-user"></i> By <a href="/author/{author_slug(author_name)}/" itemprop="url"><span itemprop="name">{safe_author}</span></a>
 </span>'''
 
 def render_author_box(author_name, role=None, bio=None, initial=None, gradient=None):
-    author = AUTHOR_INFO.get(author_name, AUTHOR_INFO.get('Dinesh', {}))
+    author = AUTHOR_INFO.get(author_name, AUTHOR_INFO.get('Dinesh Jeengar', {}))
     safe_name = html.escape(author_name)
     safe_role = html.escape(role or author.get('role', 'Health & Fitness Contributor'))
     safe_bio = html.escape(bio or author.get('bio', ''))
@@ -60,7 +42,7 @@ def render_author_box(author_name, role=None, bio=None, initial=None, gradient=N
     {init}
   </div>
   <div class="falcon-author-info">
-    <span class="falcon-author-badge">Verified Falcon Contributor</span>
+    <span class="falcon-author-badge">About this byline</span>
     <h4 class="falcon-author-name">Written by {safe_name}</h4>
     <div class="falcon-author-role">{safe_role}</div>
     <p class="falcon-author-bio">{safe_bio}</p>
@@ -88,15 +70,16 @@ def render_reading_time(read_time):
     return f'<span class="falcon-meta-read"><i class="fal fa-clock"></i> {read_time} min read</span>'
 
 # 6. Featured Image
-def render_featured_image(image_url, alt_text, caption=None, loading="lazy", eager=None):
+def render_featured_image(image_url, alt_text, caption=None, loading="lazy", eager=None, width=None, height=None):
     if eager is True or loading == "eager":
         loading_attr = 'loading="eager" fetchpriority="high"'
     else:
         loading_attr = 'loading="lazy"'
     safe_alt = html.escape(alt_text)
+    dimensions = f' width="{int(width)}" height="{int(height)}"' if width and height else ''
     caption_html = f'\n  <figcaption class="falcon-image-caption">{html.escape(caption)}</figcaption>' if caption else ''
     return f'''<figure class="falcon-featured-image-wrapper">
-  <img src="{image_url}" alt="{safe_alt}" class="falcon-featured-image" {loading_attr} itemprop="image" />{caption_html}
+  <img src="{image_url}" alt="{safe_alt}" class="falcon-featured-image"{dimensions} {loading_attr} itemprop="image" />{caption_html}
 </figure>'''
 
 # 7. Breadcrumbs
@@ -170,7 +153,7 @@ def render_featured_card(post):
     cat = html.escape(post.get('category', 'Fitness'))
     cat_url = post.get('category_url', '/category/fitness/')
     author_name = post.get('author', 'Dinesh')
-    author = AUTHOR_INFO.get(author_name, AUTHOR_INFO['Dinesh'])
+    author = AUTHOR_INFO.get(author_name, AUTHOR_INFO['Dinesh Jeengar'])
     date = html.escape(post.get('published_date', ''))
     read_time = post.get('read_time', 4)
     excerpt = html.escape(post.get('description', ''))

@@ -1,0 +1,188 @@
+[
+  {
+    "path": "index.html",
+    "url": "https://thefitnessfalcon.com/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "sitemap.xml",
+    "url": "https://thefitnessfalcon.com/sitemap.xml",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "post-sitemap.xml",
+    "url": "https://thefitnessfalcon.com/post-sitemap.xml",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/search_index.json",
+    "url": "https://thefitnessfalcon.com/assets/search_index.json",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "robots.txt",
+    "url": "https://thefitnessfalcon.com/robots.txt",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/minimum-effective-strength-training-beginners/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/minimum-effective-strength-training-beginners/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/images/minimum-strength-training.jpg",
+    "url": "https://thefitnessfalcon.com/assets/images/minimum-strength-training.jpg",
+    "status": "200",
+    "exact_match": false,
+    "error": null,
+    "image_dimensions_valid": true,
+    "visual_review": "Correct article banner; hosting CDN recompressed JPEG",
+    "ok": true
+  },
+  {
+    "path": "blogs/creatine-for-women-benefits-water-weight-safety/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/creatine-for-women-benefits-water-weight-safety/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/images/creatine-for-women.jpg",
+    "url": "https://thefitnessfalcon.com/assets/images/creatine-for-women.jpg",
+    "status": "200",
+    "exact_match": false,
+    "error": null,
+    "image_dimensions_valid": true,
+    "visual_review": "Correct article banner; hosting CDN recompressed JPEG",
+    "ok": true
+  },
+  {
+    "path": "blogs/7000-vs-10000-steps-daily-walking-goal/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/7000-vs-10000-steps-daily-walking-goal/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/images/7000-vs-10000-steps.jpg",
+    "url": "https://thefitnessfalcon.com/assets/images/7000-vs-10000-steps.jpg",
+    "status": "200",
+    "exact_match": false,
+    "error": null,
+    "image_dimensions_valid": true,
+    "visual_review": "Correct article banner; hosting CDN recompressed JPEG",
+    "ok": true
+  },
+  {
+    "path": "blogs/pre-workout-caffeine-sleep-dose-timing/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/pre-workout-caffeine-sleep-dose-timing/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/images/pre-workout-caffeine-sleep.jpg",
+    "url": "https://thefitnessfalcon.com/assets/images/pre-workout-caffeine-sleep.jpg",
+    "status": "200",
+    "exact_match": false,
+    "error": null,
+    "image_dimensions_valid": true,
+    "visual_review": "Correct article banner; hosting CDN recompressed JPEG",
+    "ok": true
+  },
+  {
+    "path": "blogs/should-you-work-out-when-sore-doms/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/should-you-work-out-when-sore-doms/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "assets/images/workout-when-sore.jpg",
+    "url": "https://thefitnessfalcon.com/assets/images/workout-when-sore.jpg",
+    "status": "200",
+    "exact_match": false,
+    "error": null,
+    "image_dimensions_valid": true,
+    "visual_review": "Correct article banner; hosting CDN recompressed JPEG",
+    "ok": true
+  },
+  {
+    "path": "blogs/progressive-overload-for-beginners-increase-weight-reps-sets/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/progressive-overload-for-beginners-increase-weight-reps-sets/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/the-ultimate-guide-to-plant-protein-for-womens-health/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/the-ultimate-guide-to-plant-protein-for-womens-health/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/10000-steps-walking-pad-how-long/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/10000-steps-walking-pad-how-long/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/how-to-sleep-better-at-night-naturally/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/how-to-sleep-better-at-night-naturally/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  },
+  {
+    "path": "blogs/walking-pad-beginner-routine/index.html",
+    "url": "https://thefitnessfalcon.com/blogs/walking-pad-beginner-routine/",
+    "status": "200",
+    "exact_match": true,
+    "error": null,
+    "ok": true
+  }
+]

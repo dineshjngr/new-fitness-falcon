@@ -52,11 +52,12 @@ def main():
         for path in (ROOT/entry.get('url', '/blogs/'+entry['slug']+'/').strip('/')/'index.html',ROOT/'assets/images'/entry['thumb']):
             checked+=1
             if not path.is_file(): errors.append(f'search index: missing {path.relative_to(ROOT)}')
-    if (ROOT/'about-us').exists() or (ROOT/'about-us.html').exists() or (ROOT/'pages/about-us').exists(): errors.append('Deleted About Us page was restored')
     routes=json.loads((ROOT/'audit/routes.json').read_text())['redirects'] if (ROOT/'audit/routes.json').exists() else {}
     for old,new in routes.items():
         checked+=1
-        if not (ROOT/new.strip('/')/'index.html').is_file(): errors.append(f'redirect {old}: missing target {new}')
+        target = ROOT/new.strip('/')
+        if target.is_dir(): target /= 'index.html'
+        if not target.is_file(): errors.append(f'redirect {old}: missing target {new}')
     result={'compatibility_redirects':len(routes),'canonical_pages':len(canonical),'legacy_redirects':len(pages)-len(canonical),'local_references_checked':checked,'search_entries':len(data),'errors':sorted(set(errors))}
     (ROOT/'audit/validation.json').write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))

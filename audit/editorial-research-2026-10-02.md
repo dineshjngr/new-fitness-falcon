@@ -1,6 +1,6 @@
-# Two local articles for editorial approval
+# Two researched articles: publication record
 
-Status: published in the local preview only. Deployment is pending the user's explicit approval. No Hostinger upload, cache purge, Git push, or remote publication was performed for this content update.
+Status: initially published locally for review, then pushed to Git main and deployed to Hostinger after the user's explicit approval. The live release is commit `b235f435097ada21e65f362c0019fe186cdbe21d`. Both articles are live on October 2, 2026; all 379 deployment verification checks passed. See `audit/deployment-b235f43.json` for the deployment record.
 
 Research date: October 2, 2026. Audience assumption: English-speaking readers of the existing fitness and wearables site; no country-specific keyword dataset was available.
 
@@ -58,6 +58,11 @@ Local review routes:
 
 1. http://localhost:8000/blogs/walking-pad-not-counting-steps/
 2. http://localhost:8000/blogs/10-minute-walk-after-meals-vs-30-minute-walk/
+
+Live article routes:
+
+1. https://thefitnessfalcon.com/blogs/walking-pad-not-counting-steps/
+2. https://thefitnessfalcon.com/blogs/10-minute-walk-after-meals-vs-30-minute-walk/
 
 ## Final verification
 

@@ -13,6 +13,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 import scripts.components as components
+from scripts.editorial import normalize_author, clean_article_html, author_slug
 
 TEMPLATE_PATH = ROOT / 'components' / 'post-template.html'
 CONTENT_DIR = ROOT / 'content' / 'posts'
@@ -30,10 +31,22 @@ def load_posts():
     for f in sorted(CONTENT_DIR.glob('*.json')):
         try:
             data = json.loads(f.read_text(encoding='utf-8'))
-            posts.append(data)
+            posts.append(normalize_author(data))
         except Exception as e:
             print(f'Error reading {f}: {e}', file=sys.stderr)
     return posts
+
+def build_cluster_navigation(post, posts):
+    """Connect articles sharing an explicitly assigned editorial topic cluster."""
+    cluster = post.get('cluster_id')
+    if not cluster:
+        return ''
+    peers = [p for p in posts if p.get('cluster_id') == cluster and p['slug'] != post['slug']]
+    peers.sort(key=lambda p: (p.get('cluster_role') != 'hub', p['title']))
+    if not peers:
+        raise ValueError(f"{post['slug']}: topic cluster has no other articles")
+    items = ''.join(f'<li><a href="/blogs/{p["slug"]}/">{html.escape(p["title"])}</a></li>' for p in peers)
+    return '<h2>Explore the walking-pad desk guide</h2><p>Choose the next question you want to solve:</p><ul>' + items + '</ul>'
 
 def generate_schema(post):
     schema = {
@@ -55,12 +68,13 @@ def generate_schema(post):
                 "image": {
                     "@type": "ImageObject",
                     "url": f"https://thefitnessfalcon.com{post['featured_image']}",
-                    "width": 1200,
-                    "height": 675,
+                    "width": post.get('featured_image_width', 1200),
+                    "height": post.get('featured_image_height', 675),
                     "caption": post.get('featured_image_alt', post['title'])
                 },
                 "author": {
-                    "@type": "Person",
+                    "@type": "Person" if post['author'] == "Dinesh Jeengar" else "Organization",
+                    "url": "https://thefitnessfalcon.com/author/" + author_slug(post['author']) + "/",
                     "name": post['author'],
                     "jobTitle": post.get('author_role', 'Health & Fitness Contributor'),
                     "description": post.get('author_bio', '')
@@ -103,6 +117,11 @@ def generate_schema(post):
             }
         ]
     }
+    article = schema['@graph'][0]
+    if article['author']['@type'] == 'Organization':
+        article['author'].pop('jobTitle', None)
+    if post.get('sources'):
+        article['citation'] = post['sources']
     return json.dumps(schema, indent=4, ensure_ascii=False)
 
 def build_toc_and_content(content):
@@ -274,10 +293,13 @@ def render_all_posts():
             post['featured_image'],
             post.get('featured_image_alt', post['title']),
             post.get('featured_image_caption'),
-            loading="eager"
+            loading="eager",
+            width=post.get('featured_image_width'),
+            height=post.get('featured_image_height')
         )
         tags_html = build_tags(post.get('tags', []))
-        toc_html, entry_content = build_toc_and_content(post['content'])
+        article_content = clean_article_html(post['content']) + build_cluster_navigation(post, posts)
+        toc_html, entry_content = build_toc_and_content(article_content)
         social_share_html = components.render_social_share(
             post['title'],
             post['canonical_url'],
@@ -293,8 +315,16 @@ def render_all_posts():
         post_pagination_html = components.render_post_pagination(prev_post, next_post)
 
         # Related posts (3 items, prefer same category)
+        cluster_peers = [p for p in reversed(posts) if p['slug'] != slug
+                         and post.get('cluster_id') and p.get('cluster_id') == post['cluster_id']]
+        cluster_peers.sort(key=lambda p: p.get('cluster_role') != 'hub')
         same_cat = [p for p in reversed(posts) if p['slug'] != slug and p['category'] == post['category']]
-        related = same_cat[:3]
+        related = cluster_peers[:3]
+        for candidate in same_cat:
+            if len(related) == 3:
+                break
+            if candidate['slug'] not in {p['slug'] for p in related}:
+                related.append(candidate)
         if len(related) < 3:
             seen = {p['slug'] for p in related}
             seen.add(slug)
@@ -323,6 +353,8 @@ def render_all_posts():
         rendered = rendered.replace('{{ROBOTS_DIRECTIVES}}', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
         rendered = rendered.replace('{{CANONICAL_URL}}', post['canonical_url'])
         rendered = rendered.replace('{{OG_IMAGE_URL}}', f"https://thefitnessfalcon.com{post['featured_image']}")
+        rendered = rendered.replace('{{OG_IMAGE_WIDTH}}', str(post.get('featured_image_width', 1200)))
+        rendered = rendered.replace('{{OG_IMAGE_HEIGHT}}', str(post.get('featured_image_height', 675)))
         rendered = rendered.replace('{{BREADCRUMBS_HTML}}', breadcrumbs_html)
         rendered = rendered.replace('{{CATEGORY_BADGE_HTML}}', cat_badge_html)
         rendered = rendered.replace('{{POST_TITLE}}', html.escape(post['title']))
@@ -349,6 +381,8 @@ def render_all_posts():
         rendered = rendered.replace('{{FEATURED_IMAGE_ALT}}', html.escape(post.get('featured_image_alt', post['title'])))
         rendered = rendered.replace('{{PUBLISHED_ISO}}', post.get('published_iso', ''))
         rendered = rendered.replace('{{MODIFIED_ISO}}', post.get('modified_iso', post.get('published_iso', '')))
+        rendered = rendered.replace('{{PUBLISHED_TIME}}', post.get('published_time') or f"{post['published_iso']}T00:00:00+00:00")
+        rendered = rendered.replace('{{MODIFIED_TIME}}', post.get('modified_time') or f"{post.get('modified_iso', post['published_iso'])}T00:00:00+00:00")
         rendered = rendered.replace('{{AUTHOR_NAME}}', html.escape(post.get('author', 'Dinesh')))
         rendered = rendered.replace('{{CATEGORY_NAME}}', html.escape(post.get('category', 'Fitness')))
 

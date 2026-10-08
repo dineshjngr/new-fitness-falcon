@@ -1,0 +1,1550 @@
+{
+  "domain": "https://thefitnessfalcon.com",
+  "checked_files": 254,
+  "file_failures": [],
+  "route_checks": [
+    {
+      "url": "https://thefitnessfalcon.com/blog/",
+      "status": 200,
+      "final_url": "https://thefitnessfalcon.com/blogs/",
+      "ok": true
+    },
+    {
+      "url": "https://thefitnessfalcon.com/progressive-overload-for-beginners-increase-weight-reps-sets/",
+      "status": 200,
+      "final_url": "https://thefitnessfalcon.com/blogs/progressive-overload-for-beginners-increase-weight-reps-sets/",
+      "ok": true
+    },
+    {
+      "url": "https://thefitnessfalcon.com/deployment-test-missing-20261007/",
+      "status": 404,
+      "ok": true
+    }
+  ],
+  "checks": [
+    {
+      "path": "assets/css/all.min.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/article-toc.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/benqu-style.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/bootstrap.min.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/custom-style.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/footer.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/post-style.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/responsive.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/css/topbar.css",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/images/Black-and-White-Modern-Gym-Presentation.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/HIIT-vs-LISS.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/Home-Workouts.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/The-Fitness-Falcon-logo-White.svg",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/images/The-Fitness-Falcon-logo.svg",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/images/Wearable-Fitness-Tech.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/What-Is-Zumba-Workout-Pros-Cons-and-How-It-Works.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/apple-watch-series-12-readiness-score-explained-1024x576.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/apple-watch-vs-garmin-step-tracking-accuracy-2026-1024x576.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/cropped-Untitled-design-14-192x192.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/cropped-Untitled-design-14-32x32.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/nav.svg",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/images/progressive-overload-guide.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/resistance-band-workouts-beginners.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/returning-to-gym-after-break.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/strength-training-or-cardio-first.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/track-fitness-progress-without-scale.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/walking-pad-while-working.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/what-is-a-readiness-score-low-workout-1024x576.png",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/images/workout-1-scaled.jpg",
+      "status": 200,
+      "matches": false,
+      "ok": true
+    },
+    {
+      "path": "assets/js/bootstrap.min.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/falcon-core.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/falcon-search-data.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/jquery.min.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/owl.carousel.min.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/popper.min.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/js/search-results.js",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "assets/search_index.json",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "author/dinesh-jeengar/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "author/the-fitness-falcon/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-effective-tips-for-managing-stress/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-essential-winter-skincare-tips-from-the-experts/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-expert-approved-foods-to-relieve-constipation-naturally/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-fruits-for-your-gym-diet-fuel-your-fitness/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-high-protein-vegetarian-foods-ideal-for-adult-nutrition/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-minute-walk-after-meals-vs-30-minute-walk/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-serious-diseases-caused-by-smoking/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10-superfoods-for-iron-deficiency/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/100-inspirational-fitness-quotes-for-captions-on-instagram/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/10000-steps-walking-pad-how-long/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/15-health-and-nutrition-benefits-of-sesame-seeds/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/2026-fitness-goals-a-complete-guide-to-building-strength-health-and-consistency/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/5-essential-healthcare-gadgets-every-home-should-have/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/5-new-year-resolutions-for-your-2024-gym-journey/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/7-best-fitness-youtubers-to-motivate-and-energize-your-workouts/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/7-best-health-and-fitness-wearables-in-2024/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/7-healthy-seeds-that-boost-immunity-and-improve-gut-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/8-easy-outdoor-fitness-activities-and-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/acne-101-understanding-types-causes-and-effective-treatments/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/acro-yoga-for-mental-health-how-it-improves-focus-and-connection/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/aging-well-10-secrets-to-a-vibrant-life/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/ai-mental-health-chatbots-ethics-and-emotional-support/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/alpha-bravo-development-leading-innovations-in-health-tech/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/anti-aging-products-benefits-and-side-effects/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/antioxidants-health-benefits-sources-and-supplements/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/apple-watch-series-12-readiness-score-explained/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/apple-watch-vs-garmin-step-tracking-accuracy-2026/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/baked-oats-full-recipe-and-ingredients/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/belly-fat-reduction-myths-vs-facts-you-need-to-know/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-full-body-workout-gym-for-2026/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-lifestyle-habits-for-longevity-and-healthy-aging/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-skincare-routine-to-prevent-pimples/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-sports-for-beginners-with-no-fitness-background/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-time-to-consume-protein-morning-vs-night/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/best-workouts-for-mental-health-move-to-feel-better/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/biological-cycle-signs-causes-of-disruption/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/blackhead-removal-guide-best-remedies-and-prevention-methods/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/brain-boosting-nutrition-best-foods-to-improve-focus-and-memory/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/chia-seeds-health-benefits-sources-and-supplements/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/clean-weight-gain-vs-fat-gain-what-you-really-need-to-know/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/common-swimming-mistakes-and-how-to-fix-them/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/common-trekking-mistakes-and-how-to-avoid-them/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/cycling-benefits-and-which-cycle-is-best/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/dandruff-treatment-at-home-remedies-that-work/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/dry-skin-care-routine-best-products-and-tips-for-hydration/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/dumbbell-workout-at-home-for-beginners/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/essential-trekking-checklist/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/expert-tips-and-techniques-to-enhance-sports-performance/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/exploring-the-top-10-most-consumed-winter-beverages/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/face-yoga-for-anti-aging-and-skin-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/food-waste-reduction-and-sustainability/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/garmin-running-plans-features-september-2026/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/gut-health-the-unsung-hero-of-your-immune-system/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/gym-diet-plan-what-to-eat-before-and-after-workout/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hair-fall-in-men-common-causes-and-permanent-fixes/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hair-fall-in-women-causes-prevention-and-treatments/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hair-growth-vs-hair-thickness-why-length-isnt-increasing/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/haircare-tips-to-prevent-split-ends-and-breakage/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/health-benefits-of-kiss-and-hugs/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/health-benefits-of-nuts/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/healthy-eating-tips-for-weight-loss/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/healthy-fats-vs-unhealthy-fats-what-you-need-to-know/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/healthy-sunflower-seeds-nutrition-benefits-eating-tips/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/high-fiber-foods-types-health-benefits-and-supplements/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/high-protein-plant-foods-for-fitness-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hiit-vs-liss-which-cardio-method-is-better-for-you/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hire-a-personal-female-fitness-trainer-in-chicago/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/home-remedies-faster-hair-growth-naturally/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/home-remedies-for-better-digestion/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/home-workouts-that-actually-work-in-2026/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-much-water-should-you-really-drink-each-day/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-choose-the-right-running-shoes-for-flat-feet/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-increase-fibre-indian-diet/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-make-skin-glow-naturally-without-makeup-or-treatments/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-remove-dark-circles-naturally-at-home/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-remove-makeup-without-makeup-remover/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-sleep-better-at-night-naturally/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-to-track-fitness-progress-without-relying-on-the-scale/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/how-yoga-transforms-your-body-in-just-30-days/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/hrv-for-fitness-what-it-tells-you/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/immune-system-how-to-improve-immune-system/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/improving-your-posture-the-ultimate-guide-for-2024/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/intermittent-fasting-and-fat-loss/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/is-overthinking-killing-your-confidence/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/kayaking-vs-canoeing-vs-rafting-best-water-sport/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/meditation-for-beginners-types-and-health-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/mindfulness-the-ultimate-guide-to-inner-peace-in-2024/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/minerals-for-hair-growth-iron-zinc-and-selenium-explained/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/monounsaturated-vs-polyunsaturated-fats-benefits-and-sources/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/omega-3-fatty-acids-health-benefits-and-rich-foods/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/omega-6-fatty-acids-health-benefits-and-rich-foods/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/outdoor-games-vs-indoor-games-which-is-better/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/10/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/11/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/12/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/13/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/14/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/15/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/2/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/3/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/4/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/5/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/6/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/7/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/8/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/page/9/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/pigmentation-on-face-causes-prevention-and-effective-treatments/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/pilates-the-ultimate-guide-for-a-stronger-core-in-2024/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/progressive-overload-for-beginners-increase-weight-reps-sets/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/psychodermatology-101-can-cortisol-blocking-skincare-actually-stop-stress-breakouts/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/pumpkin-seeds-health-benefits-nutrition-and-uses/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/resistance-band-workouts-for-beginners-routine/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/running-for-mental-health-stress-anxiety-and-mood-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/running-shoes-for-women-stylish-stable-comfortable/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/sitting-still-killing-you-5-exercises-to-save-your-day/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/skincare-for-sensitive-skin/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/smart-ring-vs-smart-watch-which-wearable-is-right-for-your-lifestyle/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/strength-training-or-cardio-first-workout-order/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/stress-management-techniques-reduce-and-relieve-stress/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/summer-haircare-tips-to-stop-dryness-and-damage/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/swimming-safety-tips-for-beginners/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/swimming-vs-walking-for-weight-loss-which-burns-more-fat-faster/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/the-importance-of-prioritizing-mental-health-in-the-workplace/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/the-power-of-calisthenics/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/the-ultimate-guide-to-plant-protein-for-womens-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/the-ultimate-guide-to-post-workout-meals/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-10-hair-growth-tips/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-10-himalayan-treks-in-india/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-10-home-workouts-that-require-no-equipment/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-10-ingredients-to-avoid-if-you-have-oily-skin/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-best-swimming-strokes-for-weight-loss-and-fitness/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-female-fitness-trainers-in-new-york/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-gyms-in-chicago/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-gyms-in-florida/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-gyms-in-new-york-city-2026/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-healthy-breakfast-ideas/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-5-yoga-centers-in-rishikesh/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-6-gyms-in-los-angeles/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-6-gyms-in-miami/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-fitness-tracker-brands-available-in-india/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-skincare-hacks-for-dry-and-dehydrated-skin/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/top-yoga-classes-certification-in-phoenix/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/trekking-vs-running-for-fitness-which-burns-more-calories-in-real-life/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/ultimate-plant-based-diet-grocery-list-for-health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-beginner-routine/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-desk-setup/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-noise-apartment/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-not-counting-steps/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-speed-while-working/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/walking-pad-while-working/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/wearable-fitness-technology-smart-gyms-in-2025/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/weight-gain-alert-signs-you-need-to-watch-out-for/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-calories-and-why-are-they-important/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-carbohydrates-definition-types-health-impact/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-fast-twitch-muscle-fibers-a-comprehensive-guide/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-micronutrients-types-functions-and-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-the-benefits-of-skipping-every-day/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-are-the-benefits-of-swimming-daily/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-a-readiness-score-low-workout/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-a-vegan-diet-vegan-food-diet-list/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-algae-and-why-its-a-superfood/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-calcium-and-calcium-rich-foods-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-dietary-fiber-types-benefits-and-best-food-sources/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-glucose-types-health-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-hiit-high-intensity-interval-training-types-benefits/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-ice-bath-health-benefits-of-cold-therapy/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-protein-and-types-of-protein-what-do-they-do/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-superfoods-benefits-uses/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-vitamins-types-importance-and-sources/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-is-zumba-workout-pros-cons-and-how-it-works/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/what-to-do-if-you-panic-in-water-beginner-survival-techniques/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/why-cycling-is-the-ultimate-workout-for-your-body-and-brain/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/why-is-magnesium-so-crucial-for-the-body/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/yoga-vs-sports-for-fitness-which-is-better-for-overall-fitness/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "blogs/zone-2-cardio-without-heart-rate-monitor/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/beauty/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/blog/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/cycling/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/fitness/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/food-and-recipes/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/gym/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/health/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/lifestyle/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/news/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/nutrition/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/recipes/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/skincare/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/sports/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/swimming/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/trekking/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/wearables-fitness-technology/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/weight/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/workout/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "category/yoga/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/about-us/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/contact-us/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/editorial-policy/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/privacy-policy/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/team/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "pages/write-for-us/index.html",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "post-sitemap.xml",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "matches": true,
+      "ok": true
+    }
+  ]
+}

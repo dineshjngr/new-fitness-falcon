@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "minimum-effective-strength-training-beginners",
+    "title_length": 50,
+    "description_length": 138,
+    "words": 1231,
+    "sources": 3,
+    "internal_links": 6,
+    "incoming_contextual_links": [
+      "creatine-for-women-benefits-water-weight-safety",
+      "should-you-work-out-when-sore-doms",
+      "pre-workout-caffeine-sleep-dose-timing",
+      "progressive-overload-for-beginners-increase-weight-reps-sets"
+    ],
+    "image_bytes": 313781,
+    "schema_dates_match": true,
+    "in_sitemap": true,
+    "in_search": true
+  },
+  {
+    "slug": "creatine-for-women-benefits-water-weight-safety",
+    "title_length": 57,
+    "description_length": 151,
+    "words": 1317,
+    "sources": 5,
+    "internal_links": 3,
+    "incoming_contextual_links": [
+      "the-ultimate-guide-to-plant-protein-for-womens-health",
+      "pre-workout-caffeine-sleep-dose-timing"
+    ],
+    "image_bytes": 250979,
+    "schema_dates_match": true,
+    "in_sitemap": true,
+    "in_search": true
+  },
+  {
+    "slug": "7000-vs-10000-steps-daily-walking-goal",
+    "title_length": 53,
+    "description_length": 154,
+    "words": 1252,
+    "sources": 3,
+    "internal_links": 3,
+    "incoming_contextual_links": [
+      "minimum-effective-strength-training-beginners",
+      "walking-pad-beginner-routine",
+      "10000-steps-walking-pad-how-long"
+    ],
+    "image_bytes": 416164,
+    "schema_dates_match": true,
+    "in_sitemap": true,
+    "in_search": true
+  },
+  {
+    "slug": "pre-workout-caffeine-sleep-dose-timing",
+    "title_length": 54,
+    "description_length": 148,
+    "words": 1265,
+    "sources": 4,
+    "internal_links": 4,
+    "incoming_contextual_links": [
+      "how-to-sleep-better-at-night-naturally",
+      "should-you-work-out-when-sore-doms"
+    ],
+    "image_bytes": 226778,
+    "schema_dates_match": true,
+    "in_sitemap": true,
+    "in_search": true
+  },
+  {
+    "slug": "should-you-work-out-when-sore-doms",
+    "title_length": 52,
+    "description_length": 154,
+    "words": 1397,
+    "sources": 4,
+    "internal_links": 5,
+    "incoming_contextual_links": [
+      "minimum-effective-strength-training-beginners",
+      "returning-to-the-gym-after-a-long-break-first-four-weeks"
+    ],
+    "image_bytes": 328016,
+    "schema_dates_match": true,
+    "in_sitemap": true,
+    "in_search": true
+  }
+]

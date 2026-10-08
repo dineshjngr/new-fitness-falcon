@@ -4,5 +4,5 @@ Allow: /
 Disallow: /search/
 Disallow: /404.html
 
-# Sitemap
+# Archive noindex directives are in HTML so crawlers can read them.
 Sitemap: https://thefitnessfalcon.com/sitemap.xml
