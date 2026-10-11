@@ -1,0 +1,18 @@
+{
+  "url": "https://thefitnessfalcon.com/blogs/oura-health-radar-availability/",
+  "http_status": 200,
+  "banner_http_status": 200,
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "canonical_verified": true,
+  "publication_schema_verified": true,
+  "homepage_verified": true,
+  "sitemap_verified": true,
+  "search_verified": true,
+  "exact_html_match": true,
+  "banner_exact_match": false,
+  "published_time": "2026-10-09T09:22:41+00:00",
+  "word_count": 1152,
+  "validation": "59,079 local references checked without errors; 11 existing tests passed.",
+  "category_verified": true,
+  "banner_note": "Live banner returns 200; response bytes differ from original, consistent with existing CDN image processing. Dimensions verified separately."
+}

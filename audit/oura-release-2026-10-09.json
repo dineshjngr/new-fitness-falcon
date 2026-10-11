@@ -1,0 +1,18 @@
+{
+  "archive": "/private/tmp/thefitnessfalcon_20261009_092557.zip",
+  "files": 915,
+  "bytes": 148888416,
+  "domain": "thefitnessfalcon.com",
+  "created": "2026-10-09T09:25:57.086361+00:00",
+  "excludes": [
+    "scratch",
+    "content",
+    "scripts",
+    "tests",
+    "audit",
+    "old-website",
+    ".git",
+    ".hostinger",
+    "components"
+  ]
+}
