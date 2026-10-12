@@ -79,8 +79,10 @@ def generate_redirects():
         for base in (f'/{slug}/feed', f'/blogs/{slug}/feed'):
             redirects[base] = f'/blogs/{slug}/'
             redirects[base + '/'] = f'/blogs/{slug}/'
-    redirects['/feed'] = '/blogs/'
-    redirects['/feed/'] = '/blogs/'
+    redirects['/feed'] = '/feed.xml'
+    redirects['/feed/'] = '/feed.xml'
+    redirects['/rss'] = '/feed.xml'
+    redirects['/rss/'] = '/feed.xml'
     # The old theme linked the Twitter handle as a relative URL, creating
     # /<page>/@fitnessfalcon_ paths. Send each one back to its page.
     handle = '@fitnessfalcon_'

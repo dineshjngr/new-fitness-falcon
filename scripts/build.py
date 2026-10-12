@@ -64,6 +64,7 @@ from scripts.build_sitemap import generate_sitemap_and_robots
 from scripts.build_redirects import generate_redirects
 from scripts.build_search import generate_search
 from scripts.build_home import generate_home_latest
+from scripts.build_feed import generate_feed
 
 def main():
     generate_search()
@@ -81,6 +82,7 @@ def main():
 
     # 4. Generate XML sitemap and robots.txt
     generate_sitemap_and_robots()
+    generate_feed()
     generate_redirects()
 
 if __name__ == '__main__':

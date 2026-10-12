@@ -2172,10 +2172,10 @@
 /face-yoga-for-anti-aging-and-skin-health/feed/@fitnessfalcon_ /blogs/face-yoga-for-anti-aging-and-skin-health/ 301
 /face-yoga-for-anti-aging-and-skin-health/feed/@fitnessfalcon_/ /blogs/face-yoga-for-anti-aging-and-skin-health/ 301
 /face-yoga-for-anti-aging-and-skin-health/index.html /blogs/face-yoga-for-anti-aging-and-skin-health/ 301
-/feed /blogs/ 301
-/feed/ /blogs/ 301
-/feed/@fitnessfalcon_ /blogs/ 301
-/feed/@fitnessfalcon_/ /blogs/ 301
+/feed /feed.xml 301
+/feed/ /feed.xml 301
+/feed/@fitnessfalcon_ /feed.xml 301
+/feed/@fitnessfalcon_/ /feed.xml 301
 /food-waste-reduction-and-sustainability /blogs/food-waste-reduction-and-sustainability/ 301
 /food-waste-reduction-and-sustainability.html /blogs/food-waste-reduction-and-sustainability/ 301
 /food-waste-reduction-and-sustainability/ /blogs/food-waste-reduction-and-sustainability/ 301
@@ -2940,6 +2940,10 @@
 /returning-to-the-gym-after-a-long-break-first-four-weeks/feed/@fitnessfalcon_ /blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/ 301
 /returning-to-the-gym-after-a-long-break-first-four-weeks/feed/@fitnessfalcon_/ /blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/ 301
 /returning-to-the-gym-after-a-long-break-first-four-weeks/index.html /blogs/returning-to-the-gym-after-a-long-break-first-four-weeks/ 301
+/rss /feed.xml 301
+/rss/ /feed.xml 301
+/rss/@fitnessfalcon_ /feed.xml 301
+/rss/@fitnessfalcon_/ /feed.xml 301
 /running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively /blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/ 301
 /running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively.html /blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/ 301
 /running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/ /blogs/running-affects-belly-fat-and-metabolism-how-running-burns-fat-effectively/ 301
