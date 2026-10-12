@@ -2840,3 +2840,36 @@ p, li, blockquote, figcaption, a {
   max-width: 100%;
   min-height: 26px;
 }
+
+/* Dark mode: readable article tables (header text and zebra rows were
+   dark-on-dark / light-on-white). */
+[data-theme="dark"] .entry-content table,
+[data-theme="dark"] .entry-content table tbody tr,
+[data-theme="dark"] .entry-content table tbody tr:nth-child(odd) {
+  background: #111827 !important;
+}
+
+[data-theme="dark"] .entry-content table tbody tr:nth-child(even) {
+  background: #1a2233 !important;
+}
+
+[data-theme="dark"] .entry-content table tbody tr:hover {
+  background: #22304a !important;
+}
+
+[data-theme="dark"] .entry-content table thead,
+[data-theme="dark"] .entry-content table thead tr,
+[data-theme="dark"] .entry-content table thead th {
+  background: #1e1b4b !important;
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .entry-content table th,
+[data-theme="dark"] .entry-content table td {
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="dark"] .entry-content table caption {
+  color: #94a3b8;
+}

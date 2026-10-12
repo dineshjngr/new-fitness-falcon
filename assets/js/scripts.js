@@ -2,6 +2,12 @@
 (function ($) {
     "use strict";
 
+    // Carousel/lightbox plugins are no longer loaded (no page uses them);
+    // keep the legacy theme calls below harmless.
+    ['owlCarousel', 'slick', 'magnificPopup', 'metisMenu'].forEach(function (name) {
+        if (typeof $.fn[name] !== 'function') { $.fn[name] = function () { return this; }; }
+    });
+
     /**
     * Search
     */

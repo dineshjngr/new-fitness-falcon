@@ -72,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 700;
 	color: #1d2027;
 	margin: 0px;
@@ -279,7 +279,7 @@ div#pfytopbar.pfy-top-bar {
 	color: #f0f0f0;
 	font-size: 14px;
 	font-weight: 600;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .pfy-top-left .topbar-date {
@@ -616,7 +616,7 @@ header.benqu-main-header.pfy-header-2.bnq__header_three.pfy-header-2 .header-men
 	font-weight: 700;
 	padding: 20px 0;
 	padding-right: 50px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .sidebar-social-info a {
@@ -770,7 +770,7 @@ button.benqu-post-grid-loadmore {
 	font-weight: 700;
 	font-size: 15px;
 	text-transform: uppercase;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	transition: .4s;
 }
 button.benqu-post-grid-loadmore:hover {
@@ -880,7 +880,7 @@ h4.benqu__post-title a {
 	color: #818181;
 	font-size: 14px;
 	text-transform: uppercase;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 700;
 }
 
@@ -926,7 +926,7 @@ h4.benqu__post-title a {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .post-thumb {
@@ -991,7 +991,7 @@ h4.benqu__post-title a {
 	text-transform: uppercase;
 	color: #666;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .grid-style-9 .pfy-post-thumb {
@@ -1152,7 +1152,7 @@ h4.benqu__post-title a {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 14px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 700;
 }
 
@@ -1280,7 +1280,7 @@ h4.benqu__post-title a {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -1432,7 +1432,7 @@ span.auth_by {
 	text-transform: uppercase;
 	color: #818181;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .pfy-post-grid-carousel-wrap.carousel-style-2 .pfy-post-item ul li:not(:last-child) {
@@ -1627,7 +1627,7 @@ span.auth_by {
     border-radius: 0;
     font-size: 20px;
     font-weight: 700;
-	font-family: 'Lora', serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .benqu_post_tabs_tiles .nav-item {
@@ -1813,7 +1813,7 @@ span.flower-count {
 .social-counter-wrap.style-2 .pfy-social-counter-item a span {
 	display: block;
     line-height: normal;
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -1982,7 +1982,7 @@ button:focus {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .pfy-post-item.post-v2-tab-md {
@@ -2018,7 +2018,7 @@ button:focus {
 .pfy-post-gd-meta li,
 .pfy-post-gd-meta li a {
 	color: #fff;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 
 }
 
@@ -2104,7 +2104,7 @@ button:focus {
 .pfy-post-list-wrap.list-style-2 a.benqu-cate-name {
 	color: #c3c3c3 !important;
 	font-size: 15px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	line-height: normal;
 	margin-bottom: 10px;
 }
@@ -2471,7 +2471,7 @@ button:focus {
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: normal;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .pfy-post-list-wrap.list-style-3 .pfy-post-item:last-child {
@@ -2736,7 +2736,7 @@ button:focus {
 	font-size: 15px;
 	font-weight: 700;
 	padding: 10px 25px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	border-radius: 0;
 }
 
@@ -3833,7 +3833,7 @@ footer.pfy-site-footer.bnq__footer_three{
 	height: 35px;
 	line-height: 35px;
 	margin-right: 5px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 600;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -3953,7 +3953,7 @@ footer.pfy-site-footer.bnq__footer_three{
 .pfy-ft-nav ul li a {
 	color: #d5d5d5;
 	font-size: 15px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 600;
 }
 
@@ -4028,7 +4028,7 @@ footer.pfy-site-footer.footer-two {
 	position: relative;
 	padding-right: 8px;
 	margin-right: 8px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .benqu-breadcrumb .breadcrumb-item li a:after,
@@ -4084,7 +4084,7 @@ footer.pfy-site-footer.footer-two {
 	text-transform: uppercase;
 	font-weight: 700;
 	padding-right: 30px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 .bnq__post_wap_loop.ajax_top_space {
     margin-top: 50px;
@@ -4212,7 +4212,7 @@ blockquote.wp-block-quote p {
 	color: #1d2027;
 	font-size: 24px !important;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .pfy_single_post_wrapper span.tags-links a:not(:last-child) {
@@ -4241,7 +4241,7 @@ blockquote.wp-block-quote p strong {
 	margin-bottom: 7px;
 	font-size: 15px;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed'
+	font-family: 'DM Sans'
 }
 
 .pfy_single_post_wrapper span.tags-links a:hover {
@@ -4331,7 +4331,7 @@ div#comments.comments-area p.form-submit input[type="submit"] {
 	font-size: 18px;
 	padding: 12px 30px;
 	font-weight: 600;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	-webkit-transition: .5s;
 	transition: .5s;
 	border: 1px solid var(--color-primary)
@@ -5535,7 +5535,7 @@ div#comments.comments-area .comment-list {
 	height: 35px;
 	line-height: 35px;
 	margin-right: 5px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 500;
 	margin-bottom: 10px;
 	-webkit-transition: .4s;
@@ -5971,7 +5971,7 @@ div#comments.comments-area .comment-list {
 	color: #1d2027;
 	margin-bottom: 10px;
 	font-weight: 700;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .bnq-navi__info span i {
@@ -6282,12 +6282,12 @@ div#comments.comments-area .comment-list {
     font-size: 16px;
     font-weight: 700;
     margin-top: 10px;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	border: none;
 }
 .bnq__cookie_area p {
     color: #ffffff;
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 }
@@ -6510,7 +6510,7 @@ span.bnqu__date_wrap {
     border-radius: 50%;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Lora';
+    font-family: 'DM Sans';
 }
 .benqu__news-item .post-number {
     border: 1px solid #d5d5d7;
@@ -6521,7 +6521,7 @@ span.bnqu__date_wrap {
     border-radius: 50%;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Lora';
+    font-family: 'DM Sans';
 }
 
 .benqu__news-item .post-number {
@@ -6832,7 +6832,7 @@ ul.page-pagination.penqu-widget-pagi.bnq__pg_two {
 	color: #8212e1;
     font-size: 24px;
     margin-bottom: 15px;
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 .bnq__team_list_item .bnq__team_content h1 {
     font-size: 50px;
