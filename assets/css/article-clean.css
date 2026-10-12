@@ -380,3 +380,33 @@ body:has(.ff-post) { background: var(--ff-page, #fff); }
     max-width: 1360px;
   }
 }
+
+/* Banner: same width as the TOC + article grid below it, and never cropped. */
+.ff-post-hero {
+  max-width: calc(var(--ff-measure) + 40px);
+}
+
+.ff-post-hero img {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  max-height: none !important;
+}
+
+@media (min-width: 1200px) {
+  .ff-post-hero {
+    max-width: calc(260px + 48px + var(--ff-measure));
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ff-post-hero {
+    max-width: calc(260px + 48px + var(--ff-measure));
+  }
+}
+
+.ff-post-hero figcaption,
+.ff-post-hero .falcon-image-caption {
+  text-align: left;
+}
