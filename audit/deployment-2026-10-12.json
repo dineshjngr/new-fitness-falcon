@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-12",
+  "domain": "thefitnessfalcon.com",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261012_124521.zip",
+  "files": 1077,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components",
+  "result": {"upload": "success", "deploy": "Request accepted", "live_after_seconds": 15},
+  "verified": {
+    "html_feed_sitemap_robots_css_hash_match": true,
+    "redirects_301": ["/team/", "/best-gym-workout-routine-for-full-body-strength-and-fitness/", "/top-6-gyms-in-miami/@fitnessfalcon_", "/10-fruits-for-your-gym-diet-fuel-your-fitness/feed/", "/2024/01/page/2/", "/feed/", "/how-to-fix-a-damaged-skin-barrier-in-48-hours/"],
+    "gone_410": ["/best-wearable-devices-for-managing-chronic-pain-symptoms/", "/what-is-cpr-and-how-is-it-performed/", "/does-kissing-burn-calories-french-kiss-your-way-to-fitness/feed/"],
+    "draft_not_public": "/blogs/fitbit-edge-price-specs-features/ -> 404"
+  }
+}
