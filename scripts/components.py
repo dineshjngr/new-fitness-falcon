@@ -345,6 +345,27 @@ def render_social_share(title, canonical_url, image_url=None):
   </div>
 </div>'''
 
+def render_share_rail(title, canonical_url, image_url=None):
+    """Compact share rail shown beside the article banner."""
+    t = quote(title)
+    u = quote(canonical_url)
+    img = quote(image_url or '')
+    links = [
+        (f'https://twitter.com/intent/tweet?text={t}&url={u}', 'fab fa-twitter', 'Share on X (Twitter)', 'x'),
+        (f'https://www.facebook.com/sharer/sharer.php?u={u}', 'fab fa-facebook-f', 'Share on Facebook', 'facebook'),
+        (f'https://www.linkedin.com/sharing/share-offsite/?url={u}', 'fab fa-linkedin-in', 'Share on LinkedIn', 'linkedin'),
+        (f'https://pinterest.com/pin/create/button/?url={u}&media={img}&description={t}', 'fab fa-pinterest-p', 'Pin on Pinterest', 'pinterest'),
+        (f'https://api.whatsapp.com/send?text={t}%20{u}', 'fab fa-whatsapp', 'Share via WhatsApp', 'whatsapp'),
+    ]
+    items = '\n'.join(
+        f'    <a class="ff-share-btn ff-share-{key}" href="{href}" target="_blank" rel="noopener noreferrer" aria-label="{label}" title="{label}"><i class="{icon}" aria-hidden="true"></i></a>'
+        for href, icon, label, key in links)
+    return f'''<aside class="ff-share-rail" aria-label="Share this article">
+  <span class="ff-share-label" aria-hidden="true">Share</span>
+{items}
+    <button type="button" class="ff-share-btn ff-copy-link" data-url="{html.escape(canonical_url, quote=True)}" aria-label="Copy article link" title="Copy link"><i class="fal fa-link" aria-hidden="true"></i><i class="fal fa-check" aria-hidden="true"></i></button>
+</aside>'''
+
 # 15. CTA Banner
 def render_cta_banner(eyebrow, title, description, button_text="Get Started", button_url="/blogs/"):
     return f'''<section class="falcon-cta" aria-label="Call to action">

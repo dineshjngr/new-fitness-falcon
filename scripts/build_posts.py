@@ -434,6 +434,7 @@ def render_all_posts():
         rendered = rendered.replace('{{AUTHOR_INITIAL}}', html.escape(post.get('author_initial') or post['author'][0]))
         rendered = rendered.replace('{{TAGS_HTML}}', tags_html)
         rendered = rendered.replace('{{SOCIAL_SHARE_HTML}}', social_share_html)
+        rendered = rendered.replace('{{SHARE_RAIL_HTML}}', components.render_share_rail(post['title'], post['canonical_url'], f"https://thefitnessfalcon.com{post['featured_image']}"))
         rendered = rendered.replace('{{AUTHOR_BOX_HTML}}', author_box_html)
         rendered = rendered.replace('{{POST_PAGINATION_HTML}}', post_pagination_html)
         rendered = rendered.replace('{{RELATED_SECTION_HTML}}', related_section_html)

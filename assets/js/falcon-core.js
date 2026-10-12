@@ -481,6 +481,32 @@
       syncBreakpoint();
     }
 
+    // Share rail copy-link buttons (class-based; several per page are fine).
+    document.querySelectorAll('.ff-copy-link').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const url = btn.getAttribute('data-url') || window.location.href;
+        const done = function () {
+          btn.classList.add('is-copied');
+          btn.setAttribute('aria-label', 'Link copied');
+          setTimeout(function () {
+            btn.classList.remove('is-copied');
+            btn.setAttribute('aria-label', 'Copy article link');
+          }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(done, done);
+        } else {
+          const tmp = document.createElement('input');
+          tmp.value = url;
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand('copy');
+          document.body.removeChild(tmp);
+          done();
+        }
+      });
+    });
+
     const copyLinkBtn = document.getElementById('falconCopyLinkBtn');
     const copyTooltip = document.getElementById('falconCopyTooltip');
     if (copyLinkBtn) {

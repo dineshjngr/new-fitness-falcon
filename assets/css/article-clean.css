@@ -459,3 +459,128 @@ body:has(.ff-post) { background: var(--ff-page, #fff); }
   .ff-post .ff-post-hero figcaption,
   .ff-post .ff-post-hero .falcon-image-caption { padding: 8px 16px 0; }
 }
+
+/* ==========================================================================
+   Share rail: attached to the banner's left edge, sticky only while the
+   banner + article are on screen (it stops at the end of the article; the
+   page itself is never sticky).
+   ========================================================================== */
+.ff-share-rail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ff-share-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ff-muted);
+}
+
+.ff-share-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ff-line);
+  background: var(--ff-surface);
+  color: var(--ff-body);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+  text-decoration: none !important;
+}
+
+.ff-share-btn:hover,
+.ff-share-btn:focus-visible {
+  background: var(--ff-brand);
+  border-color: var(--ff-brand);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ff-copy-link .fa-check { display: none; }
+.ff-copy-link.is-copied { background: var(--ff-tip); border-color: var(--ff-tip); color: #fff; }
+.ff-copy-link.is-copied .fa-link { display: none; }
+.ff-copy-link.is-copied .fa-check { display: inline; }
+
+/* Below 1200px: a plain row under the banner (not sticky). */
+.ff-share-track { order: 2; }
+.ff-post .falcon-post-layout { display: flex; flex-direction: column; }
+.ff-post .falcon-post-layout .ff-post-hero { order: 1; margin-bottom: 16px; }
+.ff-post .falcon-post-layout .ff-share-track { margin: 0 auto 28px; width: 100%; max-width: var(--ff-measure); }
+.ff-post .falcon-post-layout .falcon-toc-column { order: 3; }
+.ff-post .falcon-post-layout .falcon-post-main { order: 4; width: 100%; }
+
+@media (max-width: 1199px) {
+  .ff-share-rail { flex-wrap: wrap; }
+}
+
+@media (max-width: 576px) {
+  .ff-post .falcon-post-layout .ff-share-track { padding: 0 4px; }
+}
+
+/* 1200px+: vertical rail in the gutter left of the banner. */
+@media (min-width: 1200px) {
+  .ff-post .falcon-post-layout.has-toc { display: grid; }
+
+  .ff-post .falcon-post-layout.has-toc .ff-share-track {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    justify-self: start;
+    align-self: stretch;
+    width: 44px;
+    max-width: none;
+    margin: 0 0 0 -68px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ff-post .falcon-post-layout.has-toc .ff-post-hero { margin-bottom: 40px; }
+
+  .ff-share-rail {
+    position: sticky;
+    top: 110px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ff-share-label { margin-bottom: 2px; }
+}
+
+/* Rail gets its own grid column so it can never slide off-screen. */
+@media (min-width: 1200px) {
+  .ff-post > article > .container.falcon-has-toc { max-width: 1360px; }
+
+  .ff-post .falcon-post-layout.has-toc {
+    grid-template-columns: 44px minmax(0, var(--ff-measure)) 260px;
+    gap: 0 28px;
+  }
+
+  .ff-post .falcon-post-layout.has-toc .ff-share-track {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin: 0;
+  }
+
+  .ff-post .falcon-post-layout.has-toc .ff-post-hero { grid-column: 2; grid-row: 1; }
+  .ff-post .has-toc .falcon-post-main { grid-column: 2; grid-row: 2; }
+  .ff-post .has-toc .falcon-toc-column { grid-column: 3; grid-row: 1 / span 2; margin-left: 20px; }
+}
+
+@media (max-width: 1199px) {
+  .ff-post .falcon-post-layout,
+  .ff-post .falcon-post-layout.has-toc {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ff-post .falcon-post-layout .falcon-toc-column { width: 100%; }
+}
