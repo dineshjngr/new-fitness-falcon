@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
     <link rel="stylesheet" href="/assets/css/article-toc.css" />
+    <link rel="stylesheet" href="/assets/css/article-clean.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -337,15 +338,36 @@
 </div>
 <!-- shared:header:end -->
 
-<main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container falcon-has-toc">
-        <!-- Reusable Breadcrumbs Component -->
-        <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
+<main id="main-content" class="falcon-main-layout falcon-article-layout ff-post">
+    <article itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="ff-post-header">
+            <div class="ff-post-header-inner">
+                <nav class="falcon-breadcrumb" aria-label="Breadcrumb">
   <a href="/">Home</a> <span class="separator" aria-hidden="true">/</span> <a href="/category/gym/">Gym</a> <span class="separator" aria-hidden="true">/</span> <span class="current" aria-current="page">No More Skinny Arms: A Diet Plan to Help...</span>
 </nav>
+                <a href="/category/gym/" class="category-badge">Gym</a>
+                <h1 class="falcon-article-title ff-post-title" itemprop="headline">No More Skinny Arms: A Diet Plan to Help You Gain Muscle</h1>
+                <p class="ff-post-dek" itemprop="description">When it comes to building muscle mass, diet plays a crucial role. However, for skinny guys, gaining muscle can be a real challenge. But fear not, because with t...</p>
+                <div class="falcon-post-meta ff-post-meta">
+                    <span class="ff-avatar" aria-hidden="true">D</span>
+                    <span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+  <i class="fal fa-user"></i> By <a href="/author/dinesh-jeengar/" itemprop="url"><span itemprop="name">Dinesh Jeengar</span></a>
+</span>
+                    <span><i class="fal fa-calendar-alt"></i> <time datetime="2023-11-21T10:39:43+00:00" itemprop="datePublished">November 21, 2023</time></span>
+<span class="falcon-meta-updated"><i class="fal fa-sync-alt"></i> Updated:&nbsp;<time datetime="2026-10-06T00:00:00+00:00" itemprop="dateModified">October 6, 2026</time></span>
+                    <span class="falcon-meta-read"><i class="fal fa-clock"></i> 16 min read</span>
+                </div>
+            </div>
+            <div class="ff-post-hero">
+                <figure class="falcon-featured-image-wrapper">
+  <img src="/assets/images/Untitled-design-13.jpg" alt="Skinny Arms: A Diet Plan to Help You Gain Muscle" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
+</figure>
+            </div>
+        </header>
 
-        <div class="falcon-post-layout has-toc">
-            <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
+        <div class="container falcon-has-toc">
+            <div class="falcon-post-layout has-toc">
+                <aside class="falcon-toc-column" aria-label="Article navigation"><nav class="falcon-toc" aria-labelledby="falconTocTitle">
   <div class="falcon-toc-header">
     <span class="falcon-toc-title" id="falconTocTitle">Table of Contents</span>
     <button type="button" class="falcon-toc-toggle" id="falconTocToggle" aria-expanded="true" aria-controls="falconTocList" hidden>Hide contents</button>
@@ -376,32 +398,9 @@
 <li><a href="#conclusion">Conclusion</a></li>
   </ol>
 </nav></aside>
-            <!-- Main Article Column -->
-            <div class="falcon-post-main">
-                <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
-                    <!-- Reusable Category Badge -->
-                    <a href="/category/gym/" class="category-badge">Gym</a>
-
-                    <!-- Post Title / H1 -->
-                    <h1 class="falcon-article-title" itemprop="headline">No More Skinny Arms: A Diet Plan to Help You Gain Muscle</h1>
-
-                    <!-- Reusable Article Meta Row -->
-                    <div class="falcon-post-meta">
-                        <span class="meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-  <i class="fal fa-user"></i> By <a href="/author/dinesh-jeengar/" itemprop="url"><span itemprop="name">Dinesh Jeengar</span></a>
-</span>
-                        <span><i class="fal fa-calendar-alt"></i> <time datetime="2023-11-21T10:39:43+00:00" itemprop="datePublished">November 21, 2023</time></span>
-<span class="falcon-meta-updated"><i class="fal fa-sync-alt"></i> Updated: <time datetime="2026-10-06T00:00:00+00:00" itemprop="dateModified">October 6, 2026</time></span>
-                        <span class="falcon-meta-read"><i class="fal fa-clock"></i> 16 min read</span>
-                    </div>
-
-                    <!-- Reusable Featured Image -->
-                    <figure class="falcon-featured-image-wrapper">
-  <img src="/assets/images/Untitled-design-13.jpg" alt="Skinny Arms: A Diet Plan to Help You Gain Muscle" class="falcon-featured-image" loading="eager" fetchpriority="high" itemprop="image" />
-</figure>
-
-                    <!-- Article Content Body -->
-                    <div class="entry-content" itemprop="articleBody">
+                <div class="falcon-post-main">
+                    <div class="falcon-article-box ff-post-body">
+                        <div class="entry-content" itemprop="articleBody">
 When it comes to building muscle mass, diet plays a crucial role. However, for skinny guys, gaining muscle can be a real challenge. But fear not, because with the right diet plan, you can overcome these challenges and achieve your desired physique.
 <h3 id="heading-1-importance-of-diet-in-gaining-muscle-mass" >Importance of Diet in Gaining Muscle Mass</h3>
 Diet is often overlooked when it comes to building muscle, but it is just as important as <strong><a href="/blogs/sitting-still-killing-you-5-exercises-to-save-your-day/" target="_blank" rel="noopener">exercise</a></strong>. Your body needs the right nutrients to repair and build muscle tissue. Without proper nutrition, all your hard work in the gym will go to waste.
@@ -588,20 +587,18 @@ A well-designed diet plan is essential for skinny guys who want to build muscle 
 By following these guidelines and staying consistent with your diet plan, you can make progress towards building a stronger and more muscular physique over time. Remember that patience and perseverance are key on this journey.
 
 <em>Disclaimer: It's always recommended to consult with a healthcare professional or registered dietitian before making any significant changes to your diet or starting a new supplement regimen.</em>
-                    </div>
+                        </div>
 
-                    <!-- Reusable Tags List -->
-                    <div class="falcon-tags-list"><span class="falcon-tags-label"><i class="fal fa-tags"></i> Tags:</span> <span class="falcon-tag-badge">#diet plan</span> <span class="falcon-tag-badge">#Health</span> <span class="falcon-tag-badge">#Weight Gain</span></div>
-
-                    <!-- Reusable Social Sharing Toolbar -->
-                    <div class="falcon-social-share" aria-label="Share this article">
+                        <footer class="ff-post-footer">
+                            <div class="falcon-tags-list"><span class="falcon-tags-label"><i class="fal fa-tags"></i> Tags:</span> <span class="falcon-tag-badge">#diet plan</span> <span class="falcon-tag-badge">#Health</span> <span class="falcon-tag-badge">#Weight Gain</span></div>
+                            <div class="falcon-social-share" aria-label="Share this article">
   <div class="falcon-social-share-title">
     <i class="fal fa-share-alt"></i>
     <span>Share this article:</span>
   </div>
   <div class="falcon-social-buttons">
     <a href="https://twitter.com/intent/tweet?text=No%20More%20Skinny%20Arms%3A%20A%20Diet%20Plan%20to%20Help%20You%20Gain%20Muscle&url=https%3A//thefitnessfalcon.com/blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-x" aria-label="Share on X (Twitter)">
-      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-twitter"></i>
     </a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thefitnessfalcon.com/blogs/no-more-skinny-arms-a-diet-plan-to-help-you-gain-muscle/" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-facebook" aria-label="Share on Facebook">
       <i class="fab fa-facebook-f"></i>
@@ -621,9 +618,7 @@ By following these guidelines and staying consistent with your diet plan, you ca
     </button>
   </div>
 </div>
-
-                    <!-- Reusable Author Box -->
-                    <div class="falcon-author-box">
+                            <div class="falcon-author-box">
   <div class="falcon-author-avatar" style="background: linear-gradient(135deg, #5541f8 0%, #3b82f6 100%);">
     D
   </div>
@@ -634,10 +629,8 @@ By following these guidelines and staying consistent with your diet plan, you ca
     <p class="falcon-author-bio">Dinesh Jeengar owns and publishes The Fitness Falcon. Articles share general information about fitness and everyday wellness; no medical qualification or clinical review is implied by this byline.</p>
   </div>
 </div>
-                    <p class="falcon-editorial-note">Read our <a href="/pages/editorial-policy/">editorial and corrections policy</a>, or <a href="/pages/contact-us/">report an error in this article</a>.</p>
-
-                    <!-- Reusable Post Pagination: Previous / Next Articles -->
-                    <nav class="falcon-post-pagination" aria-label="Article navigation">
+                            <p class="falcon-editorial-note">Read our <a href="/pages/editorial-policy/">editorial and corrections policy</a>, or <a href="/pages/contact-us/">report an error in this article</a>.</p>
+                            <nav class="falcon-post-pagination" aria-label="Article navigation">
   <a href="/blogs/home-remedies-for-glowing-skin-pamper-your-face-naturally/" class="falcon-pagination-item falcon-pagination-prev">
   <span class="pagination-label"><i class="fal fa-arrow-left"></i> Previous Post</span>
   <span class="pagination-title">Home Remedies for Glowing Skin: Pamper Your Face Naturally</span>
@@ -647,10 +640,15 @@ By following these guidelines and staying consistent with your diet plan, you ca
   <span class="pagination-title">Expert Tips and Techniques to Enhance Sports Performance</span>
 </a>
 </nav>
-                </article>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 
-                <!-- Reusable Related Articles Section -->
-                <section class="falcon-related-section" aria-label="Related articles">
+    <div class="container ff-post-related">
+        <section class="falcon-related-section" aria-label="Related articles">
   <h3 class="falcon-section-heading">Related Articles</h3>
   <div class="row">
     <div class="col-md-4 mb-4">
@@ -698,105 +696,6 @@ By following these guidelines and staying consistent with your diet plan, you ca
 </div>
   </div>
 </section>
-            </div>
-
-            <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="falcon-post-widgets">
-                <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
-                    <!-- Recent Articles Widget -->
-                    <div class="falcon-sidebar-widget">
-                        <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
-                                <div class="falcon-recent-item">
-            <a href="/blogs/samsung-galaxy-watch-9-review-fitness/" class="falcon-recent-thumb" aria-label="Samsung Galaxy Watch 9 Review: Is It Worth It for Fitness, Running and Sleep?">
-                <img src="/assets/images/samsung-galaxy-watch-9-review-fitness.jpg" alt="Samsung Galaxy Watch 9 Review: Is It Worth It for Fitness, Running and Sleep?" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/samsung-galaxy-watch-9-review-fitness/" class="falcon-recent-title">Samsung Galaxy Watch 9 Review: Is It Worth It for Fitness, Running and Sleep?</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 12, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/indoor-workouts-bad-air-quality-days/" class="falcon-recent-thumb" aria-label="9 Indoor Workouts for Bad Air Quality Days (and When to Move Exercise Inside)">
-                <img src="/assets/images/indoor-workouts-bad-air-quality-days.jpg" alt="9 Indoor Workouts for Bad Air Quality Days (and When to Move Exercise Inside)" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/indoor-workouts-bad-air-quality-days/" class="falcon-recent-title">9 Indoor Workouts for Bad Air Quality Days (and When to Move Exercise Inside)</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 12, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/physical-activity-guidelines-2027-steps-strength-update/" class="falcon-recent-thumb" aria-label="HHS Is Writing Its First Step-Count Guidance: What the 2027 Update Means for You">
-                <img src="/assets/images/physical-activity-guidelines-2027-steps-strength-update.jpg" alt="HHS Is Writing Its First Step-Count Guidance: What the 2027 Update Means for You" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/physical-activity-guidelines-2027-steps-strength-update/" class="falcon-recent-title">HHS Is Writing Its First Step-Count Guidance: What the 2027 Update Means for You</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 12, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/healthy-diwali-sweets-festive-fitness-tips/" class="falcon-recent-thumb" aria-label="Healthy Diwali 2026: Enjoy Festive Sweets Without Derailing Fitness">
-                <img src="/assets/images/healthy-diwali-sweets-festive-fitness-tips.jpg" alt="Healthy Diwali 2026: Enjoy Festive Sweets Without Derailing Fitness" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/healthy-diwali-sweets-festive-fitness-tips/" class="falcon-recent-title">Healthy Diwali 2026: Enjoy Festive Sweets Without Derailing Fitness</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 11, 2026</span>
-            </div>
-        </div>
-        <div class="falcon-recent-item">
-            <a href="/blogs/weighted-vest-walking-benefits-beginner-plan/" class="falcon-recent-thumb" aria-label="Weighted Vest Walking: Benefits, How Heavy to Go and a 4-Week Plan">
-                <img src="/assets/images/weighted-vest-walking-benefits-beginner-plan.jpg" alt="Weighted Vest Walking: Benefits, How Heavy to Go and a 4-Week Plan" loading="lazy" />
-            </a>
-            <div class="falcon-recent-content">
-                <a href="/blogs/weighted-vest-walking-benefits-beginner-plan/" class="falcon-recent-title">Weighted Vest Walking: Benefits, How Heavy to Go and a 4-Week Plan</a>
-                <span class="falcon-recent-date"><i class="fal fa-calendar-alt"></i> October 11, 2026</span>
-            </div>
-        </div>
-                    </div>
-
-                    <!-- Categories Widget -->
-                    <div class="falcon-sidebar-widget">
-                        <h3 class="falcon-sidebar-widget-title">Categories</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                                    <li class="falcon-cat-item">
-            <a href="/category/fitness/" class="falcon-cat-link">Fitness</a>
-            <span class="falcon-cat-badge">35</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/nutrition/" class="falcon-cat-link">Nutrition</a>
-            <span class="falcon-cat-badge">25</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/health/" class="falcon-cat-link">Health</a>
-            <span class="falcon-cat-badge">19</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/beauty/" class="falcon-cat-link">Beauty</a>
-            <span class="falcon-cat-badge">15</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/food-and-recipes/" class="falcon-cat-link">Food &amp; Recipes</a>
-            <span class="falcon-cat-badge">13</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/lifestyle/" class="falcon-cat-link">Lifestyle</a>
-            <span class="falcon-cat-badge">13</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/gym/" class="falcon-cat-link">Gym</a>
-            <span class="falcon-cat-badge">11</span>
-        </li>
-        <li class="falcon-cat-item">
-            <a href="/category/workout/" class="falcon-cat-link">Workout</a>
-            <span class="falcon-cat-badge">9</span>
-        </li>
-                        </ul>
-                    </div>
-
-                    <!-- Reusable Newsletter CTA Widget -->
-                    
-                </aside>
-            </div>
-        </div>
     </div>
 </main>
 

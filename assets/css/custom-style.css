@@ -2873,3 +2873,221 @@ p, li, blockquote, figcaption, a {
 [data-theme="dark"] .entry-content table caption {
   color: #94a3b8;
 }
+
+/* ==========================================================================
+   DESIGN SYSTEM (2026-10-12): one palette, one card style, article blocks
+   ========================================================================== */
+:root {
+  --ff-brand: #5541f8;
+  --ff-brand-dark: #4331d6;
+  --ff-brand-tint: #eeebff;
+  --ff-ink: #0f172a;
+  --ff-body: #334155;
+  --ff-muted: #64748b;
+  --ff-line: #e2e8f0;
+  --ff-surface: #ffffff;
+  --ff-surface-alt: #f8fafc;
+  --ff-tip: #0f766e;
+  --ff-tip-tint: #ecfdf5;
+  --ff-warn: #b45309;
+  --ff-warn-tint: #fffbeb;
+  --ff-info-tint: #f1f5ff;
+  --ff-radius: 14px;
+}
+
+[data-theme="dark"] {
+  --ff-brand: #8b7dff;
+  --ff-brand-dark: #a59bff;
+  --ff-brand-tint: #1e1b4b;
+  --ff-ink: #f1f5f9;
+  --ff-body: #cbd5e1;
+  --ff-muted: #94a3b8;
+  --ff-line: #334155;
+  --ff-surface: #111827;
+  --ff-surface-alt: #0f172a;
+  --ff-tip: #5eead4;
+  --ff-tip-tint: #042f2e;
+  --ff-warn: #fcd34d;
+  --ff-warn-tint: #2a1f05;
+  --ff-info-tint: #172036;
+}
+
+/* One category badge style everywhere (old theme used per-category colors). */
+.category-badge,
+.falcon-hero-badge,
+.falcon-side-badge,
+a.benqu-cate-badge,
+.post-card-body > a.category-badge {
+  background: var(--ff-brand) !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+a.benqu-cate-badge span { color: #fff !important; }
+
+/* One card style: same radius, border, image ratio and hover. */
+.post-card,
+.pfy-post-grid-wrap .pfy-post-item,
+.pfy-post-grid-carousel-wrap .pfy-post-item,
+.falcon-side-card {
+  border-radius: var(--ff-radius) !important;
+  border: 1px solid var(--ff-line);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.post-card:hover,
+.pfy-post-grid-wrap .pfy-post-item:hover,
+.pfy-post-grid-carousel-wrap .pfy-post-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .10);
+}
+
+.post-card .post-card-thumb img,
+.pfy-post-grid-wrap .pfy-post-thumb img,
+.pfy-post-grid-carousel-wrap .pfy-post-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  object-fit: cover;
+}
+
+.post-card-title a,
+.pfy-post-title a {
+  color: var(--ff-ink);
+}
+
+.post-card-title a:hover,
+.pfy-post-title a:hover {
+  color: var(--ff-brand);
+}
+
+/* Table of contents: brand color instead of the old green. */
+.falcon-article-layout .falcon-toc-list a:hover,
+.falcon-article-layout .falcon-toc-list a[aria-current="location"],
+[data-theme="dark"] .falcon-article-layout .falcon-toc-list a:hover,
+[data-theme="dark"] .falcon-article-layout .falcon-toc-list a[aria-current="location"] {
+  color: var(--ff-brand) !important;
+  border-left-color: var(--ff-brand) !important;
+}
+
+.entry-content a {
+  color: var(--ff-brand);
+  text-underline-offset: 3px;
+}
+
+/* Key takeaways box */
+.falcon-takeaways {
+  margin: 28px 0 32px;
+  padding: 20px 24px;
+  background: var(--ff-brand-tint);
+  border: 1px solid color-mix(in srgb, var(--ff-brand) 25%, transparent);
+  border-radius: var(--ff-radius);
+}
+
+.falcon-takeaways-title {
+  margin: 0 0 10px !important;
+  font-weight: 700;
+  font-size: 15px !important;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ff-brand) !important;
+}
+
+.falcon-takeaways ul {
+  margin: 0 !important;
+  padding-left: 20px !important;
+}
+
+.falcon-takeaways li {
+  color: var(--ff-ink);
+  margin-bottom: 6px;
+}
+
+.falcon-takeaways li:last-child { margin-bottom: 0; }
+
+/* Callouts */
+.falcon-callout {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--ff-brand);
+  background: var(--ff-info-tint);
+}
+
+.falcon-callout p { margin: 0 !important; }
+.falcon-callout--tip { border-left-color: var(--ff-tip); background: var(--ff-tip-tint); }
+.falcon-callout--warning { border-left-color: var(--ff-warn); background: var(--ff-warn-tint); }
+.falcon-callout--note { border-left-color: var(--ff-muted); background: var(--ff-surface-alt); }
+
+/* FAQ accordions built from H3 questions */
+.entry-content .falcon-faq-list {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0 32px;
+}
+
+.entry-content details.falcon-faq-item {
+  border: 1px solid var(--ff-line);
+  border-radius: 12px;
+  background: var(--ff-surface);
+  padding: 0;
+}
+
+.entry-content details.falcon-faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 48px 16px 20px;
+  position: relative;
+}
+
+.entry-content details.falcon-faq-item > summary::-webkit-details-marker { display: none; }
+
+.entry-content details.falcon-faq-item > summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ff-brand);
+}
+
+.entry-content details.falcon-faq-item[open] > summary::after { content: "−"; }
+
+.entry-content details.falcon-faq-item > summary h3 {
+  display: inline;
+  margin: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.45;
+}
+
+.entry-content details.falcon-faq-item .falcon-faq-answer {
+  padding: 0 20px 16px;
+}
+
+.entry-content details.falcon-faq-item .falcon-faq-answer > :last-child { margin-bottom: 0; }
+
+/* Updated date stands out a little */
+.falcon-meta-updated { color: var(--ff-tip); font-weight: 600; }
+
+/* Share buttons */
+.falcon-share-btn {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.falcon-editorial-note {
+  margin: 16px 0 28px !important;
+  font-size: 14px;
+  color: var(--ff-muted);
+}
+
+.falcon-editorial-note a {
+  color: var(--ff-brand);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

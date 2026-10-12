@@ -62,7 +62,7 @@ def render_date_meta(date_str, iso_date=None, modified_str=None, modified_iso=No
     date_html = f'<span><i class="fal fa-calendar-alt"></i> <time{iso_attr}>{safe_date}</time></span>'
     if modified_str and modified_str != date_str:
         mod_iso_attr = f' datetime="{modified_iso or iso_date}" itemprop="dateModified"' if (modified_iso or iso_date) else ' itemprop="dateModified"'
-        date_html += f'\n<span class="falcon-meta-updated"><i class="fal fa-sync-alt"></i> Updated: <time{mod_iso_attr}>{html.escape(modified_str)}</time></span>'
+        date_html += f'\n<span class="falcon-meta-updated"><i class="fal fa-sync-alt"></i> Updated:&nbsp;<time{mod_iso_attr}>{html.escape(modified_str)}</time></span>'
     return date_html
 
 # 5. Reading Time
@@ -324,7 +324,7 @@ def render_social_share(title, canonical_url, image_url=None):
   </div>
   <div class="falcon-social-buttons">
     <a href="https://twitter.com/intent/tweet?text={share_title}&url={share_url}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-x" aria-label="Share on X (Twitter)">
-      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-twitter"></i>
     </a>
     <a href="https://www.facebook.com/sharer/sharer.php?u={share_url}" target="_blank" rel="noopener noreferrer" class="falcon-share-btn share-facebook" aria-label="Share on Facebook">
       <i class="fab fa-facebook-f"></i>

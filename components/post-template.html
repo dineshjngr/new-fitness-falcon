@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="stylesheet" href="/assets/css/custom-style.css" />
     <link rel="stylesheet" href="/assets/css/article-toc.css" />
+    <link rel="stylesheet" href="/assets/css/article-clean.css" />
 
     <!-- Schema Structured Data -->
     <script type="application/ld+json">
@@ -75,77 +76,50 @@
 <!-- shared:header:start -->
 <!-- shared:header:end -->
 
-<main id="main-content" class="falcon-main-layout falcon-article-layout">
-    <div class="container {{TOC_CONTAINER_CLASS}}">
-        <!-- Reusable Breadcrumbs Component -->
-        {{BREADCRUMBS_HTML}}
-
-        <div class="falcon-post-layout {{TOC_LAYOUT_CLASS}}">
-            {{TABLE_OF_CONTENTS_COLUMN}}
-            <!-- Main Article Column -->
-            <div class="falcon-post-main">
-                <article class="falcon-article-box" itemscope itemtype="https://schema.org/BlogPosting">
-                    <!-- Reusable Category Badge -->
-                    {{CATEGORY_BADGE_HTML}}
-
-                    <!-- Post Title / H1 -->
-                    <h1 class="falcon-article-title" itemprop="headline">{{POST_TITLE}}</h1>
-
-                    <!-- Reusable Article Meta Row -->
-                    <div class="falcon-post-meta">
-                        {{AUTHOR_META_HTML}}
-                        {{DATE_META_HTML}}
-                        {{READING_TIME_HTML}}
-                    </div>
-
-                    <!-- Reusable Featured Image -->
-                    {{FEATURED_IMAGE_HTML}}
-
-                    <!-- Article Content Body -->
-                    <div class="entry-content" itemprop="articleBody">
-{{ENTRY_CONTENT}}
-                    </div>
-
-                    <!-- Reusable Tags List -->
-                    {{TAGS_HTML}}
-
-                    <!-- Reusable Social Sharing Toolbar -->
-                    {{SOCIAL_SHARE_HTML}}
-
-                    <!-- Reusable Author Box -->
-                    {{AUTHOR_BOX_HTML}}
-                    <p class="falcon-editorial-note">Read our <a href="/pages/editorial-policy/">editorial and corrections policy</a>, or <a href="/pages/contact-us/">report an error in this article</a>.</p>
-
-                    <!-- Reusable Post Pagination: Previous / Next Articles -->
-                    {{POST_PAGINATION_HTML}}
-                </article>
-
-                <!-- Reusable Related Articles Section -->
-                {{RELATED_SECTION_HTML}}
+<main id="main-content" class="falcon-main-layout falcon-article-layout ff-post">
+    <article itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="ff-post-header">
+            <div class="ff-post-header-inner">
+                {{BREADCRUMBS_HTML}}
+                {{CATEGORY_BADGE_HTML}}
+                <h1 class="falcon-article-title ff-post-title" itemprop="headline">{{POST_TITLE}}</h1>
+                <p class="ff-post-dek" itemprop="description">{{POST_DEK}}</p>
+                <div class="falcon-post-meta ff-post-meta">
+                    <span class="ff-avatar" aria-hidden="true">{{AUTHOR_INITIAL}}</span>
+                    {{AUTHOR_META_HTML}}
+                    {{DATE_META_HTML}}
+                    {{READING_TIME_HTML}}
+                </div>
             </div>
+            <div class="ff-post-hero">
+                {{FEATURED_IMAGE_HTML}}
+            </div>
+        </header>
 
-            <!-- Sticky Sidebar Column (4 Cols) -->
-            <div class="falcon-post-widgets">
-                <aside class="falcon-sidebar-area" aria-label="Sidebar widgets">
-                    <!-- Recent Articles Widget -->
-                    <div class="falcon-sidebar-widget">
-                        <h3 class="falcon-sidebar-widget-title">Recent Articles</h3>
-                        {{SIDEBAR_RECENT_POSTS_HTML}}
+        <div class="container {{TOC_CONTAINER_CLASS}}">
+            <div class="falcon-post-layout {{TOC_LAYOUT_CLASS}}">
+                {{TABLE_OF_CONTENTS_COLUMN}}
+                <div class="falcon-post-main">
+                    <div class="falcon-article-box ff-post-body">
+                        <div class="entry-content" itemprop="articleBody">
+{{ENTRY_CONTENT}}
+                        </div>
+
+                        <footer class="ff-post-footer">
+                            {{TAGS_HTML}}
+                            {{SOCIAL_SHARE_HTML}}
+                            {{AUTHOR_BOX_HTML}}
+                            <p class="falcon-editorial-note">Read our <a href="/pages/editorial-policy/">editorial and corrections policy</a>, or <a href="/pages/contact-us/">report an error in this article</a>.</p>
+                            {{POST_PAGINATION_HTML}}
+                        </footer>
                     </div>
-
-                    <!-- Categories Widget -->
-                    <div class="falcon-sidebar-widget">
-                        <h3 class="falcon-sidebar-widget-title">Categories</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            {{SIDEBAR_CATEGORIES_HTML}}
-                        </ul>
-                    </div>
-
-                    <!-- Reusable Newsletter CTA Widget -->
-                    {{SIDEBAR_NEWSLETTER_HTML}}
-                </aside>
+                </div>
             </div>
         </div>
+    </article>
+
+    <div class="container ff-post-related">
+        {{RELATED_SECTION_HTML}}
     </div>
 </main>
 

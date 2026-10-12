@@ -3,6 +3,12 @@
   "title": "Walking Pad Not Counting Steps? Fixes for Apple Watch and Garmin",
   "meta_title": "Walking Pad Not Counting Steps? Fixes | The Fitness Falcon",
   "description": "Watch missing steps while you type on a walking pad? Check wrist movement, Apple Health settings, Garmin limits, and practical ways to log your walks.",
+  "key_takeaways": [
+    "If your watch counts steps outdoors but not on a walking pad, the likely cause is limited wrist movement while typing or resting your hands.",
+    "Starting an Indoor Walk or treadmill workout can record the session, but it does not guarantee every step will be counted.",
+    "Run a short comparison walk with natural arm swing to separate a movement-detection problem from a settings or syncing issue.",
+    "When steps are unreliable, log walking minutes instead, and avoid wrist-waving or ankle-wearing workarounds."
+  ],
   "category": "Wearables & Fitness Technology",
   "category_url": "/category/wearables-fitness-technology/",
   "tags": [

@@ -107,10 +107,11 @@ def generate_home_latest():
     updated=re.sub(r'\s*<li><i class="far fa-comments"></i>\s*\d+ Comments\s*</li>','',updated)
     updated=re.sub(r'\s*<span><i class="far fa-(?:comments|eye)"></i> \d+ (?:Comments|Views)</span>','',updated)
     # Newsletter widget has no delivery integration; hide it until one is connected
-    updated=remove_div_containing(updated,'elementor-element-9f16dba')
-    # The second "Trending Stories" heading labels the social follow widget
-    updated=re.sub(r'(<div class="benqu-section-title-wrap text-left">\s*<h2>)Trending Stories(</h2>\s*<span></span>\s*</div>\s*</div>\s*</div>\s*<div[^>]*benqu-social)',
-                   r'\1Follow Us\2',updated,flags=re.S)
+    updated=remove_div_containing(updated,'data-id="9f16dba"')
+    # Homepage cleanup: social counter (+ its title), Instagram strip and two
+    # dated 2024 promo banners. Header and footer already carry social links.
+    for widget in ('227ee9d','a2d460d','8e54b28','cf2d18b','b32c888'):
+        updated=remove_div_containing(updated,f'data-id="{widget}"')
 
     # Stylesheet was linked twice by the original migration
     dup='<link rel="stylesheet" href="/assets/css/homepage.css">\n'

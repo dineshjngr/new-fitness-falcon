@@ -124,6 +124,61 @@ def generate_schema(post):
         article['citation'] = post['sources']
     return json.dumps(schema, indent=4, ensure_ascii=False)
 
+
+CALLOUT_LABELS = {
+    'note': 'note', 'tip': 'tip', 'important': 'warning', 'warning': 'warning',
+    'safety': 'warning', 'safety note': 'warning', 'medical note': 'warning',
+    'disclaimer': 'info', 'how this review was made': 'info',
+    'how we researched this': 'info', 'how this guide was researched': 'info',
+    'bottom line': 'tip', 'the bottom line': 'tip',
+    'pro tip': 'tip', 'tips': 'tip', 'caution': 'warning', 'warning signs': 'warning',
+    'evidence and limitations': 'info', 'myth': 'note', 'fact': 'tip', 'truth': 'tip',
+}
+
+
+def render_key_takeaways(items):
+    if not items:
+        return ''
+    lis = '\n'.join(f'    <li>{html.escape(t)}</li>' for t in items)
+    return f'''<aside class="falcon-takeaways" aria-label="Key takeaways">
+  <p class="falcon-takeaways-title"><i class="fal fa-bolt" aria-hidden="true"></i> Key takeaways</p>
+  <ul>
+{lis}
+  </ul>
+</aside>
+'''
+
+
+def enhance_article_html(content):
+    """Presentational upgrades applied at build time; article text is unchanged."""
+    # Callouts: paragraphs that open with a bold label such as "Note:".
+    def callout(m):
+        label = re.sub(r'<[^>]+>', '', m.group(2)).strip().rstrip(':').strip().lower()
+        kind = CALLOUT_LABELS.get(label)
+        if not kind:
+            return m.group(0)
+        return f'<div class="falcon-callout falcon-callout--{kind}">{m.group(0)}</div>'
+    content = re.sub(r'<p>(<strong>([^<]{2,40}?):?</strong>:?)(.*?)</p>', callout, content, flags=re.S)
+
+    # FAQ accordions: H3 questions under an FAQ H2 become <details> items.
+    faq = re.search(r'(<h2[^>]*>[^<]*(?:Frequently asked questions|FAQs?)\b[^<]*</h2>)(.*?)(?=<h2\b|$)', content, flags=re.S | re.I)
+    if faq and '<h3' in faq.group(2):
+        body = faq.group(2)
+        first = body.find('<h3')
+        intro, rest = body[:first], body[first:]
+        items = re.split(r'(?=<h3\b)', rest)
+        out = []
+        for item in items:
+            if not item.strip():
+                continue
+            qm = re.match(r'(<h3[^>]*>.*?</h3>)(.*)', item, flags=re.S)
+            if not qm:
+                out.append(item)
+                continue
+            out.append(f'<details class="falcon-faq-item"><summary>{qm.group(1)}</summary><div class="falcon-faq-answer">{qm.group(2).strip()}</div></details>\n')
+        content = content[:faq.start()] + faq.group(1) + intro + '<div class="falcon-faq-list">\n' + ''.join(out) + '</div>\n' + content[faq.end():]
+    return content
+
 def build_toc_and_content(content):
     # Demote any rogue <h1> inside the article content to <h2> to maintain single H1 hierarchy
     content = re.sub(r'<h1\b([^>]*)>(.*?)</h1>', r'<h2\1>\2</h2>', content, flags=re.IGNORECASE | re.DOTALL)
@@ -298,7 +353,14 @@ def render_all_posts():
             height=post.get('featured_image_height')
         )
         tags_html = build_tags(post.get('tags', []))
-        article_content = clean_article_html(post['content']) + build_cluster_navigation(post, posts)
+        article_body = enhance_article_html(clean_article_html(post['content']))
+        takeaways = render_key_takeaways(post.get('key_takeaways'))
+        if takeaways:
+            # After the opening answer paragraph, before the first section.
+            cut = article_body.find('</p>')
+            cut = cut + 4 if 0 <= cut < article_body.find('<h2') else 0
+            article_body = article_body[:cut] + '\n' + takeaways + article_body[cut:]
+        article_content = article_body + build_cluster_navigation(post, posts)
         toc_html, entry_content = build_toc_and_content(article_content)
         social_share_html = components.render_social_share(
             post['title'],
@@ -368,6 +430,8 @@ def render_all_posts():
         toc_column = f'<aside class="falcon-toc-column" aria-label="Article navigation">{toc_html}</aside>' if toc_html else ''
         rendered = rendered.replace('{{TABLE_OF_CONTENTS_COLUMN}}', toc_column)
         rendered = rendered.replace('{{ENTRY_CONTENT}}', entry_content)
+        rendered = rendered.replace('{{POST_DEK}}', html.escape(post.get('description', '')))
+        rendered = rendered.replace('{{AUTHOR_INITIAL}}', html.escape(post.get('author_initial') or post['author'][0]))
         rendered = rendered.replace('{{TAGS_HTML}}', tags_html)
         rendered = rendered.replace('{{SOCIAL_SHARE_HTML}}', social_share_html)
         rendered = rendered.replace('{{AUTHOR_BOX_HTML}}', author_box_html)
