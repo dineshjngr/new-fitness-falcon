@@ -75,49 +75,106 @@ def hero_html(posts):
     </div>
 </section>'''
 
+ESSENTIAL_GUIDES = [
+    'how-much-water-should-you-really-drink-each-day',
+    'what-is-hiit-high-intensity-interval-training-types-benefits',
+    'intermittent-fasting-and-fat-loss',
+    'running-for-mental-health-stress-anxiety-and-mood-benefits',
+    '10-effective-tips-for-managing-stress',
+    'aging-well-10-secrets-to-a-vibrant-life',
+]
+
+CATEGORY_TILES = [
+    ('Fitness', 'fitness', 'Fitness.png'), ('Nutrition', 'nutrition', 'Nutrition.png'),
+    ('Health', 'health', 'Health.png'), ('Gym', 'gym', 'Gym.png'),
+    ('Food &amp; Recipes', 'food-and-recipes', 'Food-Recipes.png'), ('Cycling', 'cycling', 'Cycling.png'),
+    ('Skincare', 'skincare', 'Skincare.png'), ('Lifestyle', 'lifestyle', 'Lifestyle.png'),
+]
+
+
+def section(title, link, link_text, body, cls=''):
+    more = f'<a class="ff-home-more" href="{link}">{link_text} <span aria-hidden="true">&rarr;</span></a>' if link else ''
+    return f'''<section class="ff-home-section {cls}">
+  <div class="container">
+    <div class="ff-home-head"><h2>{title}</h2>{more}</div>
+{body}
+  </div>
+</section>'''
+
+
+def card_grid(posts, cols='col-md-6 col-lg-4 mb-4'):
+    from scripts import components
+    return '<div class="row">' + '\n'.join(components.render_article_card(p, col_class=cols) for p in posts) + '</div>'
+
+
+def home_main(posts):
+    by_slug = {p['slug']: p for p in posts}
+    lead, side = posts[0], posts[1:5]
+    used = {p['slug'] for p in posts[:5]}
+    latest = [p for p in posts[5:] if p['slug'] not in used][:6]
+    used |= {p['slug'] for p in latest}
+
+    def in_cat(urls, n):
+        out = [p for p in posts if p.get('category_url') in urls and p['slug'] not in used][:n]
+        used.update(p['slug'] for p in out)
+        return out
+
+    side_items = '\n'.join(f'''      <a class="ff-lead-item" href="{url(p)}">
+        <img src="{esc(p['featured_image'])}" alt="{esc(p.get('featured_image_alt', p['title']))}" width="160" height="90" loading="lazy">
+        <span class="ff-lead-item-text"><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-lead-item-title">{html.escape(p['title'])}</span><span class="ff-lead-item-meta">{esc(p['published_date'])} &middot; {p.get('read_time', 5)} min read</span></span>
+      </a>''' for p in side)
+    hero = f'''<section class="ff-home-hero">
+  <div class="container">
+    <h1 class="falcon-visually-hidden">The Fitness Falcon: Fitness, Nutrition and Wellness Guides</h1>
+    <div class="ff-lead">
+      <a class="ff-lead-main" href="{url(lead)}">
+        <img src="{esc(lead['featured_image'])}" alt="{esc(lead.get('featured_image_alt', lead['title']))}" width="1200" height="675" fetchpriority="high">
+        <span class="ff-lead-main-text">
+          <span class="ff-kicker">{esc(lead['category'])}</span>
+          <span class="ff-lead-title">{html.escape(lead['title'])}</span>
+          <span class="ff-lead-dek">{esc(lead.get('description', ''))}</span>
+          <span class="ff-lead-meta">{esc(lead['author'])} &middot; {esc(lead['published_date'])} &middot; {lead.get('read_time', 5)} min read</span>
+        </span>
+      </a>
+      <div class="ff-lead-side">
+        <p class="ff-lead-side-title">Latest</p>
+{side_items}
+      </div>
+    </div>
+  </div>
+</section>'''
+
+    tiles = '\n'.join(f'''      <a class="ff-topic" href="/category/{slug}/"><img src="/assets/images/{img}" alt="" loading="lazy"><span>{name}</span></a>''' for name, slug, img in CATEGORY_TILES)
+    topics = section('Browse by topic', '/blogs/', 'All articles', f'    <div class="ff-topics">\n{tiles}\n    </div>', 'ff-home-topics')
+
+    guides = [by_slug[s] for s in ESSENTIAL_GUIDES if s in by_slug and s not in used][:6]
+    used.update(p['slug'] for p in guides)
+    fitness = in_cat({'/category/fitness/', '/category/workout/', '/category/gym/'}, 3)
+    nutrition = in_cat({'/category/nutrition/', '/category/food-and-recipes/', '/category/recipes/'}, 3)
+    tech = in_cat({'/category/wearables-fitness-technology/'}, 3)
+
+    parts = [hero,
+             section('Latest articles', '/blogs/', 'View all', card_grid(latest)),
+             topics,
+             section('Essential guides', '/blogs/', 'Browse the library', card_grid(guides), 'ff-home-alt'),
+             section('Fitness &amp; workouts', '/category/fitness/', 'More fitness', card_grid(fitness)),
+             section('Nutrition &amp; recipes', '/category/nutrition/', 'More nutrition', card_grid(nutrition), 'ff-home-alt'),
+             section('Wearables &amp; tech', '/category/wearables-fitness-technology/', 'More wearables', card_grid(tech))]
+    return '<main id="main-content" class="falcon-main-layout home-main ff-home">\n' + '\n\n'.join(parts) + '\n</main>'
+
+
 def generate_home_latest():
     posts=load_posts()
     path=ROOT/'index.html';source=path.read_text()
-    updated=source
-
-    # Hero + side cards
-    updated,n=re.subn(r'<section class="elementor-section elementor-top-section falcon-hero-section.*?</section>',
-                      lambda m:hero_html(posts),updated,count=1,flags=re.S)
-    if n!=1:raise ValueError('Homepage hero section not found')
-
-    # Latest tab
-    cards=[]
-    for p in posts[:4]:
-        cards.append(f'''                <div class="pfy-post-item pfy-scale">
-                    <div class="pfy-post-thumb">
-                        <a href="{url(p)}"><img width="72" height="72" loading="lazy" src="{esc(p['featured_image'])}" alt="{esc(p.get('featured_image_alt',p['title']))}" /></a>
-                    </div>
-                    <div class="pfy-post-content">
-                        <h4 class="pfy-post-title"><a href="{url(p)}">{html.escape(p['title'])}</a></h4>
-                    </div>
-                </div>''')
-    pattern=r'(<!-- Tab 1: Latest -->.*?<div class="pfy-post-grid-wrap grid-style-tb">).*?(\n            </div>\n        </div>\n        <!-- Tab 2: Popular -->)'
-    updated,n=re.subn(pattern,lambda m:m[1]+'\n'+'\n'.join(cards)+m[2],updated,count=1,flags=re.S)
-    if n!=1:raise ValueError('Homepage Latest section not found')
-
-    # Legacy WordPress leftovers: bogus ez-toc navigation schema and Elementor generator tag
+    updated=re.sub(r'<main id="main-content".*?</main>',lambda m:home_main(posts),source,count=1,flags=re.S)
+    # Legacy WordPress leftovers in <head>
     updated=re.sub(r'<script type="application/ld\+json" class="ez-toc-schema-markup-output">.*?</script>','',updated,flags=re.S)
     updated=re.sub(r'<meta name="generator" content="Elementor[^"]*">','',updated)
-    # Fake engagement counters (no comment system or view tracking exists)
-    updated=re.sub(r'\s*<li><i class="far fa-comments"></i>\s*\d+ Comments\s*</li>','',updated)
-    updated=re.sub(r'\s*<span><i class="far fa-(?:comments|eye)"></i> \d+ (?:Comments|Views)</span>','',updated)
-    # Newsletter widget has no delivery integration; hide it until one is connected
-    updated=remove_div_containing(updated,'data-id="9f16dba"')
-    # Homepage cleanup: social counter (+ its title), Instagram strip and two
-    # dated 2024 promo banners. Header and footer already carry social links.
-    for widget in ('227ee9d','a2d460d','8e54b28','cf2d18b','b32c888'):
-        updated=remove_div_containing(updated,f'data-id="{widget}"')
-
-    # Stylesheet was linked twice by the original migration
     dup='<link rel="stylesheet" href="/assets/css/homepage.css">\n'
     while updated.count(dup)>1:
         i=updated.rfind(dup);updated=updated[:i]+updated[i+len(dup):]
-
+    if '/assets/css/home-clean.css' not in updated:
+        updated=updated.replace('</head>','<link rel="stylesheet" href="/assets/css/home-clean.css">\n</head>',1)
     if updated!=source:path.write_text(updated)
 
     # Header ticker: newest four posts
