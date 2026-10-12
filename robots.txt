@@ -5,4 +5,8 @@ Disallow: /search/
 Disallow: /404.html
 
 # Archive noindex directives are in HTML so crawlers can read them.
+# Legacy WordPress URLs are not blocked here: they 301-redirect (or return
+# 410) so search engines can see the new location or the removal.
+
 Sitemap: https://thefitnessfalcon.com/sitemap.xml
+Sitemap: https://thefitnessfalcon.com/sitemap_index.xml

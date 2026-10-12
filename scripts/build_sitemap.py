@@ -7,18 +7,40 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = 'https://thefitnessfalcon.com'
 
-def sitemap_xml(entries):
-    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+def sitemap_xml(entries, images=None):
+    images = images or {}
+    ns = ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' if images else ''
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"{ns}>']
     for url, modified in entries:
-        lines.append('  <url><loc>' + escape(url) + '</loc>' + ('<lastmod>' + escape(modified) + '</lastmod>' if modified else '') + '</url>')
+        image = images.get(url)
+        lines.append('  <url><loc>' + escape(url) + '</loc>'
+                     + ('<lastmod>' + escape(modified) + '</lastmod>' if modified else '')
+                     + (f'<image:image><image:loc>{escape(image)}</image:loc></image:image>' if image else '')
+                     + '</url>')
     lines.append('</urlset>')
     return '\n'.join(lines) + '\n'
 
 def generate_sitemap_and_robots():
     dates = {}
+    images = {}
+    newest_by_category = {}
+    newest = ''
     for path in (ROOT / 'content/posts').glob('*.json'):
         post = json.loads(path.read_text())
-        dates[BASE_URL + '/blogs/' + post['slug'] + '/'] = post.get('modified_time') or post.get('modified_iso') or post.get('published_iso')
+        url = BASE_URL + '/blogs/' + post['slug'] + '/'
+        modified = post.get('modified_time') or post.get('modified_iso') or post.get('published_iso')
+        dates[url] = modified
+        if post.get('featured_image'):
+            images[url] = BASE_URL + post['featured_image']
+        cat_url = BASE_URL + post.get('category_url', '')
+        if modified and modified > newest_by_category.get(cat_url, ''):
+            newest_by_category[cat_url] = modified
+        if modified and modified > newest:
+            newest = modified
+    # Listing pages change whenever a post in them is added or updated.
+    listing_dates = dict(newest_by_category)
+    for listing in ('/', '/blogs/', '/author/dinesh-jeengar/', '/author/the-fitness-falcon/'):
+        listing_dates[BASE_URL + listing] = newest
     pages = [ROOT / 'index.html']
     for directory in ('blogs', 'category', 'author', 'pages'):
         pages.extend((ROOT / directory).rglob('index.html'))
@@ -31,16 +53,16 @@ def generate_sitemap_and_robots():
         url = BASE_URL + '/' + path.relative_to(ROOT).as_posix().removesuffix('index.html')
         if not canonical or canonical[1] != url:
             raise ValueError(f'{path}: sitemap requires a matching self-canonical URL')
-        entries[url] = dates.get(url)
+        entries[url] = dates.get(url) or listing_dates.get(url)
     all_entries = sorted(entries.items())
-    (ROOT / 'sitemap.xml').write_text(sitemap_xml(all_entries))
+    (ROOT / 'sitemap.xml').write_text(sitemap_xml(all_entries, images))
     sections = {
         'post-sitemap.xml': [(u, d) for u, d in all_entries if u in dates],
         'category-sitemap.xml': [(u, d) for u, d in all_entries if '/category/' in u],
         'page-sitemap.xml': [(u, d) for u, d in all_entries if u not in dates and '/category/' not in u],
     }
     for name, section in sections.items():
-        (ROOT / name).write_text(sitemap_xml(section))
+        (ROOT / name).write_text(sitemap_xml(section, images if name == 'post-sitemap.xml' else None))
     index = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     index.extend(f'  <sitemap><loc>{BASE_URL}/{name}</loc></sitemap>' for name in sections)
     index.append('</sitemapindex>')
@@ -52,7 +74,11 @@ Disallow: /search/
 Disallow: /404.html
 
 # Archive noindex directives are in HTML so crawlers can read them.
+# Legacy WordPress URLs are not blocked here: they 301-redirect (or return
+# 410) so search engines can see the new location or the removal.
+
 Sitemap: {BASE_URL}/sitemap.xml
+Sitemap: {BASE_URL}/sitemap_index.xml
 ''')
     print(f'Generated sitemap.xml with {len(all_entries)} indexable URLs and 3 compatible section sitemaps.')
 
