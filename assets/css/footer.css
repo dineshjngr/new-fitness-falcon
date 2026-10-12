@@ -389,3 +389,22 @@
     transition: none !important;
   }
 }
+
+/* Mobile tap targets: text links in lists, breadcrumbs and meta rows get at
+   least 24px of height (2026-10-12 review). */
+@media (max-width: 768px) {
+  .falcon-breadcrumb a,
+  .falcon-post-meta a,
+  .meta-author a,
+  .falcon-toc-list a,
+  .pfy-post-gd-meta a,
+  main li > a,
+  footer li > a,
+  .falcon-footer-bottom-links a,
+  .falcon-footer a {
+    display: inline-block;
+    min-height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}

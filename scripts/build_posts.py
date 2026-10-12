@@ -252,8 +252,8 @@ def render_all_posts():
         c = p['category']
         cat_counts[c] = cat_counts.get(c, 0) + 1
         cat_slug_map[c] = p['category_url'].strip('/').split('/')[-1]
-    sorted_cats = sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)[:8]
-    sidebar_cats_data = [(c, cat_slug_map[c], cnt) for c, cnt in sorted_cats]
+    from scripts.build_archives import category_filter_data_for
+    sidebar_cats_data = category_filter_data_for(posts)[:8]
     sidebar_categories_html = build_categories_widget(sidebar_cats_data)
     sidebar_newsletter_html = components.render_newsletter_block()
 

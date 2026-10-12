@@ -2791,3 +2791,52 @@ p, li, blockquote, figcaption, a {
     padding: 0 12px !important;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Layout fixes (2026-10-12 review)
+   -------------------------------------------------------------------------- */
+/* The 44px article padding above is declared after the 768px override, so
+   phones never got the smaller padding. */
+@media (max-width: 768px) {
+  .falcon-article-box {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .falcon-article-box {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  /* Tables with three or fewer columns fit a phone; only wider ones scroll. */
+  .falcon-table-wrapper table:not(:has(tr > :nth-child(4))) {
+    min-width: 0;
+  }
+
+  .entry-content table th,
+  .entry-content table td {
+    padding: 10px 12px;
+  }
+}
+
+/* Sidebar newsletter: stack the field and button so the input is usable. */
+.falcon-sidebar-cta .falcon-newsletter-form-box > div {
+  flex-direction: column;
+}
+
+.falcon-sidebar-cta .falcon-newsletter-form-box input[type="email"] {
+  min-width: 0;
+  width: 100%;
+}
+
+/* Card category badges: size to their label instead of stretching across
+   the card, with a comfortable tap height. */
+.post-card-body > a.category-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  min-height: 26px;
+}

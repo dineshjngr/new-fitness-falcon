@@ -163,6 +163,21 @@ def build_categories_widget(categories_counts):
         </li>''')
     return '\n'.join(items)
 
+def category_filter_data_for(posts, cat_posts_map=None):
+    """(name, slug, count) for the top 10 categories, counting the same posts
+    that each category page lists (primary category plus legacy memberships)."""
+    if cat_posts_map is None:
+        cat_posts_map = json.loads(CATEGORY_POSTS_JSON.read_text(encoding='utf-8')) if CATEGORY_POSTS_JSON.exists() else {}
+    slug_by_name = {}
+    for p in posts:
+        slug_by_name[p['category']] = p['category_url'].strip('/').split('/')[-1]
+    counts = {}
+    for name, slug in slug_by_name.items():
+        members = set(cat_posts_map.get(slug, []))
+        counts[name] = sum(1 for p in posts if p.get('category_url') == f'/category/{slug}/' or p['slug'] in members)
+    top = sorted(counts.items(), key=lambda x: x[1], reverse=True)[:10]
+    return [(name, slug_by_name[name], cnt) for name, cnt in top]
+
 def build_category_filter_bar(categories_data, active_slug=None):
     pills = []
     all_active = ' active' if active_slug is None else ''
@@ -221,8 +236,7 @@ def _render_blogs_and_categories():
         c = p['category']
         cat_counts[c] = cat_counts.get(c, 0) + 1
         cat_slug_map[c] = p['category_url'].strip('/').split('/')[-1]
-    sorted_cats = sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)[:10]
-    category_filter_data = [(c, cat_slug_map[c], cnt) for c, cnt in sorted_cats]
+    category_filter_data = category_filter_data_for(posts, cat_posts_map)
 
     recent_posts = posts[:5]
     sidebar_recent_html = build_recent_widget(recent_posts)
@@ -332,10 +346,11 @@ def _render_blogs_and_categories():
         cat_dir.mkdir(parents=True, exist_ok=True)
         cat_file = cat_dir / 'index.html'
 
-        target_slugs = cat_posts_map.get(slug, [])
-        cat_posts = [post_by_slug[s] for s in target_slugs if s in post_by_slug]
-        if not cat_posts:
-            cat_posts = [p for p in posts if p.get('category_url') == f'/category/{slug}/']
+        # Every post whose primary category matches, plus legacy WordPress
+        # cross-category memberships from the migration map; newest first.
+        member_slugs = set(cat_posts_map.get(slug, []))
+        cat_posts = [p for p in posts
+                     if p.get('category_url') == f'/category/{slug}/' or p['slug'] in member_slugs]
 
         if cat_posts:
             cards_html = '\n'.join([
@@ -709,8 +724,7 @@ def render_all_archives():
         c = p['category']
         cat_counts[c] = cat_counts.get(c, 0) + 1
         cat_slug_map[c] = p['category_url'].strip('/').split('/')[-1]
-    sorted_cats = sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)[:10]
-    category_filter_data = [(c, cat_slug_map[c], cnt) for c, cnt in sorted_cats]
+    category_filter_data = category_filter_data_for(posts)
 
     sidebar_recent_html = build_recent_widget(posts[:5])
     sidebar_categories_html = build_categories_widget(category_filter_data)

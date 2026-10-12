@@ -361,7 +361,12 @@ def render_cta_banner(eyebrow, title, description, button_text="Get Started", bu
 </section>'''
 
 # 16. Newsletter Block (Sidebar / Footer)
+NEWSLETTER_ENABLED = False
+
 def render_newsletter_block(title="Daily Fitness Digest", description="Get top health tips, workouts, and wellness guides straight to your inbox.", button_text="Subscribe Free"):
+    # No email delivery provider is connected yet; set NEWSLETTER_ENABLED once one is.
+    if not NEWSLETTER_ENABLED:
+        return ''
     return f'''<div class="falcon-newsletter-card falcon-sidebar-cta" aria-label="Newsletter subscription">
   <i class="far fa-envelope-open-text" aria-hidden="true"></i>
   <h3 class="falcon-newsletter-title">{html.escape(title)}</h3>
