@@ -684,3 +684,58 @@
 [data-theme="dark"] .ff-fresh-grid { border-top-color: #e2e8f0; }
 [data-theme="dark"] .ff-round-topic img { border-color: #0b1020; }
 .ff-trust-links { margin-top: 28px !important; }
+
+/* Use the side space: wider homepage container on large screens. */
+@media (min-width: 1200px) {
+  .ff-home .container {
+    max-width: 1600px;
+    width: calc(100% - 64px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ff-cover-main { min-height: 600px; }
+  .ff-cover-side .ff-cover-card { min-height: 290px; }
+}
+
+@media (min-width: 1700px) {
+  .ff-home .container { max-width: 1760px; }
+  .ff-mini-card { flex-basis: 300px; }
+}
+
+/* Header, top bar and footer line up with the wider homepage content. */
+@media (min-width: 1200px) {
+  body:has(.ff-home) #pfytopbar .container,
+  body:has(.ff-home) #stickyHeader .container,
+  body:has(.ff-home) .header-menu .container,
+  body:has(.ff-home) footer .container {
+    max-width: 1600px;
+    width: calc(100% - 64px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  body:has(.ff-home) #pfytopbar .container,
+  body:has(.ff-home) #stickyHeader .container,
+  body:has(.ff-home) .header-menu .container,
+  body:has(.ff-home) footer .container {
+    max-width: 1760px;
+  }
+}
+
+/* Balanced width: wide, but with comfortable side margins (overrides above). */
+@media (min-width: 1200px) {
+  .ff-home .container,
+  body:has(.ff-home) #pfytopbar .container,
+  body:has(.ff-home) #stickyHeader .container,
+  body:has(.ff-home) .header-menu .container,
+  body:has(.ff-home) footer .container {
+    max-width: 1520px !important;
+    width: calc(100% - 96px) !important;
+  }
+
+  .ff-cover-main { min-height: 560px; }
+  .ff-cover-side .ff-cover-card { min-height: 272px; }
+}
