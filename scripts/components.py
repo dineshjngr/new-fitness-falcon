@@ -135,9 +135,9 @@ def render_article_card(post, col_class="col-md-6 col-lg-4 mb-4", show_excerpt=T
       <h3 class="post-card-title"><a href="/blogs/{slug}/">{title}</a></h3>
       {excerpt_html}
       <div class="post-card-meta">
-        <span class="falcon-meta-author"><i class="fal fa-user"></i> {author}</span>
-        <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> {date}</span>
-        <span class="falcon-meta-read"><i class="fal fa-clock"></i> {read_time} min read</span>
+        <span class="falcon-meta-author">{author}</span>
+        <span class="falcon-meta-date">{date}</span>
+        <span class="falcon-meta-read">{read_time} min read</span>
       </div>
     </div>
   </article>
@@ -176,8 +176,8 @@ def render_featured_card(post):
         <span class="falcon-author-avatar-sm" style="background: {author['gradient']};">{author['initial']}</span>
         <span class="falcon-author-name-sm">By {html.escape(author_name)}</span>
       </div>
-      <span class="falcon-meta-date"><i class="fal fa-calendar-alt"></i> {date}</span>
-      <span class="falcon-meta-read"><i class="fal fa-clock"></i> {read_time} min read</span>
+      <span class="falcon-meta-date">{date}</span>
+      <span class="falcon-meta-read">{read_time} min read</span>
     </div>
     <div class="falcon-featured-action">
       <a href="/blogs/{slug}/" class="falcon-btn falcon-btn-primary falcon-btn-sm">Read Article <i class="fal fa-arrow-right"></i></a>

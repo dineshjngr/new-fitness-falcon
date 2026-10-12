@@ -47,6 +47,8 @@ def render_page(path):
         source = source.replace('</head>', f'<link rel="stylesheet" href="{prefix}assets/css/topbar.css?v={revision}">\n</head>', 1)
         core_revision = hashlib.sha256((ROOT / 'assets/js/falcon-core.js').read_bytes()).hexdigest()[:12]
         source = re.sub(r'(src=["\'][^"\']*assets/js/falcon-core\.js)(?:\?[^"\']*)?(["\'])', lambda m: m[1] + '?v=' + core_revision + m[2], source)
+        style_revision = hashlib.sha256((ROOT / 'assets/css/custom-style.css').read_bytes()).hexdigest()[:12]
+        source = re.sub(r'(href=["\'][^"\']*assets/css/custom-style\.css)(?:\?[^"\']*)?(["\'])', lambda m: m[1] + '?v=' + style_revision + m[2], source)
         # Refresh cached search data whenever article titles or URLs change.
         search_revision = hashlib.sha256((ROOT / 'assets/js/falcon-search-data.js').read_bytes()).hexdigest()[:12]
         source = re.sub(r'(src=["\'][^"\']*assets/js/falcon-search-data\.js)(?:\?[^"\']*)?(["\'])', lambda m: m[1] + '?v=' + search_revision + m[2], source)

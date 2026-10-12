@@ -809,6 +809,86 @@ main {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
+.falcon-video-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Click-to-play YouTube player (iframe swapped in by falcon-core.js) */
+.entry-content .falcon-video {
+  margin: 24px 0 36px;
+}
+
+.entry-content .falcon-video .falcon-video-wrapper {
+  position: relative;
+  margin: 0;
+  background: #0f172a;
+}
+
+.entry-content a.falcon-yt__play {
+  position: absolute;
+  inset: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.entry-content .falcon-yt__play img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.falcon-yt__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 14px;
+  background: rgba(23, 23, 23, 0.8);
+  transition: background 0.2s ease;
+}
+
+.falcon-yt__play:hover .falcon-yt__icon,
+.falcon-yt__play:focus-visible .falcon-yt__icon {
+  background: #ff0000;
+}
+
+.falcon-yt__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.entry-content .falcon-video figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+  text-align: left;
+}
+
+.entry-content .falcon-video figcaption a {
+  flex-shrink: 0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .entry-content iframe:not(.ql-video) {
   max-width: 100%;
   border-radius: 12px;
@@ -3090,4 +3170,162 @@ a.benqu-cate-badge span { color: #fff !important; }
   color: var(--ff-brand);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* ==========================================================================
+   Archive cards, clean (2026-10-12): edge-to-edge image, one text column,
+   category as a text label, single meta line, no dead space.
+   ========================================================================== */
+.falcon-card.post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 !important;
+  background: var(--ff-surface);
+  border: 1px solid var(--ff-line);
+  border-radius: 16px !important;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.falcon-card.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, .08);
+  border-color: transparent;
+}
+
+.falcon-card.post-card .falcon-card-media {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.falcon-card.post-card .post-card-thumb {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+  transition: transform .4s ease;
+}
+
+.falcon-card.post-card:hover .post-card-thumb { transform: scale(1.04); }
+
+.falcon-card.post-card .post-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 20px 20px !important;
+  gap: 8px;
+}
+
+.falcon-card.post-card .post-card-body > a.category-badge,
+.falcon-featured-body > a.category-badge {
+  background: none !important;
+  color: var(--ff-brand) !important;
+  padding: 0 !important;
+  min-height: 0;
+  border-radius: 0 !important;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  width: auto !important;
+}
+
+.falcon-card.post-card .post-card-title {
+  margin: 0 !important;
+  font-size: 19px !important;
+  line-height: 1.35 !important;
+  font-weight: 700;
+}
+
+.falcon-card.post-card .post-card-title a { color: var(--ff-ink); }
+.falcon-card.post-card .post-card-title a:hover { color: var(--ff-brand); }
+
+.falcon-card.post-card .post-card-excerpt {
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.6;
+  color: var(--ff-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.falcon-card.post-card .post-card-meta {
+  margin-top: auto !important;
+  padding-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+  font-size: 13px;
+  color: var(--ff-muted);
+  border-top: 0;
+}
+
+.falcon-card.post-card .post-card-meta > span + span::before,
+.falcon-featured-meta > span + span::before {
+  content: "·";
+  margin: 0 8px;
+  color: var(--ff-line);
+  font-weight: 700;
+}
+
+.falcon-card.post-card .post-card-meta i,
+.falcon-featured-meta > span i { display: none; }
+
+.falcon-card.post-card .falcon-meta-author { color: var(--ff-body); font-weight: 600; }
+
+/* Featured story */
+.falcon-featured-card {
+  border: 1px solid var(--ff-line) !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  background: var(--ff-surface);
+}
+
+.falcon-featured-body { gap: 12px; }
+.falcon-featured-title { font-size: clamp(24px, 2.6vw, 32px) !important; line-height: 1.2 !important; }
+.falcon-featured-excerpt { color: var(--ff-muted); }
+.falcon-featured-meta { font-size: 14px; color: var(--ff-muted); align-items: center; }
+
+.falcon-featured-badge {
+  background: rgba(15, 23, 42, .72) !important;
+  color: #fff !important;
+  backdrop-filter: blur(4px);
+}
+
+.falcon-featured-badge i { color: #fbbf24; }
+
+.falcon-featured-action { margin-top: 8px; }
+
+/* Topic chips: one scrollable row instead of wrapping */
+.falcon-filter-pills {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+  -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent);
+          mask-image: linear-gradient(90deg, #000 92%, transparent);
+}
+
+.falcon-filter-pills::-webkit-scrollbar { display: none; }
+.falcon-filter-pill { white-space: nowrap; flex: 0 0 auto; }
+
+.falcon-card.post-card .post-card-meta,
+.falcon-featured-meta {
+  justify-content: flex-start !important;
+}
+
+.falcon-card.post-card .post-card-meta > span,
+.falcon-featured-meta > span {
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -160,6 +160,28 @@ def enhance_article_html(content):
         return f'<div class="falcon-callout falcon-callout--{kind}">{m.group(0)}</div>'
     content = re.sub(r'<p>(<strong>([^<]{2,40}?):?</strong>:?)(.*?)</p>', callout, content, flags=re.S)
 
+    # WordPress [embed] shortcodes for YouTube become full-width click-to-play players.
+    # The iframe is only loaded on click (falcon-core.js), so the thumbnail shows instantly
+    # and a "Watch on YouTube" link remains for videos a browser cannot play inline.
+    # Optional title="..." supplies the accessible name and caption.
+    def youtube_embed(m):
+        attrs, url = m.group(1) or '', html.unescape(m.group(2).strip())
+        vid = re.search(r'(?:youtube\.com/(?:watch\?(?:.*&)?v=|embed/|shorts/)|youtu\.be/)([\w-]{11})', url)
+        if not vid:
+            return f'<p><a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(url)}</a></p>'
+        vid = vid.group(1)
+        title = re.search(r'title="([^"]*)"', attrs)
+        title = html.escape(html.unescape(title.group(1)), quote=True) if title else 'YouTube video'
+        watch = f'https://www.youtube.com/watch?v={vid}'
+        return (f'<figure class="falcon-video">'
+                f'<div class="falcon-video-wrapper falcon-yt" data-yt="{vid}" data-title="{title}">'
+                f'<a class="falcon-yt__play" href="{watch}" target="_blank" rel="noopener" aria-label="Play video: {title}">'
+                f'<img src="https://i.ytimg.com/vi/{vid}/maxresdefault.jpg" alt="" loading="lazy" width="1280" height="720" />'
+                '<span class="falcon-yt__icon" aria-hidden="true"></span></a></div>'
+                f'<figcaption><span>{title}</span> <a href="{watch}" target="_blank" rel="noopener">'
+                '<i class="fab fa-youtube" aria-hidden="true"></i> Watch on YouTube</a></figcaption></figure>')
+    content = re.sub(r'\[embed(\s[^\]]*)?\](.*?)\[/embed\]', youtube_embed, content, flags=re.S | re.I)
+
     # FAQ accordions: H3 questions under an FAQ H2 become <details> items.
     faq = re.search(r'(<h2[^>]*>[^<]*(?:Frequently asked questions|FAQs?)\b[^<]*</h2>)(.*?)(?=<h2\b|$)', content, flags=re.S | re.I)
     if faq and '<h3' in faq.group(2):

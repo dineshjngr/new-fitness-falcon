@@ -619,6 +619,23 @@
     }
   }
 
+  // Click-to-play YouTube: swap the thumbnail for the privacy-mode player in place.
+  document.addEventListener('click', function (e) {
+    var play = e.target.closest && e.target.closest('.falcon-yt__play');
+    if (!play) return;
+    var box = play.closest('.falcon-yt');
+    if (!box || !/^[\w-]{11}$/.test(box.dataset.yt || '')) return;
+    e.preventDefault();
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.yt + '?autoplay=1&rel=0';
+    iframe.title = box.dataset.title || 'YouTube video player';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    box.replaceChildren(iframe);
+    iframe.focus();
+  });
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initSite);
   } else {
