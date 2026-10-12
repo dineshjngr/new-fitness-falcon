@@ -806,3 +806,12 @@
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
   font-size: 17px;
 }
+
+/* Side-card badges size to their label (design-system badge colors). */
+.falcon-side-badge {
+  display: inline-block !important;
+  width: auto !important;
+  align-self: flex-start;
+  padding: 3px 10px !important;
+  font-size: 11px !important;
+}
