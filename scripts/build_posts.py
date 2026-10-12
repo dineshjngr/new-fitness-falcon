@@ -85,7 +85,9 @@ def generate_schema(post):
                     "url": "https://thefitnessfalcon.com/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://thefitnessfalcon.com/assets/images/1.svg"
+                        "url": "https://thefitnessfalcon.com/assets/images/cropped-Untitled-design-14-192x192.png",
+                        "width": 192,
+                        "height": 192
                     }
                 },
                 "articleSection": post['category'],

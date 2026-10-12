@@ -65,6 +65,7 @@ from scripts.build_redirects import generate_redirects
 from scripts.build_search import generate_search
 from scripts.build_home import generate_home_latest
 from scripts.build_feed import generate_feed
+from scripts.build_schema import generate_schema
 
 def main():
     generate_search()
@@ -74,6 +75,7 @@ def main():
     # 2. Render blog and category archives through components/archive-template.html
     render_all_archives()
     generate_home_latest()
+    generate_schema()
 
     # 3. Sync shared shell components (header and footer) into all canonical HTML pages
     pages = sorted(p for p in ROOT.rglob('*.html') if not EXCLUDED.intersection(p.relative_to(ROOT).parts))
