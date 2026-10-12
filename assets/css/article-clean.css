@@ -410,3 +410,52 @@ body:has(.ff-post) { background: var(--ff-page, #fff); }
 .ff-post-hero .falcon-image-caption {
   text-align: left;
 }
+
+/* ==========================================================================
+   Layout v3: banner on the left at the top of the article column, table of
+   contents in a right-hand column starting level with the banner.
+   ========================================================================== */
+.ff-post-header-inner { padding-bottom: 8px; }
+
+.ff-post .falcon-post-layout .ff-post-hero {
+  max-width: var(--ff-measure);
+  margin: 0 auto 40px;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .ff-post .falcon-post-layout.has-toc {
+    grid-template-columns: minmax(0, var(--ff-measure)) 260px;
+    gap: 0 48px;
+  }
+
+  .ff-post .falcon-post-layout.has-toc .ff-post-hero {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+    margin: 0 0 40px;
+  }
+
+  .ff-post .has-toc .falcon-toc-column {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .ff-post .has-toc .falcon-post-main {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .ff-post .falcon-toc-list {
+    border-left: 2px solid var(--ff-line);
+  }
+}
+
+@media (max-width: 576px) {
+  .ff-post .falcon-post-layout .ff-post-hero { margin: 0 -12px 28px; }
+}
+
+@media (max-width: 576px) {
+  .ff-post .ff-post-hero figcaption,
+  .ff-post .ff-post-hero .falcon-image-caption { padding: 8px 16px 0; }
+}
