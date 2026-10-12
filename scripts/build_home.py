@@ -139,49 +139,96 @@ def marquee_section(title, link, link_text, items, reverse=False, cls=''):
 </section>'''
 
 
+def overlay_card(p, cls, eager=False):
+    load = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    dek = f'<span class="ff-cover-dek">{esc(p.get("description", ""))}</span>' if cls == 'ff-cover-main' else ''
+    return f'''<a class="ff-cover-card {cls}" href="{url(p)}">
+  <img src="{esc(p['featured_image'])}" alt="{esc(p.get('featured_image_alt', p['title']))}" {load}>
+  <span class="ff-cover-text">
+    <span class="ff-cover-kicker">{esc(p['category'])}</span>
+    <span class="ff-cover-title">{html.escape(p['title'])}</span>
+    {dek}
+    <span class="ff-cover-meta">{esc(p['published_date'])} &middot; {p.get('read_time', 5)} min read</span>
+  </span>
+</a>'''
+
+
 def home_main(posts):
     by_slug = {p['slug']: p for p in posts}
-    lead, side = posts[0], posts[1:5]
-    used = {p['slug'] for p in posts[:5]}
-    latest = [p for p in posts[5:] if p['slug'] not in used][:6]
-    used |= {p['slug'] for p in latest}
+    used = set()
 
-    def in_cat(urls, n):
-        out = [p for p in posts if p.get('category_url') in urls and p['slug'] not in used][:n]
-        used.update(p['slug'] for p in out)
-        return out
+    def take(items):
+        used.update(p['slug'] for p in items)
+        return items
 
-    side_items = '\n'.join(f'''      <a class="ff-lead-item" href="{url(p)}">
-        <img src="{esc(p['featured_image'])}" alt="{esc(p.get('featured_image_alt', p['title']))}" width="160" height="90" loading="lazy">
-        <span class="ff-lead-item-text"><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-lead-item-title">{html.escape(p['title'])}</span><span class="ff-lead-item-meta">{esc(p['published_date'])} &middot; {p.get('read_time', 5)} min read</span></span>
-      </a>''' for p in side)
-    hero = f'''<section class="ff-home-hero">
+    # 1. Cover
+    lead, second, third = take(posts[:3])
+    cover = f'''<section class="ff-cover">
   <div class="container">
     <h1 class="falcon-visually-hidden">The Fitness Falcon: Fitness, Nutrition and Wellness Guides</h1>
-    <div class="ff-lead">
-      <a class="ff-lead-main" href="{url(lead)}">
-        <img src="{esc(lead['featured_image'])}" alt="{esc(lead.get('featured_image_alt', lead['title']))}" width="1200" height="675" fetchpriority="high">
-        <span class="ff-lead-main-text">
-          <span class="ff-kicker">{esc(lead['category'])}</span>
-          <span class="ff-lead-title">{html.escape(lead['title'])}</span>
-          <span class="ff-lead-dek">{esc(lead.get('description', ''))}</span>
-          <span class="ff-lead-meta">{esc(lead['author'])} &middot; {esc(lead['published_date'])} &middot; {lead.get('read_time', 5)} min read</span>
-        </span>
-      </a>
-      <div class="ff-lead-side">
-        <p class="ff-lead-side-title">Latest</p>
-{side_items}
+    <div class="ff-cover-grid">
+{overlay_card(lead, 'ff-cover-main', eager=True)}
+      <div class="ff-cover-side">
+{overlay_card(second, 'ff-cover-small')}
+{overlay_card(third, 'ff-cover-small')}
       </div>
     </div>
   </div>
 </section>'''
 
-    tiles = '\n'.join(f'''      <a class="ff-topic" href="/category/{slug}/"><img src="/assets/images/{img}" alt="" loading="lazy"><span>{name}</span></a>''' for name, slug, img in CATEGORY_TILES)
-    topics = section('Browse by topic', '/blogs/', 'All articles', f'    <div class="ff-topics">\n{tiles}\n    </div>', 'ff-home-topics')
+    # 2. Just published: numbered text strip
+    fresh = take([p for p in posts if p['slug'] not in used][:4])
+    fresh_items = '\n'.join(f'''      <a class="ff-fresh-item" href="{url(p)}"><span class="ff-fresh-num">{i:02d}</span><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-fresh-title">{html.escape(p['title'])}</span><span class="ff-fresh-meta">{esc(p['published_date'])}</span></a>''' for i, p in enumerate(fresh, 1))
+    just = f'''<section class="ff-fresh">
+  <div class="container">
+    <div class="ff-fresh-head"><span class="ff-dot" aria-hidden="true"></span><h2>Just published</h2><a class="ff-home-more" href="/blogs/">All articles <span aria-hidden="true">&rarr;</span></a></div>
+    <div class="ff-fresh-grid">
+{fresh_items}
+    </div>
+  </div>
+</section>'''
 
-    guides = [by_slug[s] for s in ESSENTIAL_GUIDES if s in by_slug and s not in used][:6]
-    used.update(p['slug'] for p in guides)
-    lead_slugs = {p['slug'] for p in posts[:5]}
+    # 3. Explore topics: round images
+    topics_html = '\n'.join(f'''      <a class="ff-round-topic" href="/category/{slug}/"><img src="/assets/images/{img}" alt="" loading="lazy"><span>{name}</span></a>''' for name, slug, img in CATEGORY_TILES)
+    topics = f'''<section class="ff-topics-band">
+  <div class="container">
+    <h2 class="ff-band-title">Explore topics</h2>
+    <div class="ff-round-topics">
+{topics_html}
+    </div>
+  </div>
+</section>'''
+
+    # 4. Editor's pick: newest unused post with key takeaways
+    pick = next((p for p in posts if p['slug'] not in used and p.get('key_takeaways')), None)
+    pick_html = ''
+    if pick:
+        take([pick])
+        lis = '\n'.join(f'          <li>{html.escape(t)}</li>' for t in pick['key_takeaways'][:3])
+        pick_html = f'''<section class="ff-pick">
+  <div class="container">
+    <div class="ff-pick-grid">
+      <a class="ff-pick-media" href="{url(pick)}"><img src="{esc(pick['featured_image'])}" alt="{esc(pick.get('featured_image_alt', pick['title']))}" loading="lazy"></a>
+      <div class="ff-pick-body">
+        <span class="ff-pick-label">Editor&rsquo;s pick</span>
+        <span class="ff-kicker">{esc(pick['category'])}</span>
+        <h2 class="ff-pick-title"><a href="{url(pick)}">{html.escape(pick['title'])}</a></h2>
+        <ul class="ff-pick-points">
+{lis}
+        </ul>
+        <a class="ff-pick-cta" href="{url(pick)}">Read the guide <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>'''
+
+    # 5. Essential guides: numbered two-column reading list
+    guides = take([by_slug[s] for s in ESSENTIAL_GUIDES if s in by_slug and s not in used][:6])
+    guide_items = '\n'.join(f'''      <a class="ff-guide" href="{url(p)}"><span class="ff-guide-num">{i}</span><span class="ff-guide-text"><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-guide-title">{html.escape(p['title'])}</span><span class="ff-guide-meta">{p.get('read_time', 5)} min read</span></span><img src="{esc(p['featured_image'])}" alt="" loading="lazy"></a>''' for i, p in enumerate(guides, 1))
+    guides_html = section('Essential guides', '/blogs/', 'Browse the library', f'    <div class="ff-guides">\n{guide_items}\n    </div>', 'ff-home-guides')
+
+    # Sliders
+    lead_slugs = {p['slug'] for p in posts[:3]}
 
     def row(urls, n=10):
         return [p for p in posts if p.get('category_url') in urls and p['slug'] not in lead_slugs][:n]
@@ -190,14 +237,26 @@ def home_main(posts):
     nutrition = row({'/category/nutrition/', '/category/food-and-recipes/', '/category/recipes/'})
     tech = row({'/category/wearables-fitness-technology/'})
 
-    parts = [hero,
-             section('Latest articles', '/blogs/', 'View all', card_grid(latest)),
-             topics,
-             section('Essential guides', '/blogs/', 'Browse the library', card_grid(guides), 'ff-home-alt'),
+    # 6. How we work
+    trust = '''<section class="ff-trust">
+  <div class="container">
+    <div class="ff-trust-grid">
+      <div><span class="ff-trust-icon" aria-hidden="true"><i class="fal fa-search"></i></span><h3>Researched, not guessed</h3><p>Articles are built from public health agencies, peer-reviewed studies and official specs, with sources linked in every guide.</p></div>
+      <div><span class="ff-trust-icon" aria-hidden="true"><i class="fal fa-calendar-check"></i></span><h3>Dated and updated</h3><p>Prices, product features and guidelines carry the date we checked them, and articles are revised when things change.</p></div>
+      <div><span class="ff-trust-icon" aria-hidden="true"><i class="fal fa-shield-check"></i></span><h3>Honest about limits</h3><p>We say when a review is research-based rather than hands-on, and health content is general information, not medical advice.</p></div>
+    </div>
+    <p class="ff-trust-links"><a href="/pages/editorial-policy/">Editorial policy</a> &middot; <a href="/pages/team/">Who we are</a> &middot; <a href="/pages/contact-us/">Report a correction</a></p>
+  </div>
+</section>'''
+
+    parts = [cover, just, topics,
              marquee_section('Fitness &amp; Workouts', '/category/fitness/', 'More fitness', fitness),
+             pick_html,
              marquee_section('Nutrition &amp; Recipes', '/category/nutrition/', 'More nutrition', nutrition, reverse=True, cls='ff-home-alt'),
-             marquee_section('Wearables &amp; Tech', '/category/wearables-fitness-technology/', 'More wearables', tech)]
-    return '<main id="main-content" class="falcon-main-layout home-main ff-home">\n' + '\n\n'.join(parts) + '\n</main>'
+             guides_html,
+             marquee_section('Wearables &amp; Tech', '/category/wearables-fitness-technology/', 'More wearables', tech),
+             trust]
+    return '<main id="main-content" class="falcon-main-layout home-main ff-home">\n' + '\n\n'.join(x for x in parts if x) + '\n</main>'
 
 
 def generate_home_latest():
