@@ -107,6 +107,38 @@ def card_grid(posts, cols='col-md-6 col-lg-4 mb-4'):
     return '<div class="row">' + '\n'.join(components.render_article_card(p, col_class=cols) for p in posts) + '</div>'
 
 
+def mini_card(p, hidden=False):
+    attrs = ' aria-hidden="true" tabindex="-1"' if hidden else ''
+    return f'''<a class="ff-mini-card" href="{url(p)}"{attrs}>
+  <img src="{esc(p['featured_image'])}" alt="{'' if hidden else esc(p.get('featured_image_alt', p['title']))}" width="320" height="180" loading="lazy">
+  <span class="ff-mini-body"><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-mini-title">{html.escape(p['title'])}</span><span class="ff-mini-meta">{esc(p['published_date'])} &middot; {p.get('read_time', 5)} min read</span></span>
+</a>'''
+
+
+def marquee_section(title, link, link_text, items, reverse=False, cls=''):
+    """Full-bleed auto-scrolling row. The item list is repeated so one copy is
+    wider than large screens, then duplicated for a seamless loop."""
+    if not items:
+        return ''
+    loop = list(items)
+    while len(loop) < 12:
+        loop += items
+    first = '\n'.join(mini_card(p) for p in loop[:len(items)]) + '\n' + '\n'.join(mini_card(p, True) for p in loop[len(items):])
+    copy = '\n'.join(mini_card(p, True) for p in loop)
+    direction = ' ff-marquee--reverse' if reverse else ''
+    seconds = max(40, len(loop) * 5)
+    more = f'<a class="ff-home-more" href="{link}">{link_text} <span aria-hidden="true">&rarr;</span></a>'
+    return f'''<section class="ff-home-section ff-home-marquee {cls}">
+  <div class="container"><div class="ff-home-head"><h2>{title}</h2>{more}</div></div>
+  <div class="ff-marquee{direction}" style="--ff-marquee-duration:{seconds}s">
+    <div class="ff-marquee-track">
+{first}
+{copy}
+    </div>
+  </div>
+</section>'''
+
+
 def home_main(posts):
     by_slug = {p['slug']: p for p in posts}
     lead, side = posts[0], posts[1:5]
@@ -149,17 +181,22 @@ def home_main(posts):
 
     guides = [by_slug[s] for s in ESSENTIAL_GUIDES if s in by_slug and s not in used][:6]
     used.update(p['slug'] for p in guides)
-    fitness = in_cat({'/category/fitness/', '/category/workout/', '/category/gym/'}, 3)
-    nutrition = in_cat({'/category/nutrition/', '/category/food-and-recipes/', '/category/recipes/'}, 3)
-    tech = in_cat({'/category/wearables-fitness-technology/'}, 3)
+    lead_slugs = {p['slug'] for p in posts[:5]}
+
+    def row(urls, n=10):
+        return [p for p in posts if p.get('category_url') in urls and p['slug'] not in lead_slugs][:n]
+
+    fitness = row({'/category/fitness/', '/category/workout/', '/category/gym/'})
+    nutrition = row({'/category/nutrition/', '/category/food-and-recipes/', '/category/recipes/'})
+    tech = row({'/category/wearables-fitness-technology/'})
 
     parts = [hero,
              section('Latest articles', '/blogs/', 'View all', card_grid(latest)),
              topics,
              section('Essential guides', '/blogs/', 'Browse the library', card_grid(guides), 'ff-home-alt'),
-             section('Fitness &amp; workouts', '/category/fitness/', 'More fitness', card_grid(fitness)),
-             section('Nutrition &amp; recipes', '/category/nutrition/', 'More nutrition', card_grid(nutrition), 'ff-home-alt'),
-             section('Wearables &amp; tech', '/category/wearables-fitness-technology/', 'More wearables', card_grid(tech))]
+             marquee_section('Fitness &amp; Workouts', '/category/fitness/', 'More fitness', fitness),
+             marquee_section('Nutrition &amp; Recipes', '/category/nutrition/', 'More nutrition', nutrition, reverse=True, cls='ff-home-alt'),
+             marquee_section('Wearables &amp; Tech', '/category/wearables-fitness-technology/', 'More wearables', tech)]
     return '<main id="main-content" class="falcon-main-layout home-main ff-home">\n' + '\n\n'.join(parts) + '\n</main>'
 
 

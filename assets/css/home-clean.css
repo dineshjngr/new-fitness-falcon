@@ -223,3 +223,93 @@
 .ff-home.falcon-main-layout,
 .home-main.ff-home { margin-top: 0 !important; padding-top: 0 !important; }
 .ff-home-hero { padding-top: 24px; }
+
+/* ==========================================================================
+   Edge-to-edge auto-scrolling rows (Fitness, Nutrition [reverse], Wearables)
+   ========================================================================== */
+.ff-home-marquee { padding-bottom: 40px; overflow: hidden; }
+
+.ff-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 4px 0 8px;
+}
+
+.ff-marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: ff-marquee var(--ff-marquee-duration, 60s) linear infinite;
+}
+
+.ff-marquee--reverse .ff-marquee-track { animation-direction: reverse; }
+
+.ff-marquee:hover .ff-marquee-track,
+.ff-marquee:focus-within .ff-marquee-track { animation-play-state: paused; }
+
+@keyframes ff-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 8px)); }
+}
+
+.ff-mini-card {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  background: var(--ff-surface);
+  border: 1px solid var(--ff-line);
+  border-radius: 14px;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ff-mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, .10);
+}
+
+.ff-mini-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.ff-mini-body {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px 14px;
+}
+
+.ff-mini-body .ff-kicker { font-size: 11px; }
+
+.ff-mini-title {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--ff-ink);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.7em;
+}
+
+.ff-mini-card:hover .ff-mini-title { color: var(--ff-brand); }
+
+.ff-mini-meta { font-size: 12px; color: var(--ff-muted); }
+
+@media (max-width: 576px) {
+  .ff-mini-card { flex-basis: 230px; }
+  .ff-marquee-track { gap: 12px; }
+}
+
+/* Reduced motion: no animation; a normal swipeable row without duplicates. */
+@media (prefers-reduced-motion: reduce) {
+  .ff-marquee { overflow-x: auto; scrollbar-width: thin; padding-left: 16px; }
+  .ff-marquee-track { animation: none; }
+  .ff-marquee-track > [aria-hidden="true"] { display: none; }
+}
