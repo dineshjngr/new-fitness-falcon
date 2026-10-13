@@ -3145,11 +3145,11 @@ a.benqu-cate-badge span { color: #fff !important; }
   line-height: 1.45;
 }
 
-.entry-content details.falcon-faq-item .falcon-faq-answer {
+.entry-content details.falcon-faq-item .ff-faq-answer {
   padding: 0 20px 16px;
 }
 
-.entry-content details.falcon-faq-item .falcon-faq-answer > :last-child { margin-bottom: 0; }
+.entry-content details.falcon-faq-item .ff-faq-answer > :last-child { margin-bottom: 0; }
 
 /* Updated date stands out a little */
 .falcon-meta-updated { color: var(--ff-tip); font-weight: 600; }

@@ -775,3 +775,207 @@ body:has(.ff-post) { background: var(--ff-page, #fff); }
 .ff-listing-meta > .ff-listing-best { justify-self: start; }
 .ff-listing-meta { justify-items: start; }
 .ff-listing-meta > .ff-listing-facts { justify-self: stretch; width: 100%; }
+
+/* ==========================================================================
+   One card per gym (v2)
+   ========================================================================== */
+.ff-gym-card {
+  margin: 28px 0 36px;
+  border: 1px solid var(--ff-line);
+  border-radius: 20px;
+  background: var(--ff-surface);
+  box-shadow: 0 6px 24px rgba(15, 23, 42, .06);
+  overflow: hidden;
+}
+
+.ff-gym-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+  padding: 22px 24px 18px;
+  background: linear-gradient(180deg, var(--ff-brand-tint) 0%, var(--ff-surface) 100%);
+  border-bottom: 1px solid var(--ff-line);
+}
+
+.ff-gym-rank {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--ff-brand);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.ff-gym-titles { display: grid; gap: 8px; justify-items: start; }
+
+.ff-post .entry-content .ff-gym-titles h2,
+.ff-post .entry-content .ff-gym-titles h3 {
+  margin: 0 !important;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.ff-gym-best {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ff-brand);
+  background: var(--ff-surface);
+  border: 1px solid color-mix(in srgb, var(--ff-brand) 30%, transparent);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+.ff-post .entry-content .ff-gym-addr { margin: 0; font-size: 15px; line-height: 1.45; }
+.ff-gym-addr i { color: var(--ff-brand); margin-right: 4px; }
+.ff-post .entry-content .ff-gym-addr a { color: var(--ff-body); text-decoration: none; }
+.ff-post .entry-content .ff-gym-addr a:hover { color: var(--ff-brand); text-decoration: underline; }
+
+.ff-gym-score {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 108px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #4338ca 0%, #5541f8 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.ff-gym-score-num { font-size: 32px; font-weight: 800; line-height: 1; }
+.ff-gym-score-out { font-size: 12px; opacity: .8; }
+.ff-gym-score .ff-stars { font-size: 13px; margin-top: 4px; }
+.ff-gym-score-label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; opacity: .85; margin-top: 4px; }
+
+.ff-gym-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--ff-line);
+}
+
+.ff-gym-facts > div { padding: 14px 24px; border-right: 1px solid var(--ff-line); }
+.ff-gym-facts > div:last-child { border-right: 0; }
+.ff-gym-facts dt { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ff-muted); margin: 0; }
+.ff-gym-facts dd { margin: 4px 0 0; font-size: 15px; font-weight: 600; color: var(--ff-ink); line-height: 1.4; }
+
+.ff-gym-body { padding: 20px 24px 4px; }
+.ff-post .entry-content .ff-gym-body p,
+.ff-post .entry-content .ff-gym-body li { font-size: 17px; }
+
+.ff-gym-eval {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  margin: 4px 24px 20px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: var(--ff-surface-alt);
+}
+
+.ff-post .entry-content .ff-gym-sub,
+.ff-post .entry-content .ff-gym-eval .ff-pc-title {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ff-muted);
+}
+
+.ff-post .entry-content .ff-gym-eval .ff-pros .ff-pc-title { color: var(--ff-tip); }
+.ff-post .entry-content .ff-gym-eval .ff-cons .ff-pc-title { color: #dc2626; }
+
+.ff-gym-foot {
+  display: grid;
+  gap: 14px;
+  padding: 18px 24px 22px;
+  border-top: 1px solid var(--ff-line);
+}
+
+.ff-gym-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.ff-post .entry-content a.ff-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--ff-line);
+  background: var(--ff-surface);
+  color: var(--ff-ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ff-post .entry-content a.ff-btn:hover { border-color: var(--ff-brand); color: var(--ff-brand); }
+.ff-post .entry-content a.ff-btn--primary { background: var(--ff-brand); border-color: var(--ff-brand); color: #fff; }
+.ff-post .entry-content a.ff-btn--primary:hover { background: var(--ff-brand-dark); color: #fff; }
+.ff-btn i { font-size: 14px; }
+
+.ff-gym-meta-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+
+.ff-post .entry-content a.ff-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ff-body);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: var(--ff-surface-alt);
+}
+
+.ff-post .entry-content a.ff-review:hover { text-decoration: underline; }
+.ff-review--google i { color: #ea4335; }
+.ff-review--yelp i { color: #d32323; }
+
+.ff-gym-follow {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ff-muted);
+}
+
+.ff-post .entry-content a.ff-social {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ff-line);
+  background: var(--ff-surface);
+  color: var(--ff-body);
+  text-decoration: none;
+}
+
+.ff-post .entry-content a.ff-social:hover { background: var(--ff-brand); border-color: var(--ff-brand); color: #fff; }
+
+@media (max-width: 640px) {
+  .ff-gym-head { grid-template-columns: auto minmax(0, 1fr); padding: 18px 16px 14px; }
+  .ff-gym-score { grid-column: 1 / -1; grid-auto-flow: column; justify-content: start; align-items: baseline; gap: 8px; min-width: 0; }
+  .ff-gym-facts { grid-template-columns: 1fr 1fr; }
+  .ff-gym-facts > div { padding: 12px 16px; border-bottom: 1px solid var(--ff-line); }
+  .ff-gym-body { padding: 16px 16px 0; }
+  .ff-gym-eval { grid-template-columns: 1fr; margin: 4px 16px 16px; }
+  .ff-gym-foot { padding: 16px; }
+  .ff-gym-follow { margin-left: 0; width: 100%; }
+}
+
+[data-theme="dark"] .ff-gym-card { box-shadow: none; }
+[data-theme="dark"] .ff-gym-head { background: linear-gradient(180deg, #1e1b4b 0%, #111827 100%); }
+.ff-post .entry-content .ff-gym-addr { display: flex; gap: 6px; align-items: flex-start; }
+.ff-gym-addr i { margin-top: 4px; }

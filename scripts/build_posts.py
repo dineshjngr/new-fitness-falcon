@@ -201,7 +201,7 @@ def enhance_article_html(content):
             if not qm:
                 out.append(item)
                 continue
-            out.append(f'<details class="falcon-faq-item"><summary>{qm.group(1)}</summary><div class="falcon-faq-answer">{qm.group(2).strip()}</div></details>\n')
+            out.append(f'<details class="falcon-faq-item"><summary>{qm.group(1)}</summary><div class="ff-faq-answer">{qm.group(2).strip()}</div></details>\n')
         content = content[:faq.start()] + faq.group(1) + intro + '<div class="falcon-faq-list">\n' + ''.join(out) + '</div>\n' + content[faq.end():]
     return content
 
@@ -297,8 +297,81 @@ def render_listing_header(place):
 </div>'''
 
 
+def _stars(overall):
+    return (f'<span class="ff-stars" aria-hidden="true"><span class="ff-stars-base">★★★★★</span>'
+            f'<span class="ff-stars-fill" style="width:{overall / 5 * 100:.0f}%">★★★★★</span></span>')
+
+
+def render_gym_card(place, heading_html, body_html):
+    """One self-contained card per business: header, facts, description, scores, links."""
+    from urllib.parse import quote_plus
+    esc = lambda v: html.escape(str(v or ''), quote=True)
+    name = place.get('name') or re.sub(r'<[^>]+>', '', heading_html).split(':')[0]
+    overall = float(place['overall']) if place.get('overall') else None
+    query = f"{name} {place.get('address') or ''}".strip()
+    maps = f'https://www.google.com/maps/search/?api=1&query={quote_plus(query)}' if place.get('address') else ''
+    yelp = (f'https://www.yelp.com/search?find_desc={quote_plus(name)}&find_loc={quote_plus(place["address"])}'
+            if place.get('address') and (place.get('reviews') or {}).get('yelp') is not None else '')
+
+    rank = f'<span class="ff-gym-rank">{esc(place["rank"])}</span>' if place.get('rank') else ''
+    best = f'<span class="ff-gym-best">{esc(place["best_for"])}</span>' if place.get('best_for') else ''
+    addr = ''
+    if place.get('address'):
+        addr = f'<p class="ff-gym-addr"><i class="fal fa-map-marker-alt" aria-hidden="true"></i> <a href="{esc(maps)}" target="_blank" rel="noopener">{esc(place["address"])}</a></p>'
+    score = ''
+    if overall is not None:
+        score = (f'<div class="ff-gym-score" aria-label="Research score {overall:.1f} out of 5">'
+                 f'<span class="ff-gym-score-num">{overall:.1f}</span><span class="ff-gym-score-out">/ 5</span>{_stars(overall)}'
+                 f'<span class="ff-gym-score-label">Research score</span></div>')
+
+    facts = ''.join(f'<div><dt>{label}</dt><dd>{esc(place[key])}</dd></div>'
+                    for key, label in (('neighborhood', 'Area'), ('tier', 'Tier'), ('price', 'Price'), ('hours', 'Hours'), ('day_pass', 'Day pass'))
+                    if place.get(key))
+    facts_html = f'<dl class="ff-gym-facts">{facts}</dl>' if facts else ''
+
+    bars = ''.join(
+        f'<li><span class="ff-score-name">{label}</span><span class="ff-score-bar"><span style="width:{float(v) / 5 * 100:.0f}%"></span></span><span class="ff-score-val">{float(v):.1f}</span></li>'
+        for key, label in SCORE_LABELS if (v := (place.get('scores') or {}).get(key)) is not None)
+    pros = ''.join(f'<li>{esc(x)}</li>' for x in place.get('pros') or [])
+    cons = ''.join(f'<li>{esc(x)}</li>' for x in place.get('cons') or [])
+    eval_html = ''
+    if bars or pros or cons:
+        eval_html = (f'<div class="ff-gym-eval"><div><p class="ff-gym-sub">Score breakdown</p><ul class="ff-score-list">{bars}</ul></div>'
+                     f'<div class="ff-proscons"><div class="ff-pros"><p class="ff-pc-title">Pros</p><ul>{pros}</ul></div>'
+                     f'<div class="ff-cons"><p class="ff-pc-title">Cons</p><ul>{cons}</ul></div></div></div>')
+
+    btns = []
+    if place.get('website'):
+        btns.append(f'<a class="ff-btn ff-btn--primary" href="{esc(place["website"])}" target="_blank" rel="noopener"><i class="fal fa-globe" aria-hidden="true"></i> Visit website</a>')
+    local = place.get('local') or {}
+    if local.get('url'):
+        btns.append(f'<a class="ff-btn" href="{esc(local["url"])}" target="_blank" rel="noopener"><i class="fal fa-store" aria-hidden="true"></i> {esc(local.get("label") or "Houston club")}</a>')
+    if place.get('locator'):
+        btns.append(f'<a class="ff-btn" href="{esc(place["locator"])}" target="_blank" rel="noopener"><i class="fal fa-location-arrow" aria-hidden="true"></i> Find a club</a>')
+    if maps:
+        btns.append(f'<a class="ff-btn" href="{esc(maps)}" target="_blank" rel="noopener"><i class="fal fa-directions" aria-hidden="true"></i> Directions</a>')
+    if place.get('phone'):
+        tel = ''.join(ch for ch in place['phone'] if ch.isdigit() or ch == '+')
+        btns.append(f'<a class="ff-btn" href="tel:{esc(tel)}"><i class="fal fa-phone" aria-hidden="true"></i> {esc(place["phone"])}</a>')
+    reviews = []
+    if maps:
+        reviews.append(f'<a class="ff-review ff-review--google" href="{esc(maps)}" target="_blank" rel="noopener"><i class="fab fa-google" aria-hidden="true"></i> Google reviews</a>')
+    if yelp:
+        reviews.append(f'<a class="ff-review ff-review--yelp" href="{esc(yelp)}" target="_blank" rel="noopener"><i class="fab fa-yelp" aria-hidden="true"></i> Yelp reviews</a>')
+    socials = ''.join(
+        f'<a class="ff-social" href="{esc(url)}" target="_blank" rel="noopener" aria-label="{esc(name)} on {label}" title="{label}"><i class="{icon}" aria-hidden="true"></i></a>'
+        for key, (icon, label) in SOCIAL_ICONS.items() if (url := (place.get('social') or {}).get(key)))
+    foot = (f'<div class="ff-gym-foot"><div class="ff-gym-actions">{"".join(btns)}</div>'
+            f'<div class="ff-gym-meta-links">{"".join(reviews)}'
+            f'{f"<span class=ff-gym-follow>Follow</span>{socials}" if socials else ""}</div></div>')
+
+    return (f'<section class="ff-gym-card">'
+            f'<header class="ff-gym-head">{rank}<div class="ff-gym-titles">{heading_html}{best}{addr}</div>{score}</header>'
+            f'{facts_html}<div class="ff-gym-body">{body_html}</div>{eval_html}{foot}</section>')
+
+
 def insert_place_cards(content, places):
-    """For each place: score/facts panel right after its heading, links card at the end of its section."""
+    """Wrap each listed business's section (heading to next heading) in one card."""
     def plain(t):
         return html.unescape(re.sub(r'<[^>]+>', '', t)).strip()
     for place in places or []:
@@ -308,12 +381,10 @@ def insert_place_cards(content, places):
         for m in re.finditer(r'<(h2|h3)\b[^>]*>(.*?)</\1>', content, flags=re.S):
             if not plain(m.group(2)).startswith(match):
                 continue
-            header = render_listing_header(place)
-            card = render_place_card(place)
             nxt = re.search(r'<h[23]\b', content[m.end():])
-            section_end = m.end() + nxt.start() if nxt else len(content)
-            content = content[:section_end] + card + content[section_end:]
-            content = content[:m.end()] + header + content[m.end():]
+            end = m.end() + nxt.start() if nxt else len(content)
+            card = render_gym_card(place, m.group(0), content[m.end():end].strip())
+            content = content[:m.start()] + card + content[end:]
             break
     return content
 

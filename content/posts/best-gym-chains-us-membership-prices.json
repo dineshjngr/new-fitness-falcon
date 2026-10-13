@@ -113,11 +113,10 @@
         "url": "https://www.planetfitness.com/gyms/houston-greater-heights-tx/"
       },
       "social": {
-        "instagram": "https://www.instagram.com/planetfitness/",
         "facebook": "https://www.facebook.com/planetfitness",
-        "tiktok": "",
-        "youtube": "",
-        "x": "https://x.com/planetfitness"
+        "instagram": "https://www.instagram.com/planetfitness",
+        "tiktok": "https://www.tiktok.com/@planetfitness",
+        "youtube": "https://www.youtube.com/user/planetfitnessnh"
       },
       "rank": 1,
       "best_for": "Beginners; low-cost cardio and machines",
@@ -164,7 +163,6 @@
         "instagram": "https://www.instagram.com/crunchgym",
         "facebook": "https://www.facebook.com/crunch",
         "tiktok": "https://www.tiktok.com/@crunchfitness",
-        "youtube": "https://www.youtube.com/crunch",
         "x": "https://x.com/crunchgym"
       },
       "rank": 2,
@@ -208,11 +206,10 @@
         "url": "https://www.eosfitness.com/gym/houston-gillette-st-allen-pkwy"
       },
       "social": {
-        "instagram": "https://www.instagram.com/eosfitness/",
-        "facebook": "https://www.facebook.com/EoSFitness/",
+        "instagram": "https://www.instagram.com/eosfitness",
+        "facebook": "https://www.facebook.com/EoSFitness",
         "tiktok": "https://www.tiktok.com/@eosfitness",
-        "youtube": "https://www.youtube.com/@GoEOSfit",
-        "x": ""
+        "youtube": "https://www.youtube.com/@GoEOSfit"
       },
       "rank": 3,
       "best_for": "Big-box value with saunas and pools at some clubs",
@@ -255,13 +252,7 @@
         "label": "",
         "url": ""
       },
-      "social": {
-        "instagram": "",
-        "facebook": "",
-        "tiktok": "",
-        "youtube": "https://www.youtube.com/c/chuzefitness",
-        "x": ""
-      },
+      "social": {},
       "rank": 4,
       "best_for": "Budget clubs with family-oriented amenities (confirm by club)",
       "tier": "Budget",
@@ -302,11 +293,11 @@
         "url": "https://www.24hourfitness.com/gyms/houston-tx/galleria-super-sport"
       },
       "social": {
+        "facebook": "https://www.facebook.com/24HourFitness",
         "instagram": "https://www.instagram.com/24HourFitness",
-        "facebook": "https://www.facebook.com/129842823728085",
+        "x": "https://twitter.com/24HourFitness",
         "tiktok": "https://www.tiktok.com/@24hourfitness",
-        "youtube": "https://www.youtube.com/24HourFitnessInc",
-        "x": ""
+        "youtube": "https://www.youtube.com/24HourFitnessInc"
       },
       "rank": 5,
       "best_for": "Regional or national access in its markets",
@@ -349,13 +340,7 @@
         "label": "Houston club: LA Fitness Houston - Yale and Katy Fwy.",
         "url": "https://www.lafitness.com/Pages/clubhome.aspx?clubid=1049"
       },
-      "social": {
-        "instagram": "https://www.instagram.com/lafitness/",
-        "facebook": "https://www.facebook.com/LAFitness/",
-        "tiktok": "",
-        "youtube": "",
-        "x": "https://x.com/LAFitness"
-      },
+      "social": {},
       "rank": 6,
       "best_for": "Large clubs with courts and pools at many locations",
       "tier": "Mid-range",
@@ -395,11 +380,9 @@
         "url": "https://www.goldsgym.com/locations/tx/bingle/"
       },
       "social": {
-        "instagram": "https://www.instagram.com/goldsgym/",
-        "facebook": "https://www.facebook.com/goldsgym/",
-        "tiktok": "",
-        "youtube": "",
-        "x": "https://x.com/GoldsGym"
+        "instagram": "https://www.instagram.com/goldsgym",
+        "facebook": "https://www.facebook.com/goldsgym",
+        "x": "https://twitter.com/GoldsGym"
       },
       "rank": 7,
       "best_for": "Classic strength and bodybuilding floors",
@@ -442,11 +425,11 @@
         "url": "https://www.anytimefitness.com/locations/houston-texas-1254"
       },
       "social": {
+        "facebook": "https://www.facebook.com/anytimefitness",
         "instagram": "https://www.instagram.com/anytimefitness",
-        "facebook": "https://www.facebook.com/AnytimeFitness",
-        "tiktok": "",
+        "x": "https://x.com/AnytimeFitness",
         "youtube": "https://www.youtube.com/user/AnytimeFitnessLLC",
-        "x": "https://x.com/AnytimeFitness"
+        "tiktok": "https://www.tiktok.com/@anytimefitness"
       },
       "rank": 8,
       "best_for": "24/7 access and travel",
@@ -490,11 +473,9 @@
         "url": "https://www.lifetime.life/locations/tx/greenstreet.html"
       },
       "social": {
-        "instagram": "https://www.instagram.com/lifetime.life",
+        "instagram": "https://instagram.com/lifetime.life",
         "facebook": "https://www.facebook.com/LifeTime.Life",
-        "tiktok": "https://www.tiktok.com/@lifetime.life",
-        "youtube": "https://www.youtube.com/mylifetimefitness",
-        "x": ""
+        "tiktok": "https://www.tiktok.com/@lifetime.life"
       },
       "rank": 9,
       "best_for": "Families who want pools, courts, classes and childcare",
@@ -537,9 +518,8 @@
         "url": "https://www.equinox.com/clubs/texas/riveroaks"
       },
       "social": {
-        "instagram": "https://www.instagram.com/equinox/",
+        "instagram": "https://www.instagram.com/equinox",
         "facebook": "https://www.facebook.com/equinox",
-        "tiktok": "",
         "youtube": "https://www.youtube.com/@Equinox",
         "x": "https://x.com/equinox"
       },
@@ -614,11 +594,10 @@
         "url": "https://ymcahouston.org/locations/tellepsen-family-downtown-ymca"
       },
       "social": {
-        "instagram": "",
-        "facebook": "https://www.facebook.com/YMCA/",
-        "tiktok": "",
-        "youtube": "https://www.youtube.com/user/ymca",
-        "x": ""
+        "facebook": "https://www.facebook.com/ymca",
+        "instagram": "https://www.instagram.com/ymca",
+        "tiktok": "https://www.tiktok.com/@ymcaofficial",
+        "youtube": "https://www.youtube.com/user/ymca"
       }
     }
   ]
