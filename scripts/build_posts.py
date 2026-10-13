@@ -205,6 +205,119 @@ def enhance_article_html(content):
         content = content[:faq.start()] + faq.group(1) + intro + '<div class="falcon-faq-list">\n' + ''.join(out) + '</div>\n' + content[faq.end():]
     return content
 
+SOCIAL_ICONS = {
+    'instagram': ('fab fa-instagram', 'Instagram'), 'facebook': ('fab fa-facebook-f', 'Facebook'),
+    'tiktok': ('fab fa-tiktok', 'TikTok'), 'youtube': ('fab fa-youtube', 'YouTube'), 'x': ('fab fa-twitter', 'X'),
+}
+
+
+def render_place_card(place):
+    """Contact, location, social and review links for a business listed in an article."""
+    esc = lambda v: html.escape(v or '', quote=True)
+    name = esc(place.get('name'))
+    rows = []
+    if place.get('address'):
+        maps = place.get('maps') or ''
+        addr = f'<a href="{esc(maps)}" target="_blank" rel="noopener">{esc(place["address"])}</a>' if maps else esc(place['address'])
+        rows.append(f'<li><i class="fal fa-map-marker-alt" aria-hidden="true"></i><span>{addr}</span></li>')
+    if place.get('phone'):
+        tel = ''.join(ch for ch in place['phone'] if ch.isdigit() or ch == '+')
+        rows.append(f'<li><i class="fal fa-phone" aria-hidden="true"></i><a href="tel:{esc(tel)}">{esc(place["phone"])}</a></li>')
+    local = place.get('local') or {}
+    if local.get('url'):
+        rows.append(f'<li><i class="fal fa-store" aria-hidden="true"></i><a href="{esc(local["url"])}" target="_blank" rel="noopener">{esc(local.get("label") or "Local club")}</a></li>')
+    buttons = []
+    if place.get('website'):
+        buttons.append(f'<a class="ff-place-btn ff-place-btn--primary" href="{esc(place["website"])}" target="_blank" rel="noopener"><i class="fal fa-globe" aria-hidden="true"></i> Website</a>')
+    if place.get('maps'):
+        buttons.append(f'<a class="ff-place-btn" href="{esc(place["maps"])}" target="_blank" rel="noopener"><i class="fal fa-directions" aria-hidden="true"></i> Directions</a>')
+    if place.get('locator'):
+        buttons.append(f'<a class="ff-place-btn" href="{esc(place["locator"])}" target="_blank" rel="noopener"><i class="fal fa-location-arrow" aria-hidden="true"></i> Find a club</a>')
+    reviews = place.get('reviews') or {}
+    if reviews.get('google'):
+        buttons.append(f'<a class="ff-place-btn" href="{esc(reviews["google"])}" target="_blank" rel="noopener"><i class="fab fa-google" aria-hidden="true"></i> Google reviews</a>')
+    if reviews.get('yelp'):
+        buttons.append(f'<a class="ff-place-btn" href="{esc(reviews["yelp"])}" target="_blank" rel="noopener"><i class="fab fa-yelp" aria-hidden="true"></i> Yelp reviews</a>')
+    socials = []
+    for key, (icon, label) in SOCIAL_ICONS.items():
+        url = (place.get('social') or {}).get(key)
+        if url:
+            socials.append(f'<a class="ff-place-social" href="{esc(url)}" target="_blank" rel="noopener" aria-label="{name} on {label}" title="{label}"><i class="{icon}" aria-hidden="true"></i></a>')
+    if not (rows or buttons or socials):
+        return ''
+    social_html = f'<div class="ff-place-socials"><span>Follow</span>{"".join(socials)}</div>' if socials else ''
+    rows_html = f'<ul class="ff-place-info">{"".join(rows)}</ul>' if rows else ''
+    return (f'<aside class="ff-place-card" aria-label="{name}: contact and links">'
+            f'{rows_html}<div class="ff-place-actions">{"".join(buttons)}</div>{social_html}</aside>')
+
+
+SCORE_LABELS = [('value', 'Value'), ('facilities', 'Facilities'), ('access', 'Access & hours'),
+                ('coaching', 'Classes & coaching'), ('transparency', 'Transparency')]
+
+
+def render_listing_header(place):
+    """Score badge, best-for tag, quick facts, sub-scores and pros/cons for one listing."""
+    if not place.get('overall'):
+        return ''
+    esc = lambda v: html.escape(str(v or ''), quote=True)
+    overall = float(place['overall'])
+    stars = (f'<span class="ff-stars" aria-hidden="true"><span class="ff-stars-base">★★★★★</span>'
+             f'<span class="ff-stars-fill" style="width:{overall / 5 * 100:.0f}%">★★★★★</span></span>')
+    facts = []
+    for key, label in (('neighborhood', 'Area'), ('tier', 'Tier'), ('price', 'Price'), ('hours', 'Hours'), ('day_pass', 'Day pass')):
+        if place.get(key):
+            facts.append(f'<div><dt>{label}</dt><dd>{esc(place[key])}</dd></div>')
+    bars = []
+    for key, label in SCORE_LABELS:
+        val = (place.get('scores') or {}).get(key)
+        if val is None:
+            continue
+        why = esc((place.get('rationale') or {}).get(key))
+        bars.append(f'<li title="{why}"><span class="ff-score-name">{label}</span><span class="ff-score-bar"><span style="width:{float(val) / 5 * 100:.0f}%"></span></span><span class="ff-score-val">{float(val):.1f}</span></li>')
+    pros = ''.join(f'<li>{esc(x)}</li>' for x in place.get('pros') or [])
+    cons = ''.join(f'<li>{esc(x)}</li>' for x in place.get('cons') or [])
+    rank = f'<span class="ff-listing-rank">#{esc(place["rank"])}</span>' if place.get('rank') else ''
+    best = f'<span class="ff-listing-best">Best for: {esc(place["best_for"])}</span>' if place.get('best_for') else ''
+    return f'''<div class="ff-listing">
+  <div class="ff-listing-top">
+    <div class="ff-listing-score" aria-label="Fitness Falcon research score {overall:.1f} out of 5">
+      <span class="ff-listing-num">{overall:.1f}</span><span class="ff-listing-out">/5</span>
+      <span class="ff-listing-stars">{stars}</span>
+      <span class="ff-listing-note">Research score</span>
+    </div>
+    <div class="ff-listing-meta">{rank}{best}<dl class="ff-listing-facts">{"".join(facts)}</dl></div>
+  </div>
+  <div class="ff-listing-body">
+    <ul class="ff-score-list">{"".join(bars)}</ul>
+    <div class="ff-proscons">
+      <div class="ff-pros"><p class="ff-pc-title"><i class="fal fa-check" aria-hidden="true"></i> Pros</p><ul>{pros}</ul></div>
+      <div class="ff-cons"><p class="ff-pc-title"><i class="fal fa-times" aria-hidden="true"></i> Cons</p><ul>{cons}</ul></div>
+    </div>
+  </div>
+</div>'''
+
+
+def insert_place_cards(content, places):
+    """For each place: score/facts panel right after its heading, links card at the end of its section."""
+    def plain(t):
+        return html.unescape(re.sub(r'<[^>]+>', '', t)).strip()
+    for place in places or []:
+        match = html.unescape((place.get('match') or '').strip())
+        if not match:
+            continue
+        for m in re.finditer(r'<(h2|h3)\b[^>]*>(.*?)</\1>', content, flags=re.S):
+            if not plain(m.group(2)).startswith(match):
+                continue
+            header = render_listing_header(place)
+            card = render_place_card(place)
+            nxt = re.search(r'<h[23]\b', content[m.end():])
+            section_end = m.end() + nxt.start() if nxt else len(content)
+            content = content[:section_end] + card + content[section_end:]
+            content = content[:m.end()] + header + content[m.end():]
+            break
+    return content
+
+
 def build_toc_and_content(content):
     # Demote any rogue <h1> inside the article content to <h2> to maintain single H1 hierarchy
     content = re.sub(r'<h1\b([^>]*)>(.*?)</h1>', r'<h2\1>\2</h2>', content, flags=re.IGNORECASE | re.DOTALL)
@@ -379,7 +492,7 @@ def render_all_posts():
             height=post.get('featured_image_height')
         )
         tags_html = build_tags(post.get('tags', []))
-        article_body = enhance_article_html(clean_article_html(post['content']))
+        article_body = insert_place_cards(enhance_article_html(clean_article_html(post['content'])), post.get('places'))
         takeaways = render_key_takeaways(post.get('key_takeaways'))
         if takeaways:
             # After the opening answer paragraph, before the first section.
