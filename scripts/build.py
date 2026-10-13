@@ -12,6 +12,16 @@ sys.path.insert(0, str(ROOT))
 COMPONENTS = ('header', 'footer')
 EXCLUDED = {'components', 'old-website', 'node_modules', '.git', 'scratch'}
 
+_REVISIONS = {}
+
+
+def _asset_revision(asset):
+    key = str(asset)
+    if key not in _REVISIONS:
+        _REVISIONS[key] = hashlib.sha256(asset.read_bytes()).hexdigest()[:12]
+    return _REVISIONS[key]
+
+
 def render_page(path):
     path = path.resolve()
     source = path.read_text()
@@ -52,6 +62,18 @@ def render_page(path):
         # Refresh cached search data whenever article titles or URLs change.
         search_revision = hashlib.sha256((ROOT / 'assets/js/falcon-search-data.js').read_bytes()).hexdigest()[:12]
         source = re.sub(r'(src=["\'][^"\']*assets/js/falcon-search-data\.js)(?:\?[^"\']*)?(["\'])', lambda m: m[1] + '?v=' + search_revision + m[2], source)
+
+    # Fingerprint every local stylesheet and script. The CDN caches assets for
+    # 7 days, so an unchanged URL would keep serving stale CSS/JS after a deploy.
+    def _versioned(m):
+        attr, url, query, quote_ = m.group(1), m.group(2), m.group(3), m.group(4)
+        rel = re.sub(r'^(?:\.\./)+|^/', '', url)
+        asset = ROOT / rel
+        if not asset.is_file():
+            return m.group(0)
+        rev = _asset_revision(asset)
+        return f'{attr}{url}?v={rev}{quote_}'
+    source = re.sub(r'((?:href|src)=["\'])((?:/|(?:\.\./)*)assets/(?:css|js)/[^"\'?#]+\.(?:css|js))(\?[^"\']*)?(["\'])', _versioned, source)
 
     if source != path.read_text():
         path.write_text(source)
