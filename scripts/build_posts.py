@@ -132,6 +132,8 @@ CALLOUT_LABELS = {
     'safety': 'warning', 'safety note': 'warning', 'medical note': 'warning',
     'disclaimer': 'info', 'how this review was made': 'info',
     'how we researched this': 'info', 'how this guide was researched': 'info',
+    'how this guide was made': 'info', 'how this list was made': 'info',
+    'how this comparison was made': 'info', 'how we chose': 'info',
     'bottom line': 'tip', 'the bottom line': 'tip',
     'pro tip': 'tip', 'tips': 'tip', 'caution': 'warning', 'warning signs': 'warning',
     'evidence and limitations': 'info', 'myth': 'note', 'fact': 'tip', 'truth': 'tip',
