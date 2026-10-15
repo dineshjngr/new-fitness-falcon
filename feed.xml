@@ -5,8 +5,28 @@
     <link>https://thefitnessfalcon.com/</link>
     <description>Research-based fitness, nutrition, wearables and wellness guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 08:47:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 13:38:15 +0000</lastBuildDate>
     <atom:link href="https://thefitnessfalcon.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Many Calories Are in a Thanksgiving Dinner? A Dish-by-Dish Count and the Walking Math</title>
+      <link>https://thefitnessfalcon.com/blogs/thanksgiving-dinner-calories-walking/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/thanksgiving-dinner-calories-walking/</guid>
+      <pubDate>Thu, 15 Oct 2026 13:38:15 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Nutrition</category>
+      <description>A USDA-based count of Thanksgiving dinner calories, dish by dish: about 1,612 for a typical plate with pie and wine, plus walking minutes at 155 and 200 lb.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/thanksgiving-dinner-calories-walking.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Daylight Saving Time Ends Nov. 1, 2026: How to Keep Your Workouts and Sleep on Track</title>
+      <link>https://thefitnessfalcon.com/blogs/daylight-saving-time-ends-workout-sleep-tips/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/daylight-saving-time-ends-workout-sleep-tips/</guid>
+      <pubDate>Thu, 15 Oct 2026 13:38:15 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Health</category>
+      <description>Clocks fall back at 2 a.m. on Nov. 1, 2026. Shift your workout times, use morning light, protect your sleep and stay visible on darker evening runs and rides.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/daylight-saving-time-ends-workout-sleep-tips.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title>Best Gyms in Houston (2026): 9 Verified Picks by Budget, Strength and 24/7 Access</title>
       <link>https://thefitnessfalcon.com/blogs/best-gyms-in-houston/</link>
@@ -286,26 +306,6 @@
       <category>Fitness</category>
       <description>Start a beginner dumbbell workout at home with five movements, easy substitutions, rest guidance, and a clear progression log. No weight bench needed.</description>
       <enclosure url="https://thefitnessfalcon.com/assets/images/beginner-dumbbell-workout-home.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Zone 2 Cardio Without a Heart Rate Monitor: A Beginner’s Guide</title>
-      <link>https://thefitnessfalcon.com/blogs/zone-2-cardio-without-heart-rate-monitor/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/zone-2-cardio-without-heart-rate-monitor/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:35:01 +0000</pubDate>
-      <dc:creator>Dinesh Jeengar</dc:creator>
-      <category>Fitness</category>
-      <description>Learn how to pace easy cardio using the talk test and perceived effort, understand the limits of Zone 2 estimates, and follow a flexible beginner routine.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/zone-2-cardio-without-heart-rate-monitor.webp" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>100g Protein Indian Vegetarian Meal Plan Without Protein Powder</title>
-      <link>https://thefitnessfalcon.com/blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/100g-protein-indian-vegetarian-meal-plan-without-powder/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:35:01 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Nutrition</category>
-      <description>Build an approximately 100g-protein vegetarian day with Indian foods, weighed portions, transparent nutrition estimates, affordable swaps, and meal prep tips.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/100g-protein-indian-vegetarian-meal-plan-without-powder.webp" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>
