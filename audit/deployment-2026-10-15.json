@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-15",
+  "domain": "thefitnessfalcon.com",
+  "commit": "1c9aa8a8",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261015_173935.zip",
+  "files": 1106,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components",
+  "published": ["/blogs/daylight-saving-time-ends-workout-sleep-tips/", "/blogs/thanksgiving-dinner-calories-walking/"],
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified": {
+    "new_posts_and_banners_200": true,
+    "html_feed_sitemap_hash_match": true,
+    "legacy_url_301": "/thanksgiving-dinner-calories-walking/ -> /blogs/thanksgiving-dinner-calories-walking/",
+    "draft_not_public": "/blogs/fitbit-edge-price-specs-features/ -> 404"
+  }
+}
