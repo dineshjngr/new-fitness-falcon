@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-16",
+  "domain": "thefitnessfalcon.com",
+  "commit": "4794eb64",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261016_211709.zip",
+  "files": 1129,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components",
+  "published": ["/blogs/protein-for-active-indians-how-much-when-where/"],
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified": {
+    "new_post_and_banner_200": true,
+    "dofollow_link": "https://protein.horlicks.in/ on anchor 'Horlicks Protein Powder' (rel=noopener only)",
+    "in_sitemap": true,
+    "legacy_url_301": "/protein-for-active-indians-how-much-when-where/ -> /blogs/protein-for-active-indians-how-much-when-where/"
+  }
+}
