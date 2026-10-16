@@ -5,8 +5,18 @@
     <link>https://thefitnessfalcon.com/</link>
     <description>Research-based fitness, nutrition, wearables and wellness guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 06:43:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 17:15:42 +0000</lastBuildDate>
     <atom:link href="https://thefitnessfalcon.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protein for Active Indians: How Much You Need, When to Eat It, and Where to Find It</title>
+      <link>https://thefitnessfalcon.com/blogs/protein-for-active-indians-how-much-when-where/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/protein-for-active-indians-how-much-when-where/</guid>
+      <pubDate>Fri, 16 Oct 2026 17:15:42 +0000</pubDate>
+      <dc:creator>The Fitness Falcon</dc:creator>
+      <category>Nutrition</category>
+      <description>How much protein active Indians need (0.83 to 2.0 g/kg), how to time it across meals, and protein-rich Indian foods from dal and paneer to eggs and soya.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/protein-for-active-indians-how-much-when-where.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title>What to Wear Running in Cold Weather: A Temperature-by-Temperature Guide</title>
       <link>https://thefitnessfalcon.com/blogs/what-to-wear-running-cold-weather/</link>
@@ -296,16 +306,6 @@
       <category>Fitness</category>
       <description>Choose a walking pad speed while working using mph and km/h conversions, a short typing comparison, and a log of comfort, footing, and work accuracy.</description>
       <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-speed-while-working.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Walking Pad Beginner Routine: A Flexible Two-Week Start</title>
-      <link>https://thefitnessfalcon.com/blogs/walking-pad-beginner-routine/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/walking-pad-beginner-routine/</guid>
-      <pubDate>Tue, 06 Oct 2026 08:58:26 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Try a flexible walking pad beginner routine with short sessions, real workday cues, a simple log, and clear decisions about when to repeat or add time.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-beginner-routine.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>
