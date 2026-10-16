@@ -5,8 +5,38 @@
     <link>https://thefitnessfalcon.com/</link>
     <description>Research-based fitness, nutrition, wearables and wellness guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 13:38:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 06:43:16 +0000</lastBuildDate>
     <atom:link href="https://thefitnessfalcon.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What to Wear Running in Cold Weather: A Temperature-by-Temperature Guide</title>
+      <link>https://thefitnessfalcon.com/blogs/what-to-wear-running-cold-weather/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/what-to-wear-running-cold-weather/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:43:16 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Fitness</category>
+      <description>What to wear running in cold weather, from the 50s to below 10°F: layers by temperature, wind chill and frostbite times, and when to move your run indoors.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/what-to-wear-running-cold-weather.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Google Fitbit Edge: Price, Release Date, Specs and Features</title>
+      <link>https://thefitnessfalcon.com/blogs/fitbit-edge-price-specs-features/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/fitbit-edge-price-specs-features/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:43:16 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Wearables &amp; Fitness Technology</category>
+      <description>Google's Fitbit Edge costs $179.99, ships Oct 27 and adds a 1.3-inch AMOLED, GPS, ECG and a 7-day replaceable battery. What Premium unlocks, and what's missing.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/fitbit-edge-price-specs-features.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Best Budget Fitness Trackers Under $200 (2026)</title>
+      <link>https://thefitnessfalcon.com/blogs/best-budget-fitness-trackers-2026/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/best-budget-fitness-trackers-2026/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:43:16 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Wearables &amp; Fitness Technology</category>
+      <description>Seven fitness trackers under $200 compared on US price, battery, GPS and subscription costs, from the $79.99 Amazfit Bip 6 to the new Fitbit Edge.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/best-budget-fitness-trackers-2026.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title>How Many Calories Are in a Thanksgiving Dinner? A Dish-by-Dish Count and the Walking Math</title>
       <link>https://thefitnessfalcon.com/blogs/thanksgiving-dinner-calories-walking/</link>
@@ -276,36 +306,6 @@
       <category>Fitness</category>
       <description>Try a flexible walking pad beginner routine with short sessions, real workday cues, a simple log, and clear decisions about when to repeat or add time.</description>
       <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-beginner-routine.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Walking Pad Noise in an Apartment: What to Check First</title>
-      <link>https://thefitnessfalcon.com/blogs/walking-pad-noise-apartment/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/walking-pad-noise-apartment/</guid>
-      <pubDate>Tue, 06 Oct 2026 08:58:25 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Check walking pad noise in an apartment with a listening checklist, floor and mat considerations, work-call checks, and signs that need equipment support.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-noise-apartment.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>How to Increase Fibre in an Indian Diet: Simple Meal Swaps</title>
-      <link>https://thefitnessfalcon.com/blogs/how-to-increase-fibre-indian-diet/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/how-to-increase-fibre-indian-diet/</guid>
-      <pubDate>Tue, 06 Oct 2026 07:31:31 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Nutrition</category>
-      <description>Increase fibre in Indian meals with practical swaps for dal, roti, rice, and breakfast. Learn how to build gradually and avoid misleading portion counts.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/increase-fibre-indian-diet.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Beginner Dumbbell Workout at Home: A Simple No-Bench Plan</title>
-      <link>https://thefitnessfalcon.com/blogs/dumbbell-workout-at-home-for-beginners/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/dumbbell-workout-at-home-for-beginners/</guid>
-      <pubDate>Tue, 06 Oct 2026 07:31:31 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Start a beginner dumbbell workout at home with five movements, easy substitutions, rest guidance, and a clear progression log. No weight bench needed.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/beginner-dumbbell-workout-home.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>
