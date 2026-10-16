@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-16",
+  "domain": "thefitnessfalcon.com",
+  "commit": "134f3186",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261016_104342.zip",
+  "files": 1122,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components",
+  "published": ["/blogs/fitbit-edge-price-specs-features/", "/blogs/best-budget-fitness-trackers-2026/", "/blogs/what-to-wear-running-cold-weather/"],
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified": {
+    "new_posts_and_banners_200": true,
+    "html_feed_sitemap_hash_match": true,
+    "legacy_url_301": "/what-to-wear-running-cold-weather/ -> /blogs/what-to-wear-running-cold-weather/"
+  }
+}
