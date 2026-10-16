@@ -51,6 +51,14 @@ def generate_redirects():
         'the-art-of-facial-yoga-unlocking-radiant-skin-and-wellness-through-natural-exercise': 'face-yoga-for-anti-aging-and-skin-health',
         'tag/facial-yoga-exercises': 'face-yoga-for-anti-aging-and-skin-health',
     }
+    # Article slugs renamed after publication: keep the old URLs working.
+    renamed = {
+        'protein-for-active-indians-how-much-when-where': 'protein-for-active-indians-how-much-you-need-when-to-eat-it-and-where-to-find-it',
+    }
+    for old_slug, new_slug in renamed.items():
+        if (ROOT / 'content/posts' / f'{new_slug}.json').exists():
+            aliases(old_slug, f'/blogs/{new_slug}/')
+            aliases(f'blogs/{old_slug}', f'/blogs/{new_slug}/')
     for old_slug, new_slug in legacy_same_topic.items():
         if (ROOT / 'content/posts' / f'{new_slug}.json').exists():
             aliases(old_slug, f'/blogs/{new_slug}/')
