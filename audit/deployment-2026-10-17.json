@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-17",
+  "domain": "thefitnessfalcon.com",
+  "commit": "706c90f4",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261017_171528.zip",
+  "files": 1127,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components, README.md, .gitignore",
+  "changed": ["/blogs/protein-for-active-indians-how-much-you-need-when-to-eat-it-and-where-to-find-it/"],
+  "change": "Removed Horlicks Protein Powder sentence, the outbound link to protein.horlicks.in, and the 'Contributed by Team Horlicks Protein India' line",
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified": {
+    "post_200": true,
+    "live_build_date": "October 17, 2026",
+    "horlicks_mentions_live": 0
+  }
+}
