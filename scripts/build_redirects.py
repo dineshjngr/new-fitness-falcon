@@ -100,6 +100,12 @@ def generate_redirects():
         for base in (old_slug, f'blogs/{old_slug}'):
             aliases(base, f'/blogs/{new_slug}/')
             aliases(f'{base}/feed', f'/blogs/{new_slug}/')
+    for tag in retired.get('removed_tags', []):
+        if (ROOT / 'tag' / tag / 'index.html').exists():
+            raise ValueError(f'retired.json: tag {tag} still exists')
+        aliases(f'tag/{tag}', '/blogs/')
+        for page in range(2, 10):
+            redirects[f'/tag/{tag}/page/{page}/'] = '/blogs/'
     for slug in retired['retired']:
         if (ROOT / 'content/posts' / f'{slug}.json').exists():
             raise ValueError(f'retired.json: {slug} is still a published post')
