@@ -5,8 +5,38 @@
     <link>https://thefitnessfalcon.com/</link>
     <description>Research-based fitness, nutrition, wearables and wellness guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 17:15:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 09:20:00 +0000</lastBuildDate>
     <atom:link href="https://thefitnessfalcon.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Gyms in Seattle (2026): 8 Verified Picks by Budget, Style and Neighborhood</title>
+      <link>https://thefitnessfalcon.com/blogs/best-gyms-in-seattle/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/best-gyms-in-seattle/</guid>
+      <pubDate>Sun, 18 Oct 2026 09:20:00 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Gym</category>
+      <description>Eight Seattle gyms compared: premium clubs, 24/7 access, CrossFit, strength coaching and climbing, with published prices, hours and day-pass details checked October 2026.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/best-gyms-in-seattle.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Best Gyms in Atlanta (2026): 7 Verified Picks by Price, Hours and Training Style</title>
+      <link>https://thefitnessfalcon.com/blogs/best-gyms-in-atlanta/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/best-gyms-in-atlanta/</guid>
+      <pubDate>Sun, 18 Oct 2026 09:10:00 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Gym</category>
+      <description>7 Atlanta gyms compared by published price, hours and day-pass cost, from $20 Decatur barbell passes to $299/month Life Time Buckhead. Checked October 2026.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/best-gyms-in-atlanta.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Best Gyms in Dallas (2026): 7 Verified Picks by Budget, 24/7 Access and Training Style</title>
+      <link>https://thefitnessfalcon.com/blogs/best-gyms-in-dallas/</link>
+      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/best-gyms-in-dallas/</guid>
+      <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Dinesh Jeengar</dc:creator>
+      <category>Gym</category>
+      <description>7 Dallas gyms compared: Crunch, Trophy Fitness, Life Time, the Moody Y, a 24/7 boutique, CrossFit Odyssey and Diesel, with published prices, hours and day passes checked October 2026.</description>
+      <enclosure url="https://thefitnessfalcon.com/assets/images/best-gyms-in-dallas.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title>Protein for Active Indians: How Much You Need, When to Eat It, and Where to Find It</title>
       <link>https://thefitnessfalcon.com/blogs/protein-for-active-indians-how-much-you-need-when-to-eat-it-and-where-to-find-it/</link>
@@ -276,36 +306,6 @@
       <category>Fitness</category>
       <description>Learn how to apply progressive overload safely as a beginner. Master the double progression method, know exactly when to add weight or reps, and follow a sample workout log.</description>
       <enclosure url="https://thefitnessfalcon.com/assets/images/progressive-overload-guide.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Walking Pad While Working: A Practical Desk-Walking Guide</title>
-      <link>https://thefitnessfalcon.com/blogs/walking-pad-while-working/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/walking-pad-while-working/</guid>
-      <pubDate>Tue, 06 Oct 2026 08:58:29 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Use a walking pad while working with practical guides to desk fit, comfortable speed, a beginner routine, apartment noise, and reliable activity tracking.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-while-working.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Walking Pad Desk Setup: Measurements, Height and Clearance</title>
-      <link>https://thefitnessfalcon.com/blogs/walking-pad-desk-setup/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/walking-pad-desk-setup/</guid>
-      <pubDate>Tue, 06 Oct 2026 08:58:28 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Check your walking pad desk setup with a height calculation, measurement worksheet, screen and keyboard adjustments, cable checks, and a first-use fit test.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-desk-setup.jpg" length="0" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Walking Pad Speed While Working: Find a Pace That Fits Your Task</title>
-      <link>https://thefitnessfalcon.com/blogs/walking-pad-speed-while-working/</link>
-      <guid isPermaLink="true">https://thefitnessfalcon.com/blogs/walking-pad-speed-while-working/</guid>
-      <pubDate>Tue, 06 Oct 2026 08:58:27 +0000</pubDate>
-      <dc:creator>The Fitness Falcon</dc:creator>
-      <category>Fitness</category>
-      <description>Choose a walking pad speed while working using mph and km/h conversions, a short typing comparison, and a log of comfort, footing, and work accuracy.</description>
-      <enclosure url="https://thefitnessfalcon.com/assets/images/walking-pad-speed-while-working.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>
