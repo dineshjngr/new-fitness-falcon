@@ -11,7 +11,7 @@ BASE = 'https://thefitnessfalcon.com'
 
 class IndexingTests(unittest.TestCase):
     def test_sitemap_includes_each_article_once_and_only_indexable_canonicals(self):
-        urls = [n.text for n in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}loc')]
+        urls = [n.text for n in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}url/{*}loc')]  # page URLs only, not image:loc
         self.assertEqual(len(urls), len(set(urls)))
         posts = [json.loads(p.read_text()) for p in (ROOT / 'content/posts').glob('*.json')]
         for post in posts:
@@ -27,10 +27,10 @@ class IndexingTests(unittest.TestCase):
             self.assertNotIn('/tag/', url)
 
     def test_section_sitemaps_partition_the_main_sitemap(self):
-        main = {n.text for n in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}loc')}
+        main = {n.text for n in ET.parse(ROOT / 'sitemap.xml').findall('.//{*}url/{*}loc')}
         sections = []
         for name in ('post-sitemap.xml', 'page-sitemap.xml', 'category-sitemap.xml'):
-            sections.extend(n.text for n in ET.parse(ROOT / name).findall('.//{*}loc'))
+            sections.extend(n.text for n in ET.parse(ROOT / name).findall('.//{*}url/{*}loc'))
         self.assertEqual(set(sections), main)
         self.assertEqual(len(sections), len(main))
         index = {n.text for n in ET.parse(ROOT / 'sitemap_index.xml').findall('.//{*}loc')}
@@ -58,6 +58,42 @@ class IndexingTests(unittest.TestCase):
             source = (ROOT / 'blogs' / post['slug'] / 'index.html').read_text()
             self.assertNotIn('Verified Falcon Contributor', source)
             self.assertNotIn('data-message-author-role', source)
+
+    def test_search_console_legacy_urls_redirect_or_are_gone(self):
+        routes = json.loads((ROOT / 'audit/routes.json').read_text())
+        redirects, gone = routes['redirects'], set(routes['gone'])
+        expected = {
+            '/10-amazing-health-benefits-of-swimming-you-didnt-know-about/': '/blogs/what-are-the-benefits-of-swimming-daily/',
+            '/author/seo/': '/author/the-fitness-falcon/',
+            '/author/seo/page/3/': '/author/the-fitness-falcon/',
+            '/category/fitness/swimming/': '/category/swimming/',
+            '/category/workout/news/': '/category/news/',
+        }
+        for old, target in expected.items():
+            self.assertEqual(redirects.get(old), target, old)
+            self.assertTrue((ROOT / target.lstrip('/') / 'index.html').exists(), target)
+        for slug in ('usas-top-health-and-fitness-blogs-in-2024', '10-common-panic-attack-symptoms-you-should-never-ignore',
+                     '7-best-detox-drinks-to-cleanse-your-body-naturally-in-7-days',
+                     'what-causes-heart-attacks-understanding-the-warning-signs',
+                     'what-is-a-silent-heart-attack-causes-symptoms-and-risks'):
+            self.assertIn(f'/{slug}/', gone)
+            self.assertFalse((ROOT / 'content/posts' / f'{slug}.json').exists())
+        htaccess = (ROOT / '.htaccess').read_text()
+        self.assertIn('RewriteRule ^tag/([^/]+)/page/\\d+/?$ /tag/$1/ [R=301,L,NE]', htaccess)
+        self.assertIn('RewriteRule ^wp-content/uploads/.*$ - [G,L]', htaccess)
+
+    def test_modified_dates_track_content_not_build_runs(self):
+        posts = [json.loads(p.read_text()) for p in (ROOT / 'content/posts').glob('*.json')]
+        for post in posts:
+            self.assertGreaterEqual(post['modified_time'], post['published_time'], post['slug'])
+            self.assertEqual(post['modified_iso'], post['modified_time'][:10], post['slug'])
+        days = {}
+        for post in posts:
+            days[post['modified_iso']] = days.get(post['modified_iso'], 0) + 1
+        self.assertLess(max(days.values()), len(posts) * 0.5, 'a single day stamped on most posts means a bulk build date, not real edits')
+        lastmod = {n.find('{*}loc').text: n.find('{*}lastmod').text for n in ET.parse(ROOT / 'post-sitemap.xml').findall('.//{*}url')}
+        for post in posts:
+            self.assertEqual(lastmod[f'{BASE}/blogs/{post["slug"]}/'], post['modified_time'], post['slug'])
 
 if __name__ == '__main__':
     unittest.main()

@@ -20,7 +20,7 @@ def generate_redirects():
         aliases(path.parent.name, '/pages/' + path.parent.name + '/')
     aliases('about', '/pages/about-us/')
     aliases('blog', '/blogs/')
-    author_aliases = {'dinesh': 'dinesh-jeengar', 'alex': 'the-fitness-falcon', 'riya-verma': 'the-fitness-falcon'}
+    author_aliases = {'dinesh': 'dinesh-jeengar', 'alex': 'the-fitness-falcon', 'riya-verma': 'the-fitness-falcon', 'seo': 'the-fitness-falcon'}
     for old, new in author_aliases.items():
         aliases('author/' + old, '/author/' + new + '/')
         for page in range(1, 25):
@@ -31,10 +31,12 @@ def generate_redirects():
         for base in ('blog/page', 'page'):
             aliases(f'{base}/{page}', destination)
     aliases('blogs/page/1', '/blogs/')
-    parents = {'weight': 'health', 'nutrition': 'food-and-recipes', 'recipes': 'food-and-recipes', 'gym': 'fitness', 'yoga': 'fitness', 'sports': 'fitness', 'workout': 'fitness/gym', 'swimming': 'fitness/sports', 'trekking': 'fitness/sports', 'beauty': 'health', 'skincare': 'health'}
-    for slug, parent in parents.items():
+    # WordPress nested category paths (every parent path Search Console has reported).
+    parents = {'weight': ['health'], 'nutrition': ['food-and-recipes'], 'recipes': ['food-and-recipes'], 'gym': ['fitness'], 'yoga': ['fitness'], 'sports': ['fitness'], 'workout': ['fitness/gym'], 'swimming': ['fitness/sports', 'fitness'], 'trekking': ['fitness/sports'], 'beauty': ['health'], 'skincare': ['health'], 'news': ['workout']}
+    for slug, parent_paths in parents.items():
         if (ROOT / 'category' / slug / 'index.html').exists():
-            aliases(f'category/{parent}/{slug}', f'/category/{slug}/')
+            for parent in parent_paths:
+                aliases(f'category/{parent}/{slug}', f'/category/{slug}/')
     redirects['/wp-sitemap.xml'] = '/sitemap_index.xml'
     # Trashed WordPress posts that Search Console still reports (2026-10-12).
     # Redirect only where a page covers the same topic; otherwise answer 410.
@@ -50,6 +52,8 @@ def generate_redirects():
         '10-harmful-effects-of-cigarette-smoking': '10-serious-diseases-caused-by-smoking',
         'the-art-of-facial-yoga-unlocking-radiant-skin-and-wellness-through-natural-exercise': 'face-yoga-for-anti-aging-and-skin-health',
         'tag/facial-yoga-exercises': 'face-yoga-for-anti-aging-and-skin-health',
+        # Search Console 2026-10-18: still 404 with impressions; same topic as the daily-benefits article.
+        '10-amazing-health-benefits-of-swimming-you-didnt-know-about': 'what-are-the-benefits-of-swimming-daily',
     }
     # Article slugs renamed after publication: keep the old URLs working.
     renamed = {
@@ -78,7 +82,13 @@ def generate_redirects():
                  'working-out-on-ozempic-the-complete-exercise-guide-to-prevent-muscle-loss',
                  'best-seeds-for-hormonal-balance-in-women',
                  'top-tastiest-types-of-food-cuisine-in-the-usa',
-                 'can-fasting-reverse-aging'):
+                 'can-fasting-reverse-aging',
+                 # Search Console 2026-10-18: removed medical/detox posts and a dead listicle still crawled as 404.
+                 'usas-top-health-and-fitness-blogs-in-2024',
+                 '10-common-panic-attack-symptoms-you-should-never-ignore',
+                 '7-best-detox-drinks-to-cleanse-your-body-naturally-in-7-days',
+                 'what-causes-heart-attacks-understanding-the-warning-signs',
+                 'what-is-a-silent-heart-attack-causes-symptoms-and-risks'):
         if not (ROOT / 'content/posts' / f'{slug}.json').exists():
             gone.extend([f'/{slug}', f'/{slug}/', f'/{slug}/feed', f'/{slug}/feed/'])
     # Old WordPress per-post RSS feeds: send readers to the article itself.
@@ -119,6 +129,11 @@ def generate_redirects():
         '# WordPress date archives (/2024/01/, /2024/01/page/2/) and any other feed.',
         'RewriteRule ^20\\d{2}(?:/\\d{2}){0,2}(?:/page/\\d+)?/?$ /blogs/ [R=301,L]',
         'RewriteRule ^(.+?)/feed/?$ /$1/ [R=301,L,NE]',
+        '# Tag archive pagination that no longer exists: send to the tag page.',
+        'RewriteCond %{REQUEST_FILENAME} !-d',
+        'RewriteRule ^tag/([^/]+)/page/\\d+/?$ /tag/$1/ [R=301,L,NE]',
+        '# The WordPress media library is gone; the static site serves /assets/.',
+        'RewriteRule ^wp-content/uploads/.*$ - [G,L]',
         '# Normalize explicit index.html only for browser requests, not DirectoryIndex subrequests.',
         'RewriteCond %{THE_REQUEST} \\s/+[^\\s?]*index\\.html(?:[?\\s]) [NC]',
         'RewriteRule ^(.*/)?index\\.html$ /$1 [R=301,L,NE]',

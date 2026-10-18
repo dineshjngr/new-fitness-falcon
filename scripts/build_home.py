@@ -9,6 +9,7 @@ and removes legacy WordPress leftovers from index.html (idempotent).
 URLs are never changed: every link uses /blogs/<slug>/.
 """
 import html,json,re
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 
@@ -237,6 +238,17 @@ def home_main(posts):
     nutrition = row({'/category/nutrition/', '/category/food-and-recipes/', '/category/recipes/'})
     tech = row({'/category/wearables-fitness-technology/'})
 
+    # 5b. New this month: every article from the last 45 days that no section
+    # above links. Googlebot crawls the homepage far more often than the
+    # paginated archive, so each new URL gets a link from the strongest page.
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=45)).strftime('%Y-%m-%d')
+    linked = used | {p['slug'] for group in (fitness, nutrition, tech) for p in group}
+    recent = take([p for p in posts if p['slug'] not in linked and p['published_iso'] >= cutoff][:24])
+    recent_html = ''
+    if recent:
+        recent_items = '\n'.join(f'''      <a class="ff-recent-item" href="{url(p)}"><span class="ff-kicker">{esc(p['category'])}</span><span class="ff-recent-title">{html.escape(p['title'])}</span><span class="ff-recent-meta">{esc(p['published_date'])}</span></a>''' for p in recent)
+        recent_html = section('New this month', '/blogs/', 'All articles', f'    <div class="ff-recent">\n{recent_items}\n    </div>', 'ff-home-recent')
+
     # 6. How we work
     trust = '''<section class="ff-trust" aria-labelledby="ff-trust-title">
   <div class="container">
@@ -266,6 +278,7 @@ def home_main(posts):
              marquee_section('Nutrition &amp; Recipes', '/category/nutrition/', 'More nutrition', nutrition, reverse=True, cls='ff-home-alt'),
              guides_html,
              marquee_section('Wearables &amp; Tech', '/category/wearables-fitness-technology/', 'More wearables', tech),
+             recent_html,
              trust]
     return '<main id="main-content" class="falcon-main-layout home-main ff-home">\n' + '\n\n'.join(x for x in parts if x) + '\n</main>'
 
