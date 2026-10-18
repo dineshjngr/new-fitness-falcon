@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-18",
+  "domain": "thefitnessfalcon.com",
+  "commits": ["8eb9345a", "7c2c722b"],
+  "method": "hosting_deploy-static-website (Hostinger) x2, then hosting_cache_clear-website",
+  "change": "Content prune from the Search Console triage: 28 articles merged (301 to the covering article), 33 retired (410), 44 emptied tag archives 301 to /blogs/. Catalogue 197 -> 136 articles; sitemap 242 -> 176 URLs. Manifest: content/retired.json.",
+  "verified": {
+    "merged_301_correct_target": 56,
+    "retired_410": 66,
+    "removed_tags_301": 44,
+    "failures": 0,
+    "note": "One merged URL briefly served a cached redirect to its old /blogs/ path; resolved after the CDN cache clear. One timeout on first sweep returned the correct 301 on retest.",
+    "live_sitemap_urls": 176,
+    "indexnow": "submitted 1 URLs, HTTP 200"
+  }
+}
