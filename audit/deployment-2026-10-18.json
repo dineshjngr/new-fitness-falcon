@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "domain": "thefitnessfalcon.com",
+  "commit": "23568529",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261018_131848.zip",
+  "files": 1140,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components, README.md, .gitignore",
+  "published": [
+    "/blogs/best-gyms-in-dallas/",
+    "/blogs/best-gyms-in-atlanta/",
+    "/blogs/best-gyms-in-seattle/"
+  ],
+  "updated": [
+    "/blogs/best-gym-chains-us-membership-prices/ (city links to Dallas, Atlanta, Seattle)",
+    "/blogs/best-gyms-in-houston/ (More city gym guides section; Dallas link in Texas law section)"
+  ],
+  "cluster": {"id": "us-gyms", "live": ["hub", "houston", "dallas", "atlanta", "seattle"], "pending": "refresh legacy NYC/Chicago/LA/Miami/Florida posts into the cluster"},
+  "verification": {
+    "facts": "Briefs checked 2026-10-12; main prices re-fetched 2026-10-18 (Life Time Dallas $279, Life Time Buckhead $299, Crunch Central Forest $9.99/$15.99/$24.99/$29.99, Paradigm $169, CrossFit Odyssey $225/$195, Atlanta Barbell $90/$20, CrossFit Buckhead $189/$169, CrossFit Midtown $199/$175/$298, YMCA Atlanta $79/$49/$139, Urban Body Fitness $62.99, 24 Hour Fitness Northgate re-priced, Ballard CrossFit $199/$149/$129, Polaris $219/$399)",
+    "dropped": "Progressive Overload Dallas moved to an FAQ mention: official site served an invalid certificate on 2026-10-18",
+    "internal_links": "all /blogs/ targets exist in content/posts",
+    "external_links": "90 hrefs across the three posts returned 2xx/3xx on 2026-10-18",
+    "check_site": "errors: []"
+  },
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified_live": {
+    "pages_200": true,
+    "gym_cards": {"dallas": 7, "atlanta": 7, "seattle": 8, "houston": 9, "hub": 10},
+    "banners_200": true,
+    "in_sitemap": 3
+  }
+}
