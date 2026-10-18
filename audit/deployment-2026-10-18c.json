@@ -11,6 +11,6 @@
     "failures": 0,
     "note": "One merged URL briefly served a cached redirect to its old /blogs/ path; resolved after the CDN cache clear. One timeout on first sweep returned the correct 301 on retest.",
     "live_sitemap_urls": 176,
-    "indexnow": "submitted 1 URLs, HTTP 200"
+    "indexnow": "submitted 88 URLs, HTTP 200"
   }
 }
