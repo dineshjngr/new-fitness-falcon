@@ -79,10 +79,10 @@ def hero_html(posts):
 ESSENTIAL_GUIDES = [
     'how-much-water-should-you-really-drink-each-day',
     'what-is-hiit-high-intensity-interval-training-types-benefits',
-    'intermittent-fasting-and-fat-loss',
+    'how-much-protein-per-day-by-weight-and-goal',
     'running-for-mental-health-stress-anxiety-and-mood-benefits',
-    '10-effective-tips-for-managing-stress',
-    'aging-well-10-secrets-to-a-vibrant-life',
+    'stress-management-techniques-reduce-and-relieve-stress',
+    'best-lifestyle-habits-for-longevity-and-healthy-aging',
 ]
 
 CATEGORY_TILES = [

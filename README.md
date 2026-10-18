@@ -30,7 +30,7 @@ Modified dates (`modified_time`, `modified_iso`, `modified_date` in post JSON) m
 
 After each deployment run `python3 scripts/indexnow.py` (all sitemap URLs) or `python3 scripts/indexnow.py /blogs/<slug>/ …` to notify Bing, Yandex and other IndexNow engines; the key file `<key>.txt` in the site root must be live. Google ignores IndexNow: request indexing for priority URLs in Search Console. Search Console access for agents is through the `gsc` MCP server (Composio).
 
-Content review: `audit/content-triage-2026-10-18.md` lists each article with 16-month Search Console demand and a keep / refresh / merge / retire proposal.
+Content review: `audit/content-triage-2026-10-18.md` lists each article with 16-month Search Console demand and a keep / refresh / merge / retire proposal. Articles removed by that review are listed in `content/retired.json` (merged slug to target, or retired); `scripts/build_redirects.py` turns them into 301 and 410 rules, and the source JSON stays in `old-website/retired-posts/` for reference. To retire or merge another article, move its JSON there, add it to the manifest, fix links from other articles, and rebuild.
 
 ## Build, check, and preview
 

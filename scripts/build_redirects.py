@@ -49,7 +49,6 @@ def generate_redirects():
         'how-to-fix-a-damaged-skin-barrier-in-48-hours': 'essential-tips-for-dry-skin-care-how-to-repair-your-skin-barrier',
         'home-remedies-for-weight-loss-the-ultimate-guide-for-2024': 'healthy-eating-tips-for-weight-loss',
         'what-is-menstrual-cycle-period-pain-relief': 'the-four-phases-of-the-menstrual-cycle-and-how-they-impact-your-health',
-        '10-harmful-effects-of-cigarette-smoking': '10-serious-diseases-caused-by-smoking',
         'the-art-of-facial-yoga-unlocking-radiant-skin-and-wellness-through-natural-exercise': 'face-yoga-for-anti-aging-and-skin-health',
         'tag/facial-yoga-exercises': 'face-yoga-for-anti-aging-and-skin-health',
         # Search Console 2026-10-18: still 404 with impressions; same topic as the daily-benefits article.
@@ -88,9 +87,24 @@ def generate_redirects():
                  '10-common-panic-attack-symptoms-you-should-never-ignore',
                  '7-best-detox-drinks-to-cleanse-your-body-naturally-in-7-days',
                  'what-causes-heart-attacks-understanding-the-warning-signs',
-                 'what-is-a-silent-heart-attack-causes-symptoms-and-risks'):
+                 'what-is-a-silent-heart-attack-causes-symptoms-and-risks',
+                 '10-harmful-effects-of-cigarette-smoking'):
         if not (ROOT / 'content/posts' / f'{slug}.json').exists():
             gone.extend([f'/{slug}', f'/{slug}/', f'/{slug}/feed', f'/{slug}/feed/'])
+    # Articles removed in the 2026-10-18 content triage (content/retired.json):
+    # merged posts 301 to the article that now covers the topic, retired posts 410.
+    retired = json.loads((ROOT / 'content/retired.json').read_text())
+    for old_slug, new_slug in retired['merged'].items():
+        if not (ROOT / 'content/posts' / f'{new_slug}.json').exists():
+            raise ValueError(f'retired.json: merge target {new_slug} does not exist')
+        for base in (old_slug, f'blogs/{old_slug}'):
+            aliases(base, f'/blogs/{new_slug}/')
+            aliases(f'{base}/feed', f'/blogs/{new_slug}/')
+    for slug in retired['retired']:
+        if (ROOT / 'content/posts' / f'{slug}.json').exists():
+            raise ValueError(f'retired.json: {slug} is still a published post')
+        for base in (f'/{slug}', f'/blogs/{slug}'):
+            gone.extend([base, f'{base}/', f'{base}/feed', f'{base}/feed/'])
     # Old WordPress per-post RSS feeds: send readers to the article itself.
     for path in sorted((ROOT / 'content/posts').glob('*.json')):
         slug = json.loads(path.read_text())['slug']
@@ -132,6 +146,9 @@ def generate_redirects():
         '# Tag archive pagination that no longer exists: send to the tag page.',
         'RewriteCond %{REQUEST_FILENAME} !-d',
         'RewriteRule ^tag/([^/]+)/page/\\d+/?$ /tag/$1/ [R=301,L,NE]',
+        '# Tag archives that no longer exist (all their posts were retired): send to the article index.',
+        'RewriteCond %{REQUEST_FILENAME} !-d',
+        'RewriteRule ^tag/[^/]+/?$ /blogs/ [R=301,L,NE]',
         '# The WordPress media library is gone; the static site serves /assets/.',
         'RewriteRule ^wp-content/uploads/.*$ - [G,L]',
         '# Normalize explicit index.html only for browser requests, not DirectoryIndex subrequests.',

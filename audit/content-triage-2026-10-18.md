@@ -9,6 +9,79 @@ Search Console shows 12 of 210 article URLs indexed, 161 "Discovered – current
 | merge or retire | 77 |
 | retire (410) or merge | 16 |
 
+## Decisions applied on 18 October 2026
+
+Of the 93 candidates, 28 were merged (301 to the article that now covers the topic), 33 were retired (410), and 32 were kept because they are sourced, recent, the only article for a live category, or already the target of a legacy redirect. The catalogue went from 197 to 136 articles and the sitemap from 242 to 176 URLs. Removed source JSON is kept in `old-website/retired-posts/`; the manifest is `content/retired.json`. Links from remaining articles to merged posts were pointed at the merge target; links to retired posts were unlinked.
+
+### Merged
+
+| Old article | Now covered by |
+|---|---|
+| `home-remedies-faster-hair-growth-naturally` | `hair-growth-vs-hair-thickness-why-length-isnt-increasing` |
+| `top-10-hair-growth-tips` | `hair-growth-vs-hair-thickness-why-length-isnt-increasing` |
+| `haircare-tips-to-prevent-split-ends-and-breakage` | `summer-haircare-tips-to-stop-dryness-and-damage` |
+| `healthy-fats-vs-unhealthy-fats-what-you-need-to-know` | `monounsaturated-vs-polyunsaturated-fats-benefits-and-sources` |
+| `hire-a-personal-female-fitness-trainer-in-chicago` | `top-5-gyms-in-chicago` |
+| `beginners-guide-to-cycling-top-tips-for-a-smooth-and-fun-ride` | `cycling-benefits-and-which-cycle-is-best` |
+| `why-cycling-is-the-ultimate-workout-for-your-body-and-brain` | `cycling-benefits-and-which-cycle-is-best` |
+| `7-best-health-and-fitness-wearables-in-2024` | `best-budget-fitness-trackers-2026` |
+| `best-time-to-consume-protein-morning-vs-night` | `how-much-protein-per-day-by-weight-and-goal` |
+| `home-workouts-that-actually-work-in-2026` | `top-10-home-workouts-that-require-no-equipment` |
+| `10-effective-tips-for-managing-stress` | `stress-management-techniques-reduce-and-relieve-stress` |
+| `10-fruits-for-your-gym-diet-fuel-your-fitness` | `gym-diet-plan-what-to-eat-before-and-after-workout` |
+| `what-is-a-vegan-diet-vegan-food-diet-list` | `ultimate-plant-based-diet-grocery-list-for-health` |
+| `what-is-dietary-fiber-types-benefits-and-best-food-sources` | `high-fiber-foods-types-health-benefits-and-supplements` |
+| `hiit-vs-liss-which-cardio-method-is-better-for-you` | `what-is-hiit-high-intensity-interval-training-types-benefits` |
+| `immune-system-how-to-improve-immune-system` | `gut-health-the-unsung-hero-of-your-immune-system` |
+| `clean-weight-gain-vs-fat-gain-what-you-really-need-to-know` | `weight-gain-alert-signs-you-need-to-watch-out-for` |
+| `aging-well-10-secrets-to-a-vibrant-life` | `best-lifestyle-habits-for-longevity-and-healthy-aging` |
+| `why-skin-becomes-sensitive-in-your-30s-and-triggers-facial-redness` | `skincare-for-sensitive-skin` |
+| `running-shoes-for-women-stylish-stable-comfortable` | `how-to-choose-the-right-running-shoes-for-flat-feet` |
+| `10-high-protein-vegetarian-foods-ideal-for-adult-nutrition` | `high-protein-plant-foods-for-fitness-health` |
+| `healthy-sunflower-seeds-nutrition-benefits-eating-tips` | `7-healthy-seeds-that-boost-immunity-and-improve-gut-health` |
+| `omega-6-fatty-acids-health-benefits-and-rich-foods` | `omega-3-fatty-acids-health-benefits-and-rich-foods` |
+| `the-ultimate-guide-to-post-workout-meals` | `gym-diet-plan-what-to-eat-before-and-after-workout` |
+| `top-skincare-hacks-for-dry-and-dehydrated-skin` | `dry-skin-care-routine-best-products-and-tips-for-hydration` |
+| `how-to-make-skin-glow-naturally-without-makeup-or-treatments` | `home-remedies-for-glowing-skin-pamper-your-face-naturally` |
+| `what-to-do-if-you-panic-in-water-beginner-survival-techniques` | `swimming-safety-tips-for-beginners` |
+| `common-trekking-mistakes-and-how-to-avoid-them` | `essential-trekking-checklist` |
+
+### Retired (410)
+
+- `hair-fall-in-men-common-causes-and-permanent-fixes`
+- `blackhead-removal-guide-best-remedies-and-prevention-methods`
+- `how-to-remove-dark-circles-naturally-at-home`
+- `pigmentation-on-face-causes-prevention-and-effective-treatments`
+- `is-overthinking-killing-your-confidence`
+- `10-superfoods-for-iron-deficiency`
+- `top-5-home-remedies-to-remove-sun-tan-reclaim-your-natural-glow`
+- `improving-your-posture-the-ultimate-guide-for-2024`
+- `intermittent-fasting-and-fat-loss`
+- `mindfulness-the-ultimate-guide-to-inner-peace-in-2024`
+- `what-is-ice-bath-health-benefits-of-cold-therapy`
+- `food-waste-reduction-and-sustainability`
+- `exploring-the-top-10-most-consumed-winter-beverages`
+- `healthy-snack-ideas-to-satisfy-your-cravings-without-the-guilt`
+- `top-5-healthy-breakfast-ideas`
+- `what-is-superfoods-benefits-uses`
+- `wearable-fitness-technology-smart-gyms-in-2025`
+- `ai-mental-health-chatbots-ethics-and-emotional-support`
+- `the-importance-of-prioritizing-mental-health-in-the-workplace`
+- `health-benefits-of-kiss-and-hugs`
+- `home-remedies-for-better-digestion`
+- `meditation-for-beginners-types-and-health-benefits`
+- `what-are-fast-twitch-muscle-fibers-a-comprehensive-guide`
+- `10-serious-diseases-caused-by-smoking`
+- `what-are-carbohydrates-definition-types-health-impact`
+- `7-best-fitness-youtubers-to-motivate-and-energize-your-workouts`
+- `100-inspirational-fitness-quotes-for-captions-on-instagram`
+- `alpha-bravo-development-leading-innovations-in-health-tech`
+- `antioxidants-health-benefits-sources-and-supplements`
+- `what-is-glucose-types-health-benefits`
+- `why-is-magnesium-so-crucial-for-the-body`
+- `anti-aging-products-benefits-and-side-effects`
+- `what-is-zumba-workout-pros-cons-and-how-it-works`
+
 ## Rules used
 - **keep**: written on this site after 1 October 2026 or part of a topic cluster.
 - **keep + refresh**: legacy import with at least 20 impressions or a click in 16 months, or a sourced article of 1,200+ words. Rewrite to the article standard, keep the URL.
