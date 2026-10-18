@@ -1,16 +1,29 @@
 {
   "date": "2026-10-18",
   "domain": "thefitnessfalcon.com",
-  "commits": ["8eb9345a", "7c2c722b"],
-  "method": "hosting_deploy-static-website (Hostinger) x2, then hosting_cache_clear-website",
-  "change": "Content prune from the Search Console triage: 28 articles merged (301 to the covering article), 33 retired (410), 44 emptied tag archives 301 to /blogs/. Catalogue 197 -> 136 articles; sitemap 242 -> 176 URLs. Manifest: content/retired.json.",
-  "verified": {
-    "merged_301_correct_target": 56,
-    "retired_410": 66,
-    "removed_tags_301": 44,
-    "failures": 0,
-    "note": "One merged URL briefly served a cached redirect to its old /blogs/ path; resolved after the CDN cache clear. One timeout on first sweep returned the correct 301 on retest.",
-    "live_sitemap_urls": 176,
-    "indexnow": "submitted 88 URLs, HTTP 200"
-  }
+  "commit": "d2acd03f",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261018_202806.zip",
+  "files": 1024,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components, README.md, .gitignore",
+  "refreshed": [
+    "/blogs/top-5-gyms-in-new-york-city-2026/ (6 verified gyms, cluster us-gyms, new banner, NY GBL §624 section)",
+    "/blogs/top-5-gyms-in-chicago/ (7 verified gyms, cluster us-gyms, new banner, 815 ILCS 645/6 section)"
+  ],
+  "updated": ["/blogs/best-gym-chains-us-membership-prices/ (city links: NYC and Chicago rebuilt; LA and Miami next)"],
+  "removed_from_posts": {
+    "nyc": "Studio 16 (placeholder website), TMPL West Village (no hours/price/independent listing); all Yelp star ratings and review counts",
+    "chicago": "Number One Gym (domain now unrelated), Anytime Fitness Logan Square (page unreadable); all Google Maps ratings and review counts"
+  },
+  "verification": {
+    "official_pages": "fetched 2026-10-18 for every listed gym",
+    "independent": "Yelp listings (NYC + 4 Chicago gyms), Time Out Chicago 2025-12-19, Time Out New York (McBurney), InsideHook Chicago, Who What Wear NYC",
+    "law": "NY GBL §624 read on nysenate.gov via WebFetch; 815 ILCS 645/6 read on FindLaw (ilga.gov refused connections)",
+    "internal_links": "all targets exist (post-prune catalogue of 136 posts)",
+    "external_links": "52 hrefs: 50 return 2xx/3xx; nysenate.gov and findlaw.com return 403 to curl bots but render in a browser/WebFetch",
+    "check_site": "errors: []"
+  },
+  "note": "Built on top of the same-day content prune (commits 8eb9345a..8397ef07 from another session); catalogue is 136 posts.",
+  "result": {"upload": "success", "deploy": "Request accepted"},
+  "verified_live": {"pages_200": true, "gym_cards": {"nyc": 6, "chicago": 7, "hub": 10}, "ratings_text_on_live_pages": 0, "banners_200": true}
 }
