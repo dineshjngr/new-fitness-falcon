@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "domain": "thefitnessfalcon.com",
+  "commit": "60526615",
+  "method": "hosting_deploy-static-website (Hostinger)",
+  "archive": "thefitnessfalcon_20261018_133601.zip",
+  "files": 1141,
+  "source": "git ls-files at the deployed commit, excluding scratch, content, scripts, tests, audit, old-website, .hostinger, components, README.md, .gitignore",
+  "change": "Search Console crawl fixes: legacy 404s now 301/410, modified dates restored from git/WordPress history (189 posts), homepage 'New this month' section (16 articles), IndexNow key file, content triage report",
+  "result": {"upload": "success", "deploy": "Request accepted", "live_after_seconds": 5},
+  "verified": {
+    "legacy_301": ["/10-amazing-health-benefits-of-swimming-you-didnt-know-about/ -> /blogs/what-are-the-benefits-of-swimming-daily/", "/author/seo/ -> /author/the-fitness-falcon/", "/author/seo/page/3/ -> /author/the-fitness-falcon/", "/category/fitness/swimming/ -> /category/swimming/", "/category/workout/news/ -> /category/news/", "/tag/skin/page/2/ -> /tag/skin/"],
+    "legacy_410": ["/usas-top-health-and-fitness-blogs-in-2024/", "/10-common-panic-attack-symptoms-you-should-never-ignore/", "/7-best-detox-drinks-to-cleanse-your-body-naturally-in-7-days/", "/what-causes-heart-attacks-understanding-the-warning-signs/", "/what-is-a-silent-heart-attack-causes-symptoms-and-risks/", "/wp-content/uploads/2026/01/hair-1296x700.jpg"],
+    "sitemap_hash_match": true,
+    "sitemap_lastmod_months": {"2026-10": 99, "2025-07": 26, "2023-12": 22, "2023-11": 18},
+    "homepage_recent_items": 16,
+    "sample_dateModified": "/blogs/10-effective-tips-for-managing-stress/ -> 2024-08-29T13:57:54+00:00 (was 2026-10-06)",
+    "indexnow_key_200": true,
+    "indexnow_submission": "242 URLs, HTTP 200 (first attempt returned 403 before key validation; single-URL probes then returned 200)"
+  },
+  "search_console_coverage_before": {"articles": 210, "indexed": 12, "discovered_not_indexed": 161, "unknown": 37},
+  "manual_follow_up": ["Request indexing in Search Console UI for priority URLs", "Decide on audit/content-triage-2026-10-18.md"]
+}
